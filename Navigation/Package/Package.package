@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="888b4351-85d4-4132-a619-273d39d5866b" solutionId="888b4351-85d4-4132-a619-273d39d5866b" resetWebServer="false" sharePointProductVersion="15.0" name="Navigation" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="fd36705e-6e1c-42ab-ab07-d220ee225a86" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="eccbcd85-0822-4d20-8373-23a6e5a52af4" />
+    <projectItemReference itemId="bec52ff4-d0ee-4a03-b638-6b6179d1b67a" />
+    <projectItemReference itemId="03b8266b-35f4-4d71-b763-d75d99878d2b" />
+  </projectItems>
+</package>
