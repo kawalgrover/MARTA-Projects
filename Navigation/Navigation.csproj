@@ -57,6 +57,9 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\MARTA Navigation\MARTA Navigation.EventReceiver.cs">
+      <DependentUpon>MARTA Navigation.feature</DependentUpon>
+    </Compile>
     <Compile Include="_CONTROLTEMPLATES\SuiteBarBranding.ascx.cs">
       <DependentUpon>SuiteBarBranding.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -77,6 +80,9 @@
   <ItemGroup>
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{03b8266b-35f4-4d71-b763-d75d99878d2b}</SharePointProjectItemId>
+    </None>
+    <None Include="Property Bag\TermStoreProperties\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{87c564d8-853f-4efa-9d2e-596d2bd3e13b}</SharePointProjectItemId>
     </None>
     <None Include="_CONTROLTEMPLATES\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{bec52ff4-d0ee-4a03-b638-6b6179d1b67a}</SharePointProjectItemId>
@@ -109,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Layouts\Navigation\MARTA.GlobalNavigation.js" />
+    <Content Include="Property Bag\TermStoreProperties\Elements.xml" />
     <Content Include="_CONTROLTEMPLATES\SuiteBarBranding.ascx" />
     <Content Include="_CONTROLTEMPLATES\SuiteLinks.ascx" />
     <Content Include="Features\MARTA Navigation\MARTA Navigation.Template.xml">
