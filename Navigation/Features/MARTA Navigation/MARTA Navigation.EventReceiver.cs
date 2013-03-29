@@ -25,7 +25,8 @@ namespace Navigation.Features.MARTA_Navigation
         public override void FeatureActivated(SPFeatureReceiverProperties properties)
         {
             //Set the master page to be our CustomMaster page.
-            SPWeb currentWeb = properties.Feature.Parent as SPWeb;
+            SPSite currentSite = properties.Feature.Parent as SPSite;
+            SPWeb currentWeb = currentSite.RootWeb;
             currentWeb.AllowUnsafeUpdates = true;
 
             string masterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/CustomMaster.master";
@@ -47,15 +48,11 @@ namespace Navigation.Features.MARTA_Navigation
             if (taxonomySession.TermStores.Count == 0)
                 throw new InvalidOperationException("The Taxonomy Service is offline or missing.");
 
-            string termStoreName = "Navigation"; //Default Value
+            string termStoreName = "Shared Types Metadata Service"; //Default Value TODO: Perhaps get thsi value from Web App properties so that its not hard-coded.
             string globalTermSetID = string.Empty;
             string localTermSetID = string.Empty;
             //Check property bag for TermSetID key and value. If it doesn't exist create it.
-            if (!currentWeb.AllProperties.ContainsKey(termStorePropertyKey))
-                currentWeb.Properties.Add(termStorePropertyKey, termStoreName);
-            else
-                termStoreName = currentWeb.Properties[termStorePropertyKey];
-
+           
             if (!currentWeb.AllProperties.ContainsKey(globalTermSetIDPropertyKey))
                 currentWeb.Properties.Add(globalTermSetIDPropertyKey, globalTermSetID);
             else
@@ -68,7 +65,7 @@ namespace Navigation.Features.MARTA_Navigation
 
 
 
-            if (termStoreName != string.Empty)
+            if (!string.IsNullOrEmpty(termStoreName))
             {
                 TermStore termStore = taxonomySession.TermStores[termStoreName];
 
