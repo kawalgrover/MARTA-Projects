@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBB3CFE6-6875-47DC-AE7D-B8FB07944799}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Navigation</RootNamespace>
+    <AssemblyName>Navigation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_CONTROLTEMPLATES\SuiteBarBranding.ascx.cs">
+      <DependentUpon>SuiteBarBranding.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_CONTROLTEMPLATES\SuiteBarBranding.ascx.designer.cs">
+      <DependentUpon>SuiteBarBranding.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_CONTROLTEMPLATES\SuiteLinks.ascx.cs">
+      <DependentUpon>SuiteLinks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_CONTROLTEMPLATES\SuiteLinks.ascx.designer.cs">
+      <DependentUpon>SuiteLinks.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteCreatedReceiver\SiteCreatedReceiver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{03b8266b-35f4-4d71-b763-d75d99878d2b}</SharePointProjectItemId>
+    </None>
+    <None Include="_CONTROLTEMPLATES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bec52ff4-d0ee-4a03-b638-6b6179d1b67a}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\MARTA Navigation\MARTA Navigation.feature">
+      <FeatureId>{fd36705e-6e1c-42ab-ab07-d220ee225a86}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eccbcd85-0822-4d20-8373-23a6e5a52af4}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="MasterPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6464a12e-c854-488c-87a5-b4d0a85842b3}</SharePointProjectItemId>
+    </None>
+    <None Include="NavigationControls\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ec2807de-18a9-4608-8872-b489751b8fb4}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{888b4351-85d4-4132-a619-273d39d5866b}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SiteCreatedReceiver\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{62a0f0e6-3422-4eb8-b9c4-1f93ffff9d97}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Navigation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Layouts\Navigation\MARTA.GlobalNavigation.js" />
+    <Content Include="_CONTROLTEMPLATES\SuiteBarBranding.ascx" />
+    <Content Include="_CONTROLTEMPLATES\SuiteLinks.ascx" />
+    <Content Include="Features\MARTA Navigation\MARTA Navigation.Template.xml">
+      <DependentUpon>MARTA Navigation.feature</DependentUpon>
+    </Content>
+    <Content Include="MasterPage\Elements.xml" />
+    <Content Include="NavigationControls\Elements.xml" />
+    <None Include="MasterPage\CustomMaster.master" />
+    <Content Include="SiteCreatedReceiver\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
