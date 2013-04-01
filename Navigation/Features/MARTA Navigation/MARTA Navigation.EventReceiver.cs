@@ -117,7 +117,7 @@ namespace Navigation.Features.MARTA_Navigation
                     webNavigationSettings.CreateFriendlyUrlsForNewPages = true;
 
                     currentWeb.Update();
-                    webNavigationSettings.Update();
+                    //webNavigationSettings.Update();
 
                 } //if (termStoreName != string.Empty)
             });
@@ -147,7 +147,7 @@ namespace Navigation.Features.MARTA_Navigation
 
             /// Commit changes.
             childTerm.GetTaxonomyTerm().TermStore.CommitAll();
-
+            termStore.CommitAll();
             //Add this to the property bag of the web as well.
         }
 
