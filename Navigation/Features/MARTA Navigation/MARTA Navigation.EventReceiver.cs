@@ -24,99 +24,104 @@ namespace Navigation.Features.MARTA_Navigation
 
         public override void FeatureActivated(SPFeatureReceiverProperties properties)
         {
-            //Set the master page to be our CustomMaster page.
-            SPSite currentSite = properties.Feature.Parent as SPSite;
-            SPWeb currentWeb = currentSite.RootWeb;
-            currentWeb.AllowUnsafeUpdates = true;
+            SPSecurity.RunWithElevatedPrivileges(delegate()
+            {
+                //Set the master page to be our CustomMaster page.
+                SPSite currentSite = properties.Feature.Parent as SPSite;
+                SPWeb currentWeb = currentSite.RootWeb;
+                currentWeb.AllowUnsafeUpdates = true;
 
-            string masterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/CustomMaster.master";
-            string customMasterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/CustomMaster.master";
-            currentWeb.MasterUrl = masterURL;
-            currentWeb.CustomMasterUrl = customMasterURL;
-            currentWeb.Update();
+                string masterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/MasterPage/CustomMaster.master";
+                string customMasterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/MasterPage/CustomMaster.master";
+                currentWeb.MasterUrl = masterURL;
+                currentWeb.CustomMasterUrl = customMasterURL;
+                currentWeb.Update();
 
+
+                //Some templates might have subsites from start.
+                foreach (SPWeb subWeb in currentWeb.Site.RootWeb.GetSubwebsForCurrentUser())
+                {
+                    ChangeMasterPage(subWeb, masterURL, customMasterURL);
+                }
+
+                TaxonomySession taxonomySession = new TaxonomySession(currentWeb.Site, updateCache: true);
+
+                //Use the first Termstore object to see if Taxonomy Service is offline or missing.
+                if (taxonomySession.TermStores.Count == 0)
+                    throw new InvalidOperationException("The Taxonomy Service is offline or missing.");
+
+                string termStoreName = "Shared Types Metadata Service"; //Default Value TODO: Perhaps get thsi value from Web App properties so that its not hard-coded.
+                string globalTermSetID = string.Empty;
+                string localTermSetID = string.Empty;
+                //Check property bag for TermSetID key and value. If it doesn't exist create it.
+
+                if (!currentWeb.Site.RootWeb.AllProperties.ContainsKey(globalTermSetIDPropertyKey))
+                    currentWeb.Site.RootWeb.AllProperties.Add(globalTermSetIDPropertyKey, globalTermSetID);
+                else
+                    globalTermSetID = Convert.ToString(currentWeb.Site.RootWeb.AllProperties[globalTermSetIDPropertyKey]);
+
+                if (!currentWeb.Site.RootWeb.AllProperties.ContainsKey(localTermSetIDPropertyKey))
+                    currentWeb.Site.RootWeb.AllProperties.Add(localTermSetIDPropertyKey, localTermSetID);
+                else
+                    localTermSetID = Convert.ToString(currentWeb.Site.RootWeb.AllProperties[localTermSetIDPropertyKey]);
+
+
+
+                if (!string.IsNullOrEmpty(termStoreName))
+                {
+                    TermStore termStore = taxonomySession.TermStores[termStoreName];
+
+                    if (globalTermSetID != string.Empty)
+                    {
+                        TermSet termSet = termStore.GetTermSet(new Guid(globalTermSetID));
+                        if (termSet == null)
+                        {
+                            CreateTermSet(termStore, globalTermSetID, currentWeb);
+                        }
+                    }
+                    else
+                    {
+                        string newTermSetID = Guid.NewGuid().ToString(); //Create a new GUID and that will also be stored in the property bag.
+                        CreateTermSet(termStore, newTermSetID, currentWeb);
+                        currentWeb.Site.RootWeb.AllProperties[globalTermSetIDPropertyKey] = newTermSetID;
+                        globalTermSetID = newTermSetID;
+                    }
+
+                    if (localTermSetID != string.Empty)
+                    {
+                        TermSet termSet = termStore.GetTermSet(new Guid(localTermSetID));
+                        if (termSet == null)
+                        {
+                            CreateTermSet(termStore, localTermSetID, currentWeb);
+                        }
+                    }
+                    else
+                    {
+                        string newTermSetID = Guid.NewGuid().ToString(); //Create a new GUID and that will also be stored in the property bag.
+                        CreateTermSet(termStore, newTermSetID, currentWeb);
+                        currentWeb.Site.RootWeb.AllProperties[localTermSetIDPropertyKey] = newTermSetID;
+                        localTermSetID = newTermSetID;
+                    }
+                    //Once TermSet has been created. Set the correct properties
+                    WebNavigationSettings webNavigationSettings = new WebNavigationSettings(currentWeb);
+                    webNavigationSettings.GlobalNavigation.Source = StandardNavigationSource.TaxonomyProvider;
+                    webNavigationSettings.CurrentNavigation.Source = StandardNavigationSource.TaxonomyProvider;
+
+                    webNavigationSettings.GlobalNavigation.TermStoreId = termStore.Id;
+                    webNavigationSettings.GlobalNavigation.TermSetId = new Guid(globalTermSetID);
+
+                    webNavigationSettings.CurrentNavigation.TermStoreId = termStore.Id;
+                    webNavigationSettings.CurrentNavigation.TermStoreId = new Guid(localTermSetID);
+
+                    webNavigationSettings.AddNewPagesToNavigation = false;
+                    webNavigationSettings.CreateFriendlyUrlsForNewPages = true;
+
+                    currentWeb.Update();
+                    webNavigationSettings.Update();
+
+                } //if (termStoreName != string.Empty)
+            });
             
-            //Some templates might have subsites from start.
-            foreach (SPWeb subWeb in currentWeb.Site.RootWeb.GetSubwebsForCurrentUser())
-            {
-                ChangeMasterPage(subWeb, masterURL, customMasterURL);
-            }
-
-            TaxonomySession taxonomySession = new TaxonomySession(currentWeb.Site, updateCache: true);
-
-            //Use the first Termstore object to see if Taxonomy Service is offline or missing.
-            if (taxonomySession.TermStores.Count == 0)
-                throw new InvalidOperationException("The Taxonomy Service is offline or missing.");
-
-            string termStoreName = "Shared Types Metadata Service"; //Default Value TODO: Perhaps get thsi value from Web App properties so that its not hard-coded.
-            string globalTermSetID = string.Empty;
-            string localTermSetID = string.Empty;
-            //Check property bag for TermSetID key and value. If it doesn't exist create it.
-           
-            if (!currentWeb.AllProperties.ContainsKey(globalTermSetIDPropertyKey))
-                currentWeb.Properties.Add(globalTermSetIDPropertyKey, globalTermSetID);
-            else
-                globalTermSetID = currentWeb.Properties[globalTermSetIDPropertyKey];
-
-            if (!currentWeb.AllProperties.ContainsKey(localTermSetIDPropertyKey))
-                currentWeb.Properties.Add(localTermSetIDPropertyKey, localTermSetID);
-            else
-                localTermSetID = currentWeb.Properties[localTermSetIDPropertyKey];
-
-
-
-            if (!string.IsNullOrEmpty(termStoreName))
-            {
-                TermStore termStore = taxonomySession.TermStores[termStoreName];
-
-                if (globalTermSetID != string.Empty)
-                {
-                    TermSet termSet = termStore.GetTermSet(new Guid(globalTermSetID));
-                    if (termSet == null)
-                    {
-                        CreateTermSet(termStore, globalTermSetID, currentWeb);
-                    }
-                }
-                else
-                {
-                    string newTermSetID = Guid.NewGuid().ToString(); //Create a new GUID and that will also be stored in the property bag.
-                    CreateTermSet(termStore, newTermSetID, currentWeb); 
-                    currentWeb.Properties[globalTermSetIDPropertyKey] = newTermSetID;
-                    globalTermSetID = newTermSetID;
-                }
-
-                if (localTermSetID != string.Empty)
-                {
-                    TermSet termSet = termStore.GetTermSet(new Guid(localTermSetID));
-                    if (termSet == null)
-                    {
-                        CreateTermSet(termStore, localTermSetID, currentWeb);
-                    }
-                }
-                else
-                {
-                    string newTermSetID = Guid.NewGuid().ToString(); //Create a new GUID and that will also be stored in the property bag.
-                    CreateTermSet(termStore, newTermSetID, currentWeb); 
-                    currentWeb.Properties[localTermSetIDPropertyKey] = newTermSetID;
-                    localTermSetID = newTermSetID;
-                }
-                //Once TermSet has been created. Set the correct properties
-                WebNavigationSettings webNavigationSettings = new WebNavigationSettings(currentWeb);
-                webNavigationSettings.GlobalNavigation.Source = StandardNavigationSource.TaxonomyProvider;
-                webNavigationSettings.CurrentNavigation.Source = StandardNavigationSource.TaxonomyProvider;
-
-                webNavigationSettings.GlobalNavigation.TermStoreId = termStore.Id;
-                webNavigationSettings.GlobalNavigation.TermSetId = new Guid(globalTermSetID);
-
-                webNavigationSettings.CurrentNavigation.TermStoreId = termStore.Id;
-                webNavigationSettings.CurrentNavigation.TermStoreId = new Guid(localTermSetID);
-
-                webNavigationSettings.AddNewPagesToNavigation = false;
-                webNavigationSettings.CreateFriendlyUrlsForNewPages = true;
-
-                
-
-            } //if (termStoreName != string.Empty)
             
         }
 
@@ -134,7 +139,7 @@ namespace Navigation.Features.MARTA_Navigation
             NavigationTerm term1 = navTermSet.CreateTerm("Term 1", NavigationLinkType.SimpleLink);
             term1.SimpleLinkUrl = "http://www.bing.com/";
 
-            Guid term2Guid = new Guid("87FAA433-4E3E-4500-AA5B-E04330B12ACD");
+            Guid term2Guid = Guid.NewGuid();
             NavigationTerm term2 = navTermSet.CreateTerm("Term 2", NavigationLinkType.FriendlyUrl,
                 term2Guid);
 
@@ -157,9 +162,25 @@ namespace Navigation.Features.MARTA_Navigation
 
         // Uncomment the method below to handle the event raised before a feature is deactivated.
 
-        //public override void FeatureDeactivating(SPFeatureReceiverProperties properties)
-        //{
-        //}
+        public override void FeatureDeactivating(SPFeatureReceiverProperties properties)
+        {
+            SPSite currentSite = properties.Feature.Parent as SPSite;
+            SPWeb currentWeb = currentSite.RootWeb;
+            currentWeb.AllowUnsafeUpdates = true;
+
+            string masterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/v4.master";
+            string customMasterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/v4.master";
+            currentWeb.MasterUrl = masterURL;
+            currentWeb.CustomMasterUrl = customMasterURL;
+            currentWeb.Update();
+
+
+            //Some templates might have subsites from start.
+            foreach (SPWeb subWeb in currentWeb.Site.RootWeb.GetSubwebsForCurrentUser())
+            {
+                ChangeMasterPage(subWeb, masterURL, customMasterURL);
+            }
+        }
 
 
         // Uncomment the method below to handle the event raised after a feature has been installed.
