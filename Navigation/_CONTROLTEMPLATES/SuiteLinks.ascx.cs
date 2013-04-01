@@ -70,7 +70,7 @@ namespace Navigation.CONTROLTEMPLATES
             SPWebApplication webApplication = currentWeb.Site.WebApplication;
             if (webApplication.Properties != null && webApplication.Properties.Count > 0)
             {
-                topNavTermStoreSiteURL = Convert.ToString(webApplication.Properties["TopNavTermStoreSite"]);
+                topNavTermStoreSiteURL = Convert.ToString(webApplication.Properties["TopNavTermStore"]);
                 termSetID = new Guid(Convert.ToString(webApplication.Properties["TermSetID"]));
             }
 

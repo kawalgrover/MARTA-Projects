@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <PropertyBag ParentType="Web">
+
+    <Property Name="MetadataNavGlobalTermSetID"
+              Type="string" />
+
+    <Property Name="MetadataNavLocalTermSetID"
+              Type="string" />
+               
+  </PropertyBag>
+</Elements>
