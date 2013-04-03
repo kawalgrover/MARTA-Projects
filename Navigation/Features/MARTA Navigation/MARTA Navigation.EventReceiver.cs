@@ -7,6 +7,10 @@ using Microsoft.SharePoint.Taxonomy;
 using Microsoft.SharePoint.Administration;
 using Microsoft.SharePoint.Publishing;
 using Microsoft.SharePoint.Navigation;
+using Microsoft.SharePoint.Utilities;
+using System.Resources;
+using System.Xml;
+using System.IO;
 
 namespace Navigation.Features.MARTA_Navigation
 {
@@ -125,8 +129,6 @@ namespace Navigation.Features.MARTA_Navigation
                     webNavigationSettings.AddNewPagesToNavigation = false;
                     webNavigationSettings.CreateFriendlyUrlsForNewPages = true;
 
-
-
                     webNavigationSettings.Update();
                     currentWeb.Update();
 
@@ -155,11 +157,14 @@ namespace Navigation.Features.MARTA_Navigation
             NavigationTermSet navTermSet = NavigationTermSet.GetAsResolvedByWeb(newTermSet, currentWeb, StandardNavigationProviderNames.GlobalNavigationTaxonomyProvider);
 
             navTermSet.IsNavigationTermSet = true;
-            navTermSet.TargetUrlForChildTerms.Value = "~site/Pages/Topics/Topic.aspx";
+            navTermSet.TargetUrlForChildTerms.Value = "~site/SitePages/Home.aspx";
 
-            NavigationTerm term1 = navTermSet.CreateTerm("Term 1", NavigationLinkType.SimpleLink);
-            term1.SimpleLinkUrl = "http://www.bing.com/";
+            //NavigationTerm term1 = navTermSet.CreateTerm("Term 1", NavigationLinkType.SimpleLink);
+            //term1.SimpleLinkUrl = "http://www.bing.com/";
 
+
+            uint langID = (uint) currentWeb.Locale.LCID;
+            string termMap = SPUtility.GetLocalizedString("$Resources:MARTANavigation,WebTemplateTeamSiteGlobal", "MARTANavigation", langID);
             //Guid term2Guid = Guid.NewGuid();
             //NavigationTerm term2 = navTermSet.CreateTerm("Term 2", NavigationLinkType.FriendlyUrl,
             //    term2Guid);
@@ -168,10 +173,47 @@ namespace Navigation.Features.MARTA_Navigation
 
             ///// Commit changes.
             //childTerm.GetTaxonomyTerm().TermStore.CommitAll();
+
+            BuildNavTerms(navTermSet, termMap);
+
             termStore.CommitAll();
 
             return newTermSet;
             //Add this to the property bag of the web as well.
+        }
+
+        private void BuildNavTerms(NavigationTermSet navTermSet, string termMap)
+        {
+            XmlReader rdr = XmlReader.Create(new StringReader(termMap));
+            
+            XmlDocument termDoc = new XmlDocument();
+            termDoc.Load(rdr);
+
+            XmlElement root = termDoc.DocumentElement;
+            foreach (XmlNode termNode in root.ChildNodes)
+            {
+                NavigationTerm rootTerm = CreateRootTerm(navTermSet, termNode.Attributes["Title"].Value, termNode.Attributes["URL"].Value);
+                
+                foreach (XmlNode childTermNode in termNode.ChildNodes)
+                {
+                    CreateSubTerm(rootTerm, childTermNode.Attributes["Title"].Value, childTermNode.Attributes["URL"].Value);
+                }
+            }
+        }
+
+        private NavigationTerm CreateRootTerm(NavigationTermSet navTermSet, string termTitle, string termURL)
+        {
+            NavigationTerm navTerm = navTermSet.CreateTerm(termTitle, NavigationLinkType.SimpleLink);
+            navTerm.SimpleLinkUrl = termURL;
+            return navTerm;
+        }
+
+        private NavigationTerm CreateSubTerm(NavigationTerm navTerm, string termTitle, string termURL)
+        {
+            NavigationTerm subTerm = navTerm.CreateTerm(termTitle, NavigationLinkType.SimpleLink);
+            subTerm.SimpleLinkUrl = termURL;
+            return navTerm;
+            
         }
 
         private void ChangeMasterPage(SPWeb web, string masterURL, string customURL)
