@@ -4,6 +4,9 @@ using System.Security.Permissions;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Publishing.Navigation;
 using Microsoft.SharePoint.Taxonomy;
+using Microsoft.SharePoint.Administration;
+using Microsoft.SharePoint.Publishing;
+using Microsoft.SharePoint.Navigation;
 
 namespace Navigation.Features.MARTA_Navigation
 {
@@ -21,88 +24,94 @@ namespace Navigation.Features.MARTA_Navigation
         const string termStorePropertyKey = "MetadataNavTermStore";
         const string globalTermSetIDPropertyKey = "MetadataNavGlobalTermSetID";
         const string localTermSetIDPropertyKey = "MetadataNavLocalTermSetID";
+        string termStoreName = "Shared Types Metadata Service"; //Default Value TODO: Perhaps get thsi value from Web App properties so that its not hard-coded.
 
+        private void InitializeWebAppProperties()
+        {
+            SPWeb currentWeb = SPContext.Current.Web;
+
+            SPWebApplication webApplication = currentWeb.Site.WebApplication;
+            if (webApplication.Properties != null && webApplication.Properties.Count > 0)
+            {
+                termStoreName = Convert.ToString(webApplication.Properties["TopNavTermStore"]);
+            }
+
+        }
         public override void FeatureActivated(SPFeatureReceiverProperties properties)
         {
-            SPSecurity.RunWithElevatedPrivileges(delegate()
+            SPSite currentSite = properties.Feature.Parent as SPSite;
+
+            if (currentSite != null)
             {
-                //Set the master page to be our CustomMaster page.
-                SPSite currentSite = properties.Feature.Parent as SPSite;
-                SPWeb currentWeb = currentSite.RootWeb;
-                currentWeb.AllowUnsafeUpdates = true;
-
-                string masterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/MasterPage/CustomMaster.master";
-                string customMasterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/MasterPage/CustomMaster.master";
-                currentWeb.MasterUrl = masterURL;
-                currentWeb.CustomMasterUrl = customMasterURL;
-                currentWeb.Update();
-
-
-                //Some templates might have subsites from start.
-                foreach (SPWeb subWeb in currentWeb.Site.RootWeb.GetSubwebsForCurrentUser())
+                SPSecurity.RunWithElevatedPrivileges(delegate()
                 {
-                    ChangeMasterPage(subWeb, masterURL, customMasterURL);
-                }
+                    InitializeWebAppProperties();
+                    //Set the master page to be our CustomMaster page.
+                    SPWeb currentWeb = currentSite.RootWeb;
+                    currentWeb.AllowUnsafeUpdates = true;
 
-                TaxonomySession taxonomySession = new TaxonomySession(currentWeb.Site, updateCache: true);
+                    string masterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/MasterPage/CustomMaster.master";
+                    string customMasterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/MasterPage/CustomMaster.master";
+                    currentWeb.MasterUrl = masterURL;
+                    currentWeb.CustomMasterUrl = customMasterURL;
+                    currentWeb.Update();
 
-                //Use the first Termstore object to see if Taxonomy Service is offline or missing.
-                if (taxonomySession.TermStores.Count == 0)
-                    throw new InvalidOperationException("The Taxonomy Service is offline or missing.");
 
-                string termStoreName = "Shared Types Metadata Service"; //Default Value TODO: Perhaps get thsi value from Web App properties so that its not hard-coded.
-                string globalTermSetID = string.Empty;
-                string localTermSetID = string.Empty;
-                //Check property bag for TermSetID key and value. If it doesn't exist create it.
+                    //Some templates might have subsites from start.
+                    foreach (SPWeb subWeb in currentWeb.Site.RootWeb.GetSubwebsForCurrentUser())
+                    {
+                        ChangeMasterPage(subWeb, masterURL, customMasterURL);
+                    }
 
-                if (!currentWeb.Site.RootWeb.AllProperties.ContainsKey(globalTermSetIDPropertyKey))
-                    currentWeb.Site.RootWeb.AllProperties.Add(globalTermSetIDPropertyKey, globalTermSetID);
-                else
+                    TaxonomySession taxonomySession = new TaxonomySession(currentWeb.Site, updateCache: true);
+
+                    //Use the first Termstore object to see if Taxonomy Service is offline or missing.
+                    if (taxonomySession.TermStores.Count == 0)
+                        throw new InvalidOperationException("The Taxonomy Service is offline or missing.");
+
+                    string globalTermSetID = "Empty";
+                    string localTermSetID = "Empty";
+
+                    //Check property bag for TermSetID key and value. If it doesn't exist create it.
+
+                    if (!currentSite.RootWeb.AllProperties.ContainsKey(globalTermSetIDPropertyKey))
+                    {
+                        currentSite.RootWeb.AllProperties.Add(globalTermSetIDPropertyKey, globalTermSetID);
+                        currentSite.RootWeb.Update();
+                    }
+                    if (!currentSite.RootWeb.AllProperties.ContainsKey(localTermSetIDPropertyKey))
+                    {
+                        currentSite.RootWeb.AllProperties.Add(localTermSetIDPropertyKey, localTermSetID);
+                        currentSite.RootWeb.Update();
+                    }
+
+                    //Get the values from the property bags.
                     globalTermSetID = Convert.ToString(currentWeb.Site.RootWeb.AllProperties[globalTermSetIDPropertyKey]);
-
-                if (!currentWeb.Site.RootWeb.AllProperties.ContainsKey(localTermSetIDPropertyKey))
-                    currentWeb.Site.RootWeb.AllProperties.Add(localTermSetIDPropertyKey, localTermSetID);
-                else
                     localTermSetID = Convert.ToString(currentWeb.Site.RootWeb.AllProperties[localTermSetIDPropertyKey]);
 
-
-
-                if (!string.IsNullOrEmpty(termStoreName))
-                {
                     TermStore termStore = taxonomySession.TermStores[termStoreName];
 
-                    if (globalTermSetID != string.Empty)
+                    if (globalTermSetID == "Empty")
                     {
-                        TermSet termSet = termStore.GetTermSet(new Guid(globalTermSetID));
-                        if (termSet == null)
-                        {
-                            CreateTermSet(termStore, globalTermSetID, currentWeb);
-                        }
+                        TermSet newTermSet = CreateTermSet(termStore, Guid.NewGuid(), currentWeb, TermStoreType.Global);
+                        currentSite.RootWeb.AllProperties[globalTermSetIDPropertyKey] = newTermSet.Id.ToString();
+                        currentSite.RootWeb.Update();
+                        globalTermSetID = newTermSet.Id.ToString();
+
                     }
-                    else
+                    if (localTermSetID == "Empty")
                     {
-                        string newTermSetID = Guid.NewGuid().ToString(); //Create a new GUID and that will also be stored in the property bag.
-                        CreateTermSet(termStore, newTermSetID, currentWeb);
-                        currentWeb.Site.RootWeb.AllProperties[globalTermSetIDPropertyKey] = newTermSetID;
-                        globalTermSetID = newTermSetID;
+                        TermSet newTermSet = CreateTermSet(termStore, Guid.NewGuid(), currentWeb, TermStoreType.Local);
+                        currentSite.RootWeb.AllProperties[localTermSetIDPropertyKey] = newTermSet.Id.ToString();
+                        currentSite.RootWeb.Update();
+                        localTermSetID = newTermSet.Id.ToString();
                     }
 
-                    if (localTermSetID != string.Empty)
-                    {
-                        TermSet termSet = termStore.GetTermSet(new Guid(localTermSetID));
-                        if (termSet == null)
-                        {
-                            CreateTermSet(termStore, localTermSetID, currentWeb);
-                        }
-                    }
-                    else
-                    {
-                        string newTermSetID = Guid.NewGuid().ToString(); //Create a new GUID and that will also be stored in the property bag.
-                        CreateTermSet(termStore, newTermSetID, currentWeb);
-                        currentWeb.Site.RootWeb.AllProperties[localTermSetIDPropertyKey] = newTermSetID;
-                        localTermSetID = newTermSetID;
-                    }
-                    //Once TermSet has been created. Set the correct properties
+                    TermSet globalTermSet = termStore.GetTermSet(new Guid(globalTermSetID));
+                    TermSet localTermSet = termStore.GetTermSet(new Guid(localTermSetID));
+
+                    Group termSetGroup = termStore.GetSiteCollectionGroup(currentSite);
+
                     WebNavigationSettings webNavigationSettings = new WebNavigationSettings(currentWeb);
                     webNavigationSettings.GlobalNavigation.Source = StandardNavigationSource.TaxonomyProvider;
                     webNavigationSettings.CurrentNavigation.Source = StandardNavigationSource.TaxonomyProvider;
@@ -111,43 +120,57 @@ namespace Navigation.Features.MARTA_Navigation
                     webNavigationSettings.GlobalNavigation.TermSetId = new Guid(globalTermSetID);
 
                     webNavigationSettings.CurrentNavigation.TermStoreId = termStore.Id;
-                    webNavigationSettings.CurrentNavigation.TermStoreId = new Guid(localTermSetID);
+                    webNavigationSettings.CurrentNavigation.TermSetId = new Guid(localTermSetID);
 
                     webNavigationSettings.AddNewPagesToNavigation = false;
                     webNavigationSettings.CreateFriendlyUrlsForNewPages = true;
 
-                    currentWeb.Update();
-                    //webNavigationSettings.Update();
 
-                } //if (termStoreName != string.Empty)
-            });
-            
-            
+
+                    webNavigationSettings.Update();
+                    currentWeb.Update();
+
+
+                });
+
+            }
         }
 
-        private void CreateTermSet(TermStore termStore, string termSetID, SPWeb currentWeb)
+        private enum TermStoreType
+        {
+            Global = 10,
+            Local = 20
+        }
+
+        private TermSet CreateTermSet(TermStore termStore, Guid termSetID, SPWeb currentWeb, TermStoreType tsType)
         {
             //termSet is null. Create new termSet, and set the property in the property bag.
             Group siteCollectionGroup = termStore.GetSiteCollectionGroup(currentWeb.Site);
-            TermSet newTermSet = siteCollectionGroup.CreateTermSet(termSetID, new Guid(termSetID));
+            //Group navTermsGroup = termStore.Groups["Navigation"]; //TODO: Get this from configuration or passed in.
 
+            string termStoreName = (tsType == TermStoreType.Global) ? string.Format("GlobalNavTSFor{0}", termSetID) : string.Format("LocalNavTSFor{0}", termSetID);
+            TermSet newTermSet = siteCollectionGroup.CreateTermSet(termStoreName, termSetID);
+            
+            
             NavigationTermSet navTermSet = NavigationTermSet.GetAsResolvedByWeb(newTermSet, currentWeb, StandardNavigationProviderNames.GlobalNavigationTaxonomyProvider);
 
             navTermSet.IsNavigationTermSet = true;
-            navTermSet.CatalogTargetUrlForChildTerms.Value = "~site/Pages/Topics/Topic.aspx";
+            navTermSet.TargetUrlForChildTerms.Value = "~site/Pages/Topics/Topic.aspx";
 
             NavigationTerm term1 = navTermSet.CreateTerm("Term 1", NavigationLinkType.SimpleLink);
             term1.SimpleLinkUrl = "http://www.bing.com/";
 
-            Guid term2Guid = Guid.NewGuid();
-            NavigationTerm term2 = navTermSet.CreateTerm("Term 2", NavigationLinkType.FriendlyUrl,
-                term2Guid);
+            //Guid term2Guid = Guid.NewGuid();
+            //NavigationTerm term2 = navTermSet.CreateTerm("Term 2", NavigationLinkType.FriendlyUrl,
+            //    term2Guid);
 
-            NavigationTerm childTerm = term2.CreateTerm("Term 2 child", NavigationLinkType.FriendlyUrl);
+            //NavigationTerm childTerm = term2.CreateTerm("Term 2 child", NavigationLinkType.FriendlyUrl);
 
-            /// Commit changes.
-            childTerm.GetTaxonomyTerm().TermStore.CommitAll();
+            ///// Commit changes.
+            //childTerm.GetTaxonomyTerm().TermStore.CommitAll();
             termStore.CommitAll();
+
+            return newTermSet;
             //Add this to the property bag of the web as well.
         }
 
