@@ -82,9 +82,6 @@
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{03b8266b-35f4-4d71-b763-d75d99878d2b}</SharePointProjectItemId>
     </None>
-    <None Include="Property Bag\TermStoreProperties\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{87c564d8-853f-4efa-9d2e-596d2bd3e13b}</SharePointProjectItemId>
-    </None>
     <None Include="_CONTROLTEMPLATES\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{bec52ff4-d0ee-4a03-b638-6b6179d1b67a}</SharePointProjectItemId>
     </None>
@@ -113,10 +110,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\Navigation\" />
+    <Folder Include="Property Bag\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Layouts\Navigation\MARTA.GlobalNavigation.js" />
-    <Content Include="Property Bag\TermStoreProperties\Elements.xml" />
     <Content Include="_CONTROLTEMPLATES\SuiteBarBranding.ascx" />
     <Content Include="_CONTROLTEMPLATES\SuiteLinks.ascx" />
     <Content Include="Features\MARTA Navigation\MARTA Navigation.Template.xml">
