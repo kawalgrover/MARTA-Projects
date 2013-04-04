@@ -62,13 +62,24 @@ namespace Navigation.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;Terms&gt;
-        ///  &lt;Term Title=&quot;Process Diagram Library&quot;
-        ///        URL=&quot;/Lists/Diagram%20Library/&quot; /&gt;
-        ///  &lt;Term Title=&quot;Documents&quot;
-        ///        Url=&quot;/Lists/Documents/&quot; /&gt;
-        ///  &lt;Term Title=&quot;Proposed Changes&quot;
-        ///        URL=&quot;/Lists/Proposed%20Changes/&quot; /&gt;
-        ///&lt;/Terms&gt;.
+        ///  &lt;Term Title=&quot;Pages&quot;
+        ///        URL=&quot;&quot;&gt;
+        ///    &lt;Term Title=&quot;News&quot;
+        ///          URL=&quot;/News.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Who We Are&quot;
+        ///          URL=&quot;/Who%20We%20Are.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;What We Do&quot;
+        ///          URL=&quot;/What%20We%20Do.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Site Directory&quot;
+        ///          URL=&quot;/Site%20Directory.aspx&quot; /&gt;
+        ///  &lt;/Term&gt;
+        ///  &lt;Term Title=&quot;Request a Service&quot;
+        ///        URL=&quot;&quot;&gt;
+        ///    &lt;Term Title=&quot;Service 1&quot;
+        ///          URL=&quot;www.google.com&quot; /&gt;
+        ///    &lt;Term Title=&quot;Service 2&quot;
+        ///          URL=&quot;www.bing.com&quot; /&gt;
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PlanningTemplate_Global {
             get {
@@ -91,15 +102,15 @@ namespace Navigation.Resources {
         ///  &lt;Term Title=&quot;Pages&quot;
         ///        URL=&quot;&quot;&gt;
         ///    &lt;Term Title=&quot;Overview&quot;
-        ///          Url=&quot;/Overview.aspx&quot; /&gt;
+        ///          URL=&quot;/Overview.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;Instructions&quot;
-        ///          Url=&quot;/Instructions.aspx&quot; /&gt;
+        ///          URL=&quot;/Instructions.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;Diagrams&quot;
-        ///          Url=&quot;/Diagrams.aspx&quot; /&gt;
+        ///          URL=&quot;/Diagrams.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;Metrics&quot;
-        ///          Url=&quot;/Metrics.aspx&quot; /&gt;
+        ///          URL=&quot;/Metrics.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;Planning&quot;
-        ///          Url=&quot;/Planning/default.aspx&quot; /&gt;
+        ///          URL=&quot;/Planning/default.aspx&quot; /&gt;
         ///  &lt;/Term&gt;
         ///&lt;/Terms&gt;.
         /// </summary>
@@ -133,20 +144,20 @@ namespace Navigation.Resources {
         ///  &lt;Term Title=&quot;Pages&quot;
         ///        URL=&quot;&quot;&gt;
         ///    &lt;Term Title=&quot;News&quot;
-        ///          Url=&quot;/News.aspx&quot; /&gt;
+        ///          URL=&quot;/News.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;Who We Are&quot;
-        ///          Url=&quot;/Who%20We%20Are.aspx&quot; /&gt;
+        ///          URL=&quot;/Who%20We%20Are.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;What We Do&quot;
-        ///          Url=&quot;/What%20We%20Do.aspx&quot; /&gt;
+        ///          URL=&quot;/What%20We%20Do.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;Site Directory&quot;
-        ///          Url=&quot;/Site%20Directory.aspx&quot; /&gt;
+        ///          URL=&quot;/Site%20Directory.aspx&quot; /&gt;
         ///  &lt;/Term&gt;
         ///  &lt;Term Title=&quot;Request a Service&quot;
-        ///        Url=&quot;&quot;&gt;
+        ///        URL=&quot;&quot;&gt;
         ///    &lt;Term Title=&quot;Service 1&quot;
-        ///          Url=&quot;www.google.com&quot; /&gt;
+        ///          URL=&quot;www.google.com&quot; /&gt;
         ///    &lt;Term Title=&quot;Service 2&quot;
-        ///          Url=&quot;www.bing.com&quot; /&gt;
+        ///          URL=&quot;www.bing.com&quot; /&gt;
         /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string StorefrontTemplate_Global {
@@ -169,9 +180,9 @@ namespace Navigation.Resources {
         ///   Looks up a localized string similar to &lt;Terms&gt;
         ///  &lt;Term Title=&quot;Pages&quot;
         ///        URL=&quot;&quot;&gt;
-        ///    &lt;Term Title=&quot;Metrics&quot; Url=&quot;/Metrics.aspx&quot;&gt;&lt;/Term&gt;
+        ///    &lt;Term Title=&quot;Metrics&quot; URL=&quot;/Metrics.aspx&quot;&gt;&lt;/Term&gt;
         ///    &lt;Term Title=&quot;Knowledge&quot;
-        ///          Url=&quot;/Knowledge.aspx&quot;&gt;&lt;/Term&gt;
+        ///          URL=&quot;/Knowledge.aspx&quot;&gt;&lt;/Term&gt;
         ///  &lt;/Term&gt;
         ///&lt;/Terms&gt;.
         /// </summary>
