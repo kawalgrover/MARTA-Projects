@@ -119,6 +119,12 @@
   </resheader>
   <data name="PlanningTemplate_Global" xml:space="preserve">
     <value>&lt;Terms&gt;
+  &lt;Term Title="Process Diagram Library"
+        URL="/Lists/Diagram%20Library/" /&gt;
+  &lt;Term Title="Documents"
+        Url="/Lists/Documents/" /&gt;
+  &lt;Term Title="Proposed Changes"
+        URL="/Lists/Proposed%20Changes/" /&gt;
 &lt;/Terms&gt;</value>
   </data>
   <data name="PlanningTemplate_Local" xml:space="preserve">
@@ -127,14 +133,54 @@
   </data>
   <data name="ProcessTemplate_Global" xml:space="preserve">
     <value>&lt;Terms&gt;
+  &lt;Term Title="Pages"
+        URL=""&gt;
+    &lt;Term Title="Overview"
+          Url="/Overview.aspx" /&gt;
+    &lt;Term Title="Instructions"
+          Url="/Instructions.aspx" /&gt;
+    &lt;Term Title="Diagrams"
+          Url="/Diagrams.aspx" /&gt;
+    &lt;Term Title="Metrics"
+          Url="/Metrics.aspx" /&gt;
+    &lt;Term Title="Planning"
+          Url="/Planning/default.aspx" /&gt;
+  &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
   <data name="ProcessTemplate_Local" xml:space="preserve">
     <value>&lt;Terms&gt;
+  &lt;Term Title="Apps"
+        URL="" &gt;
+    &lt;Term Title="Tasks"
+          URL="/Lists/Tasks/" /&gt;
+    &lt;Term Title="Diagram Library"
+          URL="/Lists/Diagram%20Library/" /&gt;
+    &lt;Term Title="Roles and Responsibilities"
+          URL="/Lists/Roles%20and%20Responsibilities/" /&gt;
+  &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
   <data name="StorefrontTemplate_Global" xml:space="preserve">
     <value>&lt;Terms&gt;
+  &lt;Term Title="Pages"
+        URL=""&gt;
+    &lt;Term Title="News"
+          Url="/News.aspx" /&gt;
+    &lt;Term Title="Who We Are"
+          Url="/Who%20We%20Are.aspx" /&gt;
+    &lt;Term Title="What We Do"
+          Url="/What%20We%20Do.aspx" /&gt;
+    &lt;Term Title="Site Directory"
+          Url="/Site%20Directory.aspx" /&gt;
+  &lt;/Term&gt;
+  &lt;Term Title="Request a Service"
+        Url=""&gt;
+    &lt;Term Title="Service 1"
+          Url="www.google.com" /&gt;
+    &lt;Term Title="Service 2"
+          Url="www.bing.com" /&gt;
+  &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
   <data name="StorefrontTemplate_Local" xml:space="preserve">
@@ -143,20 +189,27 @@
   </data>
   <data name="TeamTemplate_Global" xml:space="preserve">
     <value>&lt;Terms&gt;
-	&lt;Term Title="Metrics" URL="/Metrics.aspx" /&gt;
-	&lt;Term Title="Knowledge Base" URL="/KB.aspx"&gt;
-		&lt;Term Title="Google" URL="http://www.google.com"/&gt;
-		&lt;Term Title="Bing" URL="http://www.bing.com"/&gt;
-	&lt;/Term&gt;
+  &lt;Term Title="Pages"
+        URL=""&gt;
+    &lt;Term Title="Metrics" Url="/Metrics.aspx"&gt;&lt;/Term&gt;
+    &lt;Term Title="Knowledge"
+          Url="/Knowledge.aspx"&gt;&lt;/Term&gt;
+  &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
   <data name="TeamTemplate_Local" xml:space="preserve">
     <value>&lt;Terms&gt;
-	&lt;Term Title="Documents" URL="/Lists/DocumentLibrary.aspx" /&gt;
-	&lt;Term Title="Tasks" URL="/Tasks.aspx"&gt;
-		&lt;Term Title="Important Tasks" URL="http://www.google.com"/&gt;
-		&lt;Term Title="Not so Important Ones" URL="http://www.bing.com"/&gt;
-	&lt;/Term&gt;
+  &lt;Term Title="Apps"
+        URL="" &gt;
+  &lt;Term Title="Calendar"
+        URL="/_layouts/15/start.aspx#/Lists/Calendar/" /&gt;
+    &lt;Term Title="Tasks"
+          URL="/_layouts/15/start.aspx#/Lists/Tasks/" /&gt;
+    &lt;Term Title="Documents"
+          URL="/_layouts/15/start.aspx#/Lists/Documents/" /&gt;
+    &lt;Term Title="Contacts"
+          URL="/_layouts/15/start.aspx#/Lists/Contacts/" /&gt;
+  &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
 </root>
