@@ -11,6 +11,7 @@ using Microsoft.SharePoint.Utilities;
 using System.Resources;
 using System.Xml;
 using System.IO;
+using Navigation;
 
 namespace Navigation.Features.MARTA_Navigation
 {
@@ -164,8 +165,9 @@ namespace Navigation.Features.MARTA_Navigation
             string webTemplateID = Convert.ToString(currentWeb.Site.RootWeb.AllProperties["MARTA.WebTemplateID"]);
             string termStoreType = (tsType == TermStoreType.Global) ? "Global" : "Local";
             string termMap = SPUtility.GetLocalizedString(string.Format("$Resources:MARTANavigation,{0}_{1}", webTemplateID, termStoreType) , "MARTANavigation", langID);
-            
-            BuildNavTerms(navTermSet, termMap);
+            Uri relativeURL = new Uri(currentWeb.Site.ServerRelativeUrl, UriKind.Relative);
+
+            BuildNavTerms(navTermSet, termMap, relativeURL);
 
             termStore.CommitAll();
 
@@ -173,7 +175,7 @@ namespace Navigation.Features.MARTA_Navigation
             //Add this to the property bag of the web as well.
         }
 
-        private void BuildNavTerms(NavigationTermSet navTermSet, string termMap)
+        private void BuildNavTerms(NavigationTermSet navTermSet, string termMap, Uri siteRelativeURL)
         {
             XmlReader rdr = XmlReader.Create(new StringReader(termMap));
             
@@ -183,11 +185,14 @@ namespace Navigation.Features.MARTA_Navigation
             XmlElement root = termDoc.DocumentElement;
             foreach (XmlNode termNode in root.ChildNodes)
             {
-                NavigationTerm rootTerm = CreateRootTerm(navTermSet, termNode.Attributes["Title"].Value, termNode.Attributes["URL"].Value);
+                NavigationTerm rootTerm = CreateRootTerm(navTermSet, termNode.Attributes["Title"].Value,
+                     siteRelativeURL.Combine(new Uri(termNode.Attributes["URL"].Value, UriKind.Relative)).ToString());
                 
                 foreach (XmlNode childTermNode in termNode.ChildNodes)
                 {
-                    CreateSubTerm(rootTerm, childTermNode.Attributes["Title"].Value, childTermNode.Attributes["URL"].Value);
+                    CreateSubTerm(rootTerm, childTermNode.Attributes["Title"].Value,
+                        siteRelativeURL.Combine(new Uri(childTermNode.Attributes["URL"].Value, UriKind.Relative)).ToString());
+                  
                 }
             }
         }
