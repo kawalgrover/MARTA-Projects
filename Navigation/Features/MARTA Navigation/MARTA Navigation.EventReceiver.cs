@@ -25,7 +25,6 @@ namespace Navigation.Features.MARTA_Navigation
     [Guid("66be5091-ebd7-48a5-ad6c-4ac609202b2a")]
     public class MARTA_NavigationEventReceiver : SPFeatureReceiver
     {
-        // Uncomment the method below to handle the event raised after a feature has been activated.
         const string termStorePropertyKey = "MetadataNavTermStore";
         const string globalTermSetIDPropertyKey = "MetadataNavGlobalTermSetID";
         const string localTermSetIDPropertyKey = "MetadataNavLocalTermSetID";
