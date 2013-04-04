@@ -12,20 +12,28 @@ namespace Navigation
     {
         public static Uri Combine(this Uri relativeBaseUri, Uri relativeUri)
         {
-            if (relativeBaseUri == null)
-            {
-                throw new ArgumentNullException("relativeBaseUri");
-            }
+            UriBuilder builder = new UriBuilder();
+            Uri baseUri = builder.Uri;
+            builder.Path = relativeBaseUri.ToString();
+            if (!builder.Path.EndsWith("/"))
+                builder.Path += "/";
+             
+            return baseUri.MakeRelativeUri(new Uri(builder.Uri, relativeUri));
 
-            if (relativeUri == null)
-            {
-                throw new ArgumentNullException("relativeUri");
-            }
+            //if (relativeBaseUri == null)
+            //{
+            //    throw new ArgumentNullException("relativeBaseUri");
+            //}
 
-            string baseUrl = VirtualPathUtility.AppendTrailingSlash(relativeBaseUri.ToString());
-            string combinedUrl = VirtualPathUtility.Combine(baseUrl, relativeUri.ToString());
+            //if (relativeUri == null)
+            //{
+            //    throw new ArgumentNullException("relativeUri");
+            //}
 
-            return new Uri(combinedUrl, UriKind.Relative);
+            //string baseUrl = VirtualPathUtility.AppendTrailingSlash(relativeBaseUri.ToString());
+            //string combinedUrl = VirtualPathUtility.Combine(baseUrl, relativeUri.ToString());
+
+            //return new Uri(combinedUrl, UriKind.Relative);
         }
     }
 

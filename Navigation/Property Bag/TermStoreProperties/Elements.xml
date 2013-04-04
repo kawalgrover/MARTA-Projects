@@ -3,10 +3,12 @@
   <PropertyBag ParentType="Web">
 
     <Property Name="MetadataNavGlobalTermSetID"
-              Type="string" />
+              Type="string"
+              Value="Empty"/>
 
     <Property Name="MetadataNavLocalTermSetID"
-              Type="string" />
+              Type="string"
+              Value="Empty"/>
                
   </PropertyBag>
 </Elements>

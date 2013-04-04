@@ -31,10 +31,8 @@ namespace Navigation.Features.MARTA_Navigation
         const string localTermSetIDPropertyKey = "MetadataNavLocalTermSetID";
         string termStoreName = "Shared Types Metadata Service"; //Default Value TODO: Perhaps get thsi value from Web App properties so that its not hard-coded.
 
-        private void InitializeWebAppProperties()
+        private void InitializeWebAppProperties(SPWeb currentWeb)
         {
-            SPWeb currentWeb = SPContext.Current.Web;
-
             SPWebApplication webApplication = currentWeb.Site.WebApplication;
             if (webApplication.Properties != null && webApplication.Properties.Count > 0)
             {
@@ -50,9 +48,10 @@ namespace Navigation.Features.MARTA_Navigation
             {
                 SPSecurity.RunWithElevatedPrivileges(delegate()
                 {
-                    InitializeWebAppProperties();
-                    //Set the master page to be our CustomMaster page.
                     SPWeb currentWeb = currentSite.RootWeb;
+                    
+                    InitializeWebAppProperties(currentWeb);
+                    //Set the master page to be our CustomMaster page.
                     currentWeb.AllowUnsafeUpdates = true;
 
                     string masterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/MasterPage/CustomMaster.master";
@@ -165,7 +164,7 @@ namespace Navigation.Features.MARTA_Navigation
             string webTemplateID = Convert.ToString(currentWeb.Site.RootWeb.AllProperties["MARTA.WebTemplateID"]);
             string termStoreType = (tsType == TermStoreType.Global) ? "Global" : "Local";
             string termMap = SPUtility.GetLocalizedString(string.Format("$Resources:MARTANavigation,{0}_{1}", webTemplateID, termStoreType) , "MARTANavigation", langID);
-            Uri relativeURL = new Uri(currentWeb.Site.ServerRelativeUrl, UriKind.Relative);
+            string relativeURL = currentWeb.Site.ServerRelativeUrl;
 
             BuildNavTerms(navTermSet, termMap, relativeURL);
 
@@ -175,7 +174,24 @@ namespace Navigation.Features.MARTA_Navigation
             //Add this to the property bag of the web as well.
         }
 
-        private void BuildNavTerms(NavigationTermSet navTermSet, string termMap, Uri siteRelativeURL)
+        private string CombineRelativeURLs(string baseURL, string sourceURL)
+        {
+            if (sourceURL.StartsWith("/"))
+            {
+                sourceURL = sourceURL.Remove(0, 1);
+            }
+
+            if (baseURL.EndsWith("/"))
+            {
+                return string.Format("{0}{1}", baseURL, sourceURL);
+            }
+            else
+            {
+                return string.Format("{0}/{1}", baseURL, sourceURL);
+            }
+        }
+
+        private void BuildNavTerms(NavigationTermSet navTermSet, string termMap, string siteRelativeURL)
         {
             XmlReader rdr = XmlReader.Create(new StringReader(termMap));
             
@@ -185,13 +201,16 @@ namespace Navigation.Features.MARTA_Navigation
             XmlElement root = termDoc.DocumentElement;
             foreach (XmlNode termNode in root.ChildNodes)
             {
-                NavigationTerm rootTerm = CreateRootTerm(navTermSet, termNode.Attributes["Title"].Value,
-                     siteRelativeURL.Combine(new Uri(termNode.Attributes["URL"].Value, UriKind.Relative)).ToString());
+                string combinedURL = CombineRelativeURLs(siteRelativeURL, termNode.Attributes["URL"].Value );
+                NavigationTerm rootTerm = CreateRootTerm(navTermSet, termNode.Attributes["Title"].Value, combinedURL);
+                    
                 
                 foreach (XmlNode childTermNode in termNode.ChildNodes)
                 {
+                    combinedURL = CombineRelativeURLs(siteRelativeURL, childTermNode.Attributes["URL"].Value);
+                
                     CreateSubTerm(rootTerm, childTermNode.Attributes["Title"].Value,
-                        siteRelativeURL.Combine(new Uri(childTermNode.Attributes["URL"].Value, UriKind.Relative)).ToString());
+                        combinedURL);
                   
                 }
             }
