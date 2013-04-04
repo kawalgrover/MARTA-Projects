@@ -122,20 +122,20 @@
   &lt;Term Title="Pages"
         URL=""&gt;
     &lt;Term Title="News"
-          Url="/News.aspx" /&gt;
+          URL="/News.aspx" /&gt;
     &lt;Term Title="Who We Are"
-          Url="/Who%20We%20Are.aspx" /&gt;
+          URL="/Who%20We%20Are.aspx" /&gt;
     &lt;Term Title="What We Do"
-          Url="/What%20We%20Do.aspx" /&gt;
+          URL="/What%20We%20Do.aspx" /&gt;
     &lt;Term Title="Site Directory"
-          Url="/Site%20Directory.aspx" /&gt;
+          URL="/Site%20Directory.aspx" /&gt;
   &lt;/Term&gt;
   &lt;Term Title="Request a Service"
-        Url=""&gt;
+        URL=""&gt;
     &lt;Term Title="Service 1"
-          Url="www.google.com" /&gt;
+          URL="www.google.com" /&gt;
     &lt;Term Title="Service 2"
-          Url="www.bing.com" /&gt;
+          URL="www.bing.com" /&gt;
   &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>

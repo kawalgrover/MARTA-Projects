@@ -65,20 +65,20 @@ namespace Navigation.Resources {
         ///  &lt;Term Title=&quot;Pages&quot;
         ///        URL=&quot;&quot;&gt;
         ///    &lt;Term Title=&quot;News&quot;
-        ///          Url=&quot;/News.aspx&quot; /&gt;
+        ///          URL=&quot;/News.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;Who We Are&quot;
-        ///          Url=&quot;/Who%20We%20Are.aspx&quot; /&gt;
+        ///          URL=&quot;/Who%20We%20Are.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;What We Do&quot;
-        ///          Url=&quot;/What%20We%20Do.aspx&quot; /&gt;
+        ///          URL=&quot;/What%20We%20Do.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;Site Directory&quot;
-        ///          Url=&quot;/Site%20Directory.aspx&quot; /&gt;
+        ///          URL=&quot;/Site%20Directory.aspx&quot; /&gt;
         ///  &lt;/Term&gt;
         ///  &lt;Term Title=&quot;Request a Service&quot;
-        ///        Url=&quot;&quot;&gt;
+        ///        URL=&quot;&quot;&gt;
         ///    &lt;Term Title=&quot;Service 1&quot;
-        ///          Url=&quot;www.google.com&quot; /&gt;
+        ///          URL=&quot;www.google.com&quot; /&gt;
         ///    &lt;Term Title=&quot;Service 2&quot;
-        ///          Url=&quot;www.bing.com&quot; /&gt;
+        ///          URL=&quot;www.bing.com&quot; /&gt;
         /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PlanningTemplate_Global {
