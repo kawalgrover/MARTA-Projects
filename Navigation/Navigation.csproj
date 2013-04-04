@@ -58,6 +58,7 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions.cs" />
     <Compile Include="Features\MARTA Navigation\MARTA Navigation.EventReceiver.cs">
       <DependentUpon>MARTA Navigation.feature</DependentUpon>
     </Compile>
