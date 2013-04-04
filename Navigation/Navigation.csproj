@@ -61,6 +61,11 @@
     <Compile Include="Features\MARTA Navigation\MARTA Navigation.EventReceiver.cs">
       <DependentUpon>MARTA Navigation.feature</DependentUpon>
     </Compile>
+    <Compile Include="Resources\MARTANavigation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MARTANavigation.resx</DependentUpon>
+    </Compile>
     <Compile Include="_CONTROLTEMPLATES\SuiteBarBranding.ascx.cs">
       <DependentUpon>SuiteBarBranding.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -81,6 +86,9 @@
   <ItemGroup>
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{03b8266b-35f4-4d71-b763-d75d99878d2b}</SharePointProjectItemId>
+    </None>
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e67b4290-915d-4b58-8608-735eeccbd15f}</SharePointProjectItemId>
     </None>
     <None Include="_CONTROLTEMPLATES\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{bec52ff4-d0ee-4a03-b638-6b6179d1b67a}</SharePointProjectItemId>
@@ -123,6 +131,12 @@
     <Content Include="NavigationControls\Elements.xml" />
     <None Include="MasterPage\CustomMaster.master" />
     <Content Include="SiteCreatedReceiver\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MARTANavigation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MARTANavigation.Designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
