@@ -119,12 +119,24 @@
   </resheader>
   <data name="PlanningTemplate_Global" xml:space="preserve">
     <value>&lt;Terms&gt;
-  &lt;Term Title="Process Diagram Library"
-        URL="/Lists/Diagram%20Library/" /&gt;
-  &lt;Term Title="Documents"
-        Url="/Lists/Documents/" /&gt;
-  &lt;Term Title="Proposed Changes"
-        URL="/Lists/Proposed%20Changes/" /&gt;
+  &lt;Term Title="Pages"
+        URL=""&gt;
+    &lt;Term Title="News"
+          Url="/News.aspx" /&gt;
+    &lt;Term Title="Who We Are"
+          Url="/Who%20We%20Are.aspx" /&gt;
+    &lt;Term Title="What We Do"
+          Url="/What%20We%20Do.aspx" /&gt;
+    &lt;Term Title="Site Directory"
+          Url="/Site%20Directory.aspx" /&gt;
+  &lt;/Term&gt;
+  &lt;Term Title="Request a Service"
+        Url=""&gt;
+    &lt;Term Title="Service 1"
+          Url="www.google.com" /&gt;
+    &lt;Term Title="Service 2"
+          Url="www.bing.com" /&gt;
+  &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
   <data name="PlanningTemplate_Local" xml:space="preserve">
@@ -136,15 +148,15 @@
   &lt;Term Title="Pages"
         URL=""&gt;
     &lt;Term Title="Overview"
-          Url="/Overview.aspx" /&gt;
+          URL="/Overview.aspx" /&gt;
     &lt;Term Title="Instructions"
-          Url="/Instructions.aspx" /&gt;
+          URL="/Instructions.aspx" /&gt;
     &lt;Term Title="Diagrams"
-          Url="/Diagrams.aspx" /&gt;
+          URL="/Diagrams.aspx" /&gt;
     &lt;Term Title="Metrics"
-          Url="/Metrics.aspx" /&gt;
+          URL="/Metrics.aspx" /&gt;
     &lt;Term Title="Planning"
-          Url="/Planning/default.aspx" /&gt;
+          URL="/Planning/default.aspx" /&gt;
   &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
@@ -166,20 +178,20 @@
   &lt;Term Title="Pages"
         URL=""&gt;
     &lt;Term Title="News"
-          Url="/News.aspx" /&gt;
+          URL="/News.aspx" /&gt;
     &lt;Term Title="Who We Are"
-          Url="/Who%20We%20Are.aspx" /&gt;
+          URL="/Who%20We%20Are.aspx" /&gt;
     &lt;Term Title="What We Do"
-          Url="/What%20We%20Do.aspx" /&gt;
+          URL="/What%20We%20Do.aspx" /&gt;
     &lt;Term Title="Site Directory"
-          Url="/Site%20Directory.aspx" /&gt;
+          URL="/Site%20Directory.aspx" /&gt;
   &lt;/Term&gt;
   &lt;Term Title="Request a Service"
-        Url=""&gt;
+        URL=""&gt;
     &lt;Term Title="Service 1"
-          Url="www.google.com" /&gt;
+          URL="www.google.com" /&gt;
     &lt;Term Title="Service 2"
-          Url="www.bing.com" /&gt;
+          URL="www.bing.com" /&gt;
   &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
@@ -191,9 +203,9 @@
     <value>&lt;Terms&gt;
   &lt;Term Title="Pages"
         URL=""&gt;
-    &lt;Term Title="Metrics" Url="/Metrics.aspx"&gt;&lt;/Term&gt;
+    &lt;Term Title="Metrics" URL="/Metrics.aspx"&gt;&lt;/Term&gt;
     &lt;Term Title="Knowledge"
-          Url="/Knowledge.aspx"&gt;&lt;/Term&gt;
+          URL="/Knowledge.aspx"&gt;&lt;/Term&gt;
   &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
