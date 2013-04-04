@@ -150,7 +150,7 @@ namespace Navigation.Features.MARTA_Navigation
             Group siteCollectionGroup = termStore.GetSiteCollectionGroup(currentWeb.Site);
             //Group navTermsGroup = termStore.Groups["Navigation"]; //TODO: Get this from configuration or passed in.
 
-            string termStoreName = (tsType == TermStoreType.Global) ? string.Format("GlobalNavTSFor{0}", termSetID) : string.Format("LocalNavTSFor{0}", termSetID);
+            string termStoreName = (tsType == TermStoreType.Global) ? string.Format("Global_Nav_For{0}", termSetID) : string.Format("Local_Nav_For{0}", termSetID);
             TermSet newTermSet = siteCollectionGroup.CreateTermSet(termStoreName, termSetID);
             
             
@@ -159,21 +159,12 @@ namespace Navigation.Features.MARTA_Navigation
             navTermSet.IsNavigationTermSet = true;
             navTermSet.TargetUrlForChildTerms.Value = "~site/SitePages/Home.aspx";
 
-            //NavigationTerm term1 = navTermSet.CreateTerm("Term 1", NavigationLinkType.SimpleLink);
-            //term1.SimpleLinkUrl = "http://www.bing.com/";
-
-
             uint langID = (uint) currentWeb.Locale.LCID;
-            string termMap = SPUtility.GetLocalizedString("$Resources:MARTANavigation,WebTemplateTeamSiteGlobal", "MARTANavigation", langID);
-            //Guid term2Guid = Guid.NewGuid();
-            //NavigationTerm term2 = navTermSet.CreateTerm("Term 2", NavigationLinkType.FriendlyUrl,
-            //    term2Guid);
 
-            //NavigationTerm childTerm = term2.CreateTerm("Term 2 child", NavigationLinkType.FriendlyUrl);
-
-            ///// Commit changes.
-            //childTerm.GetTaxonomyTerm().TermStore.CommitAll();
-
+            string webTemplateID = Convert.ToString(currentWeb.Site.RootWeb.AllProperties["MARTA.WebTemplateID"]);
+            string termStoreType = (tsType == TermStoreType.Global) ? "Global" : "Local";
+            string termMap = SPUtility.GetLocalizedString(string.Format("$Resources:MARTANavigation,{0}_{1}", webTemplateID, termStoreType) , "MARTANavigation", langID);
+            
             BuildNavTerms(navTermSet, termMap);
 
             termStore.CommitAll();

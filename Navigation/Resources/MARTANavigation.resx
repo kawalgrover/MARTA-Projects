@@ -117,7 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="WebTemplateTeamSiteGlobal" xml:space="preserve">
+  <data name="PlanningTemplate_Global" xml:space="preserve">
+    <value>&lt;Terms&gt;
+&lt;/Terms&gt;</value>
+  </data>
+  <data name="PlanningTemplate_Local" xml:space="preserve">
+    <value>&lt;Terms&gt;
+&lt;/Terms&gt;</value>
+  </data>
+  <data name="ProcessTemplate_Global" xml:space="preserve">
+    <value>&lt;Terms&gt;
+&lt;/Terms&gt;</value>
+  </data>
+  <data name="ProcessTemplate_Local" xml:space="preserve">
+    <value>&lt;Terms&gt;
+&lt;/Terms&gt;</value>
+  </data>
+  <data name="StorefrontTemplate_Global" xml:space="preserve">
+    <value>&lt;Terms&gt;
+&lt;/Terms&gt;</value>
+  </data>
+  <data name="StorefrontTemplate_Local" xml:space="preserve">
+    <value>&lt;Terms&gt;
+&lt;/Terms&gt;</value>
+  </data>
+  <data name="TeamTemplate_Global" xml:space="preserve">
     <value>&lt;Terms&gt;
 	&lt;Term Title="Metrics" URL="/Metrics.aspx" /&gt;
 	&lt;Term Title="Knowledge Base" URL="/KB.aspx"&gt;
@@ -126,7 +150,7 @@
 	&lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
-  <data name="WebTemplateTeamSiteLocal" xml:space="preserve">
+  <data name="TeamTemplate_Local" xml:space="preserve">
     <value>&lt;Terms&gt;
 	&lt;Term Title="Documents" URL="/Lists/DocumentLibrary.aspx" /&gt;
 	&lt;Term Title="Tasks" URL="/Tasks.aspx"&gt;

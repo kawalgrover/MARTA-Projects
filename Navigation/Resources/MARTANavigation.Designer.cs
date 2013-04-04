@@ -62,6 +62,66 @@ namespace Navigation.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;Terms&gt;
+        ///&lt;/Terms&gt;.
+        /// </summary>
+        internal static string PlanningTemplate_Global {
+            get {
+                return ResourceManager.GetString("PlanningTemplate_Global", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Terms&gt;
+        ///&lt;/Terms&gt;.
+        /// </summary>
+        internal static string PlanningTemplate_Local {
+            get {
+                return ResourceManager.GetString("PlanningTemplate_Local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Terms&gt;
+        ///&lt;/Terms&gt;.
+        /// </summary>
+        internal static string ProcessTemplate_Global {
+            get {
+                return ResourceManager.GetString("ProcessTemplate_Global", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Terms&gt;
+        ///&lt;/Terms&gt;.
+        /// </summary>
+        internal static string ProcessTemplate_Local {
+            get {
+                return ResourceManager.GetString("ProcessTemplate_Local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Terms&gt;
+        ///&lt;/Terms&gt;.
+        /// </summary>
+        internal static string StorefrontTemplate_Global {
+            get {
+                return ResourceManager.GetString("StorefrontTemplate_Global", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Terms&gt;
+        ///&lt;/Terms&gt;.
+        /// </summary>
+        internal static string StorefrontTemplate_Local {
+            get {
+                return ResourceManager.GetString("StorefrontTemplate_Local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Terms&gt;
         ///	&lt;Term Title=&quot;Metrics&quot; URL=&quot;/Metrics.aspx&quot; /&gt;
         ///	&lt;Term Title=&quot;Knowledge Base&quot; URL=&quot;/KB.aspx&quot;&gt;
         ///		&lt;Term Title=&quot;Google&quot; URL=&quot;http://www.google.com&quot;/&gt;
@@ -69,9 +129,9 @@ namespace Navigation.Resources {
         ///	&lt;/Term&gt;
         ///&lt;/Terms&gt;.
         /// </summary>
-        internal static string WebTemplateTeamSiteGlobal {
+        internal static string TeamTemplate_Global {
             get {
-                return ResourceManager.GetString("WebTemplateTeamSiteGlobal", resourceCulture);
+                return ResourceManager.GetString("TeamTemplate_Global", resourceCulture);
             }
         }
         
@@ -84,9 +144,9 @@ namespace Navigation.Resources {
         ///	&lt;/Term&gt;
         ///&lt;/Terms&gt;.
         /// </summary>
-        internal static string WebTemplateTeamSiteLocal {
+        internal static string TeamTemplate_Local {
             get {
-                return ResourceManager.GetString("WebTemplateTeamSiteLocal", resourceCulture);
+                return ResourceManager.GetString("TeamTemplate_Local", resourceCulture);
             }
         }
     }
