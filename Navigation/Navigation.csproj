@@ -88,6 +88,10 @@
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{03b8266b-35f4-4d71-b763-d75d99878d2b}</SharePointProjectItemId>
     </None>
+    <None Include="MasterPage\CustomMaster.master" />
+    <None Include="MasterPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{46bd9237-6c7f-454e-a8b7-3c8470bc7384}</SharePointProjectItemId>
+    </None>
     <None Include="Resources\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e67b4290-915d-4b58-8608-735eeccbd15f}</SharePointProjectItemId>
     </None>
@@ -104,9 +108,6 @@
       <SharePointProjectItemId>{eccbcd85-0822-4d20-8373-23a6e5a52af4}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
-    <None Include="MasterPage\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6464a12e-c854-488c-87a5-b4d0a85842b3}</SharePointProjectItemId>
-    </None>
     <None Include="NavigationControls\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ec2807de-18a9-4608-8872-b489751b8fb4}</SharePointProjectItemId>
     </None>
@@ -123,15 +124,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Layouts\Navigation\MARTA.GlobalNavigation.js" />
+    <Content Include="MasterPage\Elements.xml" />
     <Content Include="WebAddedReceiver\Elements.xml" />
     <Content Include="_CONTROLTEMPLATES\SuiteBarBranding.ascx" />
     <Content Include="_CONTROLTEMPLATES\SuiteLinks.ascx" />
     <Content Include="Features\MARTA Navigation\MARTA Navigation.Template.xml">
       <DependentUpon>MARTA Navigation.feature</DependentUpon>
     </Content>
-    <Content Include="MasterPage\Elements.xml" />
     <Content Include="NavigationControls\Elements.xml" />
-    <None Include="MasterPage\CustomMaster.master" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\MARTANavigation.resx">

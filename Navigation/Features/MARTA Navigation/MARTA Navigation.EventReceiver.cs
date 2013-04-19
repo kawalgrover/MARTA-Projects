@@ -28,7 +28,10 @@ namespace Navigation.Features.MARTA_Navigation
         const string termStorePropertyKey = "MetadataNavTermStore";
         const string globalTermSetIDPropertyKey = "MetadataNavGlobalTermSetID";
         const string localTermSetIDPropertyKey = "MetadataNavLocalTermSetID";
-        string termStoreName = "Shared Types Metadata Service"; //Default Value TODO: Perhaps get thsi value from Web App properties so that its not hard-coded.
+        string termStoreName;
+        Guid termSetID;
+        const string suiteLinksTermStoreKey = "SuiteLinksTermStore";
+        const string suiteLinksTermSetID = "SuiteLinksTermSetID";
 
         private void InitializeWebAppProperties(SPWeb currentWeb)
         {
@@ -36,6 +39,7 @@ namespace Navigation.Features.MARTA_Navigation
             if (webApplication.Properties != null && webApplication.Properties.Count > 0)
             {
                 termStoreName = Convert.ToString(webApplication.Properties["TopNavTermStore"]);
+                termSetID = new Guid(Convert.ToString(webApplication.Properties["TermSetID"]));
             }
 
         }
@@ -87,6 +91,18 @@ namespace Navigation.Features.MARTA_Navigation
                         currentSite.RootWeb.AllProperties.Add(localTermSetIDPropertyKey, localTermSetID);
                         currentSite.RootWeb.Update();
                     }
+
+                    if (!currentSite.RootWeb.AllProperties.ContainsKey(suiteLinksTermStoreKey))
+                    {
+                        currentSite.RootWeb.AllProperties.Add(suiteLinksTermStoreKey, termStoreName);
+                        currentSite.RootWeb.Update();
+                    }
+                    if (!currentSite.RootWeb.AllProperties.ContainsKey(suiteLinksTermSetID))
+                    {
+                        currentSite.RootWeb.AllProperties.Add(suiteLinksTermSetID, termSetID.ToString());
+                        currentSite.RootWeb.Update();
+                    }
+
 
                     //Get the values from the property bags.
                     globalTermSetID = Convert.ToString(currentWeb.Site.RootWeb.AllProperties[globalTermSetIDPropertyKey]);
@@ -247,8 +263,8 @@ namespace Navigation.Features.MARTA_Navigation
             SPWeb currentWeb = currentSite.RootWeb;
             currentWeb.AllowUnsafeUpdates = true;
 
-            string masterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/v4.master";
-            string customMasterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/v4.master";
+            string masterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/oslo.master";
+            string customMasterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/oslo.master";
             currentWeb.MasterUrl = masterURL;
             currentWeb.CustomMasterUrl = customMasterURL;
             currentWeb.Update();

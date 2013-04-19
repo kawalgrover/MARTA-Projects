@@ -5,5 +5,6 @@
   </Files>
   <SafeControls>
     <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Navigation.NavigationControls" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+    <SafeControl Name="SafeControlEntry2" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Navigation.CONTROLTEMPLATES" TypeName="*" IsSafe="true" IsSafeAgainstScript="true" />
   </SafeControls>
 </ProjectItem>

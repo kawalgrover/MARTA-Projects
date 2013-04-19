@@ -2,9 +2,7 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Control Id="SuiteBarBrandingDelegate"
            ControlSrc="~/_controltemplates/15/SuiteBarBranding.ascx"
-           Sequence="20"></Control>
+           Sequence="10"></Control>
 
-  <Control Id="SuiteLinksDelegate"
-           ControlSrc="~/_controltemplates/15/SuiteLinks.ascx"
-           Sequence="20"></Control>
+
 </Elements>

@@ -12,7 +12,17 @@
 <script src="/_layouts/15/Navigation/MARTA.GlobalNavigation.js"></script>
 <div>
     <ul class="ms-core-suiteLinkList" data-bind="foreach: globalMenuItems">
-        <li class="ms-core-suiteLink"><a class="ms-core-suiteLink-a" data-bind="attr: { href: url }"><span data-bind="text: title"></span></a></li>
+        <li class="ms-core-suiteLink">
+            <a class="ms-core-suiteLink-a" data-bind="attr: { href: url }">
+                <span>
+                    <span data-bind="text: title"></span>
+                    <!-- ko if: location.href.slice(0, url.length) == url || (location.href.slice(0, 8) === 'https://' && location.href.slice(0, url.replace(':443/', '/').length) == url.replace(':443/', '/')) -->
+                    <span class="ms-suitenav-caratBox" id="Suite_ActiveLinkIndicator_Clip"><img class="ms-suitenav-caratIcon" id="Suite_ActiveLinkIndicator" src="/_layouts/15/images/spcommon.png?rev=23" /></span>
+                    <!-- /ko -->
+                </span>
+            </a>
+
+        </li>
     </ul>
 </div>
 <asp:PlaceHolder ID="InitTopNavPlaceHolder" runat="server" />
