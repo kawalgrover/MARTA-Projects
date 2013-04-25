@@ -141,6 +141,24 @@
   </data>
   <data name="PlanningTemplate_Local" xml:space="preserve">
     <value>&lt;Terms&gt;
+  &lt;Term Title="Pages"
+        URL=""&gt;
+    &lt;Term Title="News"
+          URL="/News.aspx" /&gt;
+    &lt;Term Title="Who We Are"
+          URL="/Who%20We%20Are.aspx" /&gt;
+    &lt;Term Title="What We Do"
+          URL="/What%20We%20Do.aspx" /&gt;
+    &lt;Term Title="Site Directory"
+          URL="/Site%20Directory.aspx" /&gt;
+  &lt;/Term&gt;
+  &lt;Term Title="Request a Service"
+        URL=""&gt;
+    &lt;Term Title="Service 1"
+          URL="www.google.com" /&gt;
+    &lt;Term Title="Service 2"
+          URL="www.bing.com" /&gt;
+  &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
   <data name="ProcessTemplate_Global" xml:space="preserve">
@@ -158,10 +176,32 @@
     &lt;Term Title="Planning"
           URL="/Planning/default.aspx" /&gt;
   &lt;/Term&gt;
+  &lt;Term Title="Apps"
+        URL="" &gt;
+    &lt;Term Title="Tasks"
+          URL="/Lists/Tasks/" /&gt;
+    &lt;Term Title="Diagram Library"
+          URL="/Lists/Diagram%20Library/" /&gt;
+    &lt;Term Title="Roles and Responsibilities"
+          URL="/Lists/Roles%20and%20Responsibilities/" /&gt;
+  &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
   <data name="ProcessTemplate_Local" xml:space="preserve">
     <value>&lt;Terms&gt;
+  &lt;Term Title="Pages"
+        URL=""&gt;
+    &lt;Term Title="Overview"
+          URL="/Overview.aspx" /&gt;
+    &lt;Term Title="Instructions"
+          URL="/Instructions.aspx" /&gt;
+    &lt;Term Title="Diagrams"
+          URL="/Diagrams.aspx" /&gt;
+    &lt;Term Title="Metrics"
+          URL="/Metrics.aspx" /&gt;
+    &lt;Term Title="Planning"
+          URL="/Planning/default.aspx" /&gt;
+  &lt;/Term&gt;
   &lt;Term Title="Apps"
         URL="" &gt;
     &lt;Term Title="Tasks"
@@ -197,20 +237,55 @@
   </data>
   <data name="StorefrontTemplate_Local" xml:space="preserve">
     <value>&lt;Terms&gt;
+  &lt;Term Title="Pages"
+        URL=""&gt;
+    &lt;Term Title="News"
+          URL="/News.aspx" /&gt;
+    &lt;Term Title="Who We Are"
+          URL="/Who%20We%20Are.aspx" /&gt;
+    &lt;Term Title="What We Do"
+          URL="/What%20We%20Do.aspx" /&gt;
+    &lt;Term Title="Site Directory"
+          URL="/Site%20Directory.aspx" /&gt;
+  &lt;/Term&gt;
+  &lt;Term Title="Request a Service"
+        URL=""&gt;
+    &lt;Term Title="Service 1"
+          URL="www.google.com" /&gt;
+    &lt;Term Title="Service 2"
+          URL="www.bing.com" /&gt;
+  &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
   <data name="TeamTemplate_Global" xml:space="preserve">
     <value>&lt;Terms&gt;
   &lt;Term Title="Pages"
         URL=""&gt;
-    &lt;Term Title="Metrics" URL="/Metrics.aspx"&gt;&lt;/Term&gt;
+    &lt;Term Title="Metrics" URL="/Metrics.aspx" /&gt;
     &lt;Term Title="Knowledge"
-          URL="/Knowledge.aspx"&gt;&lt;/Term&gt;
+          URL="/Knowledge.aspx" /&gt;
+  &lt;/Term&gt;
+  &lt;Term Title="Apps"
+        URL="" &gt;
+  &lt;Term Title="Calendar"
+        URL="/_layouts/15/start.aspx#/Lists/Calendar/" /&gt;
+    &lt;Term Title="Tasks"
+          URL="/_layouts/15/start.aspx#/Lists/Tasks/" /&gt;
+    &lt;Term Title="Documents"
+          URL="/_layouts/15/start.aspx#/Lists/Documents/" /&gt;
+    &lt;Term Title="Contacts"
+          URL="/_layouts/15/start.aspx#/Lists/Contacts/" /&gt;
   &lt;/Term&gt;
 &lt;/Terms&gt;</value>
   </data>
   <data name="TeamTemplate_Local" xml:space="preserve">
     <value>&lt;Terms&gt;
+  &lt;Term Title="Pages"
+        URL=""&gt;
+    &lt;Term Title="Metrics" URL="/Metrics.aspx" /&gt;
+    &lt;Term Title="Knowledge"
+          URL="/Knowledge.aspx" /&gt;
+  &lt;/Term&gt;
   &lt;Term Title="Apps"
         URL="" &gt;
   &lt;Term Title="Calendar"

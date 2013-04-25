@@ -89,7 +89,24 @@ namespace Navigation.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;Terms&gt;
-        ///&lt;/Terms&gt;.
+        ///  &lt;Term Title=&quot;Pages&quot;
+        ///        URL=&quot;&quot;&gt;
+        ///    &lt;Term Title=&quot;News&quot;
+        ///          URL=&quot;/News.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Who We Are&quot;
+        ///          URL=&quot;/Who%20We%20Are.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;What We Do&quot;
+        ///          URL=&quot;/What%20We%20Do.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Site Directory&quot;
+        ///          URL=&quot;/Site%20Directory.aspx&quot; /&gt;
+        ///  &lt;/Term&gt;
+        ///  &lt;Term Title=&quot;Request a Service&quot;
+        ///        URL=&quot;&quot;&gt;
+        ///    &lt;Term Title=&quot;Service 1&quot;
+        ///          URL=&quot;www.google.com&quot; /&gt;
+        ///    &lt;Term Title=&quot;Service 2&quot;
+        ///          URL=&quot;www.bing.com&quot; /&gt;
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PlanningTemplate_Local {
             get {
@@ -112,7 +129,11 @@ namespace Navigation.Resources {
         ///    &lt;Term Title=&quot;Planning&quot;
         ///          URL=&quot;/Planning/default.aspx&quot; /&gt;
         ///  &lt;/Term&gt;
-        ///&lt;/Terms&gt;.
+        ///  &lt;Term Title=&quot;Apps&quot;
+        ///        URL=&quot;&quot; &gt;
+        ///    &lt;Term Title=&quot;Tasks&quot;
+        ///          URL=&quot;/Lists/Tasks/&quot; /&gt;
+        ///    &lt;Term Title=&quot;Diagram [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ProcessTemplate_Global {
             get {
@@ -122,16 +143,24 @@ namespace Navigation.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;Terms&gt;
+        ///  &lt;Term Title=&quot;Pages&quot;
+        ///        URL=&quot;&quot;&gt;
+        ///    &lt;Term Title=&quot;Overview&quot;
+        ///          URL=&quot;/Overview.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Instructions&quot;
+        ///          URL=&quot;/Instructions.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Diagrams&quot;
+        ///          URL=&quot;/Diagrams.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Metrics&quot;
+        ///          URL=&quot;/Metrics.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Planning&quot;
+        ///          URL=&quot;/Planning/default.aspx&quot; /&gt;
+        ///  &lt;/Term&gt;
         ///  &lt;Term Title=&quot;Apps&quot;
         ///        URL=&quot;&quot; &gt;
         ///    &lt;Term Title=&quot;Tasks&quot;
         ///          URL=&quot;/Lists/Tasks/&quot; /&gt;
-        ///    &lt;Term Title=&quot;Diagram Library&quot;
-        ///          URL=&quot;/Lists/Diagram%20Library/&quot; /&gt;
-        ///    &lt;Term Title=&quot;Roles and Responsibilities&quot;
-        ///          URL=&quot;/Lists/Roles%20and%20Responsibilities/&quot; /&gt;
-        ///  &lt;/Term&gt;
-        ///&lt;/Terms&gt;.
+        ///    &lt;Term Title=&quot;Diagram [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ProcessTemplate_Local {
             get {
@@ -168,7 +197,24 @@ namespace Navigation.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;Terms&gt;
-        ///&lt;/Terms&gt;.
+        ///  &lt;Term Title=&quot;Pages&quot;
+        ///        URL=&quot;&quot;&gt;
+        ///    &lt;Term Title=&quot;News&quot;
+        ///          URL=&quot;/News.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Who We Are&quot;
+        ///          URL=&quot;/Who%20We%20Are.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;What We Do&quot;
+        ///          URL=&quot;/What%20We%20Do.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Site Directory&quot;
+        ///          URL=&quot;/Site%20Directory.aspx&quot; /&gt;
+        ///  &lt;/Term&gt;
+        ///  &lt;Term Title=&quot;Request a Service&quot;
+        ///        URL=&quot;&quot;&gt;
+        ///    &lt;Term Title=&quot;Service 1&quot;
+        ///          URL=&quot;www.google.com&quot; /&gt;
+        ///    &lt;Term Title=&quot;Service 2&quot;
+        ///          URL=&quot;www.bing.com&quot; /&gt;
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string StorefrontTemplate_Local {
             get {
@@ -180,20 +226,10 @@ namespace Navigation.Resources {
         ///   Looks up a localized string similar to &lt;Terms&gt;
         ///  &lt;Term Title=&quot;Pages&quot;
         ///        URL=&quot;&quot;&gt;
-        ///    &lt;Term Title=&quot;Metrics&quot; URL=&quot;/Metrics.aspx&quot;&gt;&lt;/Term&gt;
+        ///    &lt;Term Title=&quot;Metrics&quot; URL=&quot;/Metrics.aspx&quot; /&gt;
         ///    &lt;Term Title=&quot;Knowledge&quot;
-        ///          URL=&quot;/Knowledge.aspx&quot;&gt;&lt;/Term&gt;
+        ///          URL=&quot;/Knowledge.aspx&quot; /&gt;
         ///  &lt;/Term&gt;
-        ///&lt;/Terms&gt;.
-        /// </summary>
-        internal static string TeamTemplate_Global {
-            get {
-                return ResourceManager.GetString("TeamTemplate_Global", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;Terms&gt;
         ///  &lt;Term Title=&quot;Apps&quot;
         ///        URL=&quot;&quot; &gt;
         ///  &lt;Term Title=&quot;Calendar&quot;
@@ -203,9 +239,32 @@ namespace Navigation.Resources {
         ///    &lt;Term Title=&quot;Documents&quot;
         ///          URL=&quot;/_layouts/15/start.aspx#/Lists/Documents/&quot; /&gt;
         ///    &lt;Term Title=&quot;Contacts&quot;
-        ///          URL=&quot;/_layouts/15/start.aspx#/Lists/Contacts/&quot; /&gt;
+        ///           [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TeamTemplate_Global {
+            get {
+                return ResourceManager.GetString("TeamTemplate_Global", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Terms&gt;
+        ///  &lt;Term Title=&quot;Pages&quot;
+        ///        URL=&quot;&quot;&gt;
+        ///    &lt;Term Title=&quot;Metrics&quot; URL=&quot;/Metrics.aspx&quot; /&gt;
+        ///    &lt;Term Title=&quot;Knowledge&quot;
+        ///          URL=&quot;/Knowledge.aspx&quot; /&gt;
         ///  &lt;/Term&gt;
-        ///&lt;/Terms&gt;.
+        ///  &lt;Term Title=&quot;Apps&quot;
+        ///        URL=&quot;&quot; &gt;
+        ///  &lt;Term Title=&quot;Calendar&quot;
+        ///        URL=&quot;/_layouts/15/start.aspx#/Lists/Calendar/&quot; /&gt;
+        ///    &lt;Term Title=&quot;Tasks&quot;
+        ///          URL=&quot;/_layouts/15/start.aspx#/Lists/Tasks/&quot; /&gt;
+        ///    &lt;Term Title=&quot;Documents&quot;
+        ///          URL=&quot;/_layouts/15/start.aspx#/Lists/Documents/&quot; /&gt;
+        ///    &lt;Term Title=&quot;Contacts&quot;
+        ///           [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TeamTemplate_Local {
             get {
