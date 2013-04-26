@@ -24,10 +24,14 @@ namespace Navigation.WebAddedReceiver
         /// </summary>
         public override void WebProvisioned(SPWebEventProperties properties)
         {
-            //base.WebProvisioned(properties);
+            base.WebProvisioned(properties);
 
-            //SPWeb currentWeb = properties.Web;
-
+            SPWeb currentWeb = properties.Web;
+            string masterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/MasterPage/CustomMaster.master";
+            string customMasterURL = currentWeb.Site.RootWeb.ServerRelativeUrl + "/_catalogs/masterpage/MasterPage/CustomMaster.master";
+            currentWeb.MasterUrl = masterURL;
+            currentWeb.CustomMasterUrl = customMasterURL;
+            currentWeb.Update();
             
             //InitializeWebAppProperties(currentWeb);
                     
