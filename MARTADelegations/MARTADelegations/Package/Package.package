@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="11e67410-40aa-4212-b26c-0b308e77e300" solutionId="11e67410-40aa-4212-b26c-0b308e77e300" resetWebServer="false" sharePointProductVersion="15.0" name="MARTADelegations" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="db660838-fbd5-485e-9394-b424b609c154" />
+    <featureReference itemId="a804d2d4-2784-4542-99fb-87bbbbdbb3f1" />
+  </features>
+</package>

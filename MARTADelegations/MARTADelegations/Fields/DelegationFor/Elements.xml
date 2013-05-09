@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{2224DAF1-7C0C-4005-94A7-BCC04F2E03AD}"
+         Type="User"
+         Name="DelegationFor"
+         DisplayName="Delegation For"
+         Group="MARTA Columns"
+         UserSelectionMode="PeopleOnly"></Field>
+</Elements>

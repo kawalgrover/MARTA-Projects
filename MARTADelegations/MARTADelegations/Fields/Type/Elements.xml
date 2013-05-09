@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{48249509-067D-41CB-B091-5EB11A2669E3}"
+         Name="DelegationType"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Delegation Type">
+    <CHOICES>
+      <CHOICE>Legal</CHOICE>
+      <CHOICE>Manager</CHOICE>
+      <CHOICE>Self</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

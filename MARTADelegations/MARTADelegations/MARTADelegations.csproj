@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8B6E4CC-D2D9-4D4D-B556-933867BFC410}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MARTADelegations</RootNamespace>
+    <AssemblyName>MARTADelegations</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Delegations\DelegationsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{57f69eb2-4045-4535-99b3-7c5115d7813c}</SharePointProjectItemId>
+    </None>
+    <None Include="Delegations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{417a94f4-21ce-4337-ae08-e8a0efb51a14}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Delegations\Delegations.feature">
+      <FeatureId>{a804d2d4-2784-4542-99fb-87bbbbdbb3f1}</FeatureId>
+    </None>
+    <None Include="Features\Fields\Fields.feature">
+      <FeatureId>{db660838-fbd5-485e-9394-b424b609c154}</FeatureId>
+    </None>
+    <None Include="Fields\DelegationFor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3b9b46c6-5e27-46b4-add2-14aeaf64aa41}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\EndDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{018b4a0a-a2e7-4e94-9d7b-0e894050af56}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\StartDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{19fe0aed-eb84-4820-8e1c-205b2c4a8301}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Type\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{547cf6b0-c53c-4c00-b067-fa3b899359a9}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="MARTADelegation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3e24520c-4d0a-4482-be23-3a826967ceed}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{11e67410-40aa-4212-b26c-0b308e77e300}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Old Fields\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Delegations\DelegationsInstance\Elements.xml" />
+    <Content Include="Delegations\Elements.xml" />
+    <Content Include="Delegations\Schema.xml" />
+    <Content Include="Features\Delegations\Delegations.Template.xml">
+      <DependentUpon>Delegations.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Fields\Fields.Template.xml">
+      <DependentUpon>Fields.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\DelegationFor\Elements.xml" />
+    <Content Include="Fields\EndDate\Elements.xml" />
+    <Content Include="Fields\StartDate\Elements.xml" />
+    <Content Include="Fields\Type\Elements.xml" />
+    <Content Include="MARTADelegation\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

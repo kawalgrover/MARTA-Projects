@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Delegations" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Delegations" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01001444DA97382F4D3BACD45C11AE78769C" Name="MARTADelegation" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{2224DAF1-7C0C-4005-94A7-BCC04F2E03AD}" DisplayName="Delegation For" Required="TRUE" Name="DelegationFor" /><FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" DisplayName="$Resources:core,Assigned_To;" Required="TRUE" Name="AssignedTo" /><FieldRef ID="{DB4ECA98-1DB0-467E-B2A5-4430B63A75D9}" DisplayName="Start Date" Required="TRUE" Name="DelegationStart" /><FieldRef ID="{126E5FD0-4F8C-451E-AF0F-5AEF4B224818}" DisplayName="End Date" Required="TRUE" Name="DelegationEnd" /><FieldRef ID="{48249509-067D-41CB-B091-5EB11A2669E3}" DisplayName="Delegation Type" Required="TRUE" Name="DelegationType" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{2224DAF1-7C0C-4005-94A7-BCC04F2E03AD}" Type="User" Name="DelegationFor" DisplayName="Delegation For" Group="MARTA Columns" UserSelectionMode="PeopleOnly" Required="TRUE"></Field><Field ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="AssignedTo" Group="$Resources:core,Issue_Task_Columns;" Type="User" List="UserInfo" DisplayName="$Resources:core,Assigned_To;" Required="TRUE" /><Field ID="{DB4ECA98-1DB0-467E-B2A5-4430B63A75D9}" Type="DateTime" Group="MARTA Columns" DisplayName="Start Date" Name="DelegationStart" Required="TRUE" /><Field ID="{126E5FD0-4F8C-451E-AF0F-5AEF4B224818}" Type="DateTime" Group="MARTA Columns" DisplayName="End Date" Name="DelegationEnd" Required="TRUE" /><Field ID="{48249509-067D-41CB-B091-5EB11A2669E3}" Name="DelegationType" Type="Choice" Group="MARTA Columns" DisplayName="Delegation Type" Required="TRUE"><CHOICES><CHOICE>Legal</CHOICE><CHOICE>Manager</CHOICE><CHOICE>Self</CHOICE></CHOICES></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="DelegationFor" /><FieldRef Name="AssignedTo" /><FieldRef Name="DelegationStart" /><FieldRef Name="DelegationEnd" /><FieldRef Name="DelegationType" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
