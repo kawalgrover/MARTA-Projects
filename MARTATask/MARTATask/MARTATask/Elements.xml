@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Task (0x0108) -->
+  <ContentType ID="0x0108009E9D79D5951C4CC68E64F444944F06BE"
+               Name="MARTATask"
+               Group="Custom Content Types"
+               Description="Content Type to handle MARTA Tasks"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs></FieldRefs>
+    
+  </ContentType>
+</Elements>
