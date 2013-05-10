@@ -34,8 +34,7 @@
         <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
-          
-        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="DelegationFor" /><FieldRef Name="AssignedTo" /><FieldRef Name="DelegationStart" /><FieldRef Name="DelegationEnd" /><FieldRef Name="DelegationType" /></ViewFields>
+        <FieldRef Name="DelegationFor" /><FieldRef Name="AssignedTo" /><FieldRef Name="DelegationStart" /><FieldRef Name="DelegationEnd" /><FieldRef Name="DelegationType" /></ViewFields>
         <Query>
           <OrderBy>
             
