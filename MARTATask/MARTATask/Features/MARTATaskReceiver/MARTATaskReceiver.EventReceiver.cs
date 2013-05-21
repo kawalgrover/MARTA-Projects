@@ -21,7 +21,7 @@ namespace MARTATask.Features.MARTATaskReceiver
             SPSite site = properties.Feature.Parent as SPSite;
             if (site != null)
             {
-                SPContentType martaTaskContentType = site.RootWeb.ContentTypes["MARTA Task"];
+                SPContentType martaTaskContentType = site.RootWeb.ContentTypes["MARTATask"];
                 if (martaTaskContentType != null)
                 {
                     string assemblyName = System.Reflection.Assembly.GetExecutingAssembly().FullName;
@@ -32,6 +32,8 @@ namespace MARTATask.Features.MARTATaskReceiver
                     eventReceiver.Assembly = assemblyName;
                     eventReceiver.Class = className;
                     eventReceiver.Update();
+
+                    martaTaskContentType.Update(true);
                 }
 
             }

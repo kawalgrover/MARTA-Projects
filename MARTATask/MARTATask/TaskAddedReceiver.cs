@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.SharePoint.Linq;
+using Microsoft.SharePoint.Administration.Claims;
 
 namespace MARTATask
 {
@@ -21,31 +23,101 @@ namespace MARTATask
 
             if (siteURLForDelegationsList != null)
             {
+                
                 using (SPSite delegationSite = new SPSite(siteURLForDelegationsList))
-                using (SPWeb delegationWeb = delegationSite.RootWeb)
                 {
-                    SPList delegationList = delegationWeb.Lists[delegationsListName];
+                    DelegationsDataContext dc = new DelegationsDataContext(delegationSite.RootWeb.Url);
+                    EntityList<Delegation> delegations = dc.GetList<Delegation>("Delegations");
 
+                    string assignedToUser = GetSPUser(properties, "Assigned To");
+
+                    Delegation delegation = delegations.FirstOrDefault();
+
+                    var currentDelegations = delegations.Where(d => d.DelegationFor == assignedToUser)
+                        .Where(d => d.StartDate <= System.DateTime.Now)
+                        .Where(d => d.EndDate >= System.DateTime.Now)
+                        .ToList();
+
+                    if (currentDelegations != null)
+                    {
+                        //If there are any valid delegations. A legal delegation takes precedence over others.
+                        if (currentDelegations.Where(d => d.DelegationType == DelegationType.Legal).FirstOrDefault() != null)
+                        {
+                            AssignDelegation(properties, currentDelegations.Where(d => d.DelegationType == DelegationType.Legal).First());
+                        }
+                        else if (currentDelegations.Where(d => d.DelegationType == DelegationType.Manager).FirstOrDefault() != null)
+                        {
+                            AssignDelegation(properties, currentDelegations.Where(d => d.DelegationType == DelegationType.Manager).First());
+                        }
+                        else if (currentDelegations.Where(d => d.DelegationType == DelegationType.Self).FirstOrDefault() != null)
+                        {
+                            AssignDelegation(properties, currentDelegations.Where(d => d.DelegationType == DelegationType.Self).First());
+                        }
+                    }
                 }
             }
-            //Check if the item is being assigned to by legal. Legal Delegations
-
-            //Find out the MasterAssignmentsTable
             
-
-            //And then check to see if the person that this task is being assigned to, if someone else is delegated for him.
-
-            
-            properties.ListItem["Assigned To"] = "kg";
-            properties.ListItem.Update();
-
             base.ItemAdding(properties);
         }
 
+        private string GetSPUser(SPItemEventProperties properties, string key)
+        {
+            string rawUserName = Convert.ToString(properties.AfterProperties["AssignedTo"]);
+
+            int separatorIndex = rawUserName.IndexOf(";#");
+            string claimsUserName = rawUserName.Substring(separatorIndex + 2);
+
+            SPClaimProviderManager claimsManager = SPClaimProviderManager.Local;
+
+            string userName = null;
+
+            if (claimsManager != null)
+            {
+                userName = claimsManager.DecodeClaim(claimsUserName).Value;
+            }
+
+            return userName;
+
+            //SPContentType martaTaskCT = properties.Web.ContentTypes["MARTATask"];
+
+            //SPFieldUser field = martaTaskCT.Fields[key] as SPFieldUser;
+
+            //if (field != null)
+            //{
+            //    SPFieldUserValue fieldValue = field.GetFieldValue(Convert.ToString(properties.AfterProperties["AssignedTo"])) as SPFieldUserValue;
+            //    if (fieldValue != null)
+            //    {
+            //        return fieldValue.User;
+            //    }
+            //}
+            //return null;
+        }
+
+        private void AssignDelegation(SPItemEventProperties properties, Delegation validDelegation)
+        {
+            //properties.AfterProperties["OriginalAssignee"] = GetSPUserValue(properties, "AssignedTo"); //properties.AfterProperties["Assigned To"];
+            properties.AfterProperties["AssignedTo"] = ConvertStringToUser(properties, validDelegation.AssignedTo);
+            //properties.AfterProperties["IsDelegated"] = true;
+            //properties.AfterProperties["DelegationType"] = validDelegation.DelegationType.ToString();
+            
+        }
+
+
+        private SPFieldUserValue GetSPUserValue(SPItemEventProperties properties, string key)
+        {
+            SPFieldUserValue user = new SPFieldUserValue(properties.Web, Convert.ToString(properties.AfterProperties[key]));
+            return user;
+        }
+
+        private SPFieldUserValue ConvertStringToUser(SPItemEventProperties properties, string userName)
+        {
+            SPUser user = properties.Web.EnsureUser(userName);
+            SPFieldUserValue userValue = new SPFieldUserValue(properties.Web, user.ID, user.Name);
+            return userValue ;
+        }
         private void InitializeWebAppProperties(SPItemEventProperties properties)
         {
             SPSite site = properties.Web.Site;
-            //SPFolder defaultDocuments =rootWeb.RootWeb.Folders["Default Documents"];
             SPWebApplication webApplication = site.WebApplication;
 
             siteURLForDelegationsList = Convert.ToString(webApplication.Properties["DelegationsListSiteURL"]);

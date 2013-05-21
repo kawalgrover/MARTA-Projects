@@ -41,6 +41,7 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Linq, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -51,6 +52,7 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Delegations.cs" />
     <Compile Include="Features\MARTATaskReceiver\MARTATaskReceiver.EventReceiver.cs">
       <DependentUpon>MARTATaskReceiver.feature</DependentUpon>
     </Compile>
@@ -60,6 +62,12 @@
   <ItemGroup>
     <None Include="Features\MARTATaskReceiver\MARTATaskReceiver.feature">
       <FeatureId>{65244fec-105a-47b0-9049-4c71c46df7cd}</FeatureId>
+    </None>
+    <None Include="Fields\IsDelegated\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{98d4b246-974d-4d71-92bd-914ff6ef1551}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\OriginalAssignee\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae58982b-efad-4e6f-bc05-37bec2c1341a}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
     <None Include="MARTATask\SharePointProjectItem.spdata">
@@ -78,6 +86,8 @@
     <Content Include="Features\MARTATaskReceiver\MARTATaskReceiver.Template.xml">
       <DependentUpon>MARTATaskReceiver.feature</DependentUpon>
     </Content>
+    <Content Include="Fields\IsDelegated\Elements.xml" />
+    <Content Include="Fields\OriginalAssignee\Elements.xml" />
     <Content Include="MARTATask\Elements.xml" />
     <Content Include="Parameters.xml" />
   </ItemGroup>
