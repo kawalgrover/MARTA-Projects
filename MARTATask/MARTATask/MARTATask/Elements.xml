@@ -5,6 +5,7 @@
     <FieldRefs>
       <FieldRef ID="{86e3f2b4-c0ea-4967-a6d0-6a06b6eff4d7}" DisplayName="Is Delegated" Required="FALSE" Name="IsDelegated" />
       <FieldRef ID="{d02f233c-5056-433b-8dfd-8e35b36fe3bf}" DisplayName="Original Assignee" Required="FALSE" Name="OriginalAssignee" />
+      <FieldRef ID="{48249509-067D-41CB-B091-5EB11A2669E3}" DisplayName="Delegation Type" Name="DelegationType" />
     </FieldRefs>
   </ContentType>
 </Elements>

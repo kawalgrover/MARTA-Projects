@@ -95,10 +95,10 @@ namespace MARTATask
 
         private void AssignDelegation(SPItemEventProperties properties, Delegation validDelegation)
         {
-            //properties.AfterProperties["OriginalAssignee"] = GetSPUserValue(properties, "AssignedTo"); //properties.AfterProperties["Assigned To"];
+            properties.AfterProperties["OriginalAssignee"] = GetSPUserValue(properties, "AssignedTo"); 
             properties.AfterProperties["AssignedTo"] = ConvertStringToUser(properties, validDelegation.AssignedTo);
-            //properties.AfterProperties["IsDelegated"] = true;
-            //properties.AfterProperties["DelegationType"] = validDelegation.DelegationType.ToString();
+            properties.AfterProperties["IsDelegated"] = true;
+            properties.AfterProperties["DelegationType"] = validDelegation.DelegationType.ToString();
             
         }
 
