@@ -66,6 +66,9 @@
     <None Include="Fields\IsDelegated\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{98d4b246-974d-4d71-92bd-914ff6ef1551}</SharePointProjectItemId>
     </None>
+    <None Include="Fields\Manager\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{888e7061-93f4-45eb-8058-c6f0f205184d}</SharePointProjectItemId>
+    </None>
     <None Include="Fields\OriginalAssignee\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ae58982b-efad-4e6f-bc05-37bec2c1341a}</SharePointProjectItemId>
     </None>
@@ -88,6 +91,7 @@
     </Content>
     <Content Include="Fields\IsDelegated\Elements.xml" />
     <Content Include="Fields\OriginalAssignee\Elements.xml" />
+    <Content Include="Fields\Manager\Elements.xml" />
     <Content Include="MARTATask\Elements.xml" />
     <Content Include="Parameters.xml" />
   </ItemGroup>

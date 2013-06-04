@@ -6,7 +6,7 @@
        DisplayName="Is Delegated"
        Type="Boolean"
        Required="FALSE"
-       Group="MARTA Columns">
+       Group="MyMARTA Columns">
   </Field>
 
 </Elements>
