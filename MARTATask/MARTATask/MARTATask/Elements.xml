@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <!-- Parent ContentType: Task (0x0108) -->
-  <ContentType ID="0x0108009E9D79D5951C4CC68E64F444944F06BE" Name="MARTATask" Group="Custom Content Types" Description="Content Type to handle MARTA Tasks" Inherits="TRUE" Version="0">
+  <ContentType ID="0x0108009E9D79D5951C4CC68E64F444944F06BE" Name="MARTATask" Group="MyMARTA Content Types" Description="Content Type to handle MARTA Tasks" Inherits="TRUE" Version="0">
     <FieldRefs>
       <FieldRef ID="{86e3f2b4-c0ea-4967-a6d0-6a06b6eff4d7}" DisplayName="Is Delegated" Required="FALSE" Name="IsDelegated" />
       <FieldRef ID="{d02f233c-5056-433b-8dfd-8e35b36fe3bf}" DisplayName="Original Assignee" Required="FALSE" Name="OriginalAssignee" />

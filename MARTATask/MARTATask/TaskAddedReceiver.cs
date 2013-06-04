@@ -29,11 +29,11 @@ namespace MARTATask
                     DelegationsDataContext dc = new DelegationsDataContext(delegationSite.RootWeb.Url);
                     EntityList<Delegation> delegations = dc.GetList<Delegation>("Delegations");
 
-                    string assignedToUser = GetSPUser(properties, "Assigned To");
+                    SPUser assignedToUser = GetSPUser(properties, "Assigned To");
 
                     Delegation delegation = delegations.FirstOrDefault();
 
-                    var currentDelegations = delegations.Where(d => d.DelegationFor == assignedToUser)
+                    var currentDelegations = delegations.Where(d => d.DelegationForId == assignedToUser.ID)
                         .Where(d => d.StartDate <= System.DateTime.Now)
                         .Where(d => d.EndDate >= System.DateTime.Now)
                         .ToList();
@@ -60,7 +60,7 @@ namespace MARTATask
             base.ItemAdding(properties);
         }
 
-        private string GetSPUser(SPItemEventProperties properties, string key)
+        private SPUser GetSPUser(SPItemEventProperties properties, string key)
         {
             string rawUserName = Convert.ToString(properties.AfterProperties["AssignedTo"]);
 
@@ -76,7 +76,7 @@ namespace MARTATask
                 userName = claimsManager.DecodeClaim(claimsUserName).Value;
             }
 
-            return userName;
+            return properties.Web.EnsureUser(userName);
 
             //SPContentType martaTaskCT = properties.Web.ContentTypes["MARTATask"];
 
