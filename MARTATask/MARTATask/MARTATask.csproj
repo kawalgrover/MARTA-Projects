@@ -14,6 +14,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SandboxedSolution>False</SandboxedSolution>
+    <PostDeploymentCommand>xcopy /y "%24%28TargetDir%29MARTATask.wsp" "C:\Users\Administrator\Documents\Visual Studio 2012\Projects\Solutions"</PostDeploymentCommand>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -73,6 +74,12 @@
       <SharePointProjectItemId>{ae58982b-efad-4e6f-bc05-37bec2c1341a}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
+    <None Include="MARTA Task\MARTA Task Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{10cbfb8d-0eb2-4ac2-a7c3-6a01f5439982}</SharePointProjectItemId>
+    </None>
+    <None Include="MARTA Task\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c10ebfd9-302b-4fd9-a9d1-af1fc8476db1}</SharePointProjectItemId>
+    </None>
     <None Include="MARTATask\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{bae9af72-91e4-4e14-ae3a-d8436e9d4753}</SharePointProjectItemId>
     </None>
@@ -92,6 +99,9 @@
     <Content Include="Fields\IsDelegated\Elements.xml" />
     <Content Include="Fields\OriginalAssignee\Elements.xml" />
     <Content Include="Fields\Manager\Elements.xml" />
+    <Content Include="MARTA Task\Elements.xml" />
+    <Content Include="MARTA Task\MARTA Task Instance\Elements.xml" />
+    <Content Include="MARTA Task\Schema.xml" />
     <Content Include="MARTATask\Elements.xml" />
     <Content Include="Parameters.xml" />
   </ItemGroup>
