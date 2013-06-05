@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="MARTADelegations Fields" Id="c3662b5c-fc75-43d2-bc39-b953040107e5" Scope="Site">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="c3662b5c-fc75-43d2-bc39-b953040107e5" Scope="Site" Title="MARTADelegations Fields">
   <ElementManifests>
     <ElementManifest Location="Type\Elements.xml" />
     <ElementManifest Location="DelegationFor\Elements.xml" />

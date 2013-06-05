@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <!-- Parent ContentType: Item (0x01) -->
-  <ContentType ID="0x01001444DA97382F4D3BACD45C11AE78769C" Name="MARTADelegation" Group="Custom Content Types" Description="My Content Type" Inherits="FALSE" Version="0">
+  <ContentType ID="0x01001444DA97382F4D3BACD45C11AE78769C" Name="Delegation" Group="MyMARTA Content Types" Description="My Content Type" Inherits="FALSE" Version="0">
     <FieldRefs>
       <FieldRef ID="{2224DAF1-7C0C-4005-94A7-BCC04F2E03AD}" DisplayName="Delegation For" Required="TRUE" Name="DelegationFor" />
       <FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" DisplayName="$Resources:core,Assigned_To;" Required="TRUE" Name="AssignedTo" />

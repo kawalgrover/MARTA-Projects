@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="MARTA Delegations " Id="40adc9af-947f-4b00-bce7-49484a67d463" Scope="Web">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="40adc9af-947f-4b00-bce7-49484a67d463" Scope="Web" Title="MARTA Delegations ">
   <ActivationDependencies>
     <ActivationDependency FeatureId="c3662b5c-fc75-43d2-bc39-b953040107e5" FeatureTitle="MARTADelegations Fields" />
   </ActivationDependencies>
