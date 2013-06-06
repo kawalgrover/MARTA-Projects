@@ -12,16 +12,18 @@
     <table>
         <tr>
             <td>Delegate To:</td>
-            <td><SharePoint:PeopleEditor ID="spPeoplePicker" runat="server" SelectionSet="User" />
+            <td><SharePoint:PeopleEditor ID="spPeoplePicker" runat="server" SelectionSet="User" AllowEmpty="false" MultiSelect="false" />
                 </td>
         </tr>
         <tr>
             <td>From:</td>
-            <td><asp:Calendar ID="calDelegateFrom" runat="server"></asp:Calendar></td>
+            <td><SharePoint:DateTimeControl ID="calDelegateFrom" runat="server" />
+                </td>
         </tr>
         <tr>
             <td>To:</td>
-            <td><asp:Calendar ID="calDelegateTo" runat="server"></asp:Calendar></td>
+            <td><SharePoint:DateTimeControl ID="calDelegateTo" runat="server" />
+                </td>
         </tr>
         <tr>
             <td colspan="2">

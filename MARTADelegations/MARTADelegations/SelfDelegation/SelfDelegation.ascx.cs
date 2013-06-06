@@ -30,7 +30,7 @@ namespace MARTADelegations.SelfDelegation
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            btnSubmit.Click += new EventHandler(btnSubmit_Click);
+            
         }
 
         void btnSubmit_Click(object sender, EventArgs e)

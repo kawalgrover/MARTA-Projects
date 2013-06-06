@@ -42,9 +42,9 @@ namespace MARTADelegations.SelfDelegation {
         
         protected global::Microsoft.SharePoint.WebControls.PeopleEditor spPeoplePicker;
         
-        protected global::System.Web.UI.WebControls.Calendar calDelegateFrom;
+        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDelegateFrom;
         
-        protected global::System.Web.UI.WebControls.Calendar calDelegateTo;
+        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDelegateTo;
         
         protected global::System.Web.UI.WebControls.Button btnSubmit;
         
@@ -73,25 +73,25 @@ namespace MARTADelegations.SelfDelegation {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "spPeoplePicker";
             @__ctrl.SelectionSet = "User";
+            @__ctrl.AllowEmpty = false;
+            @__ctrl.MultiSelect = false;
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::System.Web.UI.WebControls.Calendar @__BuildControlcalDelegateFrom() {
-            global::System.Web.UI.WebControls.Calendar @__ctrl;
-            @__ctrl = new global::System.Web.UI.WebControls.Calendar();
+        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDelegateFrom() {
+            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
+            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
             this.calDelegateFrom = @__ctrl;
-            @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "calDelegateFrom";
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::System.Web.UI.WebControls.Calendar @__BuildControlcalDelegateTo() {
-            global::System.Web.UI.WebControls.Calendar @__ctrl;
-            @__ctrl = new global::System.Web.UI.WebControls.Calendar();
+        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDelegateTo() {
+            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
+            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
             this.calDelegateTo = @__ctrl;
-            @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "calDelegateTo";
             return @__ctrl;
         }
@@ -127,15 +127,16 @@ namespace MARTADelegations.SelfDelegation {
             @__parser.AddParsedSubObject(@__ctrl2);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </td>\r\n        </tr>\r\n        <tr>\r\n            <td>From:</td>\r" +
                         "\n            <td>"));
-            global::System.Web.UI.WebControls.Calendar @__ctrl3;
+            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl3;
             @__ctrl3 = this.@__BuildControlcalDelegateFrom();
             @__parser.AddParsedSubObject(@__ctrl3);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n        </tr>\r\n        <tr>\r\n            <td>To:</td>\r\n            <td>"));
-            global::System.Web.UI.WebControls.Calendar @__ctrl4;
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </td>\r\n        </tr>\r\n        <tr>\r\n            <td>To:</td>\r\n " +
+                        "           <td>"));
+            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl4;
             @__ctrl4 = this.@__BuildControlcalDelegateTo();
             @__parser.AddParsedSubObject(@__ctrl4);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n        </tr>\r\n        <tr>\r\n            <td colspan=\"2\">\r\n               " +
-                        " "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </td>\r\n        </tr>\r\n        <tr>\r\n            <td colspan=\"2\"" +
+                        ">\r\n                "));
             global::System.Web.UI.WebControls.Button @__ctrl5;
             @__ctrl5 = this.@__BuildControlbtnSubmit();
             @__parser.AddParsedSubObject(@__ctrl5);
