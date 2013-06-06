@@ -38,13 +38,118 @@ namespace MARTADelegations.Webparts.ManagerDelegation {
     
     public partial class ManagerDelegation {
         
+        protected global::System.Web.UI.WebControls.Label lblMessage;
+        
+        protected global::System.Web.UI.WebControls.DropDownList ddlSubordinates;
+        
+        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDelegateFrom;
+        
+        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDelegateTo;
+        
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        protected global::System.Web.UI.WebControls.Panel pnlDelegation;
+        
         public static implicit operator global::System.Web.UI.TemplateControl(ManagerDelegation target) 
         {
             return target == null ? null : target.TemplateControl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.Label @__BuildControllblMessage() {
+            global::System.Web.UI.WebControls.Label @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Label();
+            this.lblMessage = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "lblMessage";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.DropDownList @__BuildControlddlSubordinates() {
+            global::System.Web.UI.WebControls.DropDownList @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.DropDownList();
+            this.ddlSubordinates = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "ddlSubordinates";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDelegateFrom() {
+            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
+            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
+            this.calDelegateFrom = @__ctrl;
+            @__ctrl.ID = "calDelegateFrom";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDelegateTo() {
+            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
+            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
+            this.calDelegateTo = @__ctrl;
+            @__ctrl.ID = "calDelegateTo";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.Button @__BuildControlbtnSubmit() {
+            global::System.Web.UI.WebControls.Button @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Button();
+            this.btnSubmit = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "btnSubmit";
+            @__ctrl.Text = "Submit";
+            @__ctrl.Click -= new System.EventHandler(this.btnSubmit_Click);
+            @__ctrl.Click += new System.EventHandler(this.btnSubmit_Click);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.Panel @__BuildControlpnlDelegation() {
+            global::System.Web.UI.WebControls.Panel @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Panel();
+            this.pnlDelegation = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "pnlDelegation";
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n       \r\n    <table>\r\n        <tr>\r\n            <td>Delegate To:</td>\r\n        " +
+                        "    <td>\r\n                "));
+            global::System.Web.UI.WebControls.DropDownList @__ctrl1;
+            @__ctrl1 = this.@__BuildControlddlSubordinates();
+            @__parser.AddParsedSubObject(@__ctrl1);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>From:</td>\r\n   " +
+                        "         <td>"));
+            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl2;
+            @__ctrl2 = this.@__BuildControlcalDelegateFrom();
+            @__parser.AddParsedSubObject(@__ctrl2);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </td>\r\n        </tr>\r\n        <tr>\r\n            <td>To:</td>\r\n " +
+                        "           <td>"));
+            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl3;
+            @__ctrl3 = this.@__BuildControlcalDelegateTo();
+            @__parser.AddParsedSubObject(@__ctrl3);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </td>\r\n        </tr>\r\n        <tr>\r\n            <td colspan=\"2\"" +
+                        ">\r\n                "));
+            global::System.Web.UI.WebControls.Button @__ctrl4;
+            @__ctrl4 = this.@__BuildControlbtnSubmit();
+            @__parser.AddParsedSubObject(@__ctrl4);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            </td>\r\n        </tr>\r\n    </table>\r\n        "));
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         private void @__BuildControlTree(global::MARTADelegations.Webparts.ManagerDelegation.ManagerDelegation @__ctrl) {
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n<div>\r\n    "));
+            global::System.Web.UI.WebControls.Label @__ctrl1;
+            @__ctrl1 = this.@__BuildControllblMessage();
+            @__parser.AddParsedSubObject(@__ctrl1);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n    "));
+            global::System.Web.UI.WebControls.Panel @__ctrl2;
+            @__ctrl2 = this.@__BuildControlpnlDelegation();
+            @__parser.AddParsedSubObject(@__ctrl2);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n</div>"));
         }
         
         private void InitializeControl() {
