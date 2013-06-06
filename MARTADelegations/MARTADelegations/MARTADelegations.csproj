@@ -59,10 +59,18 @@
   <ItemGroup>
     <Compile Include="Delegations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SelfDelegation\SelfDelegation.ascx.cs">
+    <Compile Include="Webparts\ManagerDelegation\ManagerDelegation.ascx.cs">
+      <DependentUpon>ManagerDelegation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ManagerDelegation\ManagerDelegation.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagerDelegation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\SelfDelegation\SelfDelegation.ascx.cs">
       <DependentUpon>SelfDelegation.ascx</DependentUpon>
     </Compile>
-    <Compile Include="SelfDelegation\SelfDelegation.ascx.g.cs">
+    <Compile Include="Webparts\SelfDelegation\SelfDelegation.ascx.g.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SelfDelegation.ascx</DependentUpon>
@@ -104,8 +112,12 @@
       <DependentUpon>Package.package</DependentUpon>
     </None>
     <None Include="Prebuild.bat" />
-    <None Include="SelfDelegation\SelfDelegation.webpart" />
-    <None Include="SelfDelegation\SharePointProjectItem.spdata">
+    <None Include="Webparts\ManagerDelegation\ManagerDelegation.webpart" />
+    <None Include="Webparts\ManagerDelegation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f256c260-4ce0-4fed-952e-469ead9f21d4}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\SelfDelegation\SelfDelegation.webpart" />
+    <None Include="Webparts\SelfDelegation\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{3babdd83-136e-45e2-97db-c06283ee8fad}</SharePointProjectItemId>
     </None>
   </ItemGroup>
@@ -128,8 +140,13 @@
     <Content Include="Fields\Type\Elements.xml" />
     <Content Include="MARTADelegation\Elements.xml" />
     <Content Include="Parameters.xml" />
-    <Content Include="SelfDelegation\Elements.xml" />
-    <Content Include="SelfDelegation\SelfDelegation.ascx">
+    <Content Include="Webparts\ManagerDelegation\Elements.xml" />
+    <Content Include="Webparts\ManagerDelegation\ManagerDelegation.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ManagerDelegation.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\SelfDelegation\Elements.xml" />
+    <Content Include="Webparts\SelfDelegation\SelfDelegation.ascx">
       <Generator>SharePointWebPartCodeGenerator</Generator>
       <LastGenOutput>SelfDelegation.ascx.g.cs</LastGenOutput>
     </Content>
