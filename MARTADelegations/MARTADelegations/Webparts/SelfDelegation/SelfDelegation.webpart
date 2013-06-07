@@ -7,8 +7,8 @@
     </metaData>
     <data>
       <properties>
-        <property name="Title" type="string">MARTADelegations - SelfDelegation</property>
-        <property name="Description" type="string">My Visual Web Part</property>
+        <property name="Title" type="string">Self Delegation</property>
+        <property name="Description" type="string">This web part allows users to enter a delegation of authority for themselves to forward their tasks to the appropriate delagatee.</property>
       </properties>
     </data>
   </webPart>

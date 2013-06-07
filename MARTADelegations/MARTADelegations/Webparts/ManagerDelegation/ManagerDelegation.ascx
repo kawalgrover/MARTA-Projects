@@ -12,23 +12,25 @@
        
     <table>
         <tr>
-            <td>Delegate To:</td>
-            <td>
+            <td width="113" class="ms-formlabel" nowrap="true" valign="top">Delegate To:</td>
+            <td width="350" class="ms-formbody" valign="top">
                 <asp:DropDownList ID="ddlSubordinates" runat="server" />
             </td>
         </tr>
         <tr>
-            <td>From:</td>
-            <td><SharePoint:DateTimeControl ID="calDelegateFrom" runat="server" />
+            <td width="113" class="ms-formlabel" nowrap="true" valign="top">From:</td>
+            <td width="350" class="ms-formbody" valign="top">
+                <SharePoint:DateTimeControl ID="calDelegateFrom" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td width="113" class="ms-formlabel" nowrap="true" valign="top">To:</td>
+            <td width="350" class="ms-formbody" valign="top">
+                <SharePoint:DateTimeControl ID="calDelegateTo" runat="server" />
                 </td>
         </tr>
         <tr>
-            <td>To:</td>
-            <td><SharePoint:DateTimeControl ID="calDelegateTo" runat="server" />
-                </td>
-        </tr>
-        <tr>
-            <td colspan="2">
+            <td width="100%" align="center" colspan="2">
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
             </td>
         </tr>

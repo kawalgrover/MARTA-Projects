@@ -11,18 +11,18 @@
         <asp:Label ID="lblMessage" runat="server" />
     <table>
         <tr>
-            <td>Delegate To:</td>
-            <td><SharePoint:PeopleEditor ID="spPeoplePicker" runat="server" SelectionSet="User" AllowEmpty="false" MultiSelect="false" />
+            <td width="113" class="ms-formlabel" nowrap="true" valign="top">Delegate To:</td>
+            <td width="350" class="ms-formbody" valign="top"><SharePoint:PeopleEditor ID="spPeoplePicker" runat="server" SelectionSet="User" AllowEmpty="false" MultiSelect="false" />
                 </td>
         </tr>
         <tr>
-            <td>From:</td>
-            <td><SharePoint:DateTimeControl ID="calDelegateFrom" runat="server" />
+            <td width="113" class="ms-formlabel" nowrap="true" valign="top">From:</td>
+            <td width="350" class="ms-formbody" valign="top"><SharePoint:DateTimeControl ID="calDelegateFrom" runat="server" />
                 </td>
         </tr>
         <tr>
-            <td>To:</td>
-            <td><SharePoint:DateTimeControl ID="calDelegateTo" runat="server" />
+            <td width="113" class="ms-formlabel" nowrap="true" valign="top">To:</td>
+            <td width="350" class="ms-formbody" valign="top"><SharePoint:DateTimeControl ID="calDelegateTo" runat="server" />
                 </td>
         </tr>
         <tr>

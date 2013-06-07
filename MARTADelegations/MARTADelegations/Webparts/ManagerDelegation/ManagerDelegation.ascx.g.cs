@@ -114,23 +114,26 @@ namespace MARTADelegations.Webparts.ManagerDelegation {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "pnlDelegation";
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n       \r\n    <table>\r\n        <tr>\r\n            <td>Delegate To:</td>\r\n        " +
-                        "    <td>\r\n                "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n       \r\n    <table>\r\n        <tr>\r\n            <td width=\"113\" class=\"ms-forml" +
+                        "abel\" nowrap=\"true\" valign=\"top\">Delegate To:</td>\r\n            <td width=\"350\" " +
+                        "class=\"ms-formbody\" valign=\"top\">\r\n                "));
             global::System.Web.UI.WebControls.DropDownList @__ctrl1;
             @__ctrl1 = this.@__BuildControlddlSubordinates();
             @__parser.AddParsedSubObject(@__ctrl1);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>From:</td>\r\n   " +
-                        "         <td>"));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"113\" cla" +
+                        "ss=\"ms-formlabel\" nowrap=\"true\" valign=\"top\">From:</td>\r\n            <td width=\"" +
+                        "350\" class=\"ms-formbody\" valign=\"top\">\r\n                "));
             global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl2;
             @__ctrl2 = this.@__BuildControlcalDelegateFrom();
             @__parser.AddParsedSubObject(@__ctrl2);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </td>\r\n        </tr>\r\n        <tr>\r\n            <td>To:</td>\r\n " +
-                        "           <td>"));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"113\" cla" +
+                        "ss=\"ms-formlabel\" nowrap=\"true\" valign=\"top\">To:</td>\r\n            <td width=\"35" +
+                        "0\" class=\"ms-formbody\" valign=\"top\">\r\n                "));
             global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl3;
             @__ctrl3 = this.@__BuildControlcalDelegateTo();
             @__parser.AddParsedSubObject(@__ctrl3);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </td>\r\n        </tr>\r\n        <tr>\r\n            <td colspan=\"2\"" +
-                        ">\r\n                "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </td>\r\n        </tr>\r\n        <tr>\r\n            <td width=\"100%" +
+                        "\" align=\"center\" colspan=\"2\">\r\n                "));
             global::System.Web.UI.WebControls.Button @__ctrl4;
             @__ctrl4 = this.@__BuildControlbtnSubmit();
             @__parser.AddParsedSubObject(@__ctrl4);
