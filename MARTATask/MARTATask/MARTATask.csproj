@@ -65,23 +65,23 @@
       <FeatureId>{65244fec-105a-47b0-9049-4c71c46df7cd}</FeatureId>
     </None>
     <None Include="Fields\IsDelegated\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{98d4b246-974d-4d71-92bd-914ff6ef1551}</SharePointProjectItemId>
+      <SharePointProjectItemId>{13b5e192-f4ca-4c0b-87d2-9433cec8af4a}</SharePointProjectItemId>
     </None>
     <None Include="Fields\Manager\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{888e7061-93f4-45eb-8058-c6f0f205184d}</SharePointProjectItemId>
+      <SharePointProjectItemId>{92f65d08-73e8-4954-ba7d-9b765ee770df}</SharePointProjectItemId>
     </None>
     <None Include="Fields\OriginalAssignee\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{ae58982b-efad-4e6f-bc05-37bec2c1341a}</SharePointProjectItemId>
+      <SharePointProjectItemId>{1aa74e70-a9c1-42a7-8d5c-5b337daa4113}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
     <None Include="MARTA Task\MARTA Task Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{10cbfb8d-0eb2-4ac2-a7c3-6a01f5439982}</SharePointProjectItemId>
+      <SharePointProjectItemId>{a1d33860-361d-449e-9bd7-f32b1618c0ca}</SharePointProjectItemId>
     </None>
     <None Include="MARTA Task\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c10ebfd9-302b-4fd9-a9d1-af1fc8476db1}</SharePointProjectItemId>
+      <SharePointProjectItemId>{e0836154-44f4-4d5d-bd74-d9d8e2be5c8e}</SharePointProjectItemId>
     </None>
     <None Include="MARTATask\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{bae9af72-91e4-4e14-ae3a-d8436e9d4753}</SharePointProjectItemId>
+      <SharePointProjectItemId>{cd9c59c0-ec97-4484-89d6-d719602d5175}</SharePointProjectItemId>
     </None>
     <None Include="Package\Package.package">
       <PackageId>{aeb117f8-be21-4435-b8f0-c4c18fb9e6aa}</PackageId>
@@ -97,12 +97,14 @@
       <DependentUpon>MARTATaskReceiver.feature</DependentUpon>
     </Content>
     <Content Include="Fields\IsDelegated\Elements.xml" />
-    <Content Include="Fields\OriginalAssignee\Elements.xml" />
     <Content Include="Fields\Manager\Elements.xml" />
+    <Content Include="Fields\OriginalAssignee\Elements.xml" />
     <Content Include="MARTA Task\Elements.xml" />
     <Content Include="MARTA Task\MARTA Task Instance\Elements.xml" />
     <Content Include="MARTA Task\Schema.xml" />
-    <Content Include="MARTATask\Elements.xml" />
+    <Content Include="MARTATask\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Parameters.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
