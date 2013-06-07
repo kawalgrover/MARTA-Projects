@@ -4,6 +4,6 @@
          Type="User"
          Name="DelegationFor"
          DisplayName="Delegation For"
-         Group="MARTA Columns"
+         Group="MARTA Site Columns"
          UserSelectionMode="PeopleOnly"></Field>
 </Elements>

@@ -3,7 +3,7 @@
   <Field ID="{48249509-067D-41CB-B091-5EB11A2669E3}"
          Name="DelegationType"
          Type="Choice"
-         Group="MARTA Columns"
+         Group="MARTA Site Columns"
          DisplayName="Delegation Type">
     <CHOICES>
       <CHOICE>Legal</CHOICE>

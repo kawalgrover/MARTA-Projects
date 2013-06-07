@@ -2,7 +2,7 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Field ID="{DB4ECA98-1DB0-467E-B2A5-4430B63A75D9}"
          Type="DateTime"
-         Group="MARTA Columns"
+         Group="MARTA Site Columns"
          DisplayName="Start Date"
          Name="DelegationStart"/>
   
