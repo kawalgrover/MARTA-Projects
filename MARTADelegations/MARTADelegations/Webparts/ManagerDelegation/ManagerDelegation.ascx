@@ -32,9 +32,26 @@
         <tr>
             <td width="100%" align="center" colspan="2">
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                <asp:HiddenField ID="delegationID" runat="server" />
             </td>
         </tr>
     </table>
         </asp:Panel>
 
+    <asp:Panel ID="pnlAllDelegations" runat="server">
+       <SharePoint:SPGridView ID="grdAllDelegations" runat="server" AutoGenerateColumns="false" DataKeyNames="Id">
+           <Columns>
+               <asp:BoundField HeaderText="Delegate To" DataField="AssignedTo" />
+               <asp:BoundField HeaderText="From" DataField="StartDate" />
+               <asp:BoundField HeaderText="To" DataField="EndDate" />
+               <asp:BoundField HeaderText="Type" DataField="DelegationType" />
+               <asp:TemplateField HeaderText ="">
+                   <ItemTemplate>
+                       <asp:Button ID="btnEditDelegation" runat="server" Text="Edit" Visible='<%# (Eval("DelegationType").ToString() == "Manager") ? true : false %>' CommandName="EditDelegation" CommandArgument='<%# Eval("Id") %>' OnCommand="btnEditDelegation_Command" />
+                       <asp:Button ID="btnDeleteDelegation" runat="server" Text="Delete" Visible='<%# (Eval("DelegationType").ToString() == "Manager") ? true : false %>' CommandName="DeleteDelegation" CommandArgument='<%# Eval("Id") %>' OnCommand="btnDeleteDelegation_Command" />
+                   </ItemTemplate>
+               </asp:TemplateField>
+           </Columns>
+       </SharePoint:SPGridView>
+   </asp:Panel>
 </div>

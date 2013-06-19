@@ -9,28 +9,47 @@
 <div>
     <asp:Panel ID="pnlDelegation" runat="server">
         <asp:Label ID="lblMessage" runat="server" />
-    <table>
-        <tr>
-            <td width="113" class="ms-formlabel" nowrap="true" valign="top">Delegate To:</td>
-            <td width="350" class="ms-formbody" valign="top"><SharePoint:PeopleEditor ID="spPeoplePicker" runat="server" SelectionSet="User" AllowEmpty="false" MultiSelect="false" />
+        <table>
+            <tr>
+                <td width="25%" class="ms-formlabel" nowrap="true" valign="top">Delegate To:</td>
+                <td width="75%" class="ms-formbody" valign="top"><SharePoint:PeopleEditor ID="spPeoplePicker" runat="server" SelectionSet="User" AllowEmpty="false" MultiSelect="false" />
+                    </td>
+            </tr>
+            <tr>
+                <td width="113" class="ms-formlabel" nowrap="true" valign="top">From:</td>
+                <td width="350" class="ms-formbody" valign="top"><SharePoint:DateTimeControl ID="calDelegateFrom" runat="server" />
+                    </td>
+            </tr>
+            <tr>
+                <td width="113" class="ms-formlabel" nowrap="true" valign="top">To:</td>
+                <td width="350" class="ms-formbody" valign="top"><SharePoint:DateTimeControl ID="calDelegateTo" runat="server" />
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                    <asp:HiddenField ID="delegationID" runat="server" />
                 </td>
-        </tr>
-        <tr>
-            <td width="113" class="ms-formlabel" nowrap="true" valign="top">From:</td>
-            <td width="350" class="ms-formbody" valign="top"><SharePoint:DateTimeControl ID="calDelegateFrom" runat="server" />
-                </td>
-        </tr>
-        <tr>
-            <td width="113" class="ms-formlabel" nowrap="true" valign="top">To:</td>
-            <td width="350" class="ms-formbody" valign="top"><SharePoint:DateTimeControl ID="calDelegateTo" runat="server" />
-                </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-            </td>
-        </tr>
-    </table>
-        </asp:Panel>
+            </tr>
+        </table>
+    </asp:Panel>
 
+   <asp:Panel ID="pnlAllDelegations" runat="server">
+       <SharePoint:SPGridView ID="grdAllDelegations" runat="server" AutoGenerateColumns="false" DataKeyNames="Id">
+           <Columns>
+               <asp:BoundField HeaderText="Delegate To" DataField="AssignedTo" />
+               <asp:BoundField HeaderText="From" DataField="StartDate" />
+               <asp:BoundField HeaderText="To" DataField="EndDate" />
+               <asp:BoundField HeaderText="Type" DataField="DelegationType" />
+               <asp:TemplateField HeaderText ="">
+                   <ItemTemplate>
+                       <asp:Button ID="btnEditDelegation" runat="server" Text="Edit" Visible='<%# (Eval("DelegationType").ToString() == "Self") ? true : false %>' CommandName="EditDelegation" CommandArgument='<%# Eval("Id") %>' OnCommand="btnEditDelegation_Command" />
+                       <asp:Button ID="btnDeleteDelegation" runat="server" Text="Delete" Visible='<%# (Eval("DelegationType").ToString() == "Self") ? true : false %>' CommandName="DeleteDelegation" CommandArgument='<%# Eval("Id") %>' OnCommand="btnDeleteDelegation_Command" />
+                   </ItemTemplate>
+               </asp:TemplateField>
+           </Columns>
+       </SharePoint:SPGridView>
+   </asp:Panel>
+    
 </div>
+

@@ -125,9 +125,7 @@
       <SharePointProjectItemId>{3babdd83-136e-45e2-97db-c06283ee8fad}</SharePointProjectItemId>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Old Fields\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Delegations\DelegationsInstance\Elements.xml" />
     <Content Include="Delegations\Elements.xml" />

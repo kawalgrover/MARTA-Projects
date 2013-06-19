@@ -9,12 +9,16 @@ using System.Collections.Generic;
 using System.Web.UI.WebControls;
 using System.Linq;
 using Microsoft.SharePoint.Linq;
+using Microsoft.SharePoint.Administration;
 
 namespace MARTADelegations.Webparts.ManagerDelegation
 {
     [ToolboxItemAttribute(false)]
     public partial class ManagerDelegation : WebPart
     {
+        string siteURLForDelegationsList;
+        List<UserProfile> directReports;
+
         // Uncomment the following SecurityPermission attribute only when doing Performance Profiling on a farm solution
         // using the Instrumentation method, and then remove the SecurityPermission attribute when the code is ready
         // for production. Because the SecurityPermission attribute bypasses the security check for callers of
@@ -33,7 +37,7 @@ namespace MARTADelegations.Webparts.ManagerDelegation
 
             if (currentUserProfile != null)
             {
-                List<UserProfile> directReports = currentUserProfile.GetDirectReports().ToList();
+                directReports = currentUserProfile.GetDirectReports().ToList();
 
                 if ((directReports != null) && (directReports.Count > 0))
                 {
@@ -63,9 +67,58 @@ namespace MARTADelegations.Webparts.ManagerDelegation
         {
             if (!Page.IsPostBack)
             {
+                InitializeWebAppProperties();
                 GetSubordinates();
+                LoadDelegations();
             }
         }
+
+        private void LoadDelegations()
+        {
+            if (siteURLForDelegationsList != null)
+            {
+                if (directReports != null)
+                {
+                    using (SPSite delegationSite = new SPSite(siteURLForDelegationsList))
+                    {
+                        SPWeb rootWeb = delegationSite.RootWeb;
+                        rootWeb.AllowUnsafeUpdates = true;
+                        rootWeb.Update();
+
+                        using (DelegationsDataContext dc = new DelegationsDataContext(delegationSite.RootWeb.Url))
+                        {
+                            EntityList<Delegation> delegations = dc.GetList<Delegation>("Delegations");
+
+                            List<int> drUsers = new List<int>();
+
+                            foreach (UserProfile directReport in directReports)
+                            {
+                                SPUser drUser = delegationSite.RootWeb.EnsureUser(directReport.AccountName);
+                                drUsers.Add(drUser.ID);
+                            }
+
+                            List<Delegation> myDelegations = delegations
+                                .Where(d => drUsers.Contains(d.DelegationForId.Value))
+                                .ToList();
+
+                            grdAllDelegations.DataSource = myDelegations;
+                            grdAllDelegations.DataBind();
+                        }
+
+                        rootWeb.AllowUnsafeUpdates = false;
+                        rootWeb.Update();
+                    }
+                }
+            }
+        }
+
+        private void InitializeWebAppProperties()
+        {
+            SPWebApplication webApplication = SPContext.Current.Site.WebApplication;
+
+            siteURLForDelegationsList = Convert.ToString(webApplication.Properties["DelegationsListSiteURL"]);
+        }
+
 
         void btnSubmit_Click(object sender, EventArgs e)
         {
@@ -102,6 +155,71 @@ namespace MARTADelegations.Webparts.ManagerDelegation
             }
 
             //Set value for message
+        }
+
+        private void ResetNewDelegationPanel()
+        {
+            delegationID.Value = string.Empty;
+            btnSubmit.Text = "Submit";
+            calDelegateFrom.ClearSelection();
+            calDelegateTo.ClearSelection();
+        }
+
+        private void PopulateDelegation(Delegation delegation)
+        {
+            delegationID.Value = delegation.Id.ToString();
+            btnSubmit.Text = "Update";
+            SPUser user = SPContext.Current.Web.Site.RootWeb.AllUsers.GetByID(delegation.AssignedToId.Value);
+
+            ddlSubordinates.Items.FindByValue(user.LoginName).Selected = true;
+
+            calDelegateFrom.SelectedDate = delegation.StartDate.Value;
+            calDelegateTo.SelectedDate = delegation.EndDate.Value;
+        }
+
+
+        protected void btnEditDelegation_Command(object sender, System.Web.UI.WebControls.CommandEventArgs e)
+        {
+            int delegationID = int.Parse(e.CommandArgument.ToString());
+
+            InitializeWebAppProperties();
+
+            if (siteURLForDelegationsList != null)
+            {
+                using (SPSite delegationSite = new SPSite(siteURLForDelegationsList))
+                {
+                    DelegationsDataContext dc = new DelegationsDataContext(delegationSite.RootWeb.Url);
+                    EntityList<Delegation> delegations = dc.GetList<Delegation>("Delegations");
+
+                    Delegation selectedDelegation = delegations.Where(d => d.Id == delegationID).FirstOrDefault();
+
+                    PopulateDelegation(selectedDelegation);
+                }
+            }
+        }
+
+        protected void btnDeleteDelegation_Command(object sender, System.Web.UI.WebControls.CommandEventArgs e)
+        {
+            int delegationID = int.Parse(e.CommandArgument.ToString());
+
+            InitializeWebAppProperties();
+
+            if (siteURLForDelegationsList != null)
+            {
+                using (SPSite delegationSite = new SPSite(siteURLForDelegationsList))
+                {
+                    DelegationsDataContext dc = new DelegationsDataContext(delegationSite.RootWeb.Url);
+                    EntityList<Delegation> delegations = dc.GetList<Delegation>("Delegations");
+
+                    Delegation selectedDelegation = delegations.Where(d => d.Id == delegationID).FirstOrDefault();
+
+                    delegations.DeleteOnSubmit(selectedDelegation);
+
+                    dc.SubmitChanges();
+                }
+            }
+
+            LoadDelegations();
         }
     }
 }
