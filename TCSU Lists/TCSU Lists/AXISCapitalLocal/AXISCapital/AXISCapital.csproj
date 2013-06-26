@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B93F3686-546F-4D64-82D9-A84375D92702}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AXISCapital</RootNamespace>
+    <AssemblyName>AXISCapital</AssemblyName>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>AXISCapital.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>GAC\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>GAC\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MICROSOFT.OFFICE.SERVER, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\MICROSOFT.OFFICE.SERVER.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Microsoft.Office.Server.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharePointRoot\Template\Features\AXISCapialKnowledgeNetworkBranding\AXISCapialKnowledgeNetworkBrandingReceiver.cs" />
+    <Compile Include="SharePointRoot\Template\Features\WorldofAxis\AdBannerRotationsWebPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SharePointRoot\Template\Features\AxisLinks\AxisLinksWebPart.cs" />
+    <Compile Include="SharePointRoot\Template\Features\AxisNews\AxisNewsWebPart.cs" />
+    <Compile Include="SharePointRoot\Template\Features\EmployeeDiscountProgram\EmployeeDiscountProgramWebPart.cs" />
+    <Compile Include="SharePointRoot\Template\Features\HelpCenter\InsuranceListWebPart.cs" />
+    <Compile Include="SharePointRoot\Template\Features\JobCorner\JobCornerWebPart.cs" />
+    <Compile Include="SharePointRoot\Template\Features\MyQuickLinks\MyQuickLinksWebPart.cs" />
+    <Compile Include="SharePointRoot\Template\Features\NewsCenter\NewscenterWebPart.cs" />
+    <Compile Include="SharePointRoot\Template\Features\Stock\QuoteMediaCodeWebPart.cs" />
+    <Compile Include="SharePointRoot\Template\Features\WorldClock\RSSFeedWebPart.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SearchBox\SearchBoxWebPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SharePointRoot\Template\Features\WeatherReport\WeatherReportWebPart.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="AXISCapital.snk" />
+    <Content Include="GAC\axiscapitalapplicationlogic.dll" />
+    <Content Include="SharePointRoot\Template\Features\AXISCapialKnowledgeNetworkBranding\AxisKN_ContentPage.aspx" />
+    <Content Include="SharePointRoot\Template\Features\AXISCapialKnowledgeNetworkBranding\AxisKN_HomePage.aspx" />
+    <Content Include="SharePointRoot\Template\Features\AXISCapialKnowledgeNetworkBranding\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\AXISCapialKnowledgeNetworkBranding\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\AXISCapialKnowledgeNetworkBranding\Story1.aspx" />
+    <Content Include="SharePointRoot\Template\Features\WorldofAxis\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\WorldofAxis\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\AxisLinks\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\AxisLinks\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\AxisNews\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\AxisNews\feature.xml" />
+    <None Include="mykey.snk" />
+    <Content Include="SharePointRoot\Template\Features\EmployeeDiscountProgram\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\EmployeeDiscountProgram\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\HelpCenter\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\HelpCenter\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\JobCorner\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\JobCorner\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\MyQuickLinks\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\MyQuickLinks\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\NewsCenter\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\NewsCenter\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\Stock\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\Stock\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\WorldClock\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\WorldClock\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\SearchBox\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\SearchBox\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\WeatherReport\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\WeatherReport\feature.xml" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\1329282521_resultset_next.png" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\bullet.png" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\button-axis-AH.jpg" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\button-axis-insurance.jpg" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\button-axis-reinsurance.jpg" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\clock.png" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\feedbullet.png" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\logo-kuyper.png" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\logo.png" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\sun.jpg" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\transparent.gif" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\transparent2.gif" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\weather1.jpg" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\weather2.jpg" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\weather3.jpg" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\weather4.jpg" />
+    <Content Include="SharePointRoot\Template\Images\AxisIntraBranding\weathericon.png" />
+    <Content Include="SharePointRoot\Template\Layouts\AxisHomePage.aspx" />
+    <Content Include="SharePointRoot\Template\Layouts\AxisIntraBranding\AxisKNGlobal.css" />
+    <Content Include="SharePointRoot\Template\Layouts\AxisIntraBranding\AxisKNHome.css" />
+    <Content Include="SharePointRoot\Template\Layouts\AxisIntraBranding\AxisKNSub.css" />
+    <Content Include="SharePointRoot\Template\Layouts\AxisIntraBranding\jkmegamenu.css" />
+    <Content Include="SharePointRoot\Template\Layouts\AxisIntraBranding\KuyperBlueBand.css" />
+    <Content Include="SharePointRoot\Template\Layouts\AxisIntraBranding\js\jkmegamenu.js" />
+    <Content Include="SharePointRoot\Template\Layouts\AxisIntraBranding\js\jquery.min.js" />
+    <Content Include="web.config" />
+    <Content Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="SharePointRoot\Template\Features\AXISCapialKnowledgeNetworkBranding\AxisKNSub.master" />
+    <Content Include="SharePointRoot\Template\Features\AXISCapialKnowledgeNetworkBranding\AxisKN.master" />
+    <None Include="SharePointRoot\Template\Features\WorldofAxis\AdBannerRotations.webpart" />
+    <None Include="SharePointRoot\Template\Features\AxisLinks\AxisLinks.webpart" />
+    <None Include="SharePointRoot\Template\Features\AxisNews\AxisNews.webpart" />
+    <None Include="SharePointRoot\Template\Features\EmployeeDiscountProgram\EmployeeDiscountProgram.webpart" />
+    <None Include="SharePointRoot\Template\Features\HelpCenter\InsuranceList.webpart" />
+    <None Include="SharePointRoot\Template\Features\JobCorner\JobCorner.webpart" />
+    <None Include="SharePointRoot\Template\Features\MyQuickLinks\MyQuickLinks.webpart" />
+    <None Include="SharePointRoot\Template\Features\NewsCenter\Newscenter.webpart" />
+    <None Include="SharePointRoot\Template\Features\Stock\QuoteMediaCode.webpart" />
+    <None Include="SharePointRoot\Template\Features\WorldClock\RSSFeed.webpart" />
+    <None Include="SharePointRoot\Template\Features\SearchBox\SearchBox.webpart" />
+    <None Include="SharePointRoot\Template\Features\WeatherReport\WeatherReport.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SolutionID.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>30988</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Releases"
+                OnQuickLaunch="FALSE"
+                TemplateType="10000"
+                Url="Lists/Releases"
+                Description="This list holds all the values used in the Release field.">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">R1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">R2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">R3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">R4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">R5</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

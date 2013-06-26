@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a61bb056-6db0-4b54-9b93-c911e17e54c7" solutionId="a61bb056-6db0-4b54-9b93-c911e17e54c7" resetWebServer="false" name="PB-Emis" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="c71f09f9-55c2-4f48-9fe2-2d2a9ebd0af7" />
+  </features>
+</package>

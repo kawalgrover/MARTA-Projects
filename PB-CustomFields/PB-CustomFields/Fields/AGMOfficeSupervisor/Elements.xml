@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{E8DCA6E0-1783-4945-9698-FFCD20AD9D6B}"
+         Name="AGM Office Supervisor"
+         StaticName="AGM Office Supervisor"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="AGM Office Supervisor">
+    <CHOICES>
+      <CHOICE>CBSS</CHOICE>
+      <CHOICE>DGM</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

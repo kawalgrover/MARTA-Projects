@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{CD38DA47-F17A-49B0-9E3D-BB5622D69181}"
+         Name="DefautDueDays"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Default Due Days">
+    <CHOICES>
+      <CHOICE>2</CHOICE>
+      <CHOICE>3</CHOICE>
+      <CHOICE>4</CHOICE>
+      <CHOICE>5</CHOICE>
+      <CHOICE>6</CHOICE>
+      <CHOICE>7</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

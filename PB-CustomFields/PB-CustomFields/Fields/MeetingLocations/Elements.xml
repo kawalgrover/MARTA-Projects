@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{A5D44827-8A3E-4B57-9776-067F8A26686B}"
+         Name="Locations"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Locations">
+    <CHOICES>
+      <CHOICE>Board Room</CHOICE>
+      <CHOICE>Board Lounge</CHOICE>
+      <CHOICE>Briefing Room</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

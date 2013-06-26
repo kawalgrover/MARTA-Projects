@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="MARTA Tasks"
+                OnQuickLaunch="TRUE"
+                TemplateType="107"
+                Url="Lists/MARTATaskList"
+                Description="This list contains MARTA Task items (from MARTA Task content type).">
+  </ListInstance>
+</Elements>

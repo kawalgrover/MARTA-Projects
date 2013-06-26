@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  
+  <Field ID="{BDCB05EE-44E3-428D-818C-4F3B8DC3EC04}"
+         Type="Text"
+         Group="MARTA Columns"
+         DisplayName="Comments"
+         Name="ActionComments">
+  </Field>
+  <Field ID="{0F0D7193-455B-4729-9FB7-9EC321C5782E}"
+         Type="Choice"
+         Name="ApproveOrReject"
+         DisplayName="Approve/Reject"
+         Group="MARTA Columns">
+    <CHOICES>
+      <CHOICE>Approve</CHOICE>
+      <CHOICE>Reject</CHOICE>
+    </CHOICES>
+  </Field>
+  
+</Elements>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="ActionsRequired"
+                OnQuickLaunch="TRUE"
+                TemplateType="10000"
+                Url="Lists/ActionsRequired"
+                Description="This is a configuration list that holds values for different actions required for the manual delegations by an executive.">
+  </ListInstance>
+</Elements>

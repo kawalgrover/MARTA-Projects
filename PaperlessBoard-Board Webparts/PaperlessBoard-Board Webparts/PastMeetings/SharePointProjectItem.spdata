@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="PastMeetingsUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="PastMeetings\" Type="ElementManifest" />
+    <ProjectItemFile Source="PastMeetings.webpart" Target="PastMeetings\" Type="ElementFile" />
+    <ProjectItemFile Source="PastMeetingsUserControl.ascx" Target="CONTROLTEMPLATES\PaperlessBoard_Board_Webparts\PastMeetings\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="PaperlessBoard_Board_Webparts.PastMeetings" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

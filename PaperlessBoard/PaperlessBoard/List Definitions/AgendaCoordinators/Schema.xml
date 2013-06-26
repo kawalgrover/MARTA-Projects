@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="PaperlessBoard - AgendaCoordinators" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/PaperlessBoard-AgendaCoordinators" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01006244478624e447d082fe84a259f16bb7" Name="AgendaCoordinatorsContentType" Group="Custom Content Types" Inherits="FALSE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{1811099D-E7C9-4A03-A5AC-F40F340367FD}" Name="ContentProviders"/>
+          <FieldRef ID="{94110E4E-91DC-4419-A5CE-9E24AD5EB9FE}" Name="Agenda Type"/>
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{1811099D-E7C9-4A03-A5AC-F40F340367FD}"
+         Type="UserMulti"
+         Name="ContentProviders"
+         DisplayName="ContentProviders"
+         Group="MARTA Columns"
+         UserSelectionMode="PeopleAndGroups" Required="TRUE" Mult="TRUE" />
+
+      <Field ID="{94110E4E-91DC-4419-A5CE-9E24AD5EB9FE}"
+         Name="Agenda Type"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Agenda Type" Required="TRUE">
+        <CHOICES>
+          <CHOICE>Procurement Resolution</CHOICE>
+          <CHOICE>Non-Procurement Resolution</CHOICE>
+          <CHOICE>Other Matters</CHOICE>
+          <CHOICE>Briefing</CHOICE>
+          <CHOICE>Meeting Minutes</CHOICE>
+        </CHOICES>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Agenda Type"></FieldRef>
+          <FieldRef Name="ContentProviders"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

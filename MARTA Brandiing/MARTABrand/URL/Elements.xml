@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{2FA980BB-931F-45ee-82F7-4701A5886B18}"
+    Type="Note"
+    Name="URL"
+    DisplayName="URL"
+    Group="MARTA Global Nav Group">
+  </Field>
+</Elements>

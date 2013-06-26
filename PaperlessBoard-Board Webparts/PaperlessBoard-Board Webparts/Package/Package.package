@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="96afb209-b05c-4d15-bdea-bdd6b02cbc12" solutionId="96afb209-b05c-4d15-bdea-bdd6b02cbc12" resetWebServer="false" name="PaperlessBoard_Board_Webparts" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="d5bcfc83-e3da-4732-a1ac-ba04085c4894" />
+  </features>
+</package>

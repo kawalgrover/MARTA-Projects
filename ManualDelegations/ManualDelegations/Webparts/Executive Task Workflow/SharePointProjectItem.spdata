@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="Executive Task WorkflowUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Executive Task Workflow\" Type="ElementManifest" />
+    <ProjectItemFile Source="Executive Task Workflow.webpart" Target="Executive Task Workflow\" Type="ElementFile" />
+    <ProjectItemFile Source="Executive Task WorkflowUserControl.ascx" Target="CONTROLTEMPLATES\ExecutiveTaskTracking.Webparts\Executive Task Workflow\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="ExecutiveTaskTracking.Webparts.Executive_Task_Workflow" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+    <SafeControl Name="SafeControlEntry2" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="ExecutiveTaskTracking" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

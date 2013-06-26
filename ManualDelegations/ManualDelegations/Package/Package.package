@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4b4c0900-55cc-4d64-aac5-5b746c05e055" solutionId="4b4c0900-55cc-4d64-aac5-5b746c05e055" resetWebServer="false" name="ManualDelegations" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="ManualDelegationCustomActivities.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\ExecutiveDelegationCustomActivity\ManualDelegationCustomActivities.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="51fd232d-7d19-4dc3-982f-2dda34d5c4d5" />
+    <featureReference itemId="9a2946a4-baed-44d1-882e-f4a70d69ce9e" />
+    <featureReference itemId="64644a2a-5e7b-4b0c-986a-6a2f199e162e" />
+    <featureReference itemId="b0f44ceb-4f85-4d6a-9a4c-59da4e598678" />
+    <featureReference itemId="8e9896c0-3a1c-4a0c-9a8f-6234dd88a256" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="39f9a123-7445-4962-a2b2-0a773bc1f6f0" />
+    <projectItemReference itemId="67691b21-4e87-4ba7-b108-9a51f40e8e78" />
+    <projectItemReference itemId="16ebad05-cce2-43bb-86e5-ad82ae74e2c9" />
+    <projectItemReference itemId="ff5ff26b-bea8-4b55-af86-265364fe7d98" />
+  </projectItems>
+</package>

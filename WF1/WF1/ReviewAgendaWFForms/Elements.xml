@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ReviewAgendaWFForms">
+  <File Path="ReviewAgendaWFForms\ReviewWFInit.aspx" Url="ReviewAgendaWFForms/ReviewWFInit.aspx" />
+</Module>
+</Elements>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="AXIS Knowledge Network Master Page" Path=""  RootWebOnly="true" Url="_catalogs/masterpage">
+    <File Url="AxisKNSub.master" Type="GhostableInLibrary" />
+    <File Url="AxisKN.master" Type="GhostableInLibrary" />
+  </Module>
+  <Module Name="PageLayoutsModule" Url="_catalogs/masterpage" RootWebOnly="True" Path="">
+    <File Url="AxisKN_ContentPage.aspx" IgnoreIfAlreadyExists="TRUE" Type="GhostableInLibrary">
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;"></Property>
+      <Property Name="PublishingAssociatedContentType" Value=";#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#"></Property>
+    </File>
+    <File Url="AxisKN_HomePage.aspx" IgnoreIfAlreadyExists="TRUE" Type="GhostableInLibrary">
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;"></Property>
+      <Property Name="PublishingAssociatedContentType" Value=";#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#"></Property>
+    </File>
+    <File Url="Story1.aspx" IgnoreIfAlreadyExists="TRUE" Type="GhostableInLibrary">
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;"></Property>
+      <Property Name="PublishingAssociatedContentType" Value=";#Article Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D;#" />
+    </File>
+  </Module>
+</Elements>

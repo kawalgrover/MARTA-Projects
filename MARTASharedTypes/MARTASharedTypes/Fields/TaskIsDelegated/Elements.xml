@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{4953D6C5-4997-4510-AB00-7A1243933FF1}"
+           Type="Boolean"
+           Group="MARTA Shared Columns"
+           DisplayName="Is Delegated"
+           Name="IsDelegated"/>
+</Elements>

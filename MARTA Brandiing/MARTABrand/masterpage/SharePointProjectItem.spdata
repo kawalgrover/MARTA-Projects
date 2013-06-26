@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="masterpage\" Type="ElementManifest" />
+    <ProjectItemFile Source="MARTABrand.master" Target="masterpage\" Type="ElementFile" />
+    <ProjectItemFile Source="MARTABrandTS.master" Target="masterpage\" Type="ElementFile" />
+    <ProjectItemFile Source="MARTABrandPS.master" Target="masterpage\" Type="ElementFile" />
+    <ProjectItemFile Source="MARTABrandSF.master" Target="masterpage\" Type="ElementFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="MARTABrand" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+  <FeatureProperties>
+    <FeatureProperty Key="ImageUrl" Value="/_layouts/images/MARTA/mymarta-logo.png" />
+  </FeatureProperties>
+</ProjectItem>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: MARTA Workflow Task (0x010801009FF2E2613A954FA5ACF0CB96152CEA6C) -->
+  <ContentType ID="0x010801009FF2E2613A954FA5ACF0CB96152CEA6C01"
+               Name="AgendaContributor"
+               Group="Custom Content Types"
+               Description="Content Type for Task created for Agenda Contributors to add content."
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+     
+    </FieldRefs>
+  </ContentType>
+</Elements>

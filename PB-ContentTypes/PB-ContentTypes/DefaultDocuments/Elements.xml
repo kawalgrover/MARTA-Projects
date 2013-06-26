@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="DefaultDocuments" Url="_cts/PB-ContentTypes">
+    <File Path="DefaultDocuments\ProcurementResolution.docx" Url="ProcurementResolution.docx" />
+</Module>
+</Elements>

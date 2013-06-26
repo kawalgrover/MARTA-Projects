@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100a56f2b91259049f89f801336371db768"
+               Name="ExecutiveTaskMARTARole"
+               Group="MARTA Custom Content Types"
+               Description="This content type holds items for MARTA Roles used by the Exective Task List."
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="Role"/>
+      
+    </FieldRefs>
+  </ContentType>
+</Elements>

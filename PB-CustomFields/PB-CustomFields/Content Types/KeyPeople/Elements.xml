@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01004820a02270d044edb96f45d0754f4e1b"
+               Name="KeyPeople"
+               Group="Custom Content Types"
+               Description="Content Type for the KeyPeople List"
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{AD25BCE6-BBD7-45DD-8278-F8BDD804A20C}" Name="Position" Required="TRUE"/>
+      <FieldRef ID="{A949BA21-D579-4906-AEBC-87EFA30241C3}" Name="KeyPerson" Required="TRUE"/>
+      <FieldRef ID="{E8E625D4-CFF2-4832-9D1F-C8DA60775A71}" Name="IsContributor"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

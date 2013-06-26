@@ -1,0 +1,660 @@
+﻿/* Top nav home button is active */
+#home-btn {
+	background: #2564a7;
+}
+
+/* Web Parts */
+.ms-WPBody {
+	margin-bottom: 20px;
+}
+
+/* Axis News Web part */
+.axisnewssubtitle {
+	font-size: 13pt !important;
+	font-weight: normal !important;
+position:relative;top: 6px;
+
+}
+
+
+
+
+
+.axis-news span {
+	font-size: 18pt;
+	color: #2066aa;
+}
+.axis-news p {
+	font-size: 10pt;
+}
+.axis-news img {
+	margin-right: 20px;
+}
+.axis-news p a {
+	background: #e7eef6;
+	font-size: 7pt;
+	padding: 5px;
+}
+.axis-news li {
+	list-style-type: square;
+	padding-bottom: 10px;
+	color: #2066aa;
+}
+.axis-news li a {
+	font-size: 10pt;
+}
+
+
+/* World of Axis Mega menus */
+.megamenu .column:first-child {
+	padding-left: 0 !important;
+}
+.column { 
+	padding-left: 5px;
+	font-size: 8pt !important;
+	width: 16% !important;
+	height: 100%;
+}
+.column h3 {
+	font-size: 7pt !important;
+	background: none !important;
+
+	border-bottom: 1px solid #ccc;
+	height: 17px;
+	padding-bottom: 10px;
+}
+.column li {
+	background: url(/_layouts/images/AxisIntraBranding/bullet.png) 2px left no-repeat;
+	padding-left: 10px;
+	
+}
+.megamenu {
+	width: 709px;
+	height: 161px;
+	padding: 5px !important;
+	border-bottom-width: 1px !important;
+
+}
+
+
+/* Axis CEO */
+#axis-ceo-transition {
+	background: url('/_layouts/images/AxisIntraBranding/axis-ceo-transition.png');
+	width: 100%;
+	height: 25px;
+}
+#axis-ceo-transition-summary {
+	font-size: 7pt;
+	padding: 3px;
+	text-align: Center;
+	border: 1px solid #c7deee;
+}
+
+/* World of Axis Web Part */
+#lyrtop
+{
+    width:100%;
+    background-color:#000000;
+
+}
+
+#lyrtop .lblcaption
+{
+	font-family: "Myriad Pro";
+	font-size: 11pt;
+	color: #fff;
+	margin: 0 0 0 10px;
+	position: relative; top: -3px;
+}
+#lyrtop, #lyrtop td, #lyrtop tr {
+	height: 27px !important;
+	padding: 0 !important;
+}
+#lnkinsurance {
+	position: relative;
+	top: -2px; left: -50px;
+}
+#lnkreinsurance {
+	position: relative;
+	top: -2px; left: -85px;
+}
+#lnkhealth {
+	position: relative;
+	top: -2px; left: -107px;
+}
+
+#lyrbanner
+{
+    width:100%;
+    height:172px;
+}
+#imgpreview
+{
+    width:100%;
+    height:172px;
+    border:0px;
+}
+
+#lblforlnktitle
+{
+    font-family:"Myriad Pro";
+    font-size:14pt;
+    color:White;
+    font-weight:bold;
+    
+}
+
+#lnktoexteneralsite
+{
+    font-family:"Myriad Pro";
+    font-size:14pt;
+    color:White;
+    font-weight:bold;
+    text-decoration:underline;
+    
+    
+}
+#lyrovertext
+{
+    z-index:1005;
+    position:absolute;
+    top:250px;   
+    
+}
+.lilistnews
+{
+    font-family:Verdana;
+    font-size:12px;
+    color:#2d6694;
+    padding-left:5px;
+    padding-top:5px;
+}
+.newstitle
+{
+    font-family:Verdana;
+    font-size:16pt;    
+    color:#2066aa;
+}
+.newscontent
+{
+    font-family:Verdana;
+    font-size:13pt;
+}
+#lyroverurl
+{
+    z-index:1006;
+    position:absolute;
+    top:275px;
+}
+
+.rigtsideheadertitle
+{
+    font-family:Verdana;
+    font-size:15pt;
+    color:#2066aa;    
+}
+.rightsideheadertable
+{
+    width:100%;
+    width:20px;
+}
+.rightsideli
+{
+    font-family:Verdana;
+    font-size:12px;
+    text-align:left;
+    padding-left:5px;
+    padding-bottom:2px;
+    
+}
+.rightsideul
+{
+    list-style-image:url(/_layouts/images/AxisIntraBranding/1329282521_resultset_next.png); 
+}
+
+
+/* Search Box Web Part */
+
+.searchtable
+{
+	border-color:#2066aa;
+	border-width:3px;
+	border-style:solid;	
+	border-top-width: 0;
+}
+.searchtxt
+{
+	padding-left:7px;
+	font-family:Verdana;
+	font-size:13px;
+	color:white;
+	font-weight:bold;
+}
+.searchtr
+{
+	padding-left:7px;
+	background-color:#e3f4fd;
+	padding-right:10px;
+	padding-top:7px;
+	padding-bottom:8px;
+
+}
+
+.drpsearch
+{
+	width:100%;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9pt;	
+	height:23px;
+}
+.searchtextbox
+{
+	width:100%;	
+	height:18px;	
+}
+
+.feedsubtitle
+{
+	font-family:Verdana;
+	font-size:12pt;
+	color:#88add2;
+	padding-left:23px;
+}
+
+.feedlist
+{
+	font-family:Verdana;
+	font-size:8pt;
+	list-style-image:url(/_layouts/images/AxisIntraBranding/feedbullet.png);
+}
+
+.feedlist li
+{
+	padding-bottom:4px;
+}	
+
+.weathertoptd
+{
+	padding-left:25px;
+
+}
+.clsgeocodeslbl
+{
+	font-size:9pt;
+	font-weight:bold;
+	padding-right:10px;
+}
+.clsgeocodes
+{
+	font-size:8pt;
+	width:100px;
+
+}
+.todayweathertext
+{
+	height:50px;
+	padding-left:25px;
+	padding-top:5px;
+}
+
+.todayweathertext span
+{
+	font-family:Verdana;
+	font-size:36pt;
+	color:#19468d;
+}
+.dyshead
+{
+    font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:#2066aa; 
+}
+
+
+.knowledgetitle
+{
+	
+}
+
+.knowledgetitle td span
+{
+	font-family:Verdana;
+	font-size:10pt;
+	color:#99b6cd;
+	padding-left:10px;
+}
+.knowledgesubhead
+{
+	font-family:Verdana;
+	font-size:9pt;
+	color:#99b6cd;
+	padding-left:10px;
+	padding-top:5px;
+
+}
+.knowledgesubtitle
+{
+	font-family:Verdana;
+	font-size:9pt;
+	padding-left:10px;	
+	padding-top:5px;
+}
+
+#ctl00_lyraddquicklinks
+{
+    position:absolute;
+    z-index:1500;
+    top:50%;
+    left:40%;
+    background-color:#e1e6eb;
+    width:300px;
+    height:200px;   
+    padding-left:25px;
+    padding-top:15px;
+    border:3px solid #000;
+    font-family:Verdana;
+}
+#ctl00_lyraddquicklinks input[type=text]
+{
+    width:250px;
+    padding-bottom:7px;
+}
+#ctl00_lyraddquicklinks span
+{
+    padding-bottom:10px;
+}
+
+#lblquicklnk
+{
+    font-family:Verdana;
+    font-size:25pt;
+    padding-bottom:7px;    
+    font-weight:bold;
+}
+#ctl00_pnlmanagelinks {
+    position:absolute;
+    z-index:1501;
+    top:50%;
+    left:40%;
+    background-color:#e1e6eb;
+    width:400px;
+    height:250px;   
+    border:3px solid #000;
+    padding-left:10px;
+  }
+  #ctl00_lyrssfeeds 
+  {
+     position:absolute;
+    z-index:1503;
+    top:50%;
+    left:30%;
+    background-color:#e1e6eb;
+    width:400px;
+    height:250px;   
+    border:3px solid #000;
+    padding-left:10px;
+  }
+  
+ .footrertext
+{
+	font-family:Verdana;
+	font-size:10pt;
+	color:#004881;
+	padding-left:10px;
+}
+
+.temperatureFPg_1f7a008c_0e36_4add_8e7e_a053fbe52735
+{
+    font-family:Verdana;
+    font-size:25pt;
+    color:#004880;    
+}
+
+.tblarticles
+{
+	padding-left:20px;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+.tblarticles span
+{
+	font-family:Verdana;
+	font-size:18pt;
+	color:#0033cc;
+	font-weight:bold;
+}
+
+
+.storiestable
+{
+	
+	height:40px;	
+	background-color:#eaeaea;
+	
+}
+
+.storiestable tr td
+{
+	padding-left:20px;
+	font-family:Verdana;
+	font-size:16pt;
+	font-weight:bold;	
+}
+
+.outerarttbl 
+{
+		padding-left:10px;
+		padding-top:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		border:1px solid #CCCCCC;
+		
+}
+.innerarttable
+{
+		padding-left:10px;
+		padding-top:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		border:1px solid #CCCCCC;
+		height:150px;		
+}
+
+.arttitle
+{
+	font-family:Verdana;
+	font-size:15pt;
+	color:Black;
+	
+}
+.artdesc
+{
+	padding-top:10px;
+	font-family:Verdana;
+	font-size:9pt;
+	color:Black;
+}
+
+
+
+
+.clsworldtitle
+{
+	color:#004880;
+	font-family:Verdana;
+	font-size:20pt;
+}
+
+.clsworldclockcity
+{
+	color:#0d0e0d;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12pt;
+	font-weight:bold;	
+
+}
+.clsweatherandclocktitle
+{
+	color:#336d9a;
+	font-family:Verdana;
+	font-size:12pt;
+	padding-left:5px;
+
+}
+
+
+
+.searchtable {
+	width: 100%;
+}
+
+.qmmt_main	{ background:#F0F0F0; border:none; } 
+.qmmt_text		{ font: 11px  arial;color: #676767; text-align:left;  padding:2px;}
+
+.qmmt_text_up		{ font: 11px  arial; color: #009900; }
+.qmmt_text_down	{ font: 11px  arial; color: #ff0000; }
+
+.qmmt_tab				 { font: bold 11px  arial !important; border: 4px solid #F0F0F0 !important; color:#2166AB; background-color: #F0F0F0;   }
+.qmmt_tabactive 	 { font: bold 11px  arial !important; border: 4px solid #F0F0F0 !important; color:#FFFFFF; background-color: #F49927;   }
+
+.qmmt_cycle	{ background-color:#eff9ed; color: #676767; }
+
+.qmmt_header_text	{ font-family: arial, sans-serif; color: #676767;  }
+.qmmt_header_bar	{ display:none; }
+
+a.qmmt 						{ color: #666; text-decoration:none;font-weight:bold;  }
+a:visited.qmmt 			{ color: #666; text-decoration:none; }
+a:hover.qmmt 			{ color: #000; text-decoration:underline; }  
+
+#miniCharts { background-color: #F0F0F0; border: 1px solid #ccc; width: 100%; margin-top: 5px; }
+
+#miniCharts img {   margin-top: 7px; }
+.qmmt_header_bar img { border:none !important; }
+
+/* jsvarsQuotesSpan.go styles */
+.qmjsleft 	{	float:left;	font: 12px Tahoma; color: #800000; }
+.qmjsright 	{	float:right; font: 12px Tahoma;	color: #000000; }
+.qmjssymbol	{	float:left; font: bold 12px Tahoma; color: #000000; }
+.qmjsname 	{	float: left; font: 12px Tahoma; color: #000000; }
+
+.qmjsdatadown { font: bold 14px arial; color: #cc0000; }
+.qmjsdataup { font: bold 14px arial; color: #00cc00; }
+.qmjsdata { font: bold 14px arial; color: #676767; }
+
+#customChart  td { padding: 3px; }
+
+.qmHeader  { font: bold 12px arial; color: #676767; }
+.qmSymbol { font: bold 14px arial;  color: #676767; text-align: center; border: 1px solid #cccccc;  border-right:none; }
+.qmLast  { font: 14px arial; color: #676767; text-align: center;  border: 1px solid #cccccc; border-right:none; border-left:none; }
+.qmChange { background-color: #F0F0F0; text-align:center;  border: 1px solid #cccccc;  border-left:none; }
+.hrdbar
+{
+	background-color:#2066aa;
+	color:#2066aa;
+	height:2px;
+	border:0px;
+}
+.mywebparttitle
+{
+    color:#174f86;
+	font-family:Verdana;
+	font-size:12pt !important;
+	padding-left:5px;
+
+}
+.insurancelisttitle
+{
+  font-family:Verdana;
+  font-size:16px;
+  color:#2066aa;
+  
+}
+
+
+.lyroverlink
+{
+    left:200px;
+   
+    
+}
+.lyrover
+{
+    left:200px;
+    
+}
+.cnewstitle
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	color:#355f85;
+}
+.cnewstitleblack
+{
+	font-family:Verdana;
+	font-size:11px;	
+}
+
+.ms-standardheader ms-WPTitle
+{
+    display: none;
+    
+    
+}
+
+
+.lyrpnlmylinks
+{
+    position:absolute;
+    top:50%;
+    left:40%;
+    background-color:#CCCCCC;
+    width:300px;
+    height:250px;
+    padding-left:15px;
+   
+}
+
+
+
+.mywebparttitle {
+	padding-bottom: 10px !important;
+}
+
+.newscentercategory {
+	font-family:Verdana;
+	font-size:12px !important;
+	font-weight:bold;
+	padding-bottom: 7px;
+}
+
+.newscentertitle, .newscentercategory, .newscenterdesc, .newscenterbar {
+	padding-left: 10px;
+}
+.newscentertitle a{
+	font-family:Verdana;
+	font-size:11px;
+	color:#2d6694;
+	font-weight: bold;
+}
+.newscentertitle span { padding-left: 5px; }
+
+.newscenterdesc {
+	padding-top: 1px;
+	padding-bottom: 8px;
+	height: 13px;
+}
+
+.newscenterbar {
+
+	
+}
+.newscenterbar hr {
+	color: #ccc;
+	height: 1px;
+	margin-bottom: 3px;
+}
+.newscenterpubDate {}

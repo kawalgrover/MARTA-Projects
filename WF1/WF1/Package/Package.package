@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5a30a2e2-aca3-49f5-a138-4b752282b216" solutionId="5a30a2e2-aca3-49f5-a138-4b752282b216" resetWebServer="false" name="PB-AgendaWorkflow" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="PBCustomActivities.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\PBCustomActivities\PBCustomActivities.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="24512e0e-7b03-466e-9209-38b39a51c581" />
+    <featureReference itemId="9709e2ae-d2bc-4cbf-ac19-f51f7b8f412e" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="b0bd74e6-70c1-443c-bbbf-413008e1809b" />
+  </projectItems>
+</package>

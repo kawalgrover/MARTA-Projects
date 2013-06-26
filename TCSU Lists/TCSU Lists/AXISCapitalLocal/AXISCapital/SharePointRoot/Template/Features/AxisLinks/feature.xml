@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="3e3b64e2-39d7-4eae-affb-adface0a9fd6"
+          Title="AxisLinks"
+          Description="This is the AxisLinks Web Part For the Axis Knowledge Network"
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"          
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="AxisLinks.webpart" />
+  </ElementManifests>
+</Feature>

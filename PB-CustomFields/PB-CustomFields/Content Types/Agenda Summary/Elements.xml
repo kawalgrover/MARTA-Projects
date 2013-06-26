@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01002a35eb5d9b3443e0abaa734055e7ac40"
+               Name="Agenda Summary"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+      
+      <FieldRef ID="{B93982F8-1081-49E1-A469-3846943E7D38}"/>
+      
+      
+      <FieldRef ID="{60B001C8-C91E-4B2B-98FC-01FC23EA9847}"/>
+
+      
+      <FieldRef ID="{B9649AC7-0B71-464B-A8BA-96B8A3FBD5A0}"/>
+  
+      
+      <FieldRef ID="{C315BE2D-F245-4846-A02E-1340911391AA}"/>
+      
+      
+      <FieldRef ID="{94DDA9CB-2D56-488A-8974-EE8DDE04F864}"/>
+
+      
+      <FieldRef ID="{0150E9FB-2077-4331-B406-8CB4C404A0BE}"/>
+
+      
+      <FieldRef ID="{683E1185-CAD8-48D2-B4E9-3BFF11931856}" />
+      
+    </FieldRefs>
+  </ContentType>
+</Elements>

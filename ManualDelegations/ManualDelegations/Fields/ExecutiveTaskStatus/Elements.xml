@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{474E7E8C-B16E-4D0E-AD44-0C5C86811C26}"
+         Name="TaskStatus"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Status">
+    <CHOICES>
+      <CHOICE>Created</CHOICE>
+      <CHOICE>Delegated</CHOICE>
+      <CHOICE>In Progress</CHOICE>
+      <CHOICE>Completed</CHOICE>
+      <CHOICE>Confirmed Completion</CHOICE>
+    </CHOICES>
+    <Default>Created</Default>
+  </Field>
+</Elements>

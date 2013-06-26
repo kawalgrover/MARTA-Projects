@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="NotifyContributorsWFForms" Url="NotifyContributorsWFForms" RootWebOnly="false">
+  <File Path="NotifyContributorsWFForms\NotifiyContributorsInit.aspx" Url="NotifiyContributorsInit.aspx" />
+  <File Path="NotifyContributorsWFForms\ContributeContentTask.aspx" Url="ContributeContentTask.aspx" />
+</Module>
+</Elements>

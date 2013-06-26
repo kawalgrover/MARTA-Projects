@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100897ca71426394f258c87262b153d77be"
+               Name="TCSU - Discipline"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"/>
+      <FieldRef ID="{62BE355E-E16A-4EEF-9E7E-B4EEB0C37D39}"/>
+      <FieldRef ID="{0E2B8C33-C8AC-4751-BFBF-45BA12E60DDB}"/>
+      
+    </FieldRefs>
+  </ContentType>
+</Elements>

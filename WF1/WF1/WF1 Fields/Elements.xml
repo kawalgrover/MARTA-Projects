@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  
+  <Field ID="{9E66C0B0-9947-49D0-96A2-DA657A8C13F3}"
+         Type="Text"
+         Group="MARTA Columns"
+         DisplayName="Comments"
+         Name="ActionComments">
+  </Field>
+</Elements>

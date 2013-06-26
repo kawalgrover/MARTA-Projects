@@ -1,0 +1,11 @@
+﻿<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{1811099D-E7C9-4A03-A5AC-F40F340367FD}"
+         Type="UserMulti"
+         Name="ContentProviders"
+         DisplayName="ContentProviders"
+         Group="MARTA Columns"
+         UserSelectionMode="PeopleAndGroups"
+         Mult="TRUE"
+         >
+  </Field>
+</Elements>

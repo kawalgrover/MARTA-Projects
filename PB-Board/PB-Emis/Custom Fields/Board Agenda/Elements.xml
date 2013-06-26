@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{33E09F17-C8CE-4438-9750-7178584EA722}"
+        Type="Text"
+        Group="MARTA Columns"
+        DisplayName="Board Agenda"
+        Name="Board Agenda"/>
+</Elements>

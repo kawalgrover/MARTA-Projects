@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Event (0x0102) -->
+  <ContentType ID="0x010200be96d84c0fcc4a8ba3891db4550d2bb9"
+                Name="Board Meeting"
+                Inherits="FALSE"
+                Group="Custom Content Types"
+                Description="My Content Type"
+                Version="0">
+    <FieldRefs>
+      
+      <RemoveFieldRef ID="{7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8}"/>
+      
+      <RemoveFieldRef ID="{f2e63656-135e-4f1c-8fc2-ccbe74071901}"/>
+      
+      <RemoveFieldRef ID="{6df9bd52-550e-4a30-bc31-a4366832a87d}"/>
+      
+      <FieldRef ID="{81601602-CE87-4220-A6C7-E58342292477}"/>
+     
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"/>
+      
+      <FieldRef ID="{A5D44827-8A3E-4B57-9776-067F8A26686B}"/>
+      
+      <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}"/>
+      
+      <FieldRef ID="{2684f9f2-54be-429f-ba06-76754fc056bf}"/>
+     
+      <FieldRef ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}"/>
+      
+      <FieldRef ID="{08fc65f9-48eb-4e99-bd61-5946c439e691}"/>
+      
+    </FieldRefs>
+  </ContentType>
+</Elements>
+

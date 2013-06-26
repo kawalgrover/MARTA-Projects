@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1ECC54C8-0705-474F-AACB-6DEC0D71E888}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MARTAProcessSite</RootNamespace>
+    <AssemblyName>MARTAProcessSite</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <AssemblyDeploymentTarget>GlobalAssemblyCache</AssemblyDeploymentTarget>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MARTAWebParts">
+      <HintPath>..\..\MARTAWebParts\MARTAWebParts\bin\Debug\MARTAWebParts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layouts\PROCESS\Diagrams.aspx.cs">
+      <DependentUpon>Diagrams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\PROCESS\Diagrams.aspx.designer.cs">
+      <DependentUpon>Diagrams.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\PROCESS\Metrics.aspx.cs">
+      <DependentUpon>Metrics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\PROCESS\Metrics.aspx.designer.cs">
+      <DependentUpon>Metrics.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\PROCESS\Planning.aspx.cs">
+      <DependentUpon>Planning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\PROCESS\Planning.aspx.designer.cs">
+      <DependentUpon>Planning.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartProcess\StartProcess.cs" />
+    <Compile Include="StartProcess\StartProcessUserControl.ascx.cs">
+      <DependentUpon>StartProcessUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StartProcess\StartProcessUserControl.ascx.designer.cs">
+      <DependentUpon>StartProcessUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\MARTAProcessSite\MARTAProcessSite.feature">
+      <FeatureId>{ea90c8e2-568e-47ad-852e-1e49f64112aa}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a1317267-031b-447e-afe1-684fe09d3e23}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteDefinition\ProcessSitePages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7dff56f0-9a3b-4359-ab3a-5b563c18b4da}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{56f92ba8-1b50-4ae1-a1ef-a5bdd1cf372e}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteDefinition\default.aspx" />
+    <None Include="SiteDefinition\onet.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SiteDefinition\webtemp_PROCESS.xml" />
+    <None Include="StartProcess\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{72ed9984-8d1c-4148-9a29-c6322ee5f3e1}</SharePointProjectItemId>
+    </None>
+    <None Include="StartProcess\StartProcess.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{8ec62d95-c718-4d73-be56-03cb0cd2079f}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\MARTAProcessSite\MARTAProcessSite.Template.xml">
+      <DependentUpon>MARTAProcessSite.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\PROCESS\Diagrams.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\PROCESS\Metrics.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\PROCESS\Planning.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Ref\MARTAWebParts.dll" />
+    <Content Include="SiteDefinition\ProcessSitePages\Elements.xml" />
+    <Content Include="SiteDefinition\ProcessSitePages\Home.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SiteDefinition\ProcessSitePages\Instructions.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SiteDefinition\ProcessSitePages\Overview.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SiteDefinition\ProcessSitePages\Roles.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SiteDefinition\ProcessSitePages\Sample.txt" />
+    <Content Include="StartProcess\Elements.xml" />
+    <Content Include="StartProcess\StartProcessUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

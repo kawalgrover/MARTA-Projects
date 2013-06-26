@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x01010098ccf2efad364a5998e16417aa826bc1"
+               Name="PaperlessBoard - Contract Award Analysis"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+      
+      <FieldRef ID="{E0ED5D79-9A5E-470D-BA22-BB03FF5AB613}"/>
+     
+      <FieldRef ID="{13DBF942-92D6-4781-9BAB-FAC8AD6034BA}"/>
+      
+      <FieldRef ID="{A3A999A3-8CD4-4F70-8CD9-C93742B08040}"/>
+    </FieldRefs>
+    <DocumentTemplate TargetName="/_layouts/PB-ContentTypes/Contract Award Analysis.dotx"/>
+  </ContentType>
+</Elements>

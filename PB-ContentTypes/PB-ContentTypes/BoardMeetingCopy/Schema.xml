@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="PB-ContentTypes - BoardMeetingCopy" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/PB-ContentTypes-BoardMeetingCopy" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01004fcad9417a42418a8c7385cec1d7cc69" Name="PB-ContentTypes - Board Meeting Copy" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <!-- Committee -->
+          <FieldRef ID="{F7ACE697-F7C5-47C4-9853-B83DD29A1431}" />
+          <!-- Meeting Date -->
+          <FieldRef ID="{B9649AC7-0B71-464B-A8BA-96B8A3FBD5A0}" />
+          <!-- CommitteeMeetingID-->
+          <FieldRef ID="{6407F7C9-06F2-43D7-9FE7-C19E6B1547E1}" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{F7ACE697-F7C5-47C4-9853-B83DD29A1431}" Type="Text" Group="MARTA Columns" DisplayName="Committee" Name="Committee" StaticName="Committee" />
+      <Field ID="{B9649AC7-0B71-464B-A8BA-96B8A3FBD5A0}" Type="DateTime" Group="MARTA Columns" DisplayName="MeetingDate" Name="MeetingDate" StaticName="MeetingDate" />
+      <Field ID="{6407f7c9-06f2-43d7-9fe7-c19e6b1547e1}" Type="Text" Group="MARTA Columns" DisplayName="MeetingID" Name="MeetingID" StaticName="CommitteeMeetingID" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="Committee">
+          </FieldRef>
+          <FieldRef Name="MeetingDate">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

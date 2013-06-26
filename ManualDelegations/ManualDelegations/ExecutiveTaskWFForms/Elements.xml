@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ExecutiveTaskWFForms" Url="ExecutiveTaskWFForms" RootWebOnly="false">
+  <File Path="ExecutiveTaskWFForms\StartExecutiveTaskForm.aspx" Url="StartExecutiveTaskForm.aspx" />
+<File Path="ExecutiveTaskWFForms\ExecutiveTaskEditForm.aspx" Url="ExecutiveTaskEditForm.aspx" />
+</Module>
+</Elements>

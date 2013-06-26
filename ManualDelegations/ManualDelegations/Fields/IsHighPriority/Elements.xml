@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{FB0F91FD-6434-4483-8FB3-9A79A2594AB6}"
+         Type="Boolean"
+         Group="MARTA Columns"
+         DisplayName="High Priority"
+         Name="HighPriority"/>
+</Elements>

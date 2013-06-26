@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{AB00365B-785E-48EC-BCCA-A539528D9544}"
+        Type="Number"
+        Group="MARTA Columns"
+        DisplayName="Order"
+        Name="AgendaOrder"/>
+</Elements>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Version="1.2.0.1" Id="ecf0fb19-7821-40f5-b50a-626d092866ae" Scope="Site">
+  <UpgradeActions>
+    <VersionRange BeginVersion="0.0.0.0" EndVersion="1.2.0.0">
+      <ApplyElementManifests>
+        <ElementFile Location="Fields\Administrator\Elements.xml"/>
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

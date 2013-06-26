@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="6c587079-e359-48fb-8de7-465ae895acd8"
+          Title="AxisNews"
+          Description="This is the AxisNews Web Part for the Axis Knowledge Network"
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"          
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="AxisNews.webpart" />
+  </ElementManifests>
+</Feature>

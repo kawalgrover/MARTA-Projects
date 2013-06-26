@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="4549e36d-8cc7-4908-bf37-71a18ce1f297"
+          Title="MyQuickLinks"
+          Description="This is the MyQuick Links Web Part for the Axis Knoweldge Network"
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"          
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="MyQuickLinks.webpart" />
+  </ElementManifests>
+</Feature>

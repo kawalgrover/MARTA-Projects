@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{82CABFD6-56C1-43EC-9F86-36326D7F49AF}"
+       Type="Number"
+       Group="MARTA Columns"
+       DisplayName="Duration For Event"
+       Name="DurationForEvent"
+       Description="Duration For Event (in Days)."/>
+</Elements>

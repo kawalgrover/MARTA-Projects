@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{5C3D49E7-CDF4-4745-AD29-DDC99D6508D4}"
+        Type="DateTime"
+        Group="MARTA Columns"
+        DisplayName="Contract Bid Date"
+        Name="ContractBidDate"/>
+</Elements>

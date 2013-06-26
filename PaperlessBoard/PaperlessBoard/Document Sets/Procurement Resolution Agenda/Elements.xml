@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document Set (0x0120D520) -->
+  <ContentType ID="0x0120D520005c5ab7295cba436ea19a781098ef1cc8"
+               Name="Procurement Resolution Agenda"
+               Group="Custom Content Types"
+               Description="Document set for Procurement Resolution Agenda"
+               Inherits="TRUE"
+               Version="0"
+               ProgId="SharePoint.DocumentSet">
+    <Folder TargetName="/_cts/PaperlessBoard/Procurement Resolution Agenda DS" />
+    <FieldRefs>
+      <!-- CommitteeMeetingID-->
+      <FieldRef ID="{6407F7C9-06F2-43D7-9FE7-C19E6B1547E1}" Required="TRUE"/> 
+    </FieldRefs>
+    <XmlDocuments>
+      <!-- List of all fields [site columns] shared between all content types and the document set. -->
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/sharedfields">
+        <sf:SharedFields xmlns:sf="http://schemas.microsoft.com/office/documentsets/sharedfields" LastModified="1/1/2010 08:00:00 AM">
+          <!-- Add shared fields here using the syntax below-->
+          <SharedField id="{6407F7C9-06F2-43D7-9FE7-C19E6B1547E1}" />
+          <!-- CommitteeMeetingID-->
+        </sf:SharedFields>
+      </XmlDocument>
+      <!-- List of all content types that are allowed in the document set. -->
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes">
+        <act:AllowedContentTypes xmlns:act="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes" LastModified="1/1/2010 08:00:00 AM">
+          <!-- Add content types that will be used in the document set using the syntax below -->
+          <AllowedContentType id="0x0101" />
+          <!-- Document -->
+          <AllowedContentType id="0x010100f698dbfcd4dd4da19934099ec55b3bd2" />
+          <!-- Procurement Resolution -->
+          <AllowedContentType id="0x01010098ccf2efad364a5998e16417aa826bc1" />
+          <!-- Contract Award Analysis -->
+        </act:AllowedContentTypes>
+      </XmlDocument>
+      <!-- List of all fields [site columns] that should appear on welcome page. -->
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/welcomepagefields">
+        <wpFields:WelcomePageFields xmlns:wpFields="http://schemas.microsoft.com/office/documentsets/welcomepagefields" LastModified="1/1/2010 08:00:00 AM">
+          <!-- Add welcome fields here using the syntax below -->
+          <WelcomePageField id="{6407F7C9-06F2-43D7-9FE7-C19E6B1547E1}" />
+          <!-- CommitteeMeetingID-->
+        </wpFields:WelcomePageFields>
+      </XmlDocument>
+      <!-- List of all default documents associated with the content types. -->
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/defaultdocuments">
+        <dd:DefaultDocuments xmlns:dd="http://schemas.microsoft.com/office/documentsets/defaultdocuments" AddSetName="TRUE" LastModified="1/1/2010 08:00:00 AM">
+          <!-- Add default documents using the syntax below -->
+          <DefaultDocument name="Contract Award Analysis.dotx" idContentType="0x01010098ccf2efad364a5998e16417aa826bc1" />
+          <DefaultDocument name="Procurement Resolution.dotx" idContentType="0x010100f698dbfcd4dd4da19934099ec55b3bd2" />
+        </dd:DefaultDocuments>
+      </XmlDocument>
+      <!-- Documents used (OOB) -->
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+        <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+          <New>_layouts/NewDocSet.aspx</New>
+        </FormUrls>
+      </XmlDocument>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates  xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>DocSetDisplayForm</New>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+   
+  </ContentType>
+</Elements>
+ 

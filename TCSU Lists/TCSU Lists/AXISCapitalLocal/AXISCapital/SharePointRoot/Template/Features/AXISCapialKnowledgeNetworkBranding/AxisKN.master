@@ -1,0 +1,346 @@
+<%@ Master language="C#" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Register Tagprefix="SPSWC" Namespace="Microsoft.SharePoint.Portal.WebControls" Assembly="Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="PublishingWebControls" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="PublishingNavigation" Namespace="Microsoft.SharePoint.Publishing.Navigation" Assembly="Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/Welcome.ascx" %>
+<%@ Register TagPrefix="wssuc" TagName="DesignModeConsole" src="~/_controltemplates/DesignModeConsole.ascx" %>
+<%@ Register TagPrefix="PublishingVariations" TagName="VariationsLabelMenu" src="~/_controltemplates/VariationsLabelMenu.ascx" %>
+<%@ Register Tagprefix="PublishingConsole" TagName="Console" src="~/_controltemplates/PublishingConsole.ascx" %>
+<%@ Register TagPrefix="PublishingSiteAction" TagName="SiteActionMenu" src="~/_controltemplates/PublishingActionMenu.ascx" %>
+<html dir="<%$Resources:wss, multipages_direction_dir_value %>" runat="server" __expr-val-dir="ltr">
+<head runat="server">
+	<meta name="GENERATOR" content="Microsoft SharePoint">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=7">
+	<SharePoint:RobotsMetaTag runat="server"/>
+	<title id="onetidTitle">
+		<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server"/>
+	</title>
+	<Sharepoint:CssLink runat="server"/>
+	<!--Styles used for positioning, font and spacing definitions-->
+	<SharePoint:CssRegistration name="<% $SPUrl:~SiteCollection/Style Library/~language/Core Styles/Band.css%>" runat="server"/>
+	<SharePoint:CssRegistration name="<% $SPUrl:~sitecollection/Style Library/~language/Core Styles/controls.css %>" runat="server"/>
+	<SharePoint:CssRegistration name="<% $SPUrl:~SiteCollection/Style Library/zz1_blue.css%>" runat="server"/>
+	<link rel="stylesheet" type="text/css" href="/_layouts/AxisIntraBranding/AxisKNGlobal.css" />
+	<link rel="stylesheet" type="text/css" href="/_layouts/AxisIntraBranding/AxisKNHome.css" />
+    <link rel="stylesheet" type="text/css" href="/_layouts/AxisIntraBranding/jkmegamenu.css" />
+    <script language="javascript" type="text/javascript" src="/_layouts/AxisIntraBranding/js/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/_layouts/AxisIntraBranding/js/jkmegamenu.js"></script>
+
+	<SharePoint:ScriptLink name="init.js" runat="server"/>
+	<!--Placeholder for additional overrides-->
+	<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server"/>
+</HEAD>
+<body class="body" onload="javascript:_spBodyOnLoadWrapper();">
+
+	
+	<form runat="server" onsubmit="return _spFormOnSubmitWrapper();">
+	<WebPartPages:SPWebPartManager runat="server"/>
+	<table cellpadding="0" cellspacing="0" class="master">
+		<tr>
+			<td height="100%" class="shadowLeft">
+				<div class="spacer"></div>
+			</td>
+			<td valign="top">
+				<table cellpadding="0" cellspacing="0" width="100%" class="masterContent">
+				<tr style="height:0px">
+					<td>
+						<wssuc:DesignModeConsole id="IdDesignModeConsole" runat="server"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="authoringRegion">
+			
+	
+						</td>
+
+				</tr>
+				<tr>
+					<td colspan="2" >
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td colspan="3" class="topArea clearfix">
+									<h1><a href="/"	>Axis Knowledge Network</a></h1>
+										
+									<!-- The top link bar helps users of your site to get to other sites in the site collection by displaying a row of tabs at the top of every page in the site. -->
+									<div class="topLinkBar">
+										<div class="topLink">
+										<PublishingVariations:VariationsLabelMenu id="labelmenu1" runat="server"/>
+										</div>
+									</div>
+									
+													
+													<div style="float:right;">
+													<table cellspacing="0" cellspacing="0" style="width: 418px">
+<tr>
+<td width="100%">
+
+ <span class="siteActionMenu">
+								<PublishingSiteAction:SiteActionMenu runat="server"/>
+							</span>
+<ul class="other-nav" class="clearfix">
+		<li><a href="#">Site Map</a></li>
+		<li><a href="#">Help</a></li>
+</ul>
+						<div class="sharepointLogin">
+						<!--Authentication for Authors only-->
+							<table cellpadding="0" cellspacing="0" >
+								<tr>							
+									<td class="ms-globallinks">
+									<wssuc:Welcome id="explitLogout" runat="server"/></td>
+								</tr>
+							</table>
+						</div>
+</td>
+
+</tr>
+</table>			
+									</div>
+									<div class="console">
+							<PublishingConsole:Console runat="server"/>
+						</div>
+								</td>
+							</tr>
+							<tr class="topNavContainer">
+								<td class="topNavRoundLeft">
+									<div class="glassSpacerLeft" />
+								</td>
+								<td valign="top" width="100%" class="nav">
+									<p id="home-btn"><a href="/">Home</a></p>
+									<SharePoint:AspMenu ID="GlobalNav" Runat="server" DataSourceID="SiteMapDataSource1"
+									Orientation="Horizontal" StaticDisplayLevels="1" MaximumDynamicDisplayLevels="4"
+									StaticSubMenuIndent="0" DynamicHorizontalOffset="0" DynamicVerticalOffset="-8"
+									StaticEnableDefaultPopOutImage="false" ItemWrap="false" SkipLinkText="<%$Resources:cms,masterpages_skiplinktext%>" CssClass="topNav">
+										<StaticMenuItemStyle CssClass="topNavItem" ItemSpacing="0"/>
+										<StaticSelectedStyle CssClass="topNavSelected" ItemSpacing="0"/>
+										<StaticHoverStyle CssClass="topNavHover"/>
+										<DynamicMenuStyle CssClass="topNavFlyOuts" />
+										<DynamicMenuItemStyle CssClass="topNavFlyOutsItem" />
+										<DynamicHoverStyle CssClass="topNavFlyOutsHover"/>
+									</SharePoint:AspMenu>
+									<PublishingNavigation:PortalSiteMapDataSource ID="siteMapDataSource1" Runat="server"
+										SiteMapProvider="CombinedNavSiteMapProvider" EnableViewState="true"
+										StartFromCurrentNode="true" StartingNodeOffset="0" ShowStartingNode="false"
+										TreatStartingNodeAsCurrent="true" TrimNonCurrentTypes="Heading"/>
+									<ul class="other-nav">
+											<li><a href="#">Help Center</a></li>
+									</ul>
+								</td>
+								<td class="topNavRoundRight" >
+									<div class="glassSpacerRight" />
+								</td>
+							</tr>
+						</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="clearfix" colspan="2">
+					<table  cellpadding="0" cellspacing="0" width="50%" id="breadcrumbs">
+						<tr>
+							<td width="100%">
+								<asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" runat="server">
+									<div class="breadcrumb">
+										<asp:SiteMapPath ID="siteMapPath" Runat="server" SiteMapProvider="CurrentNavSiteMapProviderNoEncode"
+											RenderCurrentNodeAsLink="false" CurrentNodeStyle-CssClass="breadcrumbCurrent" NodeStyle-CssClass="ms-sitemapdirectional"/>
+									</div>
+								</asp:ContentPlaceHolder>
+							</td>
+							<td>
+								<asp:ContentPlaceHolder ID="PlaceHolderMiniConsole" runat="server" />
+							</td>
+						</tr>
+					</table>
+					<ul id="utility" class="clearfix">
+						<li id="print-btn"><a href="#">Print</a></li>
+						<li id="email-btn"><a href="#">Email this Page</a></li>
+						<li id="add-quicklink-btn"><a href="#">Add to Quick Links</a></li>
+						<li id="feedback-btn"><a href="#">Feedback</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" id="left-nav">
+					<asp:ContentPlaceHolder id="PlaceHolderCalendarNavigator" runat ="server" />
+					<asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" runat="server" />
+					<asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" runat="server">
+					<!-- Current Navigation -->
+						<SharePoint:AspMenu ID="CurrentNav" runat="server" datasourceID="SiteMapDS" orientation="Vertical"
+						StaticDisplayLevels="1" MaximumDynamicDisplayLevels="4" StaticSubMenuIndent="1" ItemWrap="true" AccessKey="3" CssClass="leftNav" SkipLinkText="<%$Resources:cms,masterpages_skiplinktext%>">
+							<LevelMenuItemStyles>
+								<asp:MenuItemStyle CssClass="leftNav1" />
+								<asp:MenuItemStyle CssClass="leftNav2" />
+								<asp:MenuItemStyle CssClass="leftNav3" />
+							</LevelMenuItemStyles>
+							<StaticHoverStyle CssClass="leftNavHover"/>
+							<StaticSelectedStyle CssClass="leftNavSelected"/>
+							<DynamicMenuStyle CssClass="leftNavFlyOuts" />
+							<DynamicMenuItemStyle CssClass="leftNavFlyOutsItem"/>
+							<DynamicHoverStyle CssClass="leftNavFlyOutsHover"/>
+						</SharePoint:AspMenu>
+						<PublishingNavigation:PortalSiteMapDataSource ID="SiteMapDS" Runat="server"
+							SiteMapProvider="CurrentNavSiteMapProvider" EnableViewState="true"
+							StartFromCurrentNode="true" StartingNodeOffset="0" ShowStartingNode="false"
+							TrimNonCurrentTypes="Heading"/>
+					</asp:ContentPlaceHolder>
+					<asp:ContentPlaceHolder id="PlaceHolderLeftActions" runat ="server" />
+					<asp:ContentPlaceHolder id="PlaceHolderNavSpacer" runat="server">
+						<div class="leftNavSpacer"/>
+					</asp:ContentPlaceHolder>
+				</td>
+				<td width="100%" valign="top">
+					<div class="mainContainer" id="MSO_ContentDiv" runat="server">
+						<div class="pageTitle">
+							<asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
+						</div>
+						<div class="mainContent">
+							<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server" />
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</td>
+		<td height="100%" class="shadowRight">
+			<div class="spacer">
+			</div>
+		</td>
+		</tr>
+		</table>
+
+        <table cellpadding="0" cellspacing="0" class="master" id="footer" style="height: 200px;">
+		<tr>
+			<td id="footer-sitemap" class="clearfix">
+			<p class="head">Browse the Knowledge Network</p>
+			<ul class="first" style="width: 107px;">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">AXIS News</a></li>
+				<li><a href="#">Video</a></li>
+				<li><a href="#">Help Center</a></li>
+			</ul>
+			
+			 <ul>
+			 	<li class="head">About AXIS Capital</li>
+			 	<li><a href="#">Home</a></li>
+			 	<li><a href="#">Products and Services</a></li>
+				<li><a href="#">Guiding Principles</a></li>
+				<li><a href="#">Our History</a></li>
+				<li><a href="#">Leadership</a></li>
+				<li><a href="#">Locations</a></li>
+				<li><a href="#">Philanthropy</a></li>
+			</ul>
+			<ul>
+			 	<li class="head">Human Resources</li>
+				<li><a href="#">Benefits</a></li>
+				<li><a href="#">Payroll</a></li>
+				<li><a href="#">Career Development</a></li>
+				<li><a href="#">Learning &amp; Development</a></li>
+				<li><a href="#">Time &amp; Attendance</a></li>
+				<li><a href="#">New Hires</a></li>
+				<li><a href="#">Managers Center</a></li>
+				<li><a href="#">Forms</a></li>      
+				<li><a href="#">Policies</a></li>
+			</ul>
+			
+			<ul>
+			 	<li class="head">GRC</li>
+				<li><a href="#">Governance</a></li>
+				<li><a href="#">Risk Management</a></li>
+				<li><a href="#">Career Development</a></li>
+				<li><a href="#">Compliance</a></li>
+				<li><a href="#">Audit</a></li>
+				<li><a href="#">Reporting</a></li>
+				<li><a href="#">Paisley</a></li>
+			</ul>
+			
+			<ul>
+			 	<li class="head">Business Continuity</li>
+				<li><a href="#">Locations</a></li>
+				<li><a href="#">Data Centers</a></li>
+				<li><a href="#">Pandemic Plan</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+			
+			<ul>
+				<li class="head">Departments</li> 
+				<li><a href="#">Actuarial</a></li>
+				<li><a href="#">Actuarial - Reinsurance</a></li>
+				<li><a href="#">Ceded Reinsurance</a></li>
+				<li><a href="#">Claims</a></li>
+				<li><a href="#">EPMO</a></li>
+				<li><a href="#">Finance</a></li>
+				<li><a href="#">Human Resources</a></li>
+				<li><a href="#">IT</a></li>
+				<li><a href="#">Legal</a></li>
+				<li><a href="#">Marketing</a></li>
+				<li><a href="#">Regulatory</a></li>
+				<li><a href="#">Tax</a></li>
+				<li><a href="#">UWCS</a></li>
+			</ul>
+			
+			<ul style="width:107px;">
+				<li class="head">Resources</li>
+				<li><a href="#">Tools</a></li>
+				<li><a href="#">Applications</a></li>
+				<li><a href="#">Templates</a></li>
+				<li><a href="#">Important Links</a></li>
+				<li><a href="#">Reports</a></li>
+				<li><a href="#">Remote Desktop</a></li>
+				<li><a href="#">Team Sites</a></li>
+				<li><a href="#">Webmail</a></li>
+			</ul>
+	</td>
+  </tr>
+  <tr>
+  	<td id="footer-copyright-links">
+	  	<p><a href="#">Copyright Information</a> <a href="#">Terms of Use</a> <a href="#">Privacy</a></li></p>
+	</td>
+  </tr>
+</table>
+
+
+  </td>
+   </tr>
+</table>
+	
+
+
+		<asp:panel visible="false" runat="server">
+		
+			<!-- My site link -->
+			<SharePoint:DelegateControl ControlId="GlobalSiteLink1" Scope="Farm" runat="server"/></td>
+			<!-- My links menu link -->
+			<SharePoint:DelegateControl ControlId="GlobalSiteLink2" Scope="Farm" runat="server"/></td>
+
+			<asp:ContentPlaceHolder ID="PlaceHolderPageImage" runat="server" />
+			<asp:ContentPlaceHolder ID="PlaceHolderBodyLeftBorder" runat="server" />
+			<asp:ContentPlaceHolder ID="PlaceHolderTitleLeftBorder" runat="server" />
+			<asp:ContentPlaceHolder ID="PlaceHolderTitleAreaSeparator" runat="server" />
+			<asp:ContentPlaceHolder ID="OSSConsole" runat="server" />
+			<asp:ContentPlaceHolder ID="PlaceHolderTitleRightMargin" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderPageDescription" runat ="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat ="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" runat ="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderBodyRightMargin" runat="server" />
+			
+			<!-- Search -->
+			<asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
+				<SPSWC:SearchBoxEx id="SearchBox" RegisterStyles="false" TextBeforeDropDown="" TextBeforeTextBox="<%$Resources:cms,masterpages_searchbox_label%>" TextBoxWidth="100" GoImageUrl="<% $SPUrl:~sitecollection/Style Library/Images/Search_Arrow.jpg %>"
+					GoImageUrlRTL="<% $SPUrl:~sitecollection/Style Library/Images/Search_Arrow_RTL.jpg %>" UseSiteDefaults="true" DropDownMode = "HideScopeDD" SuppressWebPartChrome="true" runat="server" WebPart="true" __WebPartId="{ECA08968-1460-4DD8-8AF9-80DDBDB8911D}"/>
+			</asp:ContentPlaceHolder>
+			
+			<!-- logo ? -->
+			
+					<SharePoint:AspMenu ID="logoLinkId" runat="server" DataSourceID="SiteMapDataSourceRoot" StaticDisplayLevels="1" MaximumDynamicDisplayLevels="0" AccessKey="1" CssClass="logo"/>
+					<PublishingNavigation:PortalSiteMapDataSource ID="SiteMapDataSourceRoot" Runat="server"
+						SiteMapProvider="CombinedNavSiteMapProvider" EnableViewState="true"
+						StartFromCurrentNode="true" StartingNodeOffset="0" ShowStartingNode="true"/>
+		</asp:panel>
+	</form>
+
+</body>
+</html>	

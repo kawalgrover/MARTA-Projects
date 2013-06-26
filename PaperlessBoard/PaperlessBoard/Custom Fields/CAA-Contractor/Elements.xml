@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{13DBF942-92D6-4781-9BAB-FAC8AD6034BA}"
+         Type="Text"
+         Group="MARTA Columns"
+         DisplayName="Contractor"
+         Name="Contractor"/>
+</Elements>

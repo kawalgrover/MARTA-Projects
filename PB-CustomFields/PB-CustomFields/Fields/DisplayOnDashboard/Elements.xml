@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{1538C503-FE62-4F01-9AAC-29E6C18E4329}"
+         Type="Boolean"
+         Group="MARTA Columns"
+         DisplayName="Display On Dashboard"
+         Name="DisplayOnDashboard"/>
+</Elements>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100a9048e6444504679a810a72f9ea5017a"
+               Name="ActionsRequired"
+               Group="MARTA Custom Content Types"
+               Description="Custom Content Type to manage Actions Required for Manual delegations by executives at MARTA"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{605edb7c-2cca-4875-a6c5-af6e190fa3af}" Name="ActionOwed"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

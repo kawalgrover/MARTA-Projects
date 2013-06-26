@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="c3662b5c-fc75-43d2-bc39-b953040107e5" Scope="Site" Title="MARTADelegations Fields">
   <ElementManifests>
-    <ElementManifest Location="Type\Elements.xml" />
+    <ElementManifest Location="DelegationType\Elements.xml" />
     <ElementManifest Location="DelegationFor\Elements.xml" />
     <ElementManifest Location="EndDate\Elements.xml" />
     <ElementManifest Location="StartDate\Elements.xml" />
     <ElementManifest Location="MARTADelegation\Elements.xml" />
+    <ElementManifest Location="SelfDelegation\Elements.xml" />
+    <ElementFile Location="SelfDelegation\SelfDelegation.webpart" />
+    <ElementManifest Location="ManagerDelegation\Elements.xml" />
+    <ElementFile Location="ManagerDelegation\ManagerDelegation.webpart" />
   </ElementManifests>
 </Feature>

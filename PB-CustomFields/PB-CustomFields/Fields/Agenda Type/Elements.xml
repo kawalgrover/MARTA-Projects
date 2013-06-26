@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{94110E4E-91DC-4419-A5CE-9E24AD5EB9FE}"
+         Name="Agenda Type"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Agenda Type">
+    <CHOICES>
+      <CHOICE>Procurement Resolution</CHOICE>
+      <CHOICE>Non-Procurement Resolution</CHOICE>
+      <CHOICE>Other Matters</CHOICE>
+      <CHOICE>Briefing</CHOICE>
+      <CHOICE>Meeting Minutes</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

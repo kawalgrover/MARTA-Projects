@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Sections"
+                OnQuickLaunch="FALSE"
+                TemplateType="10002"
+                Url="Lists/Sections"
+                Description="This list holds the values used in the Sections field">
+
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">V1 - Vol 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">S1 - Introduction</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">S2 - Office Function</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">S3 - User Interface</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">S4 - Software</Field>
+        </Row>
+      </Rows>
+    </Data>
+    
+  </ListInstance>
+</Elements>

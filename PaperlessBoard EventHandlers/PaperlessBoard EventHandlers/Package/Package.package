@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e055c175-a94a-47e9-a067-f61a8697302e" solutionId="e055c175-a94a-47e9-a067-f61a8697302e" resetWebServer="false" name="PaperlessBoard_EventHandlers" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="6c182f8c-74d8-499a-86b8-6eb8535b4ead" />
+  </features>
+</package>

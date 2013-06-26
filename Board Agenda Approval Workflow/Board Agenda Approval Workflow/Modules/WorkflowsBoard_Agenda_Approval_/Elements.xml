@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsBoard Agenda Approval_" Url="Workflows/Board Agenda Approval" RootWebOnly="FALSE" Path="Files\Workflows\3BoardAgendaApproval" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="Board Agenda Approval.xsn" Type="GhostableInLibrary" Path="2BoardAgendaApproval.xsn">
+			<Property Name="ContentTypeId" Value="0x01010700C00F7143D651F24D9FA89905EB2B85EE" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="Workflows/Board Agenda Approval" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Board Agenda Approval.xsn" />
+			<Property Name="MetaInfo" Value="5;#vti_parserversion:SR|14.0.0.5130&#xD;&#xA;vti_modifiedby:SR|MARTA\\itkgrover&#xD;&#xA;ipfs_streamhash:SW|WX7CkNKcWSQF7D/u1nC0Zk2/mzJLXbEYNY6meWOsFow=&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;ContentTypeId:SW|0x01010700C00F7143D651F24D9FA89905EB2B85EE&#xD;&#xA;vti_author:SR|MARTA\\itkgrover&#xD;&#xA;" />
+			<Property Name="Order" Value="500.000000000000" />
+		</File>
+		<File Url="Board Agenda Approval.xoml.rules" Type="GhostableInLibrary" Path="4BoardAgendaApproval.xoml.rules">
+			<Property Name="ContentTypeId" Value="0x01010700C00F7143D651F24D9FA89905EB2B85EE" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="Workflows/Board Agenda Approval" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Board Agenda Approval.xoml.rules" />
+			<Property Name="MetaInfo" Value="3;#vti_parserversion:SR|14.0.0.5130&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|MARTA\\itkgrover&#xD;&#xA;ContentTypeId:SW|0x01010700C00F7143D651F24D9FA89905EB2B85EE&#xD;&#xA;vti_author:SR|MARTA\\itkgrover&#xD;&#xA;" />
+			<Property Name="Order" Value="300.000000000000" />
+		</File>
+		<File Url="Board Agenda Approval.xoml" Type="GhostableInLibrary" Path="5BoardAgendaApproval.xoml">
+			<Property Name="ContentTypeId" Value="0x01010700C00F7143D651F24D9FA89905EB2B85EE" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="Workflows/Board Agenda Approval" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Board Agenda Approval.xoml" />
+			<Property Name="MetaInfo" Value="2;#vti_parserversion:SR|14.0.0.5130&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|MARTA\\itkgrover&#xD;&#xA;ContentTypeId:SW|0x01010700C00F7143D651F24D9FA89905EB2B85EE&#xD;&#xA;vti_author:SR|MARTA\\itkgrover&#xD;&#xA;" />
+			<Property Name="Order" Value="200.000000000000" />
+		</File>
+		<File Url="Board Agenda Approval.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="6BoardAgendaApproval.xoml.wfconfig.xml">
+			<Property Name="ContentTypeId" Value="0x01010700C00F7143D651F24D9FA89905EB2B85EE" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="Workflows/Board Agenda Approval" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Board Agenda Approval.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="4;#BaseAssociationGuid:SW|{9ECF13FC-B633-4A54-A596-1B72D1308EAE}&#xD;&#xA;WorkflowDisplayName:SW|Board Agenda Approval&#xD;&#xA;vti_parserversion:SR|14.0.0.5130&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;XomlUrl:SW|Workflows/Board Agenda Approval/Board Agenda Approval.xoml&#xD;&#xA;NoCodeVisibility:SW|DraftPublic&#xD;&#xA;vti_author:SR|MARTA\\itkgrover&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;AssociatedListId:SW|&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|MARTA\\itkgrover&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_title:SR|Board Agenda Approval.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x01010700C00F7143D651F24D9FA89905EB2B85EE&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;RulesUrl:SW|Workflows/Board Agenda Approval/Board Agenda Approval.xoml.rules&#xD;&#xA;RestrictContentTypeId:SW|&#xD;&#xA;" />
+			<Property Name="Order" Value="400.000000000000" />
+		</File>
+		<File Url="Approval Workflow Task _x0028_en-US_x0029_ Copy.xsn" Type="GhostableInLibrary" Path="7ApprovalWorkflowTask_x0028_en-US_x0029_Copy.xsn">
+			<Property Name="ContentTypeId" Value="0x01010700C00F7143D651F24D9FA89905EB2B85EE" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="Workflows/Board Agenda Approval" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Approval Workflow Task _x0028_en-US_x0029_ Copy.xsn" />
+			<Property Name="MetaInfo" Value="6;#vti_parserversion:SR|14.0.0.5130&#xD;&#xA;vti_modifiedby:SR|MARTA\\itkgrover&#xD;&#xA;ipfs_streamhash:SW|i3QjPJwPQKZGeimJ2sR7i9+0AIZyL4WI83GKsdnYBJo=&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;ContentTypeId:SW|0x01010700C00F7143D651F24D9FA89905EB2B85EE&#xD;&#xA;vti_author:SR|MARTA\\itkgrover&#xD;&#xA;" />
+			<Property Name="Order" Value="600.000000000000" />
+		</File>
+	</Module>
+</Elements>

@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CD2B47A-A620-427B-A611-F5E6CBFC5948}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PB_CustomFields</RootNamespace>
+    <AssemblyName>PB-CustomFields</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\CustomFields\CustomFields.EventReceiver.cs">
+      <DependentUpon>CustomFields.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content Types\AgendaDocument\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae91ab30-9371-4b7c-a1b5-a4f0519ca28b}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\DefaultAgendaDocument\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{867ae86a-52c0-4ecb-b6b7-653eb2a84d2d}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\KeyEvents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aaf59474-9804-4f0a-b9a9-41ed6161a7f9}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\KeyPeople\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{487f1d49-7142-423a-acc1-e999c096c790}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\MARTA Workflow Task\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0b83b9db-d6bb-4d68-9890-f13c3cd59425}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\CustomContentTypes\CustomContentTypes.feature">
+      <FeatureId>{af66860a-4c62-438f-a795-cee8f8057a9e}</FeatureId>
+    </None>
+    <None Include="Fields\Administrator\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bd25cb75-96b6-4dc7-a5d8-3c7725c447d0}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Agenda Status\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{67de6fce-f192-4325-bd7e-e95e58e5925f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Agenda Type\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{04467ee0-d625-479a-aa96-64850c6fbdf5}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\AgendaID\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{048d09b4-c840-4d47-9315-304ba4b15a20}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\AgendaOrder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9a10ec05-62cd-4ada-b76d-6e242c104957}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\AgendaTaskStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{08f7b09b-07fd-44d0-8d01-72a262c14e38}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\AGMOfficeSupervisor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{01d2fec8-7034-4b59-9309-757f6dc8ad99}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Boad Agenda\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6bc49334-7eb9-47fd-9bfa-038a19a8954c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\BoardAgendaStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{75d19cc0-5245-4eb8-9f09-6d58d80f3d37}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Committee\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9df22183-4bdd-4450-869d-69c2e054d0fd}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\Agenda Summary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0d8db08b-7668-46a8-93c2-b9a547452553}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\Board Agenda\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b5f03b15-e9d2-469d-bed0-1b118d188512}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\Board Meeting Copy\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{04b5c121-2b4c-4002-a884-885f9bd23c60}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\Board Meeting\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eacd044a-3153-4ad7-bc10-432d9c4c5f7b}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\Contract Award Analysis\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{619ed3cf-72a2-4c7a-a60e-10549b23e167}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\DefaultDocuments\ProcurementResolution.docx" />
+    <None Include="Content Types\DefaultDocuments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bdbf8829-c3e5-4253-8662-1b4c1c28d108}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\Future Agendas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6a87f9e0-5a4d-4c27-9b6e-48b4e42febfd}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\Procurement Resolution\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59ee6ac8-06e2-442a-8f8a-4f6fe68323af}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\Responsible AGM\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a7ebf4bd-1304-4b67-9ccd-54df611f6a0e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\ContentProviders\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{069ac78f-5cb9-4802-92c4-514b6063871f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\ContractBidDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6debed0-f91e-4d6f-bf07-3c3edd026f75}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DaysFromMeeting\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b7c0a720-99ac-4ec0-a67e-268f3faa4ba2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DisplayOnDashboard\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f25bad3f-8f32-4da4-a596-b26c0a7001f3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\OriginalAssignee\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7b2ac9d3-915b-4c1e-81c7-0e3d6697c078}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DelegateDueDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5b92515b-0b50-43a1-bc53-12315247844e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DurationForEvent\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{42299f17-4e6c-4c6f-9cf2-8d249e78d974}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Executive Position\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{985c9c3a-d5f3-4af0-a579-f7107b329c7b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\AGM\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6b7d3ffa-5966-4b74-b0da-86c9503e50db}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Board Committee\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{65a344a8-ac72-4a0b-a2cd-dc1d1ee07147}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\CAA-Contract Numbers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a7cc1207-bbd5-4378-9691-74286b46fdd3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\CAA-Contractor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7a4d0599-d91f-4bf3-aecf-faa80fb2f11c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\CAA-Description\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d47b7a59-e169-4add-bd8b-f850c4a2709c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Committee Meeting ID\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{85839b88-80ed-464a-8f2d-7a28ecc9315c}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\CustomFields\CustomFields.feature">
+      <FeatureId>{3d1d162b-a356-46f2-ad23-ae6a0761c316}</FeatureId>
+    </None>
+    <None Include="Fields\IsContributor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e1c69e11-91c5-4a65-a2ed-2de793c39291}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\KeyEvent\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{34af7ce8-e610-4462-80f5-d48b908971bc}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\KeyPerson\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5d360052-b8dd-436c-839f-b6c62e64c3c2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Meeting Title\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6351e21e-0269-4ee2-af5f-b66c1c96df88}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\MeetingLocations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bcf44569-7da0-4893-a3d9-8e1772316d20}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Position\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{63de1e68-3241-4841-a609-86c0c6e127f0}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Presenter\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6e576ba-ecfc-4185-9b05-b97a3881c819}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\PublishDocumentToBoard\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d6abe09c-a945-4aeb-8bc2-80cda41eb061}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\PublishedDocs\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{27cab71e-99c5-47f9-ab9b-016de6f307e7}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Reviewer Comments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8b204593-e7f0-44fb-ba97-3e2717bc4d9b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Sponsor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5206a88d-1fef-4874-bc6b-a4dfe8df16b3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Task Action\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4f5a06bd-7eef-4b48-98cd-8467e0c3a4ac}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Task Source\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{df87357a-b2ef-4324-a005-7ab7108d9fe1}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\TaskIsDelegated\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2304d32-1c38-4eef-8acd-54a6a211590b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\WF1 Fields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81c07e18-42ef-4ae5-93ea-565b2eb584ce}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Fields\MeetingDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f0717c61-9f34-4451-9917-cf390664136b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\MeetingWorkspaceURL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{70eb4f73-2d0f-47f7-869c-f1d2754dee90}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Meeting\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8e53ef71-e008-4ae7-9965-a2af09b3f563}</SharePointProjectItemId>
+    </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Fields\OfficeName\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8a1f609a-f6db-4f2d-beec-979312887cbd}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{e7c720cd-4971-4cb7-b453-046b05ac2993}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Fields\ResponsiblePerson\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{430540f8-beeb-41d9-b1ff-19da9dc8bf31}</SharePointProjectItemId>
+    </None>
+    <None Include="SharePointProjectItem.spdata" />
+    <None Include="Fields\Voting Requirements\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b5def122-33fc-4bf1-9c65-1b78f1eaa718}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content Types\AgendaDocument\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content Types\DefaultAgendaDocument\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content Types\KeyEvents\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content Types\KeyPeople\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content Types\MARTA Workflow Task\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\CustomContentTypes\CustomContentTypes.Template.xml">
+      <DependentUpon>CustomContentTypes.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\Administrator\Elements.xml" />
+    <Content Include="Fields\Agenda Status\Elements.xml" />
+    <Content Include="Fields\Agenda Type\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\AgendaID\Elements.xml" />
+    <Content Include="Fields\AgendaOrder\Elements.xml" />
+    <Content Include="Fields\AgendaTaskStatus\Elements.xml" />
+    <Content Include="Fields\AGMOfficeSupervisor\Elements.xml" />
+    <Content Include="Fields\Boad Agenda\Elements.xml" />
+    <Content Include="Fields\BoardAgendaStatus\Elements.xml" />
+    <Content Include="Fields\Committee\Elements.xml" />
+    <Content Include="Content Types\Agenda Summary\Elements.xml" />
+    <Content Include="Content Types\Board Agenda\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content Types\Board Meeting Copy\Elements.xml" />
+    <Content Include="Content Types\Board Meeting\Elements.xml" />
+    <Content Include="Content Types\Contract Award Analysis\Elements.xml" />
+    <Content Include="Content Types\DefaultDocuments\Elements.xml" />
+    <Content Include="Content Types\DefaultDocuments\Sample.txt" />
+    <Content Include="Content Types\Future Agendas\Elements.xml" />
+    <Content Include="Content Types\Procurement Resolution\Elements.xml" />
+    <Content Include="Content Types\Responsible AGM\Elements.xml" />
+    <Content Include="Fields\ContentProviders\Elements.xml" />
+    <Content Include="Fields\ContractBidDate\Elements.xml" />
+    <Content Include="Fields\DaysFromMeeting\Elements.xml" />
+    <Content Include="Fields\DisplayOnDashboard\Elements.xml" />
+    <Content Include="Fields\OriginalAssignee\Elements.xml" />
+    <Content Include="Fields\DelegateDueDate\Elements.xml" />
+    <Content Include="Fields\DurationForEvent\Elements.xml" />
+    <Content Include="Fields\Executive Position\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\AGM\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\Board Committee\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\CAA-Contract Numbers\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\CAA-Contractor\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\CAA-Description\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\Committee Meeting ID\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Elements.xml" />
+    <Content Include="Features\CustomFields\CustomFields.Template.xml">
+      <DependentUpon>CustomFields.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\IsContributor\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\KeyEvent\Elements.xml" />
+    <Content Include="Fields\KeyPerson\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\Meeting Title\Elements.xml" />
+    <Content Include="Fields\MeetingDate\Elements.xml" />
+    <Content Include="Fields\MeetingLocations\Elements.xml" />
+    <Content Include="Fields\MeetingWorkspaceURL\Elements.xml" />
+    <Content Include="Fields\Meeting\Elements.xml" />
+    <Content Include="Fields\OfficeName\Elements.xml" />
+    <Content Include="Fields\Position\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\Presenter\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\PublishDocumentToBoard\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\PublishedDocs\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\ResponsiblePerson\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\Reviewer Comments\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\Sponsor\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\Task Action\Elements.xml" />
+    <Content Include="Fields\Task Source\Elements.xml" />
+    <Content Include="Fields\TaskIsDelegated\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\Voting Requirements\Elements.xml" />
+    <Content Include="Fields\WF1 Fields\Elements.xml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="false" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y $(BuildDir)PB_CustomFields.wsp "C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PBSolutions\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

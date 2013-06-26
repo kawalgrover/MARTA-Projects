@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <PropertyBag Url="Workflows" ParentType="Folder" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="1" Type="int" />
+    <Property Name="vti_isexecutable" Value="false" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{94EBD427-802F-469C-BDA9-1F0AFB09D5E2},0&quot;" Type="string" />
+    <Property Name="vti_isscriptable" Value="false" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_listrequirecheckout" Value="false" Type="string" />
+    <Property Name="vti_docstoretype" Value="1" Type="int" />
+    <Property Name="vti_listenableminorversions" Value="false" Type="string" />
+    <Property Name="vti_listname" Value="{$ListId:Workflows;}" Type="string" />
+    <Property Name="vti_listservertemplate" Value="117" Type="int" />
+    <Property Name="vti_foldersubfolderitemcount" Value="1" Type="int" />
+    <Property Name="vti_timecreated" Value="2011-06-07T22:03:21Z" Type="DateTime" />
+    <Property Name="vti_dirlateststamp" Value="2011-06-08T01:47:12Z" Type="DateTime" />
+    <Property Name="vti_listbasetype" Value="1" Type="int" />
+    <Property Name="vti_listenablemoderation" Value="false" Type="string" />
+    <Property Name="vti_metainfoversion" Value="1" Type="int" />
+    <Property Name="vti_replid" Value="rid:{94EBD427-802F-469C-BDA9-1F0AFB09D5E2}" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-07T22:03:22Z" Type="DateTime" />
+    <Property Name="vti_isbrowsable" Value="true" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_hassubdirs" Value="false" Type="string" />
+    <Property Name="vti_listtitle" Value="Workflows" Type="string" />
+    <Property Name="vti_rtag" Value="rt:94EBD427-802F-469C-BDA9-1F0AFB09D5E2@00000000000" Type="string" />
+    <Property Name="vti_listenableversioning" Value="true" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="Workflows/Board Agenda Approval" ParentType="Folder" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="5" Type="int" />
+    <Property Name="vti_isexecutable" Value="false" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{89D973E9-7B7E-4614-95AA-5A10FC073CDC},0&quot;" Type="string" />
+    <Property Name="vti_isscriptable" Value="false" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_listrequirecheckout" Value="false" Type="string" />
+    <Property Name="vti_docstoretype" Value="1" Type="int" />
+    <Property Name="vti_listenableminorversions" Value="false" Type="string" />
+    <Property Name="vti_listname" Value="{$ListId:Workflows;}" Type="string" />
+    <Property Name="vti_listservertemplate" Value="117" Type="int" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_timecreated" Value="2011-06-07T22:03:22Z" Type="DateTime" />
+    <Property Name="vti_dirlateststamp" Value="2011-06-08T01:47:12Z" Type="DateTime" />
+    <Property Name="vti_listbasetype" Value="1" Type="int" />
+    <Property Name="vti_listenablemoderation" Value="false" Type="string" />
+    <Property Name="vti_metainfoversion" Value="1" Type="int" />
+    <Property Name="vti_replid" Value="rid:{89D973E9-7B7E-4614-95AA-5A10FC073CDC}" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-08T01:51:02Z" Type="DateTime" />
+    <Property Name="vti_isbrowsable" Value="true" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_hassubdirs" Value="false" Type="string" />
+    <Property Name="vti_rtag" Value="rt:89D973E9-7B7E-4614-95AA-5A10FC073CDC@00000000000" Type="string" />
+    <Property Name="vti_listenableversioning" Value="true" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="Workflows/Board Agenda Approval/Approval Workflow Task _x0028_en-US_x0029_ Copy.xsn" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://m264981:1411" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="vti_etag" Value="&quot;{39073F4A-6BAC-40E9-AA5D-C1C966652356},2&quot;" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="vti_parserversion" Value="14.0.0.5130" Type="string" />
+    <Property Name="vti_privatelistexempt" Value="true" Type="string" />
+    <Property Name="vti_author" Value="MARTA\itkgrover" Type="string" />
+    <Property Name="vti_metainfoversion" Value="2" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700C00F7143D651F24D9FA89905EB2B85EE" Type="string" />
+    <Property Name="vti_replid" Value="rid:{39073F4A-6BAC-40E9-AA5D-C1C966652356}" Type="string" />
+    <Property Name="vti_modifiedby" Value="MARTA\itkgrover" Type="string" />
+    <Property Name="vti_timecreated" Value="2011-06-08T01:51:02Z" Type="DateTime" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_filesize" Value="12676" Type="int" />
+    <Property Name="vti_contenttag" Value="{39073F4A-6BAC-40E9-AA5D-C1C966652356},2,1" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-08T01:51:15Z" Type="DateTime" />
+    <Property Name="ipfs_streamhash" Value="i3QjPJwPQKZGeimJ2sR7i9+0AIZyL4WI83GKsdnYBJo=" Type="string" />
+    <Property Name="vti_docstoreversion" Value="2" Type="int" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2011-06-08T01:51:02Z" Type="DateTime" />
+    <Property Name="vti_rtag" Value="rt:39073F4A-6BAC-40E9-AA5D-C1C966652356@00000000002" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V2.0" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="Workflows/Board Agenda Approval/Board Agenda Approval.xoml" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://m264981:1411" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="vti_etag" Value="&quot;{59C5C9EA-4452-4D14-83CE-7BC709CADDFB},3&quot;" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="vti_parserversion" Value="14.0.0.5130" Type="string" />
+    <Property Name="vti_author" Value="MARTA\itkgrover" Type="string" />
+    <Property Name="vti_metainfoversion" Value="3" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700C00F7143D651F24D9FA89905EB2B85EE" Type="string" />
+    <Property Name="vti_replid" Value="rid:{59C5C9EA-4452-4D14-83CE-7BC709CADDFB}" Type="string" />
+    <Property Name="vti_modifiedby" Value="MARTA\itkgrover" Type="string" />
+    <Property Name="vti_timecreated" Value="2011-06-07T22:03:23Z" Type="DateTime" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_filesize" Value="100265" Type="int" />
+    <Property Name="vti_contenttag" Value="{59C5C9EA-4452-4D14-83CE-7BC709CADDFB},3,3" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-08T01:52:02Z" Type="DateTime" />
+    <Property Name="vti_docstoreversion" Value="3" Type="int" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2011-06-08T01:51:16Z" Type="DateTime" />
+    <Property Name="vti_rtag" Value="rt:59C5C9EA-4452-4D14-83CE-7BC709CADDFB@00000000003" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V3.0" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="Workflows/Board Agenda Approval/Board Agenda Approval.xoml.rules" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://m264981:1411" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="vti_etag" Value="&quot;{08FA340D-594E-449D-ADC9-3E3DE0E8820E},3&quot;" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="vti_parserversion" Value="14.0.0.5130" Type="string" />
+    <Property Name="vti_author" Value="MARTA\itkgrover" Type="string" />
+    <Property Name="vti_metainfoversion" Value="3" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700C00F7143D651F24D9FA89905EB2B85EE" Type="string" />
+    <Property Name="vti_replid" Value="rid:{08FA340D-594E-449D-ADC9-3E3DE0E8820E}" Type="string" />
+    <Property Name="vti_modifiedby" Value="MARTA\itkgrover" Type="string" />
+    <Property Name="vti_timecreated" Value="2011-06-07T22:03:23Z" Type="DateTime" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_filesize" Value="106406" Type="int" />
+    <Property Name="vti_contenttag" Value="{08FA340D-594E-449D-ADC9-3E3DE0E8820E},3,3" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-08T01:52:02Z" Type="DateTime" />
+    <Property Name="vti_docstoreversion" Value="3" Type="int" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2011-06-08T01:51:16Z" Type="DateTime" />
+    <Property Name="vti_rtag" Value="rt:08FA340D-594E-449D-ADC9-3E3DE0E8820E@00000000003" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V3.0" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="Workflows/Board Agenda Approval/Board Agenda Approval.xoml.wfconfig.xml" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://m264981:1411" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_charset" Value="utf-8" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2011-06-08T01:51:28Z" Type="DateTime" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="NoCodeVisibility" Value="DraftPublic" Type="string" />
+    <Property Name="vti_rtag" Value="rt:A299BAF2-A44F-407F-B7C4-A22448038780@00000000003" Type="string" />
+    <Property Name="XomlUrl" Value="Workflows/Board Agenda Approval/Board Agenda Approval.xoml" Type="string" />
+    <Property Name="vti_title" Value="Board Agenda Approval.xoml.wfconfig.xml" Type="string" />
+    <Property Name="vti_parserversion" Value="14.0.0.5130" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{A299BAF2-A44F-407F-B7C4-A22448038780},3&quot;" Type="string" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="AssociatedListId" Value="" Type="string" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="BaseAssociationGuid" Value="{9ECF13FC-B633-4A54-A596-1B72D1308EAE}" Type="string" />
+    <Property Name="vti_metainfoversion" Value="3" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="ContentType" Value="User Workflow Document" Type="string" />
+    <Property Name="vti_contenttag" Value="{A299BAF2-A44F-407F-B7C4-A22448038780},3,3" Type="string" />
+    <Property Name="vti_modifiedby" Value="MARTA\itkgrover" Type="string" />
+    <Property Name="vti_cachedcustomprops" Value="BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId" Type="string" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="RulesUrl" Value="Workflows/Board Agenda Approval/Board Agenda Approval.xoml.rules" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-08T01:52:02Z" Type="DateTime" />
+    <Property Name="vti_privatelistexempt" Value="true" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V3.0" Type="string" />
+    <Property Name="vti_timecreated" Value="2011-06-07T22:03:23Z" Type="DateTime" />
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="ContentTypeId" Value="0x01010700C00F7143D651F24D9FA89905EB2B85EE" Type="string" />
+    <Property Name="vti_filesize" Value="10880" Type="int" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="WorkflowDisplayName" Value="Board Agenda Approval" Type="string" />
+    <Property Name="vti_author" Value="MARTA\itkgrover" Type="string" />
+    <Property Name="vti_replid" Value="rid:{A299BAF2-A44F-407F-B7C4-A22448038780}" Type="string" />
+    <Property Name="vti_docstoreversion" Value="3" Type="int" />
+    <Property Name="RestrictContentTypeId" Value="" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="Workflows/Board Agenda Approval/Board Agenda Approval.xsn" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://m264981:1411" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="vti_etag" Value="&quot;{C120E99B-6224-4F6A-8B45-32162CEF831F},2&quot;" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="vti_parserversion" Value="14.0.0.5130" Type="string" />
+    <Property Name="vti_privatelistexempt" Value="true" Type="string" />
+    <Property Name="vti_author" Value="MARTA\itkgrover" Type="string" />
+    <Property Name="vti_metainfoversion" Value="2" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700C00F7143D651F24D9FA89905EB2B85EE" Type="string" />
+    <Property Name="vti_replid" Value="rid:{C120E99B-6224-4F6A-8B45-32162CEF831F}" Type="string" />
+    <Property Name="vti_modifiedby" Value="MARTA\itkgrover" Type="string" />
+    <Property Name="vti_timecreated" Value="2011-06-08T01:51:02Z" Type="DateTime" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_filesize" Value="11166" Type="int" />
+    <Property Name="vti_contenttag" Value="{C120E99B-6224-4F6A-8B45-32162CEF831F},2,1" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-08T01:51:05Z" Type="DateTime" />
+    <Property Name="ipfs_streamhash" Value="WX7CkNKcWSQF7D/u1nC0Zk2/mzJLXbEYNY6meWOsFow=" Type="string" />
+    <Property Name="vti_docstoreversion" Value="2" Type="int" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2011-06-08T01:51:02Z" Type="DateTime" />
+    <Property Name="vti_rtag" Value="rt:C120E99B-6224-4F6A-8B45-32162CEF831F@00000000002" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V2.0" Type="string" />
+  </PropertyBag>
+</Elements>

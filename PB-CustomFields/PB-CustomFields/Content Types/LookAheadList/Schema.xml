@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="PB-ContentTypes - LookAheadList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/PB-ContentTypes-LookAheadList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100370df00279f3444498f590acea32d0c3" Name="Future Agendas" Group="Custom Content Types" Description="Content Type for look ahead list for Future Agendas." Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <!-- Meeting Name-->
+          <FieldRef ID="{60B001C8-C91E-4B2B-98FC-01FC23EA9847}" />
+          <!-- Board Agenda -->
+          <FieldRef ID="{33E09F17-C8CE-4438-9750-7178584EA722}" />
+          <!-- Meeting Date -->
+          <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" />
+          <!-- Responsible Person -->
+          <FieldRef ID="{0150E9FB-2077-4331-B406-8CB4C404A0BE}" />
+          <!-- AGM Office-->
+          <FieldRef ID="{683E1185-CAD8-48D2-B4E9-3BFF11931856}" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{33E09F17-C8CE-4438-9750-7178584EA722}" Type="Text" DisplayName="Meeting" Name="Meeting" StaticName="Meeting"></Field>
+      <Field ID="{33E09F17-C8CE-4438-9750-7178584EA722}" Type="Text" DisplayName="Agenda" Name="Agenda" StaticName="Agenda"></Field>
+      <Field ID="{0150e9fb-2077-4331-b406-8cb4c404a0be}" Type="User" DisplayName="Responsible Person" Required="True" StaticName="ResponsiblePerson" Name="ResponsiblePerson" Group="MARTA Columns" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" SourceID="{413ca5dc-8853-4f0d-b514-70decd69f5c4}" />
+      <Field ID="{683e1185-cad8-48d2-b4e9-3bff11931856}" Name="Office" Type="Choice" Group="MARTA Columns" DisplayName="Position" SourceID="{413ca5dc-8853-4f0d-b514-70decd69f5c4}" StaticName="Executive_x0020_Position">
+        <CHOICES>
+          <CHOICE>AGM-Audit</CHOICE>
+          <CHOICE>AGM-Bus Operations</CHOICE>
+          <CHOICE>AGM-Communications and External Affairs</CHOICE>
+          <CHOICE>AGM-Contracts and Procurement</CHOICE>
+          <CHOICE>AGM-Finance</CHOICE>
+          <CHOICE>AGM-Human Resources</CHOICE>
+          <CHOICE>AGM-Legal Services</CHOICE>
+          <CHOICE>AGM-Operations</CHOICE>
+          <CHOICE>AGM-Planning</CHOICE>
+          <CHOICE>AGM-Police</CHOICE>
+          <CHOICE>AGM-Rail Operations</CHOICE>
+          <CHOICE>AGM-Safety and QA</CHOICE>
+          <CHOICE>AGM-Technology</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="MeetingDate" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="MeetingDate" Group="$Resources:core,Base_Columns;" Type="DateTime" Format="DateOnly" DisplayName="Meeting Date">
+        
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments">
+          </FieldRef>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

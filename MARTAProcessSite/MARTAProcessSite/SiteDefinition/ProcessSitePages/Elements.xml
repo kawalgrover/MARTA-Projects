@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ProcessSitePages">
+    <File Path="ProcessSitePages\Sample.txt" Url="ProcessSitePages/Sample.txt" />
+  <File Path="ProcessSitePages\Home.aspx" Url="ProcessSitePages/Home.aspx" />
+<File Path="ProcessSitePages\Overview.aspx" Url="ProcessSitePages/Overview.aspx" />
+<File Path="ProcessSitePages\Instructions.aspx" Url="ProcessSitePages/Instructions.aspx" />
+<File Path="ProcessSitePages\Roles.aspx" Url="ProcessSitePages/Roles.aspx" />
+</Module>
+</Elements>

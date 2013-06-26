@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Future Agenda Items"
+                OnQuickLaunch="FALSE"
+                TemplateType="10002"
+                Url="Lists/FutureAgendas"
+                Description="List Instance for Future Agendas -- Look ahead list in EMIS">
+  </ListInstance>
+</Elements>

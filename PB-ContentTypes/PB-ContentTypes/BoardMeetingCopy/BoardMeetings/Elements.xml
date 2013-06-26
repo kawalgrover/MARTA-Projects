@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="BoardMeetings"
+                OnQuickLaunch="FALSE"
+                TemplateType="10006"
+                Url="Lists/BoardMeetingsCopy"
+                Description="List for maintaining reference copy for Board Meetings">
+  </ListInstance>
+</Elements>

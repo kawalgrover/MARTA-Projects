@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ExecutiveTaskTracking - ExecutiveTaskConfigurationListDefinition" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ExecutiveTaskTracking-ExecutiveTaskConfigurationListDefinition" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01000406e4d4285d4f1fb773e4f82ade0063" Name="ExecutiveTaskConfiguration" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{CD38DA47-F17A-49B0-9E3D-BB5622D69181}" DisplayName="Due Days for Tasks" />
+          <FieldRef ID="{68A57E4A-80AE-4E0E-9F22-7F232036C210}" DisplayName="Task Coordinator" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{cd38da47-f17a-49b0-9e3d-bb5622d69181}" Name="DefautDueDays" Type="Choice" Group="MARTA Columns" DisplayName="Default Due Days">
+    <CHOICES>
+      <CHOICE>2</CHOICE>
+      <CHOICE>3</CHOICE>
+      <CHOICE>4</CHOICE>
+      <CHOICE>5</CHOICE>
+      <CHOICE>6</CHOICE>
+      <CHOICE>7</CHOICE>
+    </CHOICES>
+  </Field>
+      <Field ID="{68a57e4a-80ae-4e0e-9f22-7f232036c210}" Type="User" Name="TaskCoordinator" DisplayName="Task Coordinator" Group="MARTA Columns" UserSelectionMode="PeopleOnly">
+    
+  </Field>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"
+             Name="Title"
+             SourceID="http://schemas.microsoft.com/sharepoint/v3"
+             StaticName="Title"
+             Group="_Hidden"
+             Type="Text"
+             DisplayName="Source"
+             Required="TRUE"
+             FromBaseType="TRUE"
+             Customization=""
+             ShowInNewForm="TRUE"
+             ShowInEditForm="TRUE"></Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="TaskCoordinator"></FieldRef>
+          <FieldRef Name="DefautDueDays"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

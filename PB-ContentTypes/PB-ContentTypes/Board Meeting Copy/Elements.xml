@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01004fcad9417a42418a8c7385cec1d7cc69"
+               Name="PB-ContentTypes - Board Meeting Copy"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <!-- Committee -->
+      <FieldRef ID="{F7ACE697-F7C5-47C4-9853-B83DD29A1431}"/>
+      <!-- Meeting Date -->
+      <FieldRef ID="{B9649AC7-0B71-464B-A8BA-96B8A3FBD5A0}"/>
+      <!-- CommitteeMeetingID-->
+      <FieldRef ID="{6407F7C9-06F2-43D7-9FE7-C19E6B1547E1}"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

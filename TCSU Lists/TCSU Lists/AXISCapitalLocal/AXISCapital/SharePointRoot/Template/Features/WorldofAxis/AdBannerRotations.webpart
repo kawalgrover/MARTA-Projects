@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="AXISCapital.UI.WebControls.WebParts.AdBannerRotationsWebPart, AXISCapital, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e3887e76deee1794" />
+      <importErrorMessage>Cannot import AdBannerRotations Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">World of Axis</property>
+        <property name="Description" type="string">This is the World of Axis Web Part for the AXIS Knowledge Network</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="ChromeType" type="chrometype">None</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

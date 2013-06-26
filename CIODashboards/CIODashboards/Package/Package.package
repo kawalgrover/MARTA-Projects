@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b2c070a5-97d5-4bc3-a2ef-9cdc5338ab44" solutionId="b2c070a5-97d5-4bc3-a2ef-9cdc5338ab44" resetWebServer="false" name="CIODashboards" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="DocumentFormat.OpenXml.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="Ref\DocumentFormat.OpenXml.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="edcb831e-2d09-455d-98d4-82d0a867ef5b" />
+  </features>
+</package>

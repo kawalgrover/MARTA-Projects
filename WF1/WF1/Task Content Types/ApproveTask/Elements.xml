@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: ReviewTask (WF1\ReviewTask) (0x0108009e12998413ac4b168e4380533fb8ae0f) -->
+  <ContentType ID="0x0108009e12998413ac4b168e4380533fb8ae0f00452319639f60402a85564adc415b2f2e"
+               Name="ApproveTask"
+               Group="Custom Content Types"
+               Description="This task is used by the GM to approve/reject the Agenda Document Set from being published to the Board Meeting workspace."
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <!-- ApproveOrReject -->
+      <FieldRef ID="{0F0D7193-455B-4729-9FB7-9EC321C5782E}"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

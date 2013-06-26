@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{68A57E4A-80AE-4E0E-9F22-7F232036C210}"
+         Type="User"
+         Name="TaskCoordinator"
+         DisplayName="Task Coordinator"
+         Group="MARTA Columns"
+         UserSelectionMode="PeopleOnly">
+    
+  </Field>
+</Elements>

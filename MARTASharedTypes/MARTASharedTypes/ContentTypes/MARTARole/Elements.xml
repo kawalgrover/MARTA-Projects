@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100a56f2b91259049f89f801336371db768"
+               Name="MARTARole"
+               Group="MARTA Shared Content Types"
+               Description="This content type holds the items for a MARTA Task list."
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="Role"/>
+      <FieldRef ID="{360F341E-BA2E-43EA-8871-AD9F9813EA14}" DisplayName="Assigned Person"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

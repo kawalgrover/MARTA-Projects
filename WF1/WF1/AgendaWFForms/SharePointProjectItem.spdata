@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="AgendaWFForms\" Type="ElementManifest" />
+    <ProjectItemFile Source="WF1Init.aspx" Target="AgendaWFForms\" Type="ElementFile" />
+    <ProjectItemFile Source="Task1Form.aspx" Target="AgendaWFForms\" Type="ElementFile" />
+    <ProjectItemFile Source="ReviewerTaskForm.aspx" Target="AgendaWFForms\" Type="ElementFile" />
+    <ProjectItemFile Source="ApproverTaskForm.aspx" Target="AgendaWFForms\" Type="ElementFile" />
+    <ProjectItemFile Source="..\AgendaWFForms\SubmitForDGMReviewTask.aspx" Target="AgendaWFForms\" Type="ElementFile" />
+    <ProjectItemFile Source="..\AgendaWFForms\SubmitForGMReviewTask.aspx" Target="AgendaWFForms\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

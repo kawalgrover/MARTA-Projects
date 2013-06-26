@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{0150E9FB-2077-4331-B406-8CB4C404A0BE}" 
+         Type="User" 
+         DisplayName="Executive" 
+         Required="True"  
+         StaticName="Executive" 
+         Name="Executive" 
+         Group="MARTA Columns" 
+         UserSelectionMode="PeopleAndGroups" 
+         UserSelectionScope="0" />
+
+</Elements>

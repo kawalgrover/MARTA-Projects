@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document Set (0x0120D520) -->
+  <ContentType ID="0x0120D520001a1b53404a8340a79f7d7982f168ab2f"
+               Name="Executive Task"
+               Group="MARTA Custom Content Types"
+               Description="Document Set that holds any pertinent information related to Executive tasks"
+               Version="0"
+               ProgId="SharePoint.DocumentSet">
+    <Folder TargetName="_cts/ExecutiveTask Document Set" />
+    <FieldRefs>
+      <FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8"
+                DisplayName="Subject"/>                                 <!-- FileLeafRef / Name -->
+      <FieldRef ID="{629C85FE-8FA6-4649-BFE8-1E095688FEA7}" Required="TRUE"/>           <!-- Delegate To-->
+      <FieldRef ID="{6A71ED76-9DFB-4D51-A8C8-A8BC97E25950}" Required="TRUE"/>           <!-- Action Required-->
+      <FieldRef ID="{2410235D-B2AB-43DE-A4FD-F86C9F70EB97}" Required="TRUE"/>           <!-- Due Date-->
+      <FieldRef ID="{FB0F91FD-6434-4483-8FB3-9A79A2594AB6}"/>           <!-- High Priority-->
+      <FieldRef ID="{474E7E8C-B16E-4D0E-AD44-0C5C86811C26}"/> <!-- Task Status -->
+    </FieldRefs>
+
+    <XmlDocuments>
+      <!-- list of all content types that are allowed in the document set. -->
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes">
+        <act:AllowedContentTypes xmlns:act="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes"
+                                 LastModified="1/1/2010 08:00:00 AM">
+          <AllowedContentType id="0x0101" />
+          <!-- Document -->
+          
+        </act:AllowedContentTypes>
+      </XmlDocument>
+
+      <!-- list of all fields that should appear on the welcome page -->
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/welcomepagefields">
+        <wpFields:WelcomePageFields xmlns:wpFields="http://schemas.microsoft.com/office/documentsets/welcomepagefields"
+                                    LastModified="1/1/2010 08:00:00 AM">
+
+          <WelcomePageField id="8553196d-ec8d-4564-9861-3dbe931050c8" />
+          <!-- Delegate To -->
+          <WelcomePageField id="629C85FE-8FA6-4649-BFE8-1E095688FEA7" />
+          <!-- Action Required -->
+          <WelcomePageField id="6A71ED76-9DFB-4D51-A8C8-A8BC97E25950" />
+          <!-- Due Date -->
+          <WelcomePageField id="2410235D-B2AB-43DE-A4FD-F86C9F70EB97" />
+          <!-- High Priority -->
+          <WelcomePageField id="FB0F91FD-6434-4483-8FB3-9A79A2594AB6" />
+        </wpFields:WelcomePageFields>
+      </XmlDocument>
+
+
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+        <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+          <New>_layouts/ExecutiveTaskTracking/ExecTaskNewForm.aspx</New>
+          <Edit>_layouts/ExecutiveTaskTracking/ExecTaskEditForm.aspx</Edit>
+        </FormUrls>
+      </XmlDocument>
+      
+      
+    </XmlDocuments>
+    
+    
+  </ContentType>
+</Elements>

@@ -1,0 +1,50 @@
+hr{
+margin:50px 0;
+color:#eee;
+}
+
+ul li.active{ /*IE6 hack- hide gooey effect from that browser*/
+_visibility: hidden; /*IE6 rule*/
+}
+
+
+/* ######### Thick Underline Menu CSS ######### */
+
+
+ul.underlinemenu{
+margin: 0;
+margin-bottom:1em;
+padding: 0;
+list-style: none;
+position:relative;
+text-align: left; //set value to "left", "center", or "right"*/
+}
+
+ul.underlinemenu li{
+display: inline;
+}
+
+ul.underlinemenu li a{
+font: 14px Verdana, sans-serif;
+font-weight:normal;
+color: black;
+padding: 4px;
+margin-right: 10px; /*spacing between each menu link*/
+text-decoration: none;
+}
+
+
+ul.underlinemenu li.active{ /*style of LI that gets dynamically added to menu to create background effect*/
+position:absolute;
+width:0;
+border-bottom:5px solid gold;
+}
+
+ul.underlinemenu li a:hover{
+font: 14px Verdana, sans-serif;
+font-weight:normal;
+color: gray;
+padding: 4px;
+margin-right: 10px; /*spacing between each menu link*/
+text-decoration: none;
+}

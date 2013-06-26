@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C129195F-5D0E-4847-B509-009D4A1EBFA5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TCSU_Fields_and_Content_Types</RootNamespace>
+    <AssemblyName>TCSU Fields and Content Types</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content Types\Discipline\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d2fae3f8-1510-4502-88ce-164b13bb288a}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\TCSU Content Types\TCSU Content Types.feature">
+      <FeatureId>{02b0e9f5-7605-4757-8e50-926801f36278}</FeatureId>
+    </None>
+    <None Include="Features\TCSU Fields\TCSU Fields.feature">
+      <FeatureId>{b850514f-1430-4b18-ac62-c818cc6db16f}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ac930994-9f94-4ecf-a8c3-771b9f8a6895}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{f18ee5c1-7030-4508-8ef2-87ac57db24b1}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="TCSU Document Set\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c61a0ced-068b-48b6-a43b-854a643d2864}</SharePointProjectItemId>
+    </None>
+    <None Include="TCSU Document\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0d9332bd-333a-464b-b217-c571d96e74cb}</SharePointProjectItemId>
+    </None>
+    <None Include="TCSU Fields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{746540ef-24b4-492f-a1e1-4b1328e446de}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\TCSU Fields and Content Types\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content Types\Discipline\Elements.xml" />
+    <Content Include="Features\TCSU Content Types\TCSU Content Types.Template.xml">
+      <DependentUpon>TCSU Content Types.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\TCSU Fields\TCSU Fields.Template.xml">
+      <DependentUpon>TCSU Fields.feature</DependentUpon>
+    </Content>
+    <Content Include="TCSU Document Set\Elements.xml" />
+    <Content Include="TCSU Document\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TCSU Fields\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

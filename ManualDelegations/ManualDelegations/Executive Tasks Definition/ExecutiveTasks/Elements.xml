@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="ExecutiveTasks"
+                OnQuickLaunch="TRUE"
+                TemplateType="10002"
+                Url="Lists/ExecutiveTasks"
+                Description="My List Instance">
+  </ListInstance>
+  
+</Elements>

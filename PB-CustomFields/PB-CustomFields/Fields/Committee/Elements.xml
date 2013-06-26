@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{F7ACE697-F7C5-47C4-9853-B83DD29A1431}"
+         Type="Text"
+         Group="MARTA Columns"
+         DisplayName="Committee"
+         Name="Committee"/>
+</Elements>

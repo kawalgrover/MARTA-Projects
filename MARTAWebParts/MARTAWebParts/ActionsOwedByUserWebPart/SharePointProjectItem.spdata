@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="ActionsOwedByUserWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ActionsOwedByUserWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="ActionsOwedByUserWebPart.webpart" Target="ActionsOwedByUserWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="ActionsOwedByUserWebPartUserControl.ascx" Target="CONTROLTEMPLATES\MARTAWebParts\ActionsOwedByUserWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="MARTAWebParts.ActionsOwedByUserWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

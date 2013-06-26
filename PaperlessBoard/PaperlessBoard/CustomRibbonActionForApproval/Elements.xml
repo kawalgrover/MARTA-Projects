@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+      Id="MARTA.CustomActions.Ribbon.SubmitDSForApproval"
+      Location="CommandUI.Ribbon"
+      Title="Submit your documents for approval">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.ManageDocumentSet.MDS.Manage.Controls._children">
+          <ToggleButton
+            Id="btnSubmitDSForApproval"
+            Sequence="20"
+            Command="SubmitDSForApproval"
+            Alt="Click here to submit your documents for approval"
+            Image16by16="/_layouts/images/RibbonCustomization/images16x16.png"
+            Image16by16Top="-16"
+            Image16by16Left="-32"
+            Image32by32="/_layouts/images/RibbonCustomization/images32x32.png"
+            Image32by32Top="0"
+            Image32by32Left="-64"
+            TemplateAlias="o1"
+            ToolTipTitle="Custom Button"
+            ToolTipDescription="Executes custom action" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      
+      
+    </CommandUIExtension>
+    
+  </CustomAction>
+</Elements>

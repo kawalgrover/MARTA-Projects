@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{E33E056C-B39E-42E2-ABA9-B949068157EC}"
+         Name="Status"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Status">
+    <CHOICES>
+      <CHOICE>Not Started</CHOICE>
+      <CHOICE>Completed</CHOICE>
+      <CHOICE>No Response</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

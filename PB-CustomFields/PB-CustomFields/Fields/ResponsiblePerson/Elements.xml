@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{94FE379B-C518-41CB-BC7F-BF71A74B9C93}"
+         Type="Text"
+         Group="MARTA Columns"
+         DisplayName="ResponsiblePerson"
+         Name="ResponsiblePerson"/>
+</Elements>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="WF1 Tasks"
+                OnQuickLaunch="TRUE"
+                TemplateType="107"
+                Url="Lists/WF1Tasks"
+                Description="My List Instance">
+  </ListInstance>
+</Elements>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="LookAhead"
+                OnQuickLaunch="TRUE"
+                TemplateType="10008"
+                Url="Lists/LookAhead"
+                Description="Look ahead list for Future Agendas (EMIS Version)">
+  </ListInstance>
+</Elements>

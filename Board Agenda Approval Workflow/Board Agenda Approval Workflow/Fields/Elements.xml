@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{16B6952F-3CE6-45e0-8F4E-42DAC6E12441}" Name="OffsiteParticipant" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="OffsiteParticipant" Group="_Hidden" Type="Text" DisplayName="External Participant" ReadOnly="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{17CA3A22-FDFE-46eb-99B5-9646BAED3F16}" Name="FormURN" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FormURN" Group="_Hidden" Type="Text" DisplayName="Form_URN" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{18E1C6FA-AE37-4102-890A-CFB0974EF494}" Name="WorkflowOutcome" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkflowOutcome" Group="_Hidden" Type="Text" DisplayName="Outcome" ReadOnly="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{1BFEE788-69B7-4765-B109-D4D9C31D1AC1}" Name="WorkflowListId" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkflowListId" Group="Base Columns" Type="Guid" DisplayName="Workflow List ID" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{1C5518E2-1E99-49FE-BFC6-1A8DE3BA16E2}" Name="ExtendedProperties" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ExtendedProperties" Group="_Hidden" Type="Note" DisplayName="Extended Properties" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{35363960-D998-4aad-B7E8-058DFE2C669E}" Name="Completed" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Completed" Group="Base Columns" Type="Boolean" DisplayName="Completed" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Default>FALSE</Default>
+  </Field>
+  <Field ID="{47F68C3B-8930-406f-BDE2-4A8C669EE87C}" Name="HasCustomEmailBody" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="HasCustomEmailBody" Group="_Hidden" Type="Boolean" DisplayName="Has Custom E-mail Body" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{4A799BA5-F449-4796-B43E-AA5186C3C414}" Name="OffsiteParticipantReason" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="OffsiteParticipantReason" Group="_Hidden" Type="Text" DisplayName="External Participant Reason" ReadOnly="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{4D2444C2-0E97-476c-A2A3-E9E4A9C73009}" Name="PendingModTime" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="PendingModTime" Group="_Hidden" Type="DateTime" DisplayName="Pending Modification Time" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="AssignedTo" Group="Core Task and Issue Columns" Type="User" List="UserInfo" DisplayName="Assigned To" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{58DDDA52-C2A3-4650-9178-3BBC1F6E36DA}" Name="WorkflowLink" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkflowLink" Group="_Hidden" Type="URL" DisplayName="Related Content" ReadOnly="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="StartDate" Group="Base Columns" Type="DateTime" Format="DateOnly" DisplayName="Start Date" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Default>[today]</Default>
+  </Field>
+  <Field ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Body" Group="_Hidden" Type="Note" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" DisplayName="Body" Sortable="FALSE" NumLines="15" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{78EAE64A-F5F2-49af-B416-3247B76F46A1}" Name="FormData" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FormData" Group="_Hidden" Type="Note" DisplayName="Form Data" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{8CBB9252-1035-4156-9C35-F54E9056C65A}" Name="EmailBody" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EmailBody" Group="_Hidden" Type="Note" DisplayName="E-Mail Body" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{8D96AA48-9DFF-46cf-8538-84C747FFA877}" Name="TaskType" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TaskType" Group="_Hidden" Type="Integer" DisplayName="Task Type" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{8E234C69-02B0-42d9-8046-D5F49BF0174F}" Name="WorkflowItemId" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkflowItemId" Group="Base Columns" Type="Integer" DisplayName="Workflow Item ID" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{a8eb573e-9e11-481a-a8c9-1104a54b2fbd}" Name="Priority" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Priority" Group="Core Task and Issue Columns" Type="Choice" DisplayName="Priority" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CHOICES>
+      <CHOICE>(1) High</CHOICE>
+      <CHOICE>(2) Normal</CHOICE>
+      <CHOICE>(3) Low</CHOICE>
+    </CHOICES>
+    <Default>(2) Normal</Default>
+  </Field>
+  <Field ID="{ae069f25-3ac2-4256-b9c3-15dbc15da0e0}" Name="GUID" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="GUID" Group="_Hidden" ColName="tp_GUID" RowOrdinal="0" ReadOnly="TRUE" Hidden="TRUE" Type="Guid" FromBaseType="TRUE" DisplayName="GUID" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ContentType" Group="_Hidden" Type="Computed" DisplayName="Content Type" Sealed="TRUE" Sortable="FALSE" RenderXMLUsingPattern="TRUE" PITarget="MicrosoftWindowsSharePointServices" PIAttribute="ContentTypeID" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <FieldRefs>
+      <FieldRef ID="{03e45e84-1992-4d42-9116-26f756012634}" Name="ContentTypeId" />
+    </FieldRefs>
+    <DisplayPattern>
+      <MapToContentType>
+        <Column Name="ContentTypeId" />
+      </MapToContentType>
+    </DisplayPattern>
+  </Field>
+  <Field ID="{c15b34c3-ce7d-490a-b133-3f4de8801b76}" Name="TaskStatus" Group="Core Task and Issue Columns" Type="Choice" DisplayName="Task Status" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="TaskStatus" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CHOICES>
+      <CHOICE>Not Started</CHOICE>
+      <CHOICE>In Progress</CHOICE>
+      <CHOICE>Completed</CHOICE>
+      <CHOICE>Deferred</CHOICE>
+      <CHOICE>Waiting on someone else</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Not Started</MAPPING>
+      <MAPPING Value="2">In Progress</MAPPING>
+      <MAPPING Value="3">Completed</MAPPING>
+      <MAPPING Value="4">Deferred</MAPPING>
+      <MAPPING Value="5">Waiting on someone else</MAPPING>
+    </MAPPINGS>
+    <Default>Not Started</Default>
+  </Field>
+  <Field ID="{c3a92d97-2b77-4a25-9698-3ab54874bc6f}" Name="Predecessors" Group="Core Task and Issue Columns" Type="LookupMulti" Mult="TRUE" Required="FALSE" DisplayName="Predecessors" SourceID="http://schemas.microsoft.com/sharepoint/v4" StaticName="Predecessors" PrependId="TRUE" List="Self" ShowField="Title" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{CB2413F2-7DE9-4afc-8587-1CA3F563F624}" Name="SendEmailNotification" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="SendEmailNotification" Group="_Hidden" Type="Boolean" DisplayName="Send E-mail Notification" Hidden="TRUE" Sealed="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{cd21b4c2-6841-4f9e-a23a-738a65f99889}" Name="TaskDueDate" Group="Core Task and Issue Columns" Type="DateTime" DisplayName="Due Date" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="TaskDueDate" Format="DateOnly" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{d2311440-1ed6-46ea-b46d-daa643dc3886}" Name="PercentComplete" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="PercentComplete" Group="Core Task and Issue Columns" Type="Number" Percentage="TRUE" Min="0" Max="1" DisplayName="% Complete" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{E506D6CA-C2DA-4164-B858-306F1C41C9EC}" Name="WorkflowName" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkflowName" Group="Base Columns" Type="Text" DisplayName="Workflow Name" Sealed="TRUE" AllowDeletion="TRUE" Customization="" xmlns="http://schemas.microsoft.com/sharepoint/" />
+  <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" Group="_Hidden" Type="Text" DisplayName="Title" Required="TRUE" FromBaseType="TRUE" Customization="" ShowInNewForm="TRUE" ShowInEditForm="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

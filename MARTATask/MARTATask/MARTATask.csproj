@@ -47,6 +47,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
@@ -56,6 +57,13 @@
     <Compile Include="Delegations.cs" />
     <Compile Include="Features\MARTATaskReceiver\MARTATaskReceiver.EventReceiver.cs">
       <DependentUpon>MARTATaskReceiver.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\MARTATask\NewMARTATask.aspx.cs">
+      <DependentUpon>NewMARTATask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\MARTATask\NewMARTATask.aspx.designer.cs">
+      <DependentUpon>NewMARTATask.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskAddedReceiver.cs" />
@@ -74,6 +82,9 @@
       <SharePointProjectItemId>{1aa74e70-a9c1-42a7-8d5c-5b337daa4113}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0ac9d28-081d-43d6-9c4b-fd5243fc0ab0}</SharePointProjectItemId>
+    </None>
     <None Include="MARTA Task\MARTA Task Instance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a1d33860-361d-449e-9bd7-f32b1618c0ca}</SharePointProjectItemId>
     </None>
@@ -99,6 +110,7 @@
     <Content Include="Fields\IsDelegated\Elements.xml" />
     <Content Include="Fields\Manager\Elements.xml" />
     <Content Include="Fields\OriginalAssignee\Elements.xml" />
+    <Content Include="Layouts\MARTATask\NewMARTATask.aspx" />
     <Content Include="MARTA Task\Elements.xml" />
     <Content Include="MARTA Task\MARTA Task Instance\Elements.xml" />
     <Content Include="MARTA Task\Schema.xml" />

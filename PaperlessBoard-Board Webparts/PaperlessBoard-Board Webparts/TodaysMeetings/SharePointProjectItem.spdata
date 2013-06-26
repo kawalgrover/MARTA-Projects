@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="TodaysMeetingsUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="TodaysMeetings\" Type="ElementManifest" />
+    <ProjectItemFile Source="TodaysMeetings.webpart" Target="TodaysMeetings\" Type="ElementFile" />
+    <ProjectItemFile Source="TodaysMeetingsUserControl.ascx" Target="CONTROLTEMPLATES\PaperlessBoard_Board_Webparts\TodaysMeetings\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="PaperlessBoard_Board_Webparts.TodaysMeetings" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

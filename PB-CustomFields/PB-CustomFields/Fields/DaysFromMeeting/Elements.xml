@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{EAEF4CC8-1B36-4C1E-B233-0B1531B0EBE3}"
+        Type="Number"
+        Group="MARTA Columns"
+        DisplayName="Days From Meeting"
+        Name="DaysFromMeeting"
+        Description="Number of days from Meeting date that should ideally be the start date of this event."/>
+</Elements>

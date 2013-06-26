@@ -1,0 +1,49 @@
+﻿/* Selected */
+.s4-toplinks .s4-tn a.selected{
+background:url("/_layouts/Images/selbg.png") repeat-x left top;
+background-color:#0087C1;
+color:#fff; text-decoration:none;
+border:1px transparent solid;
+padding-right:10px;
+padding-left:10px;
+margin:0px;
+}
+
+/* No arrows applies two levels */
+.menu-horizontal a.dynamic-children span.additional-background,
+.menu-horizontal ul.dynamic a.dynamic-children span.additional-background {
+background-image:none;
+}
+.s4-tn ul.dynamic {
+/* UL wrap */
+background-image:none;
+border-top:0px #ccc solid;  border-right:1px transparent solid ;
+border-bottom:1px #ccc solid; border-left:1px #ccc solid ;
+margin:0px; padding:0px;
+}
+/* LIs */
+.s4-tn li.dynamic  {
+background-image:none;
+border-top:1px #ccc solid; border-right:1px #ccc solid;
+border-bottom:1px #fff solid; border-left:1px #fff solid;
+}
+/* LI menu items */
+.s4-tn li.dynamic > .menu-item {
+padding:7px 10px;
+height:16px;
+color:#333;
+background-color:#f7f7f7; /* fallback */
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7f7f7));
+background: -moz-linear-gradient(top, #ffffff, #f7f7f7);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#f7f7f7);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#f7f7f7)";
+}
+/* LI menu items hover */
+.s4-tn li.dynamic > a:hover {
+color:#00557B;
+background-color:#fff; /* fallback */
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+background: -moz-linear-gradient(top, #ffffff, #ffffff);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#ffffff);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#ffffff)";
+}

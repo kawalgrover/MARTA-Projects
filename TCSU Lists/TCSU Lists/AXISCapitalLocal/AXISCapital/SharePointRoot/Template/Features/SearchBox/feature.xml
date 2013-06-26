@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="0d067993-ebda-4ab4-a84c-25708e4b0394"
+          Title="SearchBox"
+          Description="This is the Search Web Part for Axis Knoweldge Network"
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"
+          
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="SearchBox.webpart" />
+  </ElementManifests>
+</Feature>

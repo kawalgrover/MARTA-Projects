@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{22C87415-A0DE-4730-8CBF-93182E764F62}"
+       Type="URL"
+       Group="MARTA Columns"
+       DisplayName="PublishedDocs"
+       Name="PublishedDocs"/>
+</Elements>
+

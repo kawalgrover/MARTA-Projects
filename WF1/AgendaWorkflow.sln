@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaWorkflow", "WF1\AgendaWorkflow.csproj", "{6FE4AF02-4E6E-4136-BB05-F31778413955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBCustomActivities", "PBCustomActivities\PBCustomActivities.csproj", "{A0C010E7-F875-408E-A40C-CD613AD5D01B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs2010.intellinet.com/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WF1\\AgendaWorkflow.csproj
+		SccProjectName1 = WF1
+		SccLocalPath1 = WF1
+		SccProjectUniqueName2 = PBCustomActivities\\PBCustomActivities.csproj
+		SccProjectName2 = PBCustomActivities
+		SccLocalPath2 = PBCustomActivities
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FE4AF02-4E6E-4136-BB05-F31778413955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE4AF02-4E6E-4136-BB05-F31778413955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE4AF02-4E6E-4136-BB05-F31778413955}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6FE4AF02-4E6E-4136-BB05-F31778413955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE4AF02-4E6E-4136-BB05-F31778413955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE4AF02-4E6E-4136-BB05-F31778413955}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A0C010E7-F875-408E-A40C-CD613AD5D01B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C010E7-F875-408E-A40C-CD613AD5D01B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C010E7-F875-408E-A40C-CD613AD5D01B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A0C010E7-F875-408E-A40C-CD613AD5D01B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C010E7-F875-408E-A40C-CD613AD5D01B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C010E7-F875-408E-A40C-CD613AD5D01B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

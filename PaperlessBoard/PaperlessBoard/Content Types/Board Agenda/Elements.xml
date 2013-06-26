@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100f429bbf7fe8b4ff491ca55d2db5fd70a"
+               Name="Board Agenda"
+               Group="Custom Content Types"
+               Description="Used in Paperless Board. This content type originates all the other workflows."
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <!-- Agenda Type -->
+      <FieldRef ID="{94110E4E-91DC-4419-A5CE-9E24AD5EB9FE}"/>
+      
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+      <FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" />
+      <!-- Board Committee -->
+      <FieldRef ID="{81601602-CE87-4220-A6C7-E58342292477}" />
+      <!-- Committee Meeting DateTime -->
+      <FieldRef ID="{6407F7C9-06F2-43D7-9FE7-C19E6B1547E1}" />
+      <!-- AGM Office -->
+      <FieldRef ID="{683E1185-CAD8-48D2-B4E9-3BFF11931856}" />
+      <!-- Workspace URL-->
+      <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}"/>
+      
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="fd8bd043-8199-4e2d-8e3e-851b2c218646"
+          Title="Stock"
+          Description="This is the Stock Web Part for the Axis Knowledge Network"
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"          
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="QuoteMediaCode.webpart" />
+  </ElementManifests>
+</Feature>

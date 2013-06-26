@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="AgendaWFForms" Url="AgendaWFForms" RootWebOnly="false">
+    <File Path="AgendaWFForms\WF1Init.aspx" Url="WF1Init.aspx" />
+    <File Path="AgendaWFForms\Task1Form.aspx" Url="Task1Form.aspx" />
+    <File Path="AgendaWFForms\ReviewerTaskForm.aspx" Url="ReviewerTaskForm.aspx" />
+    <File Path="AgendaWFForms\ApproverTaskForm.aspx" Url="ApproverTaskForm.aspx" />
+<File Path="AgendaWFForms\SubmitForDGMReviewTask.aspx" Url="SubmitForDGMReviewTask.aspx" />
+<File Path="AgendaWFForms\SubmitForGMReviewTask.aspx" Url="SubmitForGMReviewTask.aspx" />
+</Module>
+</Elements>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{CC39A73A-54CA-47DE-97BD-2D666E6E8407}"
+        Type="Text"
+        Group="TCSU Submittal Columns"
+        DisplayName="Transmittal"
+        Name="Transmittal"
+        />
+  
+  <Field ID="{F3F22775-31BF-4D53-8125-1E61AB7FD01E}"
+        Type="DateTime"
+        Format="DateOnly"
+        Group="TCSU Submittal Columns"
+        DisplayName="Submittal Date"
+        Name="SubmittalDate"/>
+
+  <Field ID="{259DE569-0EB0-4E18-B47C-35876DDD3D84}"
+        Type="DateTime"
+        Format="DateOnly"
+        Group="TCSU Submittal Columns"
+        DisplayName="Due Date"
+        Name="DueDate"/>
+
+  <Field ID="{066C366C-37A3-4758-96DF-E3CA30943735}"
+        Type="DateTime"
+        Format="DateOnly"
+        Group="TCSU Submittal Columns"
+        DisplayName="Review Due Date"
+        Name="ReviewDueDate"/>
+
+  <Field ID="{303062CE-5BDE-4154-BCCE-C5B06E0AC931}"
+         Name="SubmittalType"
+         Type="Choice"
+         Group="TCSU Submittal Columns"
+         DisplayName="Submittal Type">
+    <CHOICES>
+      <CHOICE>CDRL</CHOICE>
+      <CHOICE>RFI</CHOICE>
+      <CHOICE>Other</CHOICE>
+    </CHOICES>
+  </Field>
+
+  
+
+  <Field ID="{D98FFA3C-E038-4804-A04A-2C2AE9639D24}"
+        Type="Text"
+        Group="TCSU Submittal Columns"
+        DisplayName="CDRL List"
+        Name="CDRLList"
+        />
+
+  
+  
+  <Field ID="{CB991160-C28E-43AC-803B-682F35720A88}"
+        Type="Text"
+        Group="TCSU Submittal Columns"
+        DisplayName="Location/Vehicle"
+        Name="LocationVehicle"
+        />
+  
+  
+  <!-- Fields below are for the DocumentNumbers list -->
+
+  <Field ID="{433FC353-BEAD-4015-B201-6370CDA554DB}"
+        Type="Integer"
+        Group="TCSU Columns"
+        DisplayName="Section"
+        Name="Section"
+        Required="true"/>
+
+  <Field ID="{3F420069-E190-4616-B3FA-207B1DBF9FCC}"
+        Type="Text"
+        Group="TCSU Columns"
+        DisplayName="SubSystem"
+        Name="SubSystem"
+        Required="true"/>
+
+  <Field ID="{2C019D0E-D182-4F1D-8637-172F88D43FF1}"
+        Type="Text"
+        Group="TCSU Columns"
+        DisplayName="Alstom Document Description"
+        Name="AlstomDocumentDescription"
+        Required="true"/>
+
+
+  <Field ID="{FC255CB4-8E2D-4642-8CC4-87920B970D9D}"
+        Type="Text"
+        Group="TCSU Submittal Columns"
+        DisplayName="Release"
+        Name="Release"
+        StaticName="Release"
+        />
+
+  <Field ID="{A8ED85D5-9634-4353-83E8-6A6B42EA23BB}"
+        Type="Text"
+        Group="TCSU Submittal Columns"
+        DisplayName="Revision"
+        Name="Revision"
+        StaticName="Revision"
+        />
+
+  <Field ID="{12CAA1A1-9620-4BAA-837C-3EC70900F86F}"
+        Type="Text"
+        Group="TCSU Submittal Columns"
+        DisplayName="Section/Function"
+        Name="SectionFunction"
+        StaticName="SectionFunction"
+        />
+
+  <Field ID="{9F0EBF59-CFF0-4101-9908-A01F50985494}"
+        Type="Text"
+        Group="TCSU Submittal Columns"
+        DisplayName="Alstom Document Number"
+        Name="AlstomDocumentNumber"
+        StaticName="AlstomDocumentNumber"
+        
+        />
+
+  <Field ID="{445DA944-A823-46CF-9BDC-5E752A473284}"
+        Type="Text"
+        Group="TCSU Submittal Columns"
+        DisplayName="Discipline"
+        Name="DisciplineLookup"
+        StaticName="DisciplineLookup"
+        
+        />
+  
+  <!-- Fields below are used in the Desciplines list -->
+  <Field ID="{62BE355E-E16A-4EEF-9E7E-B4EEB0C37D39}"
+        Type="Choice"
+        Group="TCSU Submittal Columns"
+        DisplayName="Discipline"
+        Name="Discipline"
+        Required="TRUE" ShowInNewForm="TRUE" >
+    <CHOICES>
+      <CHOICE>TCFU</CHOICE>
+      <CHOICE>Rail Car Maintenance</CHOICE>
+      <CHOICE>TPSS</CHOICE>
+      <CHOICE>Auxillary</CHOICE>
+      <CHOICE>Gap Breaker</CHOICE>
+    </CHOICES>
+  </Field>
+
+  <Field ID="{0E2B8C33-C8AC-4751-BFBF-45BA12E60DDB}"
+        Type="Text"
+        Group="TCSU Columns"
+        DisplayName="Code"
+        Name="Code"
+        Required="TRUE" ShowInNewForm="TRUE"/>
+
+  
+  
+         
+  
+  
+</Elements>

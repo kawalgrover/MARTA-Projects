@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:3BoardAgendaApproval:-dataFormSolution" href="manifest.xsf" solutionVersion="1.0.0.4" productVersion="14.0.0" PIVersion="1.0.0.0" ?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.3"?>
+<dfs:myFields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-06-08T02:14:49">
+	<dfs:queryFields>
+		<q:SharePointListItem_RW>
+			<q:ExpandGroups xsi:nil="true"></q:ExpandGroups>
+			<q:DueDateforAllTasks xsi:nil="true"></q:DueDateforAllTasks>
+			<q:DurationforSerialTasks xsi:nil="true"></q:DurationforSerialTasks>
+			<q:DurationUnits xsi:nil="true"></q:DurationUnits>
+			<q:CancelonRejection xsi:nil="true"></q:CancelonRejection>
+			<q:CancelonChange xsi:nil="true"></q:CancelonChange>
+			<q:EnableContentApproval xsi:nil="true"></q:EnableContentApproval>
+		</q:SharePointListItem_RW>
+	</dfs:queryFields>
+	<dfs:dataFields>
+		<d:SharePointListItem_RW>
+			<d:Approvers>
+				<d:Assignment>
+					<d:Assignee>
+						<pc:Person>
+							<pc:DisplayName></pc:DisplayName>
+							<pc:AccountId></pc:AccountId>
+							<pc:AccountType></pc:AccountType>
+						</pc:Person>
+					</d:Assignee>
+					<d:Stage xsi:nil="true"></d:Stage>
+					<d:AssignmentType>Serial</d:AssignmentType>
+				</d:Assignment>
+			</d:Approvers>
+			<d:ExpandGroups>true</d:ExpandGroups>
+			<d:NotificationMessage></d:NotificationMessage>
+			<d:DueDateforAllTasks xsi:nil="true"></d:DueDateforAllTasks>
+			<d:DurationforSerialTasks xsi:nil="true"></d:DurationforSerialTasks>
+			<d:DurationUnits>Day</d:DurationUnits>
+			<d:CC></d:CC>
+			<d:CancelonRejection>false</d:CancelonRejection>
+			<d:CancelonChange>false</d:CancelonChange>
+			<d:EnableContentApproval>false</d:EnableContentApproval>
+		</d:SharePointListItem_RW>
+	</dfs:dataFields>
+	<my:God>false</my:God>
+	<my:Super_God>false</my:Super_God>
+	<my:Super_Duper_God>false</my:Super_Duper_God>
+</dfs:myFields>

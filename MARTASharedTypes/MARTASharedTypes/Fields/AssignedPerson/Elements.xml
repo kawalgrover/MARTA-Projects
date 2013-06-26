@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{360F341E-BA2E-43EA-8871-AD9F9813EA14}"
+         Type="User"
+         Name="AssignedPerson"
+         DisplayName="Assigned Person"
+         Group="MARTA Shared Columns"
+         UserSelectionMode="PeopleOnly">
+    
+  </Field>
+</Elements>

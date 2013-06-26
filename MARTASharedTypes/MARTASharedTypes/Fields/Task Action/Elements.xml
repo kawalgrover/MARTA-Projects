@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{605EDB7C-2CCA-4875-A6C5-AF6E190FA3AF}"
+         Name="ActionOwed"
+         Type="Choice"
+         Group="MARTA Shared Columns"
+         DisplayName="Action"
+         >
+    <CHOICES>
+      <CHOICE>Review and Comment</CHOICE>
+      <CHOICE>Approve</CHOICE>
+      <CHOICE>Initiate</CHOICE>
+      <CHOICE>Complete</CHOICE>
+      <CHOICE>Schedule</CHOICE>
+      <CHOICE>Conduct</CHOICE>
+      <CHOICE>Submit</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

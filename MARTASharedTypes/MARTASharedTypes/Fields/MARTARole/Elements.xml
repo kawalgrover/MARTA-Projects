@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{E44D57AC-CD13-43DE-936A-B1EAA259BA47}"
+         Name="MARTARole"
+         Type="Text"
+         Group="MARTA Shared Columns"
+         DisplayName="Role">
+  </Field>
+</Elements>

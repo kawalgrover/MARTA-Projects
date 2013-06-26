@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="ExecutiveTaskConfigurationList"
+                OnQuickLaunch="FALSE"
+                TemplateType="10003"
+                Url="Lists/ExecutiveTaskConfigurationList"
+                Description="This list holds configuration information for the Executive Task Tracking solution.">
+  </ListInstance>
+</Elements>

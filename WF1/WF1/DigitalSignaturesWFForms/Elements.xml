@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="DigitalSignaturesWFForms">
+    <File Path="DigitalSignaturesWFForms\Sample.txt" Url="DigitalSignaturesWFForms/Sample.txt" />
+  <File Path="DigitalSignaturesWFForms\DigitalSignaturesInit.aspx" Url="DigitalSignaturesWFForms/DigitalSignaturesInit.aspx" />
+</Module>
+</Elements>

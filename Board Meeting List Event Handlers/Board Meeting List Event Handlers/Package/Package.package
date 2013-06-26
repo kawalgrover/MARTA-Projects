@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="648e6aee-7d4f-48ef-a592-f2a4f3b9707b" solutionId="648e6aee-7d4f-48ef-a592-f2a4f3b9707b" resetWebServer="false" name="BoardMeetingListEventHandlers" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="b9845ae5-1a2a-4d07-a0d3-482991a15183" />
+  </features>
+</package>

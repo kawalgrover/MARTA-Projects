@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68408538-F435-4A78-A667-1ED37AF17E49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PaperlessBoard_Board_Webparts</RootNamespace>
+    <AssemblyName>PaperlessBoard-Board Webparts</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <PostDeploymentCommand>xcopy /y "%24%28TargetDir%29PaperlessBoard_Board_Webparts.wsp" "C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PBSolutions\"</PostDeploymentCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgendaList\AgendaList.cs" />
+    <Compile Include="AgendaList\AgendaListUserControl.ascx.cs">
+      <DependentUpon>AgendaListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgendaList\AgendaListUserControl.ascx.designer.cs">
+      <DependentUpon>AgendaListUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PastMeetings\PastMeetings.cs" />
+    <Compile Include="PastMeetings\PastMeetingsUserControl.ascx.cs">
+      <DependentUpon>PastMeetingsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PastMeetings\PastMeetingsUserControl.ascx.designer.cs">
+      <DependentUpon>PastMeetingsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TodaysMeetings\TodaysMeetings.cs" />
+    <Compile Include="TodaysMeetings\TodaysMeetingsUserControl.ascx.cs">
+      <DependentUpon>TodaysMeetingsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TodaysMeetings\TodaysMeetingsUserControl.ascx.designer.cs">
+      <DependentUpon>TodaysMeetingsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpcomingMeetings\UpcomingMeetings.cs" />
+    <Compile Include="UpcomingMeetings\UpcomingMeetingsUserControl.ascx.cs">
+      <DependentUpon>UpcomingMeetingsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpcomingMeetings\UpcomingMeetingsUserControl.ascx.designer.cs">
+      <DependentUpon>UpcomingMeetingsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AgendaList\AgendaList.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgendaList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fe01fdff-95e6-4fe7-9e42-9967cb2ff28c}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\PB Board WebParts\PB Board WebParts.feature">
+      <FeatureId>{d5bcfc83-e3da-4732-a1ac-ba04085c4894}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{96afb209-b05c-4d15-bdea-bdd6b02cbc12}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PastMeetings\PastMeetings.webpart" />
+    <None Include="PastMeetings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{85c02eff-8657-458f-9a22-3320ef8e8753}</SharePointProjectItemId>
+    </None>
+    <None Include="SafeControls\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{65b91202-80c1-4b88-9991-e51683cc34c8}</SharePointProjectItemId>
+    </None>
+    <None Include="TodaysMeetings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{06c66716-ae61-45f8-9f54-00675cd49325}</SharePointProjectItemId>
+    </None>
+    <None Include="TodaysMeetings\TodaysMeetings.webpart" />
+    <None Include="UpcomingMeetings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5e87f165-d7e5-4eb6-a43e-fb6737ed8603}</SharePointProjectItemId>
+    </None>
+    <None Include="UpcomingMeetings\UpcomingMeetings.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="AgendaList\AgendaListUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="AgendaList\Elements.xml" />
+    <Content Include="Features\PB Board WebParts\PB Board WebParts.Template.xml">
+      <DependentUpon>PB Board WebParts.feature</DependentUpon>
+    </Content>
+    <Content Include="PastMeetings\Elements.xml" />
+    <Content Include="PastMeetings\PastMeetingsUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SafeControls\Elements.xml" />
+    <Content Include="TodaysMeetings\Elements.xml" />
+    <Content Include="TodaysMeetings\TodaysMeetingsUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="UpcomingMeetings\Elements.xml" />
+    <Content Include="UpcomingMeetings\UpcomingMeetingsUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

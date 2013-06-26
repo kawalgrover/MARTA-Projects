@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{7CFE3257-06C0-4061-AA42-0B4F4D95A02D}"
+        Type="Boolean"
+        Group="MARTA Columns"
+        DisplayName="Publish Document To Board"
+        Name="PublishDocumentToBoard">
+    <Default>FALSE</Default>
+  </Field>
+</Elements>

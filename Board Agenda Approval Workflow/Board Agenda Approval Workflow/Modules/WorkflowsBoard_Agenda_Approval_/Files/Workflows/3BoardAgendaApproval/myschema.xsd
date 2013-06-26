@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema targetNamespace="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-06-08T02:14:49" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-06-08T02:14:49" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:import schemaLocation="rootschema.xsd" namespace="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"/>
+	<xsd:import schemaLocation="qfschema.xsd" namespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"/>
+	<xsd:import schemaLocation="dfschema.xsd" namespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields"/>
+	<xsd:import schemaLocation="typeschema.xsd" namespace="http://schemas.microsoft.com/office/2009/documentManagement/types"/>
+	<xsd:import schemaLocation="builtincontrolsschema.xsd" namespace="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"/>
+	<xsd:element name="God" nillable="true" type="xsd:boolean"/>
+	<xsd:element name="Super_God" nillable="true" type="xsd:boolean"/>
+	<xsd:element name="Super_Duper_God" nillable="true" type="xsd:boolean"/>
+</xsd:schema>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List Title="RolesForExecutiveTasks"
+      Description="This list is used to keep the values used different roles that the Executive Task Tracking shows and who is assigned to each role."
+      Direction="0"
+      Url="Lists/RolesForExecutiveTasks"
+      BaseType="0"
+      FolderCreation="FALSE"
+      BrowserFileHandling="permissive"
+      Version="1">
+  <MetaData>
+    <Views>
+      <View BaseViewID="0"
+            Type="HTML"
+            MobileView="TRUE"
+            TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+          <FieldRef Name="AssignedPerson"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified"
+                      Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement"
+                            Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements"
+                            Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo"
+                            Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+          
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1"
+            Type="HTML"
+            WebPartZoneID="Main"
+            DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;"
+            DefaultView="TRUE"
+            MobileView="TRUE"
+            MobileDefaultView="TRUE"
+            SetupPath="pages\viewpage.aspx"
+            ImageUrl="/_layouts/images/generic.png"
+            Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments">
+          </FieldRef>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="AssignedPerson"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements"
+                            Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo"
+                            Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <ContentType ID="0x0100A56F2B91259049F89F801336371DB768009B97F2856D3EE94E8F8F0DECF04C9BD0"
+                 Name="ExecutiveTaskMARTARole"
+                 Group="MARTA Content Types"
+                 Description="This content type holds items for MARTA Roles used by the Exective Task List."
+                 Version="2">
+      <Folder TargetName="ExecutiveTaskMARTARole"/>
+      <FieldRefs>
+        <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}"
+                  Name="ContentType"/>
+        <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"
+                  Name="Title"
+                  Required="TRUE"
+                  ShowInNewForm="TRUE"
+                  ShowInEditForm="TRUE"/>
+        <FieldRef ID="{360f341e-ba2e-43ea-8871-ad9f9813ea14}"
+                  Name="AssignedPerson"/>
+      </FieldRefs>
+      
+    </ContentType>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"
+             Type="Text"
+             Name="Title"
+             DisplayName="Role"
+             Required="TRUE"
+             SourceID="http://schemas.microsoft.com/sharepoint/v3"
+             StaticName="Title"
+             FromBaseType="TRUE"
+             ColName="nvarchar1"
+             EnforceUniqueValues="FALSE"
+             Indexed="FALSE"
+             MaxLength="255"
+             Version="1"
+             RowOrdinal="0"/>
+      
+      <Field ID="{39360f11-34cf-4356-9945-25c44e68dade}"
+             ReadOnly="TRUE"
+             Hidden="TRUE"
+             Type="Text"
+             Name="File_x0020_Type"
+             DisplaceOnUpgrade="TRUE"
+             DisplayName="$Resources:core,File_Type;"
+             SourceID="http://schemas.microsoft.com/sharepoint/v3"
+             StaticName="File_x0020_Type"
+             FromBaseType="TRUE"
+             ColName="nvarchar2"/>
+      
+      <Field ID="{360f341e-ba2e-43ea-8871-ad9f9813ea14}"
+             Type="User"
+             Name="AssignedPerson"
+             DisplayName="Assigned Person"
+             Group="MARTA Shared Columns"
+             UserSelectionMode="PeopleOnly"
+             SourceID="{eae3aeef-4844-4f11-b19b-b4a6f6df2629}"
+             StaticName="AssignedPerson"
+             ColName="int1"
+             RowOrdinal="0"/>
+      
+    </Fields>
+    
+    <Forms>
+      <Form Type="DisplayForm"
+            Url="DispForm.aspx"
+            SetupPath="pages\form.aspx"
+            WebPartZoneID="Main" />
+      <Form Type="EditForm"
+            Url="EditForm.aspx"
+            SetupPath="pages\form.aspx"
+            WebPartZoneID="Main" />
+      <Form Type="NewForm"
+            Url="NewForm.aspx"
+            SetupPath="pages\form.aspx"
+            WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

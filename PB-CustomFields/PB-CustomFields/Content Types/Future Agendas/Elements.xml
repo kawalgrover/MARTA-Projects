@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100370df00279f3444498f590acea32d0c3"
+               Name="Future Agendas"
+               Group="Custom Content Types"
+               Description="Content Type for look ahead list for Future Agendas."
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      
+      <FieldRef ID="{60B001C8-C91E-4B2B-98FC-01FC23EA9847}"/>
+      
+      <FieldRef ID="{B93982F8-1081-49E1-A469-3846943E7D38}"/>
+      
+      <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}"/>
+      
+      <FieldRef ID="{0150E9FB-2077-4331-B406-8CB4C404A0BE}"/>
+      
+      <FieldRef ID="{683E1185-CAD8-48D2-B4E9-3BFF11931856}"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

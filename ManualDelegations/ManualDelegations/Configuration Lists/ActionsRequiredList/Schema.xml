@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List Title="ActionsRequired"
+      Description="This list is used to keep the values used for 'Action Required' for manual delegations by an executive."
+      Direction="0"
+      BaseType="0"
+      ServerTemplate="100"
+      Url="Lists/ActionsRequired"
+      FolderCreation="FALSE"
+      BrowserFileHandling="permissive"
+      Version="1">
+  <MetaData>
+    <Views>
+      <View BaseViewID="0"
+            Type="HTML"
+            MobileView="TRUE"
+            TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement"
+                            Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements"
+                            Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo"
+                            Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified"
+                      Ascending="FALSE"></FieldRef>
+          </OrderBy>
+          <Where>
+            <Or>
+              <Neq>
+                <FieldRef Name="Status"></FieldRef>
+                <Value Type="Text">$Resources:core,Tasks_Completed</Value>
+              </Neq>
+              <IsNull>
+                <FieldRef Name="Status"></FieldRef>
+              </IsNull>
+            </Or>
+          </Where>
+        </Query>
+      </View>
+      
+      <View BaseViewID="1"
+            Type="HTML"
+            WebPartZoneID="Main"
+            DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;"
+            DefaultView="TRUE"
+            MobileView="TRUE"
+            MobileDefaultView="TRUE"
+            SetupPath="pages\viewpage.aspx"
+            ImageUrl="/_layouts/images/generic.png"
+            Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments"></FieldRef>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="ActionOwed"/>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements"
+                            Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo"
+                            Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Fields>
+      
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"
+             Type="Text"
+             Name="Title"
+             DisplayName="$Resources:core,Title;"
+             Required="TRUE"
+             SourceID="http://schemas.microsoft.com/sharepoint/v3"
+             StaticName="Title"
+             FromBaseType="TRUE"
+             ColName="nvarchar1"/>
+      <Field ID="{39360f11-34cf-4356-9945-25c44e68dade}"
+             ReadOnly="TRUE"
+             Hidden="TRUE"
+             Type="Text"
+             Name="File_x0020_Type"
+             DisplaceOnUpgrade="TRUE"
+             DisplayName="$Resources:core,File_Type;"
+             SourceID="http://schemas.microsoft.com/sharepoint/v3"
+             StaticName="File_x0020_Type"
+             FromBaseType="TRUE"
+             ColName="nvarchar2"/>
+      <Field ID="{605edb7c-2cca-4875-a6c5-af6e190fa3af}"
+             Name="ActionOwed"
+             Type="Choice"
+             Group="MARTA Shared Columns"
+             DisplayName="Action"
+             SourceID="{dbf4bb5d-0366-4f92-bd90-2a086f1b901f}"
+             StaticName="ActionOwed"
+             ColName="nvarchar3"
+             RowOrdinal="0">
+        <CHOICES>
+          <CHOICE>Review and Comment</CHOICE>
+          <CHOICE>Approve</CHOICE>
+          <CHOICE>Initiate</CHOICE>
+          <CHOICE>Complete</CHOICE>
+          <CHOICE>Schedule</CHOICE>
+          <CHOICE>Conduct</CHOICE>
+          <CHOICE>Submit</CHOICE>
+        </CHOICES>
+      </Field>
+      
+    </Fields>
+
+    <ContentTypes>
+      <ContentTypeRef ID="0x0100a9048e6444504679a810a72f9ea5017a" />
+    </ContentTypes>
+
+
+    <Forms>
+      <Form Type="DisplayForm"
+            Url="DispForm.aspx"
+            SetupPath="pages\form.aspx"
+            WebPartZoneID="Main" />
+      <Form Type="EditForm"
+            Url="EditForm.aspx"
+            SetupPath="pages\form.aspx"
+            WebPartZoneID="Main" />
+      <Form Type="NewForm"
+            Url="NewForm.aspx"
+            SetupPath="pages\form.aspx"
+            WebPartZoneID="Main" />
+    </Forms>
+    
+    <Security>
+      <ReadSecurity>1</ReadSecurity>
+      <WriteSecurity>1</WriteSecurity>
+      <SchemaSecurity>0</SchemaSecurity>
+    </Security>
+  </MetaData>
+</List>
+

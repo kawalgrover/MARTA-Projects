@@ -1,0 +1,1048 @@
+﻿body {
+	background-color: #fff !important;
+	margin: 25px 0 0;
+	font-family: "Myriad Pro", Helvetica, Arial, Sans-serif;
+	/* Verdana Font Stack: http://www.sitepoint.com/eight-definitive-font-stacks-2/ */
+	font-family: Verdana, "Verdana Ref", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", sans-serif;
+}
+
+
+.mainContainer { margin-left: 0; }
+
+/* Get rid of default blueglass shadows */
+.shadowLeft, .shadowRight { width: 0 !important; }
+.shadowLeft .spacer, .shadowRight .spacer { display: none; }
+
+/* Links */
+a:link {
+	text-decoration: none;
+}
+.mainContainer a:link {
+	color: #2066aa !important;
+	text-decoration: none;
+}
+
+.master {
+	width: 986px !important;	
+}
+
+/* Top Bar (Welcome Administrator!) */
+.topBar {
+				float: right;
+				width: 399px !important;
+				height: 85px;
+}
+.topBar td {
+				height: 27px;
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#052d4c', endColorstr='#2c6694'); /* for IE */
+				background: -webkit-gradient(linear, left top, left bottom, from(#052d4c), to(#2c6694)); /* for webkit browsers */
+				background: -moz-linear-gradient(top,  #052d4c,  #2c6694); /* for firefox 3.6+ */ 
+}
+
+/* Logo area */
+.topArea {
+				height: 85px; 
+				background: #fff;
+}
+.topArea h1 {
+				margin: 12px 15px 15px 0;
+				float: left;
+}
+.topArea h1 a {
+				display: block;
+				width: 340px;
+				height: 65px;
+				background: url('/_layouts/images/AxisIntraBranding/logo-kuyper.png');
+				font-size: 0; text-indent: -999px;
+}
+	#utility {
+		height: 36px;
+	}
+
+/* clearfix: http://www.webtoolkit.info/css-clearfix.html */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+
+/* site actions menu */
+
+.siteActionMenu {
+				margin-top: 3px !important;
+
+}
+.ms-siteactionsmenu div div span div {
+				background: none !important;
+				border: none !important;
+}
+.ms-siteactionsmenu div div span div a {
+					color: #777;
+					font-weight: normal;
+					font-family: Arial !important;
+}
+
+/* welcome link */
+
+.sharepointLogin {
+	margin-top: 2px;
+}
+.topBar .ms-globallinks {
+	height: 27px !important;
+	float: right;				
+}
+.ms-globallinks a {
+	font-size: 11px !important;
+	color: #777 !important;
+				
+}
+.topBar .ms-SPLink {
+	height: 21px !important;
+	padding: 5px 0 0 5px;
+	margin-left: 40px;
+	margin-top: 5px;
+}
+.topBar .ms-SpLinkButtonActive {
+	border-top: 0;
+	height: 21px !important;
+}
+.topBar .ms-SPLink img {
+	position: relative; top: 3px;
+}
+.topBar .ms-SPLink a:link {
+	font-size: 11px;
+}
+.topBar .ms-SPLink a:hover {
+	color: #000 !important;
+	height: 27px !important;
+}
+
+
+
+/* top right navigation (next to site actions) */
+.other-nav {
+				float: right;
+				margin-left: 0;
+}
+.other-nav li {
+				list-style-type: none;
+				display: inline;
+				float: left;
+				padding: 0 8px 0 8px;
+				
+}
+.other-nav a {
+				font-size: 11px;
+				color: #777;
+}
+
+
+/* nav container */
+
+.topNavRoundLeft { display: none; }
+.ms-topNavContainer {
+	float: left;
+}
+.topNavContainer, .nav {
+	height: 28px !important;
+}
+.topNavItem a {
+	height: 22px !important;
+	padding: 6px 8px 0 8px !important;
+	background: none !important;
+	color: #fff !important;
+	font-weight: bold;
+	font-size: 11px !important;
+}
+.topNavContainer td {
+		background: #02aff1 !important
+}
+.topNav {
+		background-image: none !important;
+		background-color: transparent !important;
+		border: none !important;
+		float: left;
+		height: 100%;
+		position: static !important;
+}
+
+
+/* home button */
+
+#home-btn {
+	background: #2564a7;
+	float: left;
+	height: 22px; 
+	padding-top: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#home-btn a {
+	color: #fff;
+	font-weight: bold; font-size: 11px;
+}
+
+
+
+/* top right navigation */
+
+.topNavContainer .other-nav {
+	float: right;
+	height: 23px;
+	margin-top: -1px
+}
+
+.topNavContainer .other-nav a {
+				color: #fff !important;
+				font-size: 11px !important;
+}
+.topNavContainer .other-nav li {
+				list-style-type: none;
+				display: inline;
+				float: left;
+				padding: 3px 8px 0px;
+				
+}
+
+
+/* utility nav (print, email, add to quicklinks, feedback) */
+
+#utility {
+	float: right;
+	margin-top: 10px;
+}
+#utility a {
+				float: left;
+				display: block;
+				height: 20px;
+				padding: 0 6px 0 10px;
+				margin-left: 15px;
+				color: #000;
+				font-size: 11px;
+				line-height: 23px;
+}
+#utility li {
+				display: inline;
+}
+#utility a:hover {
+				text-decoration: underline;	
+}
+
+
+/* Breadcrumbs */
+
+
+#breadcrumbs {
+	float: left;
+	line-height: 23px;
+	margin-top: 5px;
+}
+.breadcrumb {
+	border: 0;
+	font-size: 11px;
+}
+
+
+/* General Page Styling */
+
+.pageTitle {
+	font-size: 18pt;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	padding: 15px 0;
+	margin-bottom: 20px;
+
+}
+
+
+/* Interior Left Nav */
+
+#left-nav {
+	width: 20%;
+	padding-right: 17px !important;
+}
+.leftNav {
+	background:none; 
+	border: none;
+	border-top: 2px solid #2066aa;
+	margin: 0;
+	width: 100%;
+}
+
+/* In this section Header */
+.leftNav1 td a {
+	font-family: Verdana !important;
+	font-size: 11pt !important;
+	color: #2e5377;
+	margin: 7px 0;
+	font-weight: normal !important;
+}
+
+.leftNav td td td a {
+	padding-left: 15px;
+	background: url('/_layouts/images/AxisIntraBranding/bullet.png') 5px 5px no-repeat;
+	font-size: 9pt !important;
+	font-family: Verdana !important;
+	color: #004881;
+}
+.leftNav img {
+	display: none;
+}
+.leftNav tr:hover, .leftNav td:hover, .leftNav a:hover, .leftNav tr:hover .leftNav1{
+	background-color: #fff !important;
+	color: #004881;
+}
+
+.leftNav td div {
+	border-top: 2px solid #2066aa;
+margin-left: -1px;
+}
+table.leftNavFlyOutsItem {
+	background: #fff;
+	border-left: none;
+}
+table.leftNavFlyOutsItem td {
+	padding: 2px;
+}
+.leftNav table.leftNavFlyOutsItem a {
+	font-size: 8pt !important;
+}
+
+
+.topNavFlyOuts {
+	border-top: 2px solid #2066aa;
+	margin-top: 6px;
+}
+table.topNavFlyOutsItem {
+}
+table.topNavFlyOutsItem * {
+	background: #fff !important;
+}
+table.topNavFlyOutsItem td {
+	
+}
+a.topNavFlyOutsItem {
+	background: url('/_layouts/images/AxisIntraBranding/bullet.png') 5px 7px no-repeat !important;
+	padding-left: 15px;
+	font-family: Verdana !important;
+	font-size: 8pt !important;
+}
+
+/* Web Part STyling */
+.ms-WPBody {
+	margin-bottom: 20px;
+}
+
+/* Axis News Web part */
+/*
+.axis-news span {
+	font-size: 18pt;
+	color: #2066aa;
+}
+*/
+.axis-news p {
+	font-size: 10pt;
+}
+.axis-news img {
+	margin-right: 20px;
+}
+.axis-news p a {
+	background: #e7eef6;
+	font-size: 7pt;
+	padding: 5px;
+}
+.axis-news li {
+	list-style-type: square;
+	padding-bottom: 10px;
+	color: #2066aa;
+}
+.axis-news li a {
+	font-size: 10pt;
+}
+
+/* Axis CEO */
+#axis-ceo-transition {
+	background: url('/_layouts/images/AxisIntraBranding/axis-ceo-transition.png');
+	width: 100%;
+	height: 25px;
+}
+#axis-ceo-transition-summary {
+	font-size: 7pt;
+	padding: 3px;
+	text-align: Center;
+	border: 1px solid #c7deee;
+}
+/* World of Axis Web Part */
+
+#lyrtop
+{
+    width:100%;
+    background-color:#000000;
+
+}
+
+#lyrtop .lblcaption
+{
+	font-family: "Myriad Pro";
+	font-size: 11pt;
+	color: #fff;
+	margin: 0 0 0 10px;
+position: relative; top: -3px;
+}
+#lyrtop, #lyrtop td, #lyrtop tr {
+	height: 27px !important;
+	padding: 0 !important;
+}
+#lnkinsurance {
+	position: relative;
+	top: -2px; left: -50px;
+}
+#lnkreinsurance {
+	position: relative;
+	top: -2px; left: -85px;
+}
+#lnkhealth {
+	position: relative;
+	top: -2px; left: -107px;
+}
+
+#lyrbanner
+{
+    width:100%;
+    height:172px;
+}
+#imgpreview
+{
+    width:100%;
+    height:172px;
+    border:0px;
+}
+
+#lblforlnktitle
+{
+    font-family:"Myriad Pro";
+    font-size:14pt;
+    color:White;
+    font-weight:bold;
+    
+}
+
+#lnktoexteneralsite
+{
+    font-family:"Myriad Pro";
+    font-size:14pt;
+    color:White;
+    font-weight:bold;
+    text-decoration:underline;
+    
+    
+}
+.newscenterbar
+{
+	background-color:#CCCCCC;
+	color:#CCCCCC;
+	height:1px;
+	border:0px;
+
+}
+#lyrovertext
+{
+    z-index:1005;
+    position:absolute;
+    top:250px;   
+    
+}
+.lilistnews
+{
+    font-family:Verdana;
+    font-size:12px;
+    color:#2d6694;
+    padding-left:5px;
+    padding-top:5px;
+}
+.newstitle
+{
+    font-family:Verdana;
+    font-size:16pt;    
+    color:#2066aa;
+}
+.newscontent
+{
+    font-family:Verdana;
+    font-size:13pt;
+}
+#lyroverurl
+{
+    z-index:1006;
+    position:absolute;
+    top:275px;
+}
+
+.rigtsideheadertitle
+{
+    font-family:Verdana;
+    font-size:15pt;
+    color:#2066aa;    
+}
+.rightsideheadertable
+{
+    width:100%;
+    width:20px;
+}
+.rightsideli
+{
+    font-family:Verdana;
+    font-size:12px;
+    text-align:left;
+    padding-left:5px;
+    padding-bottom:2px;
+    
+}
+.rightsideul
+{
+    list-style-image:url(/_layouts/images/AxisIntraBranding/1329282521_resultset_next.png); 
+}
+
+
+/* Search Box Web Part */
+
+.searchtable
+{
+	border-color:#2066aa;
+	border-width:3px;
+	border-style:solid;	
+	border-top-width: 0;
+}
+.searchtxt
+{
+	padding-left:7px;
+	font-family:Verdana;
+	font-size:13px;
+	color:white;
+	font-weight:bold;
+}
+.searchtr
+{
+	padding-left:7px;
+	background-color:#e3f4fd;
+	padding-right:10px;
+	padding-top:7px;
+	padding-bottom:8px;
+
+}
+
+.drpsearch
+{
+	width:100%;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9pt;	
+	height:23px;
+}
+.searchtextbox
+{
+	width:100%;	
+	height:18px;	
+}
+
+.feedsubtitle
+{
+	font-family:Verdana;
+	font-size:12pt;
+	color:#88add2;
+	padding-left:23px;
+}
+
+.feedlist
+{
+	font-family:Verdana;
+	font-size:8pt;
+	list-style-image:url(/_layouts/images/AxisIntraBranding/feedbullet.png);
+}
+
+.feedlist li
+{
+	padding-bottom:4px;
+}	
+
+.weathertoptd
+{
+	padding-left:25px;
+
+}
+.clsgeocodeslbl
+{
+	font-size:9pt;
+	font-weight:bold;
+	padding-right:10px;
+}
+.clsgeocodes
+{
+	font-size:8pt;
+	width:100px;
+
+}
+.todayweathertext
+{
+	height:50px;
+	padding-left:25px;
+	padding-top:5px;
+}
+
+.todayweathertext span
+{
+	font-family:Verdana;
+	font-size:36pt;
+	color:#19468d;
+}
+.dyshead
+{
+    font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:#2066aa; 
+}
+
+
+.knowledgetitle
+{
+	
+}
+
+.knowledgetitle td span
+{
+	font-family:Verdana;
+	font-size:10pt;
+	color:#99b6cd;
+	padding-left:10px;
+}
+.knowledgesubhead
+{
+	font-family:Verdana;
+	font-size:9pt;
+	color:#99b6cd;
+	padding-left:10px;
+	padding-top:5px;
+
+}
+.knowledgesubtitle
+{
+	font-family:Verdana;
+	font-size:9pt;
+	padding-left:10px;	
+	padding-top:5px;
+}
+
+#ctl00_lyraddquicklinks
+{
+    position:absolute;
+    z-index:1500;
+    top:50%;
+    left:40%;
+    background-color:#e1e6eb;
+    width:300px;
+    height:200px;   
+    padding-left:25px;
+    padding-top:15px;
+    border:3px solid #000;
+    font-family:Verdana;
+}
+#ctl00_lyraddquicklinks input[type=text]
+{
+    width:250px;
+    padding-bottom:7px;
+}
+#ctl00_lyraddquicklinks span
+{
+    padding-bottom:10px;
+}
+
+#lblquicklnk
+{
+    font-family:Verdana;
+    font-size:25pt;
+    padding-bottom:7px;    
+    font-weight:bold;
+}
+#ctl00_pnlmanagelinks {
+    position:absolute;
+    z-index:1501;
+    top:50%;
+    left:40%;
+    background-color:#e1e6eb;
+    width:400px;
+    height:250px;   
+    border:3px solid #000;
+    padding-left:10px;
+  }
+  #ctl00_lyrssfeeds 
+  {
+     position:absolute;
+    z-index:1503;
+    top:50%;
+    left:30%;
+    background-color:#e1e6eb;
+    width:400px;
+    height:250px;   
+    border:3px solid #000;
+    padding-left:10px;
+  }
+  
+ .footrertext
+{
+	font-family:Verdana;
+	font-size:10pt;
+	color:#004881;
+	padding-left:10px;
+}
+
+.temperatureFPg_1f7a008c_0e36_4add_8e7e_a053fbe52735
+{
+    font-family:Verdana;
+    font-size:25pt;
+    color:#004880;    
+}
+
+.tblarticles
+{
+	padding-left:20px;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+.tblarticles span
+{
+	font-family:Verdana;
+	font-size:18pt;
+	color:#0033cc;
+	font-weight:bold;
+}
+
+
+.storiestable
+{
+	
+	height:40px;	
+	background-color:#eaeaea;
+	
+}
+
+.storiestable tr td
+{
+	padding-left:20px;
+	font-family:Verdana;
+	font-size:16pt;
+	font-weight:bold;	
+}
+
+.outerarttbl 
+{
+		padding-left:10px;
+		padding-top:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		border:1px solid #CCCCCC;
+		
+}
+.innerarttable
+{
+		padding-left:10px;
+		padding-top:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		border:1px solid #CCCCCC;
+		height:150px;		
+}
+
+.arttitle
+{
+	font-family:Verdana;
+	font-size:15pt;
+	color:Black;
+	
+}
+.artdesc
+{
+	padding-top:10px;
+	font-family:Verdana;
+	font-size:9pt;
+	color:Black;
+}
+
+
+
+
+.clsworldtitle
+{
+	color:#004880;
+	font-family:Verdana;
+	font-size:20pt;
+}
+
+.clsworldclockcity
+{
+	color:#0d0e0d;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12pt;
+	font-weight:bold;	
+
+}
+.clsweatherandclocktitle
+{
+	color:#336d9a;
+	font-family:Verdana;
+	font-size:12pt;
+	padding-left:5px;
+
+}
+
+
+/* Footer */
+
+#footer {
+	margin-top: 30px;
+width: 1011px !important;
+}
+#footer-sitemap {
+	border-top: 2px solid #004881;
+}
+#footer-sitemap li.head {
+	color: #004881;
+	font-size: 10pt;
+}
+#footer-sitemap p.head {
+	color: #004881;
+	font-size: 12pt;
+	margin: 10px 0 15px;
+}
+
+#footer-sitemap ul {
+	float: left;
+	width: 14%;
+	margin: 0 0 0 10px !important;
+}
+#footer-sitemap ul.first {
+	margin: 0;
+}
+#footer-sitemap li {
+	list-style-type: none;}
+	
+#footer-sitemap li a {
+	color: #050202;
+	font-size: 8pt;
+}
+ul.first a {
+	font-size: 10pt !important;
+	color: #004881 !important;
+}
+#footer-copyright-links  {
+	text-align: center;
+	padding-bottom: 20px;
+}
+#footer-copyright-links a{
+	margin-right: 20px;
+font-size: 8pt;
+}
+
+/*.footertext
+{
+	font-family:Verdana;
+	color:#004881;
+	font-size:10pt;
+	padding-right:10px;
+}
+.categories
+{
+	font-family:Verdana;
+	color:#004881;
+	font-size:10pt;
+	padding-left:10px;
+}
+.categoriesfirst
+{
+	font-family:Verdana;
+	color:#004881;
+	font-size:10pt;
+	padding-left:5px;
+	list-style:none
+	
+}
+.categoriesfirst li
+{
+	padding-bottom:5px;
+}
+.categoriesothers
+{
+	font-family:Verdana;
+	font-size:10pt;
+	padding-left:5px;
+	list-style:none
+}
+
+.categoriesothers li
+{
+		padding-bottom:5px;
+}*/
+
+tr.ms-WPHeader td {
+	border-bottom: 0;
+	border-top: 2px solid #004984;
+}
+
+h3.ms-standardheader {
+	color: #004984;
+	font-size: 13pt;
+	font-weight: normal;
+}
+
+
+
+
+.searchtable {
+	width: 100%;
+}
+
+.qmmt_main	{ background:#F0F0F0; border:none; } 
+.qmmt_text		{ font: 11px  arial;color: #676767; text-align:left;  padding:2px;}
+
+.qmmt_text_up		{ font: 11px  arial; color: #009900; }
+.qmmt_text_down	{ font: 11px  arial; color: #ff0000; }
+
+.qmmt_tab				 { font: bold 11px  arial !important; border: 4px solid #F0F0F0 !important; color:#2166AB; background-color: #F0F0F0;   }
+.qmmt_tabactive 	 { font: bold 11px  arial !important; border: 4px solid #F0F0F0 !important; color:#FFFFFF; background-color: #F49927;   }
+
+.qmmt_cycle	{ background-color:#eff9ed; color: #676767; }
+
+.qmmt_header_text	{ font-family: arial, sans-serif; color: #676767;  }
+.qmmt_header_bar	{ display:none; }
+
+a.qmmt 						{ color: #666; text-decoration:none;font-weight:bold;  }
+a:visited.qmmt 			{ color: #666; text-decoration:none; }
+a:hover.qmmt 			{ color: #000; text-decoration:underline; }  
+
+#miniCharts { background-color: #F0F0F0; border: 1px solid #ccc; width: 100%; margin-top: 5px; }
+
+#miniCharts img {   margin-top: 7px; }
+.qmmt_header_bar img { border:none !important; }
+
+/* jsvarsQuotesSpan.go styles */
+.qmjsleft 	{	float:left;	font: 12px Tahoma; color: #800000; }
+.qmjsright 	{	float:right; font: 12px Tahoma;	color: #000000; }
+.qmjssymbol	{	float:left; font: bold 12px Tahoma; color: #000000; }
+.qmjsname 	{	float: left; font: 12px Tahoma; color: #000000; }
+
+.qmjsdatadown { font: bold 14px arial; color: #cc0000; }
+.qmjsdataup { font: bold 14px arial; color: #00cc00; }
+.qmjsdata { font: bold 14px arial; color: #676767; }
+
+#customChart  td { padding: 3px; }
+
+.qmHeader  { font: bold 12px arial; color: #676767; }
+.qmSymbol { font: bold 14px arial;  color: #676767; text-align: center; border: 1px solid #cccccc;  border-right:none; }
+.qmLast  { font: 14px arial; color: #676767; text-align: center;  border: 1px solid #cccccc; border-right:none; border-left:none; }
+.qmChange { background-color: #F0F0F0; text-align:center;  border: 1px solid #cccccc;  border-left:none; }
+.hrdbar
+{
+	background-color:#2066aa;
+	color:#2066aa;
+	height:2px;
+	border:0px;
+}
+.mywebparttitle
+{
+    color:#174f86;
+	font-family:Verdana;
+	font-size:12pt;
+	padding-left:5px;
+
+}
+.insurancelisttitle
+{
+  font-family:Verdana;
+  font-size:16px;
+  color:#2066aa;
+  
+}
+
+.newscentertitle
+{
+	font-family:Verdana;
+	font-size:13px;
+	font-weight:bold;	
+}
+.lyroverlink
+{
+    left:200px;
+   
+    
+}
+.lyrover
+{
+    left:200px;
+    
+}
+.cnewstitle
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	color:#355f85;
+}
+.cnewstitleblack
+{
+	font-family:Verdana;
+	font-size:11px;	
+}
+
+.ms-standardheader ms-WPTitle
+{
+    display: none;
+    
+    
+}
+.pubdate
+{
+	font-family:Verdana;
+	font-size:11px;
+	color:#999999;
+}
+.lyrpnlmylinks
+{
+    position:absolute;
+    top:50%;
+    left:40%;
+    background-color:#CCCCCC;
+    width:300px;
+    height:500px;
+    padding-left:15px;
+   
+}
+
+.axisnewssubtitle
+{
+    font-family:Verdana;        
+    color:#2d6694;    
+    font-size: 14pt;
+	
+}
+.axisnewstitle
+{
+    font-size: 18pt;
+    color: #2066aa;
+}

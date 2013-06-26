@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Workflow1Forms" Url="Workflow1Forms" RootWebOnly="false">
+    <File Path="Workflow1Forms\Sample.txt" Url="Workflow1Forms/Sample.txt" />
+  <File Path="Workflow1Forms\Workflow1InitiationForm.aspx" Url="Workflow1Forms/Workflow1InitiationForm.aspx" />
+<File Path="Workflow1Forms\Workflow1AssociationForm.aspx" Url="Workflow1AssociationForm.aspx" />
+</Module>
+</Elements>

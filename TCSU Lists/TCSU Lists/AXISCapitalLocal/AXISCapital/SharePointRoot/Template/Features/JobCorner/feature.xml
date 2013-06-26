@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="1e6bcee2-6566-4c5c-92ce-607c6355f16d"
+          Title="JobCorner"
+          Description="This is the JobCorner Web Part for the Axis Knowledge Newtwork"
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"          
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="JobCorner.webpart" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{E8E625D4-CFF2-4832-9D1F-C8DA60775A71}"
+         Type="Boolean"
+         Group="MARTA Columns"
+         DisplayName="Is Contributor?"
+         Name="IsContributor"/>
+</Elements>

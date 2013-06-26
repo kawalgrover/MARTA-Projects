@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Workflow Task (0x010801) -->
+  <ContentType ID="0x01080100c55841431d2b4a00b96a229bf9b6b14d"
+               Name="MARTA Workflow Task"
+               Group="MARTA Shared Content Types"
+               Description="This content type holds the items for a MARTA Task list that is originated from a workflow."
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{605EDB7C-2CCA-4875-A6C5-AF6E190FA3AF}" Name="ActionOwed" DefaultValue="Approve"/>
+      <FieldRef ID="{4953D6C5-4997-4510-AB00-7A1243933FF1}" Name="IsDelegated"/>
+      <FieldRef ID="{B59D9889-B4F6-46BB-ABC4-75E34B06EAF6}" Name="OriginalAssignee"/>
+      <FieldRef ID="{179836E0-2916-49DA-8734-0D1297E2BC03}" Name="DelegateDueDate"/>
+      <FieldRef ID="{E1ABA978-D44A-4600-A6E0-D4F3C4FEE7A4}" Name="TaskSource"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

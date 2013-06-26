@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: AgendaDocument (PB-CustomFields\AgendaDocument) (0x01010056f13056f1fa4407a97c80d9e2a44937) -->
+  <ContentType ID="0x01010056f13056f1fa4407a97c80d9e2a44937004d2ddd4840bb499783501f87977d0eb1"
+               Name="Default Agenda Document"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{94110E4E-91DC-4419-A5CE-9E24AD5EB9FE}" Required="TRUE" Name="Agenda Type" DisplayName="Agenda Type"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

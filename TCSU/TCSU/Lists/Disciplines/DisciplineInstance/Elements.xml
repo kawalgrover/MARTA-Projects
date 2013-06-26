@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Disciplines"
+                OnQuickLaunch="FALSE"
+                TemplateType="10004"
+                Url="Lists/Disciplines"
+                Description="TCSU lookup list for Disciplines">
+
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Candler Park</Field>
+          <Field Name="Discipline">Auxillary</Field>
+          <Field Name="Code">EEC</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Decatur</Field>
+          <Field Name="Discipline">Auxillary</Field>
+          <Field Name="Code">EED</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Eastlake</Field>
+          <Field Name="Discipline">Auxillary</Field>
+          <Field Name="Code">EEE</Field>
+        </Row>
+      </Rows>
+    </Data>
+    
+    
+  </ListInstance>
+</Elements>

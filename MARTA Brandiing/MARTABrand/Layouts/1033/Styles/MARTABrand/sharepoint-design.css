@@ -1,0 +1,1145 @@
+﻿body {
+font-family: Verdana,sans-serif;
+}
+
+#header {
+    background-image: url("/_layouts/images/MARTA/header-red.jpg");
+    background-repeat: repeat-x;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+#footer
+{
+	background-image: url(/_layouts/images/MARTA/footer-repeater.png);
+	background-repeat:repeat-x;
+	height: 63px;
+	float:left;
+	padding-top:10px;
+	position:absolute;
+}
+
+.footerimg
+{
+	background-image: url(/_layouts/images/MARTA/footer-logo.png);
+	width:90%;
+	height:29px;
+	background-repeat:no-repeat;
+	margin-left:13px;
+	margin-top:5px;
+	
+}
+	
+.headerimg
+{
+	background-image: url(/_layouts/images/MARTA/myMARTA-logo-chosen-small.png);
+	height:40px;
+	background-repeat:no-repeat;
+}
+
+#topnav
+{
+	width:100%;
+	background-image: url(/_layouts/images/MARTA/topnav.jpg);
+	background-repeat:repeat-x;
+	height: 22px;
+	padding-top:7px;
+	padding-left:4px;
+}
+
+
+
+
+#welcomemsg {
+    float: right;
+    height: 50px;
+    margin-right: -5px;
+    margin-top: -45px;
+    width: 350px;
+}
+
+body #s4-ribbonrow {
+	background-image:url(/_layouts/images/MARTA/SiteActions-bg.jpg);
+	background-repeat:repeat-x;
+	background-color:#DDDDDD;
+	/*background-position:left;
+	height:42px;
+    overflow: hidden;
+    */
+}
+
+.ms-cui-topBar2 {
+    height: 42px;
+}
+
+.ms-siteactionsmenuinner{
+border-color:#c5c5c5;
+background:url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x -0px -467px;
+background-color:#DDDDDD;
+}
+
+.topnavrightsection {
+    color: #FFFFFF;
+    float:right;
+    width:265px;
+}
+.topnavleftsection {
+    color: #FFFFFF;
+    float:left;
+    width:60%;
+}
+
+.ms-Search {
+    float: left;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-left: 35px;
+}
+
+.ms-subsites {
+    float: left;
+}
+
+.ms-subsites:hover {
+    border: 1px solid #C5C5C5;
+    height:16px;
+    background: url("/_layouts/images/MARTA/site-actions-repeater.png") repeat-x;
+}
+
+.ms-GlobalLinks {
+    float: left;
+    height: 15px;
+    padding-top: 12px;
+}
+
+.ms-devdashboard {
+    float: left;
+    padding-top: 15px;
+    width:20px;
+}
+
+.s4-breadcrumb-anchor{
+    border: 1px solid transparent;
+    display: inline-block;
+    margin: 0 3px 0 0;
+    padding: 2px 5px 0;
+    text-align: center;
+    vertical-align: bottom;
+    border-color:#c5c5c5;
+	background:url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x -0px -467px;
+	background-color:#DDDDDD;
+}
+
+.ms-qatbutton {
+    border: 1px solid transparent;
+    display: inline-block;
+    margin: 0 3px 0 0;
+    padding: 2px 5px 0;
+    text-align: center;
+    vertical-align: bottom;
+    border-color:#c5c5c5;
+	background:url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x -0px -467px;
+	background-color:#DDDDDD;
+}
+
+.ms-cui-tt-span {
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    display: block;
+    padding: 4px 10px;
+    text-align: center;
+    border-color:#c5c5c5;
+	background:url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x -0px -467px;
+	background-color:#DDDDDD;
+}
+
+.s4-search input.ms-sbplain {
+    background: url("/_layouts/images/MARTA/bgximg.png") repeat-x scroll 0 -511px #FFFFFF;
+    border: 1px solid #E3E3E3 !important;
+    font-size: 1.1em;
+    height: 17px;
+    padding: 2px 3px 0;
+    width: 111px !important;
+}
+
+body #s4-leftpanel {
+    /*float: left;
+    width: 155px;
+    border-right: 1px solid #C5C5C5;
+    height: 100%; */
+    display: none; 
+}
+
+.s4-ca {
+    /*background: none repeat scroll 0 0 #FFFFFF;
+    margin-left: 155px;
+    margin-right: 0;
+    border-left: 1px solid #C5C5C5;
+    padding-left:10px;
+    min-height: 524px;*/
+    margin-left: 0px; 
+    
+}
+
+.ms-dialog .s4-ca {
+    padding-left:0px;
+    padding-top:10px;
+}
+
+.menu-horizontal {
+     padding-top: 2px;
+}
+
+.s4-tn {
+    margin: 0;
+    padding: 0;
+}
+
+#sptopnavNew
+{
+	margin-left:-100px;
+	position: absolute;
+	top: 60px;
+	z-index:300;
+	display:none;
+	}
+
+#sptopnavNew ul
+{
+width:100%;
+left:0px;
+list-style-type: none;
+}
+
+#sptopnavNew ul li
+{
+border-color:#6C6E70;	
+border-width:thin;
+border-style:solid;
+width:100%;
+background-color: #F2F2F2;
+left:0px;
+height:15px;
+}
+
+#sptopnavNew ul li:hover
+{
+background:lightgray;
+border-color: #6C6E70;
+}
+
+.s4-breadcrumb-anchor:hover, .ms-qatbutton:hover,.ms-cui-tt-span:hover, .ms-siteactionsmenuhover{
+  background: url("/_layouts/images/MARTA/bgximg.png") repeat-x scroll 0 -489px #FFFFFF;
+  border-color: #8B929A;
+}
+
+.s4-breadcrumb-anchor:selected, .ms-qatbutton:selected,.ms-cui-tt-span:selected{
+  background: url("/_layouts/images/MARTA/bgximg.png") repeat-x scroll 0 -489px #FFFFFF;
+  border-color: #8B929A;
+}
+
+.ms-cui-cg-t {
+    background-color: #c5c5c5;
+    background-image: none;
+    color: #000000;
+}
+
+.ms-cui-cg {
+    border-style: solid;
+    border-width: 1px 1px 1px;
+    height: 41px;
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-t {
+    background-color: #c5c5c5;
+    background-image: none;
+    color: #FFFFFF;
+}
+
+.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-ct-last .ms-cui-tt-a {
+    border-right-color: #c5c5c1;
+}
+
+.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover {
+    border-right-color: #c5c5c1;
+    border-top-color: #c5c5c1;
+    border-left-color: #c5c5c1;
+    background-color:#C5C5C5;
+}
+
+.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-tt-a:hover {
+  background-color: #C5C5C5 !important;
+  border-color: #c5c5c1;
+}
+
+/*.ms-browseTab.ms-cui-tt-s a.ms-cui-tt-a{
+color:red !important;
+background  : url("/_layouts/images/bgximg.png") repeat-x scroll 0 -489px #FFFFFF;
+}*/
+
+
+/*.ms-cui-tts ul .ms-cui-tt.ms-browseTab.ms-cui-tt-s.ms-cui-tt-a.ms-cui-tt-span {
+ background  : url("/_layouts/images/bgximg.png") repeat-x scroll 0 -489px #FFFFFF;
+  border-color: #8B929A;
+}
+
+.ms-cui-tts ul li a span.ms-cui-tt-span{
+ background  : url("/_layouts/images/bgximg.png") repeat-x scroll 0 -489px #FFFFFF;
+  border-color: #8B929A; 
+}*/
+
+ul li.ms-cui-tt-s a span.ms-cui-tt-span
+{
+  background  : url("/_layouts/images/MARTA/bgximg.png") repeat-x scroll 0 -489px #FFFFFF;
+  border-color: #8B929A; 
+}
+
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-cg-t
+{
+    background: url("/_layouts/images/MARTA/bgximg.png") repeat-x scroll 0 -857px transparent;
+    color: #333333;
+}
+
+.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-cg-t {
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    border-color: #C5C5C5;
+    color: #333333;
+}
+
+.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-ct-ul {
+    background-color: #C5C5C5;
+    border-color: #c5c5c1;
+}
+
+.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-cg-i {
+    border-color: #c5c5c1;
+}
+
+.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-ct-first .ms-cui-tt-a {
+    border-left-color: #c5c5c1;
+}
+
+.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-tt-a {
+    background-color: #C5C5C5;
+    border-color: #c5c5c1 #c5c5c1 #c5c5c1;
+}
+
+
+.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a {
+    border-left-color: #c5c5c1;
+    border-right-color: #c5c5c1;
+}
+
+.ms-cui-ct-topBar-lb, .ms-cui-tabBody-lb {
+    border-color: #c5c5c1 !important;
+}
+
+
+.ms-cui-tt-span {
+    padding-bottom: 2px;
+}
+.ms-cui-cg-lb .ms-cui-cg-i {
+    border-color: #c5c5c1;
+    height: 15px;
+}
+.ms-cui-cg-lb .ms-cui-ct-last .ms-cui-tt-a {
+    border-right-color: #c5c5c1;
+}
+
+
+.ms-cui-cg-lb .ms-cui-ct-first .ms-cui-tt-a {
+    border-left-color: #c5c5c1;
+}
+/* Sub Sites */
+.menu ul
+{
+list-style:none;
+
+}
+.menu ul,.menu li
+{
+margin:0;
+padding:0;
+
+}
+.menu a.menu-item span.additional-background,.menu a.menu-item span.menu-item-text
+{
+cursor:pointer;
+
+}
+.menu .menu-item,
+.menu .menu-item .additional-background,
+.menu .menu-item .additional-background .menu-item-text
+{
+display:block;
+
+}
+.menu li.hover,.menu li.hover-off
+{
+position:relative;
+
+}
+
+.menu-vertical .menu-item-text
+{
+overflow:hidden;
+
+}
+/* End of Sub Sites CSS */
+
+#s4-bodyContainer {
+    margin-top:-14px;
+}
+
+a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+
+.ms-cui-ct-ul {
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    border-color: #C5C5C5;
+    color:#333333;
+}
+
+.ms-cui-cg-db .ms-cui-cg-t  {
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    border-color: #C5C5C5;
+    color:#333333;
+}
+
+.ms-cui-cg-db .ms-cui-cg-i{
+	background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    border-color: #C5C5C5;
+    color:#333333;
+}
+
+.ms-cui-cg-db .ms-cui-ct-last .ms-cui-tt-a{
+border-color:#C5C5C5;
+border-right-color:#C5C5C5;
+}
+
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-ct-ul{
+	background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+	border-color: #C5C5C5;
+    color:#333333;}
+    
+
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-cg-t{
+color:#333333;
+background-color:#C5C5C5;
+}
+
+.ms-cui-cg-db .ms-cui-ct-first .ms-cui-tt-a{
+border-left-color:#C5C5C5;
+}
+
+.ms-cui-cg-db .ms-cui-tt-a:hover{
+border-color:#C5C5C5;
+border-top-color:#C5C5C5;
+}
+
+.ms-cui-cg-db .ms-cui-cg-t{
+color:#333333;
+}
+
+.ms-cui-cg-tl.ms-cui-cg-s .ms-cui-cg-t{
+color:#333333;
+}
+
+.ms-cui-cg-mg.ms-cui-cg-s .ms-cui-cg-t{
+color:#333333;
+
+}
+
+.ms-cui-cg-pp.ms-cui-cg-s .ms-cui-cg-t{
+color:#333333;
+}
+
+
+.ms-cui-tt-a {
+    color: #333333 !important;
+}
+
+.ms-cui-tt-a:hover{
+color:#333333 !important;
+}
+
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+    border-right-color: #C5C5C5;
+}
+
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-cg-t {
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    color: #333333;
+}
+
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-ct-first .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+    border-right-color: #C5C5C5;
+    border-top-color: #C5C5C5;
+}
+
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-cg-i {
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-ct-last .ms-cui-tt-a {
+    border-right-color: #C5C5C5;
+}
+
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-tt-a:hover{
+border-top-color:#C5C5C5;
+}
+
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover{
+border-color:#C5C5C5;
+}
+
+.ms-cui-ct-topBar-db, .ms-cui-tabBody-db {
+    border-color: #C5C5C5 !important;
+}
+
+.ms-cui-tts > .ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span {
+    padding-bottom: 4px;
+}
+
+.ms-cui-ct-ul .ms-cui-tt-span {
+    padding-top: 5px;
+}
+
+.ms-cui-tt-span {
+    
+}
+
+.ms-cui-cg-or.ms-cui-cg-s .ms-cui-cg-t {
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    color: #333333;
+}
+
+.ms-cui-cg-or.ms-cui-cg-s .ms-cui-cg-i {
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-or.ms-cui-cg-s .ms-cui-ct-ul {
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-or.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+    border-right-color: #C5C5C5;
+}
+
+ms-cui-cg-or.ms-cui-cg-s .ms-cui-tt-a {
+    background-color: #DDDDDD;
+    border-color: #C5C5C5 #C5C5C5 #C5C5C5;
+}
+
+/* Personal Settings */
+a.ms-toolbar:hover
+{
+	color:#C7AC12;
+}
+
+
+/* Site Actions Menu */
+.ms-siteactionsmenu > span > a {
+    color: #23272C;
+}
+
+
+div.ms-MenuUIPopupBody.ms-MenuUIPopupScreen, div.ms-MenuUIPopupBody.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner div.ms-MenuUIPopupBody.ms-MenuUIPopupScreen {
+    border: 1px solid #C5C5C5;
+}
+
+div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner div.ms-MenuUILarge ul.ms-MenuUIUL div.ms-MenuUIULItem a.ms-MenuUIULLink, div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner div.ms-MenuUILargeRtL ul.ms-MenuUIUL div.ms-MenuUIULItem a.ms-MenuUIULLink {
+    color: #333333 !important;
+}
+
+div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner ul.ms-MenuUIUL div.ms-MenuUIULItemHover
+{
+	background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+	border-color: #C5C5C5;
+	color: #333333;
+}
+
+.ms-welcomeMenu.ms-SpLinkButtonActive
+{
+	background: url("/_layouts/images/MARTA/site-actions-repeater.png") repeat-x;
+	border-color: #C5C5C5;
+	color: #333333;
+}
+
+.ms-welcomeMenu {
+    margin: 10px 3px;
+}
+        
+.ms-cui-cg-lb .ms-cui-cg-t {
+    background: none;
+    color:#333333;
+}
+
+
+/* Workflows */
+td.ms-linksectionheader, th.ms-linksectionheader {
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    border: 1px solid #C5C5C5;
+    text-align: left;
+}
+
+/* Site Settings Links */
+.ms-linksection-level1 ul li a {
+    color: #333333;
+}
+
+.ms-linksection-level1 ul li a:hover {
+    color: #C7AC12 !important;
+}
+
+.ms-linksection-level1 h3 {
+    color: #333333;
+}
+
+/* All Site Content*/
+.ms-viewlsts .ms-vb2 > a {
+    color: #333333 !important;
+}
+.ms-viewlsts .ms-vb2 > a:hover {
+    color: #C7AC12 !important;
+}
+
+/* Left Navigation */
+
+.s4-ql ul.root > li > .menu-item, .s4-qlheader, .s4-qlheader:visited {
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    color: #333333;
+    border-color:#C5C5C5;
+}
+
+.menu ul, .menu li {
+    padding-bottom: 2px;
+}
+
+.s4-ql ul.root ul {
+    margin: 0 0 10px;
+    padding-left: 10px;
+}
+
+
+.s4-ql a.selected 
+{
+	background-image: url("/_layouts/images/MARTA/arrow-bullet.png");
+	background-color:White;
+    border-color: transparent;
+    background-repeat:no-repeat;
+    background-position:left;
+    color:#C7AC12 !important;
+}
+
+
+.s4-ql ul.root ul > li > a {
+    border-color: transparent;
+    border-style: none;
+    color:#333333;
+}
+
+.s4-ql ul.root ul > li > a:hover {
+    color:#C7AC12;
+}
+/* left navigation end */
+
+a:link {
+    color: #333333;
+}
+
+.ms-vb a:link, .ms-vb2 a:link, .ms-vb-user a:link {
+    color: #333333;
+}
+
+.s4-search select.ms-sbscopes, .s4-search input.ms-sbplain {
+    color: #333333;
+}
+
+.ms-menutoolbar td a {
+    color: #3B4F65;
+}
+
+.ms-rteElement-H1B {
+    color: #333333;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+
+.ms-dlgTitle 
+{
+	background:none;
+    background-image: url("/_layouts/images/MARTA/model-window-header.png");
+    background-repeat: repeat-x;
+}
+
+.ms-dlgBorder {
+    border: 1px solid #333333;
+}
+
+.ms-dlgContent {
+    border-color:#2F2F2F;
+}
+
+ms.ModelContent 
+{ 
+position:fixed !important 
+} 
+
+
+.ms-ToolPaneOuter {
+    padding-top: 22px;
+}
+
+.ms-cui-ribbon, .ms-cui-menu, .ms-cui-toolbar-toolbar {
+    font-family: Verdana,sans-serif;
+}
+
+.ms-siteactionsmenuinner, .ms-siteactionsmenuhover {
+    font-family: Verdana,sans-serif;
+}
+
+
+/* top navigaton drop down menu */
+#top-nav ul li ul.dynamic {
+    color:#909090;
+    width:auto;
+    background-color:#303030;
+    z-index: 1;
+    border: 1px solid #737373;
+    margin-top:6px;
+}
+
+#top-nav ul li ul.dynamic li{
+    border-bottom: 1px solid #737373;
+    width: 90%;
+}
+
+#top-nav ul li ul.dynamic li a span{
+    text-align:left;
+}
+
+.s4-search {
+    margin-left: -20px;
+    margin-top: -5px;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.ms-sbplain s4-searchbox-QueryPrompt {
+    font-family: Verdana,sans-serif;
+}
+
+.ms-ltviewselectormenuheader .ms-viewselector a, .ms-ltviewselectormenuheader .ms-viewselectorhover a {
+    color: #666666;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.0em;
+    font-weight: normal;
+}
+
+.ms-mini-socialNotif:hover {
+    border: 1px solid #C5C5C5;
+    height:26px;
+    background: url("/_layouts/images/MARTA/site-actions-repeater.png") repeat-x;
+}
+
+/*.ms-subsites:hover {
+    border: 1px solid #C5C5C5;
+    height:17px;
+    background: url("/_layouts/images/MARTA/site-actions-repeater.png") repeat-x;
+    width:30px;
+}*/
+
+.ms-mini-socialNotif
+{
+border: 1px solid transparent;
+display: inline-block;
+height: 40px;
+margin: 0 1px;
+overflow: hidden;
+padding: 0 2px;
+text-align: center;
+vertical-align: top;
+}
+
+.s4-help {
+    display: inline-block;
+    margin: 0 0 0 3px;
+}
+
+.ms-help
+{
+	float: left; 
+	padding-left: 10px;
+	padding-right: 7px;
+    padding-top: 15px;
+}
+
+/*
+OWA Mini Header
+ */
+ body #s4-mini-header {
+    background-image: url("/_layouts/images/MARTA/header-red.jpg");
+    background-repeat: repeat-x;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+input.s4-searchbox-QueryPrompt
+{
+	font-size: 8pt;
+	font-family: Verdana,sans-serif;
+}
+
+
+/* Landing page */
+#showcase-landing {
+    height:208px;
+    width:723px;
+	background-image: url("/_layouts/images/MARTA/banner-landing.png");
+}
+
+#site-container{
+/*	border: 1px solid #ccc;
+	width:70%;*/
+}
+#right-column-container-landing {
+	width:180px;
+	height: auto;
+	float:left;
+}
+
+#mainContent-home{
+	float: left;
+	height: auto;
+	width: 500px;
+	margin-top: 0px;
+	margin-right: 2px;
+	padding-left:100px;
+}
+#HomeIcons {
+	background-image: url("/_layouts/images/MARTA/icons.png");
+}
+
+.martahome
+{
+width:"70%";
+vertical-align:middle;
+}
+
+.martahome1
+{
+width:"80%";
+vertical-align:middle;
+}
+
+#footer {
+		
+		bottom:-100;
+		width:100%;
+		background-image: url(/_layouts/images/MARTA/footer-repeater.png);
+		background-repeat:repeat-x;
+		height: 63px;
+		/*padding-top:10px;*/
+}
+
+#homelinks ul li a
+{
+	height:15px;
+	}
+	
+.ms-featurealtrow {
+    background-color: #C5C5C5;
+}
+
+.ms-formtoolbar {
+    margin-left: -10px;
+}
+
+/*body #s4-workspace
+{
+	overflow:inherit;
+}*/
+
+.ms-dialog #s4-workspace
+{
+	overflow-x: auto;
+    overflow-y: scroll;
+}
+
+/* Calander tool box */
+
+.ms-cui-cg-gr .ms-cui-cg-i {
+background: url("/Style Library/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    border-color: #C5C5C5;
+    color: #333333;
+}
+
+.ms-cui-cg-gr .ms-cui-cg-t {
+    color: #333333;
+}
+
+.ms-cui-cg-gr.ms-cui-cg-s .ms-cui-cg-t {
+    background: url("/Style Library/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    color: #333333;}
+    
+.ms-cui-cg-gr.ms-cui-cg-s .ms-cui-cg-i {
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-gr.ms-cui-cg-s .ms-cui-ct-ul {
+    background-color: #DDDDDD;
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-gr.ms-cui-cg-s .ms-cui-ct-last .ms-cui-tt-a {
+    border-right-color: #C5C5C5;
+}
+.ms-cui-cg-gr.ms-cui-cg-s .ms-cui-tt-a {
+    background-color: #DDDDDD;
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-gr.ms-cui-cg-s .ms-cui-tt-a:hover {
+border-top-color:#C5C5C5;
+border-left-color:#C5C5C5;
+}
+
+.ms-cui-cg-gr.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+    border-right-color: #C5C5C5;
+}
+.ms-cui-cg-gr.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover {
+    border-left-color: #C5C5C5;
+    border-right-color: #C5C5C5;
+    border-top-color:#c5c5c5;
+}
+
+.ms-cui-cg-gr.ms-cui-cg-s .ms-cui-ct-first .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+}
+
+.ms-cui-cg-gr.ms-cui-cg-s .ms-cui-ct-first .ms-cui-tt-a:hover {
+    border-top-color: #C5C5C5;
+        border-left-color: #C5C5C5;
+            border-right-color: #C5C5C5;
+}
+
+
+.ms-cui-cg-gr .ms-cui-ct-first .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+}
+
+.ms-cui-cg-gr .ms-cui-ct-first .ms-cui-tt-a:hover {
+    border-top-color: #C5C5C5;
+        border-right-color: #C5C5C5;
+}
+
+
+.ms-cui-cg-gr .ms-cui-ct-last .ms-cui-tt-a {
+    border-right-color: #C5C5C5;
+}
+
+.ms-cui-cg-gr .ms-cui-ct-last .ms-cui-tt-a:hover {
+    border-top-color: #C5C5C5;
+        border-left-color: #C5C5C5;
+}
+
+.ms-cui-cg-gr .ms-cui-cg-t {
+    background-color: #DDDDDD;
+    background: none;
+}
+
+.ms-cui-ct-topBar-gr, .ms-cui-tabBody-gr {
+    border-color: #C5C5C5 !important;
+}
+
+/* Permissions Tool */
+.ms-cui-ct-topBar-or, .ms-cui-tabBody-or {
+    border-color: #C5C5C5 !important;
+}
+
+body #pageStatusBar {
+    padding: 15px 5px 5px 10px;
+}
+
+.ms-cui-cg-or.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover {
+    background-color: #FEF4E5 !important;
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-or.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a{
+    border-top-color: #C5C5C5;
+}
+
+.ms-cui-cg-or .ms-cui-cg-i {
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-or .ms-cui-cg-t {
+    background: #DDDDDD;
+    color: #C5C5C5;
+}
+
+.ms-cui-cg-or .ms-cui-ct-last .ms-cui-tt-a {
+    border-right-color: #C5C5C5;
+}
+
+.ms-cui-cg-or .ms-cui-ct-first .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+}
+
+.ms-cui-cg-or .ms-cui-ct-last .ms-cui-tt-a:hover {
+    border-top-color: #C5C5C5;
+}
+
+/* Page Tools*/
+.ms-cui-ct-topBar-yl, .ms-cui-tabBody-yl {
+    border-color: #C5C5C5 !important;
+}
+
+.ms-cui-cg-yl.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover {
+    background-color: #FEF4E5 !important;
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-yl.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a{
+    border-top-color: #C5C5C5;
+}
+
+.ms-cui-cg-yl .ms-cui-cg-i {
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-yl .ms-cui-cg-t {
+    background: #DDDDDD;
+    color: #C5C5C5;
+}
+
+.ms-cui-cg-yl .ms-cui-ct-last .ms-cui-tt-a {
+    border-right-color: #C5C5C5;
+}
+
+.ms-cui-cg-yl .ms-cui-ct-first .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+}
+
+.ms-cui-cg-yl .ms-cui-ct-last .ms-cui-tt-a:hover {
+    border-top-color: #C5C5C5;
+}
+
+.ms-cui-cg-yl .ms-cui-cg-t {
+    color: #333333;
+}
+
+.ms-cui-cg-yl.ms-cui-cg-s .ms-cui-cg-i {
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-yl.ms-cui-cg-s .ms-cui-cg-t {
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    color: #333333;
+}
+
+.ms-cui-cg-yl.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+    border-right-color: #C5C5C5;
+}
+
+
+/* Web Part Tools*/
+.ms-cui-ct-topBar-pp, .ms-cui-tabBody-yl {
+    border-color: #C5C5C5 !important;
+}
+
+.ms-cui-cg-pp.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover {
+    background-color: #FEF4E5 !important;
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-pp.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a{
+    border-top-color: #C5C5C5;
+}
+
+.ms-cui-cg-pp .ms-cui-cg-i {
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-pp .ms-cui-cg-t {
+    background: #DDDDDD;
+    color: #C5C5C5;
+}
+
+.ms-cui-cg-pp .ms-cui-ct-last .ms-cui-tt-a {
+    border-right-color: #C5C5C5;
+}
+
+.ms-cui-cg-pp .ms-cui-ct-first .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+}
+
+.ms-cui-cg-pp .ms-cui-ct-last .ms-cui-tt-a:hover {
+    border-top-color: #C5C5C5;
+}
+
+.ms-cui-cg-pp .ms-cui-cg-t {
+    color: #333333;
+}
+
+.ms-cui-cg-pp.ms-cui-cg-s .ms-cui-cg-i {
+    border-color: #C5C5C5;
+}
+
+.ms-cui-cg-pp.ms-cui-cg-s .ms-cui-cg-t {
+    background: url("/_layouts/images/MARTA/SiteActions-bg.jpg") repeat-x scroll 0 -467px #DDDDDD;
+    color: #333333;
+}
+
+.ms-cui-cg-pp.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a {
+    border-left-color: #C5C5C5;
+    border-right-color: #C5C5C5;
+}
+
+/*roy*/
+.ms-WPHeader{
+/* [ReplaceColor(themeColor:"Light1")] */ background-color:#676767;
+}
+.ms-WPTitle,.ms-WPTitle a, a:link{
+/* [ReplaceColor(themeColor:"Hyperlink")] */ color:#ffffff;
+}
+
+/* Tool box */
+.ms-cui-ctl-on, .ms-cui-ctl-dark-highlight, .ms-cui-ctl-a2.ms-cui-ctl-dark-highlight:hover, .ms-cui-ctl-a1.ms-cui-ctl-dark-highlight:hover, .ms-cui-mrusb-selecteditem a:hover, .ms-cui-ctl-hoveredOver {
+    background-color: #C5C5C5;
+    border-color: #C2821B !important;
+}
+
+.ms-cui-ctl-large:hover, .ms-cui-ctl-light-hoveredOver, .ms-cui-ctl-medium:hover, .ms-cui-ctl:hover, .ms-cui-mrusb-selecteditem.ms-cui-ctl-light-hoveredOver a, .ms-cui-ctl-thin:hover {
+    background-color: #DDDDDD;
+    border-color: #F1C43F !important;
+}
+
+.ms-cui-ctl-on:hover {
+    background-color: #DDDDDD !important;
+    border-color: #C28A30 !important;
+}
+
+.ms-cui-ctl-mousedown, .ms-cui-ctl-large:active, .ms-cui-ctl-medium:active, .ms-cui-ctl:active, .ms-cui-ctl-a1:active, .ms-cui-ctl-a2:active, .ms-cui-ctl-thin:active {
+    background-color: #C5C5C5 !important;
+    border-color: #C28A30 !important;
+}

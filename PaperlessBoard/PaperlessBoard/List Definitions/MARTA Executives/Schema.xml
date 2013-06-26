@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="MARTA Executives" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/PaperlessBoard-MARTA Executives" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100516c763c532d402792a2e0f47192e69b" Name="Responsible AGM" Group="Custom Content Types" Description="Responsible AGM" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <!-- Executive Positions -->
+          <FieldRef ID="{683E1185-CAD8-48D2-B4E9-3BFF11931856}" />
+          <!-- AGM -->
+          <FieldRef ID="{0150E9FB-2077-4331-B406-8CB4C404A0BE}" />
+          <!-- Administrator -->
+          <FieldRef ID="{3B8B0735-3FDA-487C-BA18-A50CFDC66F39}"/>
+          <!-- AGM Supervisor -->
+          <FieldRef ID="{E8DCA6E0-1783-4945-9698-FFCD20AD9D6B}"/>
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Type="Text" DisplayName="_HiddenTitle" StaticName="Title" Required="FALSE" Hidden="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE"/>
+      <Field ID="{683e1185-cad8-48d2-b4e9-3bff11931856}" Name="Executive Position" Type="Choice" DisplayName="Executive Position">
+    <CHOICES>
+      <CHOICE>AGM-Audit</CHOICE>
+      <CHOICE>AGM-Bus Operations</CHOICE>
+      <CHOICE>AGM-Communications and External Affairs</CHOICE>
+      <CHOICE>AGM-Contracts and Procurement</CHOICE>
+      <CHOICE>AGM-Finance</CHOICE>
+      <CHOICE>AGM-Human Resources</CHOICE>
+      <CHOICE>AGM-Legal Services</CHOICE>
+      <CHOICE>AGM-Operations</CHOICE>
+      <CHOICE>AGM-Planning</CHOICE>
+      <CHOICE>AGM-Police</CHOICE>
+      <CHOICE>AGM-Rail Operations</CHOICE>
+      <CHOICE>AGM-Safety and QA</CHOICE>
+      <CHOICE>AGM-Technology</CHOICE>
+      <CHOICE>Executive Director</CHOICE>
+      <CHOICE>DGM</CHOICE>
+      <CHOICE>CBSS</CHOICE>
+      <CHOICE>GM</CHOICE>
+    </CHOICES>
+  </Field>
+      <Field ID="{0150e9fb-2077-4331-b406-8cb4c404a0be}" Type="User" DisplayName="Executive" Required="True" StaticName="Executive" Name="Executive" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" />
+      <Field ID="{3B8B0735-3FDA-487C-BA18-A50CFDC66F39}" Type="User" DisplayName="Administrator" Required="True" StaticName="Administrator" Name="Administrator" Group="MARTA Columns" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" />
+      <Field ID="{E8DCA6E0-1783-4945-9698-FFCD20AD9D6B}"
+         Name="AGM Office Supervisor"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="AGM Office Supervisor">
+        <CHOICES>
+          <CHOICE>CBSS</CHOICE>
+          <CHOICE>DGM</CHOICE>
+        </CHOICES>
+      </Field>
+      
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Executive Position">
+          </FieldRef>
+          <FieldRef Name="Executive">
+          </FieldRef>
+          <FieldRef Name="Administrator">
+          </FieldRef>
+          <FieldRef Name="AGM Office Supervisor">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

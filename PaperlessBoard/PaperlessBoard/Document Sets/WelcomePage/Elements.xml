@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Add the Contract Award Analysis and Procurement Resolution empty documents to this Doc Set's folder -->
+  <Module Name="DefaultDocSetDocuments" Url="_cts/PaperlessBoard/Procurement Resolution Agenda DS">
+    <File Path="DefaultDocuments\Contract Award Analysis.dotx" Url="Contract Award Analysis.dotx" />
+    <File Path="DefaultDocuments\Procurement Resolution.dotx" Url="Procurement Resolution.dotx" />
+  <File Path="WelcomePage\DocSetHomePage.aspx" Url="WelcomePage/DocSetHomePage.aspx" />
+</Module>
+  <Module Name="WelcomePage" Url="_cts/PaperlessBoard/Procurement Resolution Agenda DS">
+    <File Path="WelcomePage\DocSetHomePage.aspx" Url="DocSetHomePage.aspx">
+      <AllUsersWebPart WebPartOrder="0" WebPartZoneID="WebPartZone_TopLeft">
+        
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="0" WebPartZoneID="WebPartZone_CenterMain">
+        <![CDATA[<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+	          <Assembly>Microsoft.Office.DocumentManagement, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+	          <TypeName>Microsoft.Office.Server.WebControls.DocumentSetContentsWebPart</TypeName>
+	          <Title>$Resources:dlccore,DocSetContentWP_Title</Title>
+	          <Description>$Resources:dlccore,DocSetContentWP_Description</Description>
+	          <PartImageLarge>/_layouts/images/msimagel.gif</PartImageLarge>
+	          <DisplayText></DisplayText>
+          </WebPart>
+        ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="0" WebPartZoneID="WebPartZone_Top">
+        <![CDATA[<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+	          <Assembly>Microsoft.Office.DocumentManagement, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+	          <TypeName>Microsoft.Office.Server.WebControls.DocumentSetPropertiesWebPart</TypeName>
+	          <Title>$Resources:dlccore,DocSetPropertiesWP_Title</Title>
+	          <Description>$Resources:dlccore,DocSetPropertiesWP_Description</Description>
+	          <PartImageLarge>/_layouts/images/msimagel.gif</PartImageLarge>
+	          <DisplayText></DisplayText>
+          </WebPart>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    
+  </Module>
+</Elements>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x01010056f13056f1fa4407a97c80d9e2a44937"
+               Name="AgendaDocument"
+               Group="Custom Content Types"
+               Description="All documents in the Agenda Document Set (in Document Workspaces) are of this content type."
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+     
+      <FieldRef ID="{7CFE3257-06C0-4061-AA42-0B4F4D95A02D}" Required="TRUE" Name="PublishDocumentToBoard" DisplayName="Publish Document To Board"/>
+      
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+      
+      <FieldRef ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" Required="TRUE" Name="Name"/>
+      
+    </FieldRefs>
+  </ContentType>
+</Elements>

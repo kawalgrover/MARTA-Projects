@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Revisions"
+                OnQuickLaunch="FALSE"
+                TemplateType="10001"
+                Url="Lists/Revisions"
+                Description="This list holds the values used in the Revision field">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Rev_0</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Rev_1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Rev_2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Rev_3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Rev_4</Field>
+        </Row>
+      </Rows>
+    </Data>
+    
+  </ListInstance>
+</Elements>

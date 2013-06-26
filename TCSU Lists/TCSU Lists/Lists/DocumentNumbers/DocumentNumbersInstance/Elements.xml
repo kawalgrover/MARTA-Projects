@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="DocumentNumbers"
+                OnQuickLaunch="FALSE"
+                TemplateType="10003"
+                Url="Lists/DocumentNumbers"
+                Description="This list holds the mappings between CDRL List, Asltom Document Description and the Subsystem.">
+
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Section">1</Field>
+          <Field Name="Title">CC1</Field>
+          <Field Name="AlstomDocumentDescription">7011200-2.0-M-0001</Field>
+          <Field Name="SubSystem">PMO</Field>
+        </Row>
+
+        <Row>
+          <Field Name="Section">1</Field>
+          <Field Name="Title">CC2</Field>
+          <Field Name="AlstomDocumentDescription">7011200-2.0-M-0002</Field>
+          <Field Name="SubSystem">PMO</Field>
+        </Row>
+
+        <Row>
+          <Field Name="Section">1</Field>
+          <Field Name="Title">CC3</Field>
+          <Field Name="AlstomDocumentDescription">7011200-2.0-M-0003</Field>
+          <Field Name="SubSystem">PMO</Field>
+        </Row>
+        
+      </Rows>
+    </Data>
+    
+  </ListInstance>
+</Elements>

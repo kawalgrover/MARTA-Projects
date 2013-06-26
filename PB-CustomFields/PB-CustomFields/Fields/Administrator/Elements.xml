@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{3B8B0735-3FDA-487C-BA18-A50CFDC66F39}"
+         Type="User"
+         DisplayName="Administrator"
+         Required="True"
+         StaticName="Administrator"
+         Name="Administrator"
+         Group="MARTA Columns"
+         UserSelectionMode="PeopleAndGroups"
+         UserSelectionScope="0" />
+</Elements>

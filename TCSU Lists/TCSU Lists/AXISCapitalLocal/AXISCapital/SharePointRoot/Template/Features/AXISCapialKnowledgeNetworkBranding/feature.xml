@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="f1a75822-ef4c-451a-a4e1-13da6e233d8c"
+          Title="AXIS Capital Knowledge Network Branding"
+          Description="Master Page Branding Needed for AXIS Knowledge Network"
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"
+          ReceiverAssembly="AXISCapital, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e3887e76deee1794"
+          ReceiverClass="AXISCapital.EventHandlers.Features.AXISCapialKnowledgeNetworkBrandingReceiver"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>    
+  </ElementManifests>
+</Feature>

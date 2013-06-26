@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{6A71ED76-9DFB-4D51-A8C8-A8BC97E25950}"
+         Type="ActionRequiredChoice"
+         Group="MARTA Columns"
+         DisplayName="Action Required"
+         Name="ActionRequired"/>
+</Elements>

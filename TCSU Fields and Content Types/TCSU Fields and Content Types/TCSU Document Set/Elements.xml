@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document Set (0x0120D520) -->
+  <ContentType ID="0x0120D520004f3cd9f0bcab46fb9d835b1095c150eb"
+               Name="TCSU Document Set"
+               Group="Custom Content Types"
+               Description="Document Set for managing TCSU-Alstom Documents. Has a lot of shareable properties with the documents contained in this document set."
+               Version="0"
+               ProgId="SharePoint.DocumentSet">
+    <Folder TargetName="_cts/TCSU Document Set" />
+    
+    <FieldRefs>
+      <FieldRef ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" DisplayName="Letter"/>
+      
+      <FieldRef ID="{CC39A73A-54CA-47DE-97BD-2D666E6E8407}" />
+      <!-- Transmittal-->
+
+      <FieldRef ID="{F3F22775-31BF-4D53-8125-1E61AB7FD01E}" />
+      <!-- Submittal Date-->
+
+      <FieldRef ID="{259DE569-0EB0-4E18-B47C-35876DDD3D84}" />
+      <!-- Due Date-->
+
+      <FieldRef ID="{066C366C-37A3-4758-96DF-E3CA30943735}" />
+      <!-- Review Due Date-->
+
+      <FieldRef ID="{303062CE-5BDE-4154-BCCE-C5B06E0AC931}" />
+      <!-- Submittal Type-->
+    
+      <FieldRef ID="{FC255CB4-8E2D-4642-8CC4-87920B970D9D}" />
+      <!-- Release-->
+      
+      <FieldRef ID="{A8ED85D5-9634-4353-83E8-6A6B42EA23BB}" />
+      <!-- Revisions-->
+
+      <FieldRef ID="{12CAA1A1-9620-4BAA-837C-3EC70900F86F}" />
+      <!-- Sections-->
+
+      
+      <FieldRef ID="{62BE355E-E16A-4EEF-9E7E-B4EEB0C37D39}" />
+      <!-- Discipline -->
+
+      <FieldRef ID="{CB991160-C28E-43AC-803B-682F35720A88}" />
+      <!-- Location/Vehicle -->
+
+
+    </FieldRefs>
+
+    <XmlDocuments>
+      <!-- list of all fields [site columns] shared between all documents and the doc set. -->
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/sharedfields">
+        <sf:SharedFields xmlns:sf="http://schemas.microsoft.com/office/documentsets/sharedfields" LastModified="1/1/2010 08:00:00 AM">
+         
+          <SharedField id="CC39A73A-54CA-47DE-97BD-2D666E6E8407" />
+          <!-- Transmittal-->
+
+          <SharedField id="F3F22775-31BF-4D53-8125-1E61AB7FD01E" />
+          <!-- Submittal Date-->
+
+          <SharedField id="259DE569-0EB0-4E18-B47C-35876DDD3D84" />
+          <!-- Due Date-->
+
+          <SharedField id="066C366C-37A3-4758-96DF-E3CA30943735" />
+          <!-- Review Due Date-->
+
+          <SharedField id="303062CE-5BDE-4154-BCCE-C5B06E0AC931" />
+          <!-- Submittal Type-->
+
+
+          <SharedField id="FC255CB4-8E2D-4642-8CC4-87920B970D9D" />
+          <!-- Release-->
+          
+          <SharedField id="A8ED85D5-9634-4353-83E8-6A6B42EA23BB" />
+          <!-- Revisions-->
+          
+          <SharedField id="12CAA1A1-9620-4BAA-837C-3EC70900F86F" />
+          <!-- Sections-->
+
+         
+
+          <SharedField id="62BE355E-E16A-4EEF-9E7E-B4EEB0C37D39" />
+          <!-- Discipline -->
+
+          <SharedField id="CB991160-C28E-43AC-803B-682F35720A88" />
+          <!-- Location/Vehicle -->
+
+        </sf:SharedFields>
+      </XmlDocument>
+      
+      <!-- list of all content types that are allowed in the document set. -->
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes">
+        <act:AllowedContentTypes xmlns:act="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes"  LastModified="1/1/2010 08:00:00 AM">
+          <AllowedContentType id="0x010100bd1946b45443458b9bb21b626c8ad8aa" /> <!-- TCSU Document -->
+        </act:AllowedContentTypes>
+      </XmlDocument>
+      
+      <!-- list of all fields that should appear on teh welcome page -->
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/welcomepagefields">
+        <wpFields:WelcomePageFields xmlns:wpFields="http://schemas.microsoft.com/office/documentsets/welcomepagefields" LastModified="1/1/2010 08:00:00 AM">
+
+          <WelcomePageField id="8553196d-ec8d-4564-9861-3dbe931050c8" /> <!-- Letter -->
+          <WelcomePageField id="CC39A73A-54CA-47DE-97BD-2D666E6E8407" />
+          <!-- Transmittal -->
+          <WelcomePageField id="12CAA1A1-9620-4BAA-837C-3EC70900F86F" />
+          <!-- Section -->
+          <WelcomePageField id="62BE355E-E16A-4EEF-9E7E-B4EEB0C37D39" />
+          <!-- Descipline -->
+        </wpFields:WelcomePageFields>
+      </XmlDocument>
+
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+        <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+          <New>_layouts/TCSU/TCSUDocSetNewForm.aspx</New>
+          <Display>_layouts/TCSU/TCSUDocSetDisplayForm.aspx</Display>
+          <Edit>_layouts/TCSU/TCSUDocSetEditForm.aspx</Edit>
+        </FormUrls>
+      </XmlDocument>
+    </XmlDocuments>
+   
+  </ContentType>
+</Elements>

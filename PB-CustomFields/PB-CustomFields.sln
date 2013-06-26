@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PB-CustomFields", "PB-CustomFields\PB-CustomFields.csproj", "{3CD2B47A-A620-427B-A611-F5E6CBFC5948}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs2010.intellinet.com/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PB-CustomFields\\PB-CustomFields.csproj
+		SccProjectName1 = PB-CustomFields
+		SccLocalPath1 = PB-CustomFields
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CD2B47A-A620-427B-A611-F5E6CBFC5948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD2B47A-A620-427B-A611-F5E6CBFC5948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD2B47A-A620-427B-A611-F5E6CBFC5948}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3CD2B47A-A620-427B-A611-F5E6CBFC5948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD2B47A-A620-427B-A611-F5E6CBFC5948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD2B47A-A620-427B-A611-F5E6CBFC5948}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

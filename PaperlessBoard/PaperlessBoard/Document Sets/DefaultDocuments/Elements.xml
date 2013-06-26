@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="DefaultDocuments" Url="_cts/PaperlessBoard">
+    <File Path="DefaultDocuments\Contract Award Analysis.dotx" Url="DefaultDocuments/Contract Award Analysis.dotx" />
+    <File Path="DefaultDocuments\Procurement Resolution.dotx" Url="DefaultDocuments/Procurement Resolution.dotx" />
+</Module>
+</Elements>

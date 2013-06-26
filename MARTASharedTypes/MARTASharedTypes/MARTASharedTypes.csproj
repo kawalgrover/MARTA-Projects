@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97214A0D-85A3-43F6-B18C-98E525DC6837}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MARTASharedTypes</RootNamespace>
+    <AssemblyName>MARTASharedTypes</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Fields\Fields.EventReceiver.cs">
+      <DependentUpon>Fields.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\MARTASharedTypes\MARTATask\DisplayMARTATask.aspx.cs">
+      <DependentUpon>DisplayMARTATask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\MARTASharedTypes\MARTATask\DisplayMARTATask.aspx.designer.cs">
+      <DependentUpon>DisplayMARTATask.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\MARTASharedTypes\MARTATask\EditMARTATask.aspx.cs">
+      <DependentUpon>EditMARTATask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\MARTASharedTypes\MARTATask\EditMARTATask.aspx.designer.cs">
+      <DependentUpon>EditMARTATask.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\MARTASharedTypes\MARTATask\NewMARTATask.aspx.cs">
+      <DependentUpon>NewMARTATask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\MARTASharedTypes\MARTATask\NewMARTATask.aspx.designer.cs">
+      <DependentUpon>NewMARTATask.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fields\AssignedPerson\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d4386776-fe8c-4752-9a71-4e12504c062a}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\MARTA Task\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{df782549-6371-43c0-9c4f-bcbcb88c7af3}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\MARTA Workflow Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{45396ac9-5bcb-44ab-9b3e-de49be05017b}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\ContentTypes\ContentTypes.feature">
+      <FeatureId>{514ce7d6-d695-40b9-9f88-7a84b452cd50}</FeatureId>
+    </None>
+    <None Include="Features\Fields\Fields.feature">
+      <FeatureId>{e548f16e-6029-4e2d-8097-19727085ff53}</FeatureId>
+    </None>
+    <None Include="Fields\DelegateDueDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1d1f6e6c-cf04-4845-bc32-6680e8c06240}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\MARTARole\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{41f191e0-513d-4136-87a0-a2fc0b449adb}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\OriginalAssignee\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d1724cbf-6e37-4ca3-a4fb-eb7e3b1cba08}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\RelatedInfo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{01a13bb1-bbd1-4e41-b3d3-be090938eda2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Task Action\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{971aedde-13fc-4cdd-b8f7-03699d61f14c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Task Source\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{145b6816-6490-453f-9e7a-a73fbbedac91}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\TaskIsDelegated\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{04d490c1-3dd1-468c-9b74-715825e3236b}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{abdcfa1f-9a74-4d19-9a4f-c13a47bf1cb1}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{303a8115-4299-45e0-9ce4-e9af05202903}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Fields\AssignedPerson\Elements.xml" />
+    <Content Include="ContentTypes\MARTA Task\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentTypes\MARTA Workflow Tasks\Elements.xml" />
+    <Content Include="Features\ContentTypes\ContentTypes.Template.xml">
+      <DependentUpon>ContentTypes.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Fields\Fields.Template.xml">
+      <DependentUpon>Fields.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\DelegateDueDate\Elements.xml" />
+    <Content Include="Fields\MARTARole\Elements.xml" />
+    <Content Include="Fields\OriginalAssignee\Elements.xml" />
+    <Content Include="Fields\RelatedInfo\Elements.xml" />
+    <Content Include="Fields\Task Action\Elements.xml" />
+    <Content Include="Fields\Task Source\Elements.xml" />
+    <Content Include="Fields\TaskIsDelegated\Elements.xml" />
+    <Content Include="Layouts\MARTASharedTypes\MARTATask\DisplayMARTATask.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\MARTASharedTypes\MARTATask\EditMARTATask.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\MARTASharedTypes\MARTATask\NewMARTATask.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

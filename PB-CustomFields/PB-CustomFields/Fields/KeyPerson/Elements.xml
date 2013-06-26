@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{A949BA21-D579-4906-AEBC-87EFA30241C3}"
+         Type="User"
+         Name="KeyPerson"
+         DisplayName="Key Person"
+         Group="MARTA Columns"
+         UserSelectionMode="PeopleOnly">
+
+  </Field>
+</Elements>

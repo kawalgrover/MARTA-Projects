@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{E0ED5D79-9A5E-470D-BA22-BB03FF5AB613}"
+         Type="Text"
+         Group="MARTA Columns"
+         DisplayName="CAA Description"
+         Name="CAA-Description"/>
+</Elements>

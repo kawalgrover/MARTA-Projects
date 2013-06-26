@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="fa8c657c-6855-446d-b28e-4c5ed5c2453a"
+          Title="Newscenter"
+          Description="This is the News Center Web Part for the Axis Knowlege Network"
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"
+          
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="Newscenter.webpart" />
+  </ElementManifests>
+</Feature>

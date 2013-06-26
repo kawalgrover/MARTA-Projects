@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Agenda Coordinators"
+                OnQuickLaunch="FALSE"
+                TemplateType="10003"
+                Url="Lists/AgendaCoordinators"
+                Description="This list contains all the coordinators for each Agenda Type.">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Agenda Type">Procurement Resolution</Field>
+          <Field Name="ContentProviders">MARTA\itkgrover</Field>
+        </Row>
+        <Row>
+          <Field Name="Agenda Type">Non-Procurement Resolution</Field>
+          <Field Name="ContentProviders">MARTA\itkgrover</Field>
+        </Row>
+        <Row>
+          <Field Name="Agenda Type">Other Matters</Field>
+          <Field Name="ContentProviders">MARTA\itkgrover</Field>
+        </Row>
+        <Row>
+          <Field Name="Agenda Type">Briefing</Field>
+          <Field Name="ContentProviders">MARTA\itkgrover</Field>
+        </Row>
+        <Row>
+          <Field Name="Agenda Type">Meeting Minutes</Field>
+          <Field Name="ContentProviders">MARTA\itkgrover</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6FE4AF02-4E6E-4136-BB05-F31778413955}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BoardAgendaWorkflow</RootNamespace>
+    <AssemblyName>BoardAgendaWorkflow</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.DocumentManagement, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Server, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.SharePoint.WorkflowActions" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgendaWFData.cs" />
+    <Compile Include="BoardAgendaWorkflow\BoardAgendaWorkflow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BoardAgendaWorkflow\BoardAgendaWorkflow.Designer.cs">
+      <DependentUpon>BoardAgendaWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaWFForms\ApproverTaskForm.aspx.cs">
+      <DependentUpon>ApproverTaskForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgendaWFForms\ApproverTaskForm.aspx.designer.cs">
+      <DependentUpon>ApproverTaskForm.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaWFForms\ReviewerTaskForm.aspx.cs">
+      <DependentUpon>ReviewerTaskForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgendaWFForms\ReviewerTaskForm.aspx.designer.cs">
+      <DependentUpon>ReviewerTaskForm.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaWFForms\Task1Form.aspx.cs">
+      <DependentUpon>Task1Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgendaWFForms\Task1Form.aspx.designer.cs">
+      <DependentUpon>Task1Form.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaWFForms\WF1Init.aspx.cs">
+      <DependentUpon>WF1Init.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgendaWFForms\WF1Init.aspx.designer.cs">
+      <DependentUpon>WF1Init.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Digital Signatures\Digital Signatures.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Digital Signatures\Digital Signatures.Designer.cs">
+      <DependentUpon>Digital Signatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalSignaturesWFData.cs" />
+    <Compile Include="Features\WorkflowArtefacts\WorkflowArtefacts.EventReceiver.cs">
+      <DependentUpon>WorkflowArtefacts.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaWFForms\SubmitForDGMReviewTask.aspx.cs">
+      <DependentUpon>SubmitForDGMReviewTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgendaWFForms\SubmitForDGMReviewTask.aspx.designer.cs">
+      <DependentUpon>SubmitForDGMReviewTask.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaWFForms\SubmitForGMReviewTask.aspx.cs">
+      <DependentUpon>SubmitForGMReviewTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgendaWFForms\SubmitForGMReviewTask.aspx.designer.cs">
+      <DependentUpon>SubmitForGMReviewTask.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalSignaturesWFForms\DigitalSignaturesInit.aspx.cs">
+      <DependentUpon>DigitalSignaturesInit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DigitalSignaturesWFForms\DigitalSignaturesInit.aspx.designer.cs">
+      <DependentUpon>DigitalSignaturesInit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotifyContributorsWFData.cs" />
+    <Compile Include="NotifyContributorsWFForms\ContributeContentTask.aspx.cs">
+      <DependentUpon>ContributeContentTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotifyContributorsWFForms\ContributeContentTask.aspx.designer.cs">
+      <DependentUpon>ContributeContentTask.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotifyContributorsWFForms\NotifiyContributorsInit.aspx.cs">
+      <DependentUpon>NotifiyContributorsInit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotifyContributorsWFForms\NotifiyContributorsInit.aspx.designer.cs">
+      <DependentUpon>NotifiyContributorsInit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotifyCoordinatorsWorkflow\NotifyCoordinatorsWorkflow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NotifyCoordinatorsWorkflow\NotifyCoordinatorsWorkflow.Designer.cs">
+      <DependentUpon>NotifyCoordinatorsWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReviewAgendaWFForms\ReviewWFInit.aspx.cs">
+      <DependentUpon>ReviewWFInit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReviewAgendaWFForms\ReviewWFInit.aspx.designer.cs">
+      <DependentUpon>ReviewWFInit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewAgendaWorkflow\ReviewAgendaWorkflow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReviewAgendaWorkflow\ReviewAgendaWorkflow.Designer.cs">
+      <DependentUpon>ReviewAgendaWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewWFData.cs" />
+    <Compile Include="WFPagesBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BoardAgendaWorkflow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{84ce0a0b-fa1f-49ea-ac44-5f562785c42c}</SharePointProjectItemId>
+    </None>
+    <None Include="Digital Signatures\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0e89ff3f-551d-4de2-b35a-e1b0a7f6c4e0}</SharePointProjectItemId>
+    </None>
+    <None Include="DigitalSignaturesWFForms\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6a07be42-83c5-43b8-82e7-4fbbce069b47}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\AgendaWorkflow\AgendaWorkflow.feature">
+      <FeatureId>{9709e2ae-d2bc-4cbf-ac19-f51f7b8f412e}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0bd74e6-70c1-443c-bbbf-413008e1809b}</SharePointProjectItemId>
+    </None>
+    <None Include="List Definitions\Agenda Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6ccec296-1f36-49f4-b608-3e828049f408}</SharePointProjectItemId>
+    </None>
+    <None Include="NotifyContributorsWFForms\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{516f12b3-cc99-44d5-86fa-8e15886a54ae}</SharePointProjectItemId>
+    </None>
+    <None Include="NotifyCoordinatorsWorkflow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fc19fbf7-9e6d-4b6e-af89-250451fb4af7}</SharePointProjectItemId>
+    </None>
+    <None Include="ReviewAgendaWFForms\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ccc59d8e-5b97-448e-b09c-b7e780ac39f1}</SharePointProjectItemId>
+    </None>
+    <None Include="ReviewAgendaWorkflow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{798ec580-7074-44b7-8cff-6ad1f156ab18}</SharePointProjectItemId>
+    </None>
+    <None Include="SafeControl\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{69259edc-341a-41fe-a402-df05039739c4}</SharePointProjectItemId>
+    </None>
+    <None Include="Task Content Types\GMApproveTask\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e215a75d-2940-4f0f-a63e-329f97fe5e89}</SharePointProjectItemId>
+    </None>
+    <None Include="Task Content Types\ReviewTask\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e3962675-bf27-43b5-8456-6d57c38e8642}</SharePointProjectItemId>
+    </None>
+    <None Include="Task Content Types\SubmitForDGMApprovalTask\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{37967366-4ae0-4b62-a6f3-c632d25cb94f}</SharePointProjectItemId>
+    </None>
+    <None Include="Task Content Types\SubmitForGMApprovalTask\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8d735d33-e368-49c2-9481-2544050127ad}</SharePointProjectItemId>
+    </None>
+    <None Include="AgendaWFForms\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{18d5996f-8fab-4ea6-8ce8-24083f159a8c}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{5a30a2e2-aca3-49f5-a138-4b752282b216}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\WorkflowArtefacts\WorkflowArtefacts.feature">
+      <FeatureId>{24512e0e-7b03-466e-9209-38b39a51c581}</FeatureId>
+    </None>
+    <None Include="Features\WorkflowArtefacts\WorkflowArtefacts.Template.xml">
+      <DependentUpon>WorkflowArtefacts.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BoardAgendaWorkflow\Elements.xml" />
+    <Content Include="AgendaWFForms\SubmitForDGMReviewTask.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="AgendaWFForms\SubmitForGMReviewTask.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="AgendaWFForms\ApproverTaskForm.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="AgendaWFForms\ReviewerTaskForm.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ContributorTaskActivity\Elements.xml" />
+    <Content Include="Digital Signatures\Elements.xml" />
+    <Content Include="DigitalSignaturesWFForms\Elements.xml" />
+    <Content Include="DigitalSignaturesWFForms\Sample.txt" />
+    <Content Include="Features\AgendaWorkflow\AgendaWorkflow.Template.xml">
+      <DependentUpon>AgendaWorkflow.feature</DependentUpon>
+    </Content>
+    <Content Include="DigitalSignaturesWFForms\DigitalSignaturesInit.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="List Definitions\Agenda Tasks\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="List Definitions\Agenda Tasks\Schema.xml" />
+    <Content Include="NotifyContributorsWFForms\ContributeContentTask.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="NotifyContributorsWFForms\NotifiyContributorsInit.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="NotifyContributorsWFForms\Elements.xml" />
+    <Content Include="NotifyCoordinatorsWorkflow\Elements.xml" />
+    <Content Include="ReviewAgendaWFForms\Elements.xml" />
+    <Content Include="ReviewAgendaWFForms\ReviewWFInit.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ReviewAgendaWorkflow\Elements.xml" />
+    <Content Include="Task Content Types\GMApproveTask\Elements.xml" />
+    <Content Include="Task Content Types\ReviewTask\Elements.xml" />
+    <Content Include="AgendaWFForms\Task1Form.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SafeControl\Elements.xml" />
+    <Content Include="Task Content Types\SubmitForDGMApprovalTask\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Task Content Types\SubmitForGMApprovalTask\Elements.xml" />
+    <Content Include="AgendaWFForms\WF1Init.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="AgendaWFForms\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\AgendaWorkflow\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BoardAgendaWorkflow\BoardAgendaWorkflow.rules">
+      <DependentUpon>BoardAgendaWorkflow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewAgendaWorkflow\ReviewAgendaWorkflow.rules">
+      <DependentUpon>ReviewAgendaWorkflow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PBCustomActivities\PBCustomActivities.csproj">
+      <Project>{A0C010E7-F875-408E-A40C-CD613AD5D01B}</Project>
+      <Name>PBCustomActivities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="false" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "$(TargetDir)PB-AgendaWorkflow.wsp" "C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PBSolutions\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

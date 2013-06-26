@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4FE6837-D9AC-4A57-B0EE-B88EFB4737C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExecutiveTaskTracking</RootNamespace>
+    <AssemblyName>ExecutiveTaskTracking</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentDateTime, Version=1.5.0.0, Culture=neutral, PublicKeyToken=6ccbc613702e6c71, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Ref\FluentDateTime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.DocumentManagement, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Server, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.WorkflowActions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomFieldTypes\ActionRequiredChoiceField.cs" />
+    <Compile Include="CustomFieldTypes\ActionRequiredChoiceFieldControl.cs" />
+    <Compile Include="CustomFieldTypes\ExecutiveAssignedToField.cs" />
+    <Compile Include="CustomFieldTypes\ExecutiveAssignedToFieldControl.cs" />
+    <Compile Include="Executive Task Tracking Workflow\Executive Task Tracking Workflow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Executive Task Tracking Workflow\Executive Task Tracking Workflow.Designer.cs">
+      <DependentUpon>Executive Task Tracking Workflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Fields\Fields.EventReceiver.cs">
+      <DependentUpon>Fields.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ManualDelegations\ManualDelegations.EventReceiver.cs">
+      <DependentUpon>ManualDelegations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ExecutiveTaskTracking\ExecTaskDisplayForm.aspx.cs">
+      <DependentUpon>ExecTaskDisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\ExecutiveTaskTracking\ExecTaskDisplayForm.aspx.designer.cs">
+      <DependentUpon>ExecTaskDisplayForm.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ExecutiveTaskTracking\ExecTaskEditForm.aspx.cs">
+      <DependentUpon>ExecTaskEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\ExecutiveTaskTracking\ExecTaskEditForm.aspx.designer.cs">
+      <DependentUpon>ExecTaskEditForm.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ExecutiveTaskTracking\ExecTaskNewForm.aspx.cs">
+      <DependentUpon>ExecTaskNewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\ExecutiveTaskTracking\ExecTaskNewForm.aspx.designer.cs">
+      <DependentUpon>ExecTaskNewForm.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutiveTaskWFForms\StartExecutiveTaskForm.aspx.cs">
+      <DependentUpon>StartExecutiveTaskForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExecutiveTaskWFForms\StartExecutiveTaskForm.aspx.designer.cs">
+      <DependentUpon>StartExecutiveTaskForm.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutiveTaskWFForms\ExecutiveTaskEditForm.aspx.cs">
+      <DependentUpon>ExecutiveTaskEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExecutiveTaskWFForms\ExecutiveTaskEditForm.aspx.designer.cs">
+      <DependentUpon>ExecutiveTaskEditForm.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Webparts\Executive Task Workflow\Executive Task Workflow.cs" />
+    <Compile Include="Webparts\Executive Task Workflow\Executive Task WorkflowUserControl.ascx.cs">
+      <DependentUpon>Executive Task WorkflowUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webparts\Executive Task Workflow\Executive Task WorkflowUserControl.ascx.designer.cs">
+      <DependentUpon>Executive Task WorkflowUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WFPagesBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Configuration Lists\ActionsRequiredList\ActionsRequired\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8420c9cd-8ae6-4018-bc26-aace302f0f49}</SharePointProjectItemId>
+    </None>
+    <None Include="Configuration Lists\ActionsRequiredList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f2962015-d11a-40d6-83cd-03e2e6268ee3}</SharePointProjectItemId>
+    </None>
+    <None Include="Configuration Lists\ExecutiveTaskConfigurationListDefinition\ExecutiveTaskConfigurationList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b1fe66de-4e42-4923-ba79-0bbeacf36a8a}</SharePointProjectItemId>
+    </None>
+    <None Include="Configuration Lists\ExecutiveTaskConfigurationListDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dec46248-36c8-4e36-90b2-1ee53268434c}</SharePointProjectItemId>
+    </None>
+    <None Include="Configuration Lists\MARTA Tasks Definition\MARTA Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8fc8edcc-5083-4e0c-b5f0-62320bc8765c}</SharePointProjectItemId>
+    </None>
+    <None Include="Configuration Lists\MARTA Tasks Definition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ea16c40-81e5-4562-933f-3cda95d0be52}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\ActionsRequired\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4d512449-e5a3-4afa-8de7-1c0ede188352}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\ExecutiveTaskConfiguration\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0c71dd26-ba4b-4c9c-b13a-636c1c8b7b34}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\MARTARole\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{01963af6-c7ec-4752-b540-7a7e468af730}</SharePointProjectItemId>
+    </None>
+    <None Include="CONTROLTEMPLATES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{39f9a123-7445-4962-a2b2-0a773bc1f6f0}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\ExecutiveTask-DocumentSet\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e349376a-fe8f-4f99-9e29-da4f31fe5026}</SharePointProjectItemId>
+    </None>
+    <None Include="Executive Task Tracking Workflow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{01d31cd7-ac77-4814-965e-98616bb9181d}</SharePointProjectItemId>
+    </None>
+    <None Include="ExecutiveTaskWFForms\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4521af34-e8df-4b24-a42e-7772c95fd1c0}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Content Types\Content Types.feature">
+      <FeatureId>{9a2946a4-baed-44d1-882e-f4a70d69ce9e}</FeatureId>
+    </None>
+    <None Include="Features\Artifacts\Artifacts.feature">
+      <FeatureId>{8e9896c0-3a1c-4a0c-9a8f-6234dd88a256}</FeatureId>
+    </None>
+    <None Include="Features\Workflow\Workflow.feature">
+      <FeatureId>{64644a2a-5e7b-4b0c-986a-6a2f199e162e}</FeatureId>
+    </None>
+    <None Include="Features\Fields\Fields.feature">
+      <FeatureId>{51fd232d-7d19-4dc3-982f-2dda34d5c4d5}</FeatureId>
+    </None>
+    <None Include="Features\ManualDelegations\ManualDelegations.feature">
+      <FeatureId>{b0f44ceb-4f85-4d6a-9a4c-59da4e598678}</FeatureId>
+    </None>
+    <None Include="Fields\ActionRequired\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{91c8ebe7-9bcd-4578-b93b-23fe6e1eccd2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DefaultDueDays\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9c8dfde6-6432-4327-b135-6603c85e2d0e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DelegateTo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fca81a92-53ea-448d-9195-7e86d32e64b6}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DueDateForExecutiveTask\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9462b306-4fb4-46eb-9329-f327b2cf5daf}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\ExecutiveTaskStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{308dbebc-dd37-4234-8fad-3e2343485b3c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\IsHighPriority\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5bccdce3-b6ca-4262-a510-eb6c8d9199e7}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\TaskCoordinator\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{def7b8c6-611a-4eed-b150-5e2ff69d307b}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ff5ff26b-bea8-4b55-af86-265364fe7d98}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{4b4c0900-55cc-4d64-aac5-5b746c05e055}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Configuration Lists\RolesForExecutiveTasks\ExecutiveTasksRoleList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ead71e0e-46a3-4a1b-9006-60fdbd2aa98a}</SharePointProjectItemId>
+    </None>
+    <None Include="Configuration Lists\RolesForExecutiveTasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cb788c89-d1fd-4de7-8c74-be74f2b21cf3}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Executive Task Workflow\Executive Task Workflow.webpart" />
+    <None Include="Webparts\Executive Task Workflow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{02584f53-f724-40e0-9fba-bdc6f024dc14}</SharePointProjectItemId>
+    </None>
+    <None Include="WelcomePage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{90f7d957-491a-45be-b407-7585f0c31443}</SharePointProjectItemId>
+    </None>
+    <None Include="XML\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{67691b21-4e87-4ba7-b108-9a51f40e8e78}</SharePointProjectItemId>
+    </None>
+    <None Include="XSL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{16ebad05-cce2-43bb-86e5-ad82ae74e2c9}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Workflow\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configuration Lists\ActionsRequiredList\Elements.xml" />
+    <Content Include="Configuration Lists\ActionsRequiredList\ActionsRequired\Elements.xml" />
+    <Content Include="Configuration Lists\ActionsRequiredList\Schema.xml" />
+    <Content Include="Configuration Lists\ExecutiveTaskConfigurationListDefinition\Elements.xml" />
+    <Content Include="Configuration Lists\ExecutiveTaskConfigurationListDefinition\ExecutiveTaskConfigurationList\Elements.xml" />
+    <Content Include="Configuration Lists\ExecutiveTaskConfigurationListDefinition\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration Lists\MARTA Tasks Definition\Elements.xml" />
+    <Content Include="Configuration Lists\MARTA Tasks Definition\MARTA Tasks\Elements.xml" />
+    <Content Include="Configuration Lists\MARTA Tasks Definition\Schema.xml" />
+    <Content Include="Content Types\ActionsRequired\Elements.xml" />
+    <Content Include="Content Types\ExecutiveTaskConfiguration\Elements.xml" />
+    <Content Include="Content Types\MARTARole\Elements.xml" />
+    <Content Include="CONTROLTEMPLATES\ActionRequiredChoiceField.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CONTROLTEMPLATES\ExecutiveAssignedToField.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Content Types\ExecutiveTask-DocumentSet\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Executive Task Tracking Workflow\Elements.xml" />
+    <Content Include="ExecutiveTaskWFForms\Elements.xml" />
+    <Content Include="Features\Content Types\Content Types.Template.xml">
+      <DependentUpon>Content Types.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Artifacts\Artifacts.Template.xml">
+      <DependentUpon>Artifacts.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Workflow\Workflow.Template.xml">
+      <DependentUpon>Workflow.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Fields\Fields.Template.xml">
+      <DependentUpon>Fields.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\ManualDelegations\ManualDelegations.Template.xml">
+      <DependentUpon>ManualDelegations.feature</DependentUpon>
+    </Content>
+    <Content Include="Configuration Lists\RolesForExecutiveTasks\Elements.xml" />
+    <Content Include="Configuration Lists\RolesForExecutiveTasks\ExecutiveTasksRoleList\Elements.xml" />
+    <Content Include="Configuration Lists\RolesForExecutiveTasks\Schema.xml" />
+    <Content Include="Fields\ActionRequired\Elements.xml" />
+    <Content Include="Fields\DefaultDueDays\Elements.xml" />
+    <Content Include="Fields\DelegateTo\Elements.xml" />
+    <Content Include="Fields\DueDateForExecutiveTask\Elements.xml" />
+    <Content Include="Fields\ExecutiveTaskStatus\Elements.xml" />
+    <Content Include="Fields\IsHighPriority\Elements.xml" />
+    <Content Include="Fields\TaskCoordinator\Elements.xml" />
+    <Content Include="Layouts\ExecutiveTaskTracking\ExecTaskDisplayForm.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\ExecutiveTaskTracking\ExecTaskEditForm.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\ExecutiveTaskTracking\ExecTaskNewForm.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ExecutiveTaskWFForms\StartExecutiveTaskForm.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ExecutiveTaskWFForms\ExecutiveTaskEditForm.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Ref\FluentDateTime.dll" />
+    <Content Include="Webparts\Executive Task Workflow\Elements.xml" />
+    <Content Include="Webparts\Executive Task Workflow\Executive Task WorkflowUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WelcomePage\DocSetHomePage.aspx" />
+    <Content Include="WelcomePage\Elements.xml" />
+    <Content Include="XML\fldtypes_ActionRequiredChoiceField.xml" />
+    <Content Include="XML\fldtypes_RolesForExecutiveTasks.xml" />
+    <Content Include="XSL\fldtypes_ActionRequiredChoiceField.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExecutiveDelegationCustomActivity\ManualDelegationCustomActivities.csproj">
+      <Project>{A0C010E7-F875-408E-A40C-CD613AD5D01B}</Project>
+      <Name>ManualDelegationCustomActivities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

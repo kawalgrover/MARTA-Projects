@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{3108020D-1C32-448C-BDE0-E8174EF737BD}"
+         Name="Board Agenda Status"
+         StaticName="Board Agenda Status"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Agenda Status">
+    <CHOICES>
+      <CHOICE>Agenda Created</CHOICE>
+      <CHOICE>Adding Content</CHOICE>
+      <CHOICE>Initial Review</CHOICE>
+      <CHOICE>Initial Review Completed</CHOICE>
+      <CHOICE>AGM Review</CHOICE>
+      <CHOICE>Adding AGM Comments</CHOICE>
+      <CHOICE>DGM/CBSS Initial Review</CHOICE>
+      <CHOICE>Adding DGM/CBSS Comments</CHOICE>
+      <CHOICE>DGM/CBSS Final Review</CHOICE>
+      <CHOICE>GM Review</CHOICE>
+      <CHOICE>Required Signatures</CHOICE>
+      <CHOICE>Ready to Publish</CHOICE>
+      <CHOICE>Published to Board</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

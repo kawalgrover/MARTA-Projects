@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="11e67410-40aa-4212-b26c-0b308e77e300" SharePointProductVersion="15.0">
   <Assemblies>
-    <Assembly Location="MARTADelegations.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="MARTADelegations.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="MARTADelegations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=efbc9581eb5f8575" Namespace="MARTADelegations.SelfDelegation" TypeName="*" />
+        <SafeControl Assembly="MARTADelegations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=efbc9581eb5f8575" Namespace="MARTADelegations.Webparts.ManagerDelegation" TypeName="*" />
+      </SafeControls>
+    </Assembly>
   </Assemblies>
   <FeatureManifests>
     <FeatureManifest Location="MARTADelegations_Fields\Feature.xml" />

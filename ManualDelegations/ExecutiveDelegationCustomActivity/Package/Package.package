@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="f06115ba-4bb4-49ad-aeca-9353f17b432f" solutionId="f06115ba-4bb4-49ad-aeca-9353f17b432f" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="PBCustomActivities">
+    <features>
+        <featureReference itemId="0263bdbc-c87d-4146-8fa7-2ae6bb3670fb" />
+    </features>
+</package>

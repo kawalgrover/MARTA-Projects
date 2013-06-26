@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Board Agenda"
+                OnQuickLaunch="TRUE"
+                TemplateType="10000"
+                Url="Lists/Agenda List1"
+                Description="This list is used to create all Board Agendas.">
+  </ListInstance>
+</Elements>

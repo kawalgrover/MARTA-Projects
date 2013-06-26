@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{AA449235-1F90-4B24-9C2D-8F2CB9EB3279}"
+         Type="Note"
+         Group="MARTA Columns"
+         DisplayName="Comments"
+         Name="ReviewerComments"/>
+</Elements>

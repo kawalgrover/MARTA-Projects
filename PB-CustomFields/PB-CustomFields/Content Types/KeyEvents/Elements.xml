@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100e521db561af046f0a123038b77ae0fcd"
+               Name="KeyEvents"
+               Group="Custom Content Types"
+               Description="Content Type for Key Events associated with an Agenda Type"
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{94110E4E-91DC-4419-A5CE-9E24AD5EB9FE}" Name="Agenda Type"/>
+      <FieldRef ID="{40E799EE-68B7-4B8C-A258-F9E60DB6CB5C}" Name="KeyEvent"/>
+      <FieldRef ID="{EAEF4CC8-1B36-4C1E-B233-0B1531B0EBE3}" Name="DaysFromMeeting"/>
+      <FieldRef ID="{82CABFD6-56C1-43EC-9F86-36326D7F49AF}" Name="DurationForEvent"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

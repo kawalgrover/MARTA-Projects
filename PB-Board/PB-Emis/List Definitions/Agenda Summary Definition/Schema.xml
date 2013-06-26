@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="PB-Board - Agenda Summary Definition" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/PB-Board-AgendaSummary" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01002a35eb5d9b3443e0abaa734055e7ac40" Name="PB-Board - Agenda Summary" Group="Custom Content Types" Description="My Content Type" Inherits="FALSE" Version="0">
+        <FieldRefs>
+          <!-- Board Agenda -->
+          <FieldRef ID="{B93982F8-1081-49E1-A469-3846943E7D38}" />
+          <!-- Meeting -->
+          <FieldRef ID="{60B001C8-C91E-4B2B-98FC-01FC23EA9847}" />
+          <!-- Meeting Date -->
+          <FieldRef ID="{B9649AC7-0B71-464B-A8BA-96B8A3FBD5A0}" />
+          <!-- Agenda Status -->
+          <FieldRef ID="{C315BE2D-F245-4846-A02E-1340911391AA}" />
+          <!-- AgendaID -->
+          <FieldRef ID="{94DDA9CB-2D56-488A-8974-EE8DDE04F864}"/>
+          <!-- Responsible Person -->
+          <FieldRef ID="{94FE379B-C518-41CB-BC7F-BF71A74B9C93}"/>
+          <!-- AGM Office -->
+          <FieldRef ID="{EBAFFDF5-ADA7-4842-98F7-612054A787E1}" />
+          <!-- Workspace URL-->
+          <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}"/>
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{33e09f17-c8ce-4438-9750-7178584ea722}" Type="Text" Group="MARTA Columns" DisplayName="Board Agenda" Name="Board Agenda" />
+      <Field ID="{60b001c8-c91e-4b2b-98fc-01fc23ea9847}" Type="Text" Group="MARTA Columns" DisplayName="Board Meeting" Name="Board Meeting" />
+      <Field ID="{c315be2d-f245-4846-a02e-1340911391aa}" Type="Text" Group="MARTA Columns" DisplayName="Agenda Status" Name="Agenda Status" />
+      <Field ID="{6a262e75-adf6-4c20-a592-9e07670b2760}" Type="DateTime" Group="MARTA Columns" DisplayName="Meeting Date" Name="Meeting Date" />
+      <Field ID="{94DDA9CB-2D56-488A-8974-EE8DDE04F864}" Type="Text" DisplayName="AgendaID" Name="AgendaID"/>
+      <Field ID="{94FE379B-C518-41CB-BC7F-BF71A74B9C93}" Type="Text" DisplayName="Responsible Person" Required="True" StaticName="ResponsiblePerson" Name="ResponsiblePerson" Group="MARTA Columns" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" />
+
+      <Field ID="{EBAFFDF5-ADA7-4842-98F7-612054A787E1}" Name="Office" Type="Text" Group="MARTA Columns" DisplayName="Office" />
+      <Field ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="MeetingWorkspace" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="MeetingWorkspace" Group="Base Columns" Type="URL" DisplayName="Meeting Workspace" Required="FALSE" Customization=""></Field>
+
+
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleToMenu">
+          </FieldRef>
+          
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Board Agenda">
+          </FieldRef>
+          <FieldRef Name="Board Meeting">
+          </FieldRef>
+          <FieldRef Name="Meeting Date">
+          </FieldRef>
+          <FieldRef Name="Agenda Status">
+          </FieldRef>
+          <FieldRef Name="ResponsiblePerson">
+          </FieldRef>
+          <FieldRef Name="Office">
+          </FieldRef>
+          <FieldRef Name="MeetingWorkspace">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

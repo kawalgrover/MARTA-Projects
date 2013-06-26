@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="WelcomePage"
+          Url="_cts/ExecutiveTask Document Set">
+    <File Path="WelcomePage\DocSetHomePage.aspx"
+          Url="DocSetHomePage.aspx">
+      <AllUsersWebPart WebPartOrder="0"
+                       WebPartZoneID="WebPartZone_TopLeft">
+        <![CDATA[<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+	                  <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+	                  <TypeName>Microsoft.SharePoint.WebPartPages.ImageWebPart</TypeName>
+	                  <Title>Image Viewer</Title>
+	                  <Description>Displays a specified image.</Description>
+	                  <PartImageLarge>/_layouts/images/msimagel.gif</PartImageLarge>
+                    <ImageLink xmlns="http://schemas.microsoft.com/WebPart/v2/Image">/_layouts/images/docset_welcomepage_big.png</ImageLink>
+                  </WebPart>
+                  ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="1" WebPartZoneID="WebPartZone_TopLeft">
+        <![CDATA[<webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+            <metaData>
+              <type name="ExecutiveTaskTracking.Webparts.Executive_Task_Workflow.Executive_Task_Workflow, ExecutiveTaskTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0d9367a5fd93b969" />
+              <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Executive Task Workflow</property>
+                <property name="Description" type="string">My Visual WebPart</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="0"
+                       WebPartZoneID="WebPartZone_Top">
+        <![CDATA[<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+	                  <Assembly>Microsoft.Office.DocumentManagement, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+	                  <TypeName>Microsoft.Office.Server.WebControls.DocumentSetPropertiesWebPart</TypeName>
+	                  <Title>$Resources:dlccore,DocSetPropertiesWP_Title</Title>
+	                  <Description>$Resources:dlccore,DocSetPropertiesWP_Description</Description>
+	                  <PartImageLarge>/_layouts/images/msimagel.gif</PartImageLarge>
+	                  <DisplayText></DisplayText>
+                  </WebPart>]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="0"
+                       WebPartZoneID="WebPartZone_CenterMain">
+        <![CDATA[<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+	                  <Assembly>Microsoft.Office.DocumentManagement, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+	                  <TypeName>Microsoft.Office.Server.WebControls.DocumentSetContentsWebPart</TypeName>
+	                  <Title>$Resources:dlccore,DocSetContentWP_Title</Title>
+	                  <Description>$Resources:dlccore,DocSetContentWP_Description</Description>
+	                  <PartImageLarge>/_layouts/images/msimagel.gif</PartImageLarge>
+	                  <DisplayText></DisplayText>
+                  </WebPart>]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="0"
+                       WebPartZoneID="WebPartZone_Bottom">
+        <![CDATA[<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                  <Title>Comments</Title>
+                  <Description>Enable users to leave short, publicly-viewable notes about this page.</Description>
+                  <FrameType>TitleBarOnly</FrameType>
+                  <AllowRemove>true</AllowRemove>
+                  <AllowMinimize>true</AllowMinimize>
+                  <Assembly>Microsoft.SharePoint.Portal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                  <TypeName>Microsoft.SharePoint.Portal.WebControls.SocialCommentWebPart</TypeName>
+                </WebPart>]]>
+      </AllUsersWebPart>
+    </File>
+</Module>
+</Elements>

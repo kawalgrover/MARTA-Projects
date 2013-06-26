@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="MasterKeyEvents" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/PaperlessBoard-MasterKeyEvents" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100e521db561af046f0a123038b77ae0fcd" Name="KeyEvents" Group="Custom Content Types" Description="Content Type for Key Events associated with an Agenda Type" Inherits="FALSE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="FALSE" Hidden="TRUE"/>
+          <FieldRef ID="{94110E4E-91DC-4419-A5CE-9E24AD5EB9FE}" Name="Agenda Type" />
+          <FieldRef ID="{40E799EE-68B7-4B8C-A258-F9E60DB6CB5C}" Name="KeyEvent" />
+          <FieldRef ID="{EAEF4CC8-1B36-4C1E-B233-0B1531B0EBE3}" Name="DaysFromMeeting" />
+          <FieldRef ID="{82CABFD6-56C1-43EC-9F86-36326D7F49AF}" Name="DurationForEvent" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      
+      <Field ID="{94110e4e-91dc-4419-a5ce-9e24ad5eb9fe}" Name="Agenda Type" Type="Choice" Group="MARTA Columns" DisplayName="Agenda Type" SourceID="{6570b431-8e16-4cc8-b1f8-9e6233710e88}" StaticName="Agenda_x0020_Type">
+        <CHOICES>
+          <CHOICE>Procurement Resolution</CHOICE>
+          <CHOICE>Non-Procurement Resolution</CHOICE>
+          <CHOICE>Other Matters</CHOICE>
+          <CHOICE>Briefing</CHOICE>
+          <CHOICE>Meeting Minutes</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field ID="{eaef4cc8-1b36-4c1e-b233-0b1531b0ebe3}" Type="Number" Group="MARTA Columns" DisplayName="Days From Meeting" Name="DaysFromMeeting" Description="Number of days from Meeting date that should ideally be the start date of this event." SourceID="{6570b431-8e16-4cc8-b1f8-9e6233710e88}" StaticName="DaysFromMeeting" />
+      <Field ID="{82cabfd6-56c1-43ec-9f86-36326d7f49af}" Type="Number" Group="MARTA Columns" DisplayName="Duration For Event" Name="DurationForEvent" Description="Duration For Event (in Days)." SourceID="{6570b431-8e16-4cc8-b1f8-9e6233710e88}" StaticName="DurationForEvent" />
+      <Field ID="{40e799ee-68b7-4b8c-a258-f9e60db6cb5c}" Type="Text" Group="MARTA Columns" DisplayName="Key Event" Name="KeyEvent" SourceID="{6570b431-8e16-4cc8-b1f8-9e6233710e88}" StaticName="KeyEvent" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Agenda Type">
+          </FieldRef>
+          <FieldRef Name="KeyEvent">
+          </FieldRef>
+          <FieldRef Name="DaysFromMeeting">
+          </FieldRef>
+          <FieldRef Name="DurationForEvent">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

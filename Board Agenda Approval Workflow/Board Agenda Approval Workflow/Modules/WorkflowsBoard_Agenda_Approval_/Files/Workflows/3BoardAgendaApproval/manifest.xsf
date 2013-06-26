@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file is automatically created and modified by Microsoft InfoPath.
+Changes made to the file outside of InfoPath might be lost if the form template is modified in InfoPath.
+-->
+<xsf:xDocumentClass solutionFormatVersion="3.0.0.0" solutionVersion="1.0.0.4" productVersion="14.0.0" publishUrl="C:\Users\itkgrover\Documents\Visual Studio 2010\Projects\Board Agenda Approval Workflow\Board Agenda Approval Workflow\Modules\WorkflowsBoard_Agenda_Approval_\Files\Workflows\3BoardAgendaApproval\manifest.xsf" name="urn:schemas-microsoft-com:office:infopath:3BoardAgendaApproval:-dataFormSolution" xmlns:xsf="http://schemas.microsoft.com/office/infopath/2003/solutionDefinition" xmlns:xsf2="http://schemas.microsoft.com/office/infopath/2006/solutionDefinition/extensions" xmlns:xsf3="http://schemas.microsoft.com/office/infopath/2009/solutionDefinition/extensions" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xdUtil="http://schemas.microsoft.com/office/infopath/2003/xslt/Util" xmlns:xdXDocument="http://schemas.microsoft.com/office/infopath/2003/xslt/xDocument" xmlns:xdMath="http://schemas.microsoft.com/office/infopath/2003/xslt/Math" xmlns:xdDate="http://schemas.microsoft.com/office/infopath/2003/xslt/Date" xmlns:xdExtension="http://schemas.microsoft.com/office/infopath/2003/xslt/extension" xmlns:xdEnvironment="http://schemas.microsoft.com/office/infopath/2006/xslt/environment" xmlns:xdUser="http://schemas.microsoft.com/office/infopath/2006/xslt/User" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:xdServerInfo="http://schemas.microsoft.com/office/infopath/2009/xslt/ServerInfo" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-06-08T02:14:49">
+	<xsf:package>
+		<xsf:files>
+			<xsf:file name="rootschema.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"></xsf:property>
+					<xsf:property name="editability" type="string" value="none"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="myFields"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="qfschema.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"></xsf:property>
+					<xsf:property name="editability" type="string" value="none"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="dfschema.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields"></xsf:property>
+					<xsf:property name="editability" type="string" value="none"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="typeschema.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/2009/documentManagement/types"></xsf:property>
+					<xsf:property name="editability" type="string" value="none"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="builtincontrolsschema.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"></xsf:property>
+					<xsf:property name="editability" type="string" value="none"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="template.xml"></xsf:file>
+			<xsf:file name="sampledata.xml">
+				<xsf:fileProperties>
+					<xsf:property name="fileType" type="string" value="sampleData"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="choices.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="dataObject" type="string" value="Choices Data Connection"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="root"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="choices.xml">
+				<xsf:fileProperties>
+					<xsf:property name="fileType" type="string" value="resource"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="context.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="dataObject" type="string" value="Context"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="Context"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="context.xml">
+				<xsf:fileProperties>
+					<xsf:property name="fileType" type="string" value="resource"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="view1.xsl">
+				<xsf:fileProperties>
+					<xsf:property name="lang" type="string" value="1033"></xsf:property>
+					<xsf:property name="mode" type="string" value="1"></xsf:property>
+					<xsf:property name="componentId" type="string" value="3"></xsf:property>
+					<xsf:property name="xmlToEditName" type="string" value="7"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="view2.xsl">
+				<xsf:fileProperties>
+					<xsf:property name="lang" type="string" value="1033"></xsf:property>
+					<xsf:property name="mode" type="string" value="1"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="upgrade.xsl"></xsf:file>
+			<xsf:file name="myschema.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-06-08T02:14:49"></xsf:property>
+					<xsf:property name="editability" type="string" value="full"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+		</xsf:files>
+	</xsf:package>
+	<xsf:importParameters enabled="yes"></xsf:importParameters>
+	<xsf:documentVersionUpgrade>
+		<xsf:useTransform transform="upgrade.xsl" minVersionToUpgrade="0.0.0.0" maxVersionToUpgrade="1.0.0.2"></xsf:useTransform>
+	</xsf:documentVersionUpgrade>
+	<xsf:extensions>
+		<xsf:extension name="SolutionDefinitionExtensions">
+			<xsf2:solutionDefinition runtimeCompatibility="client server" runtimeCompatibilityURL="" verifyOnServer="no" allowClientOnlyCode="no">
+				<xsf2:offline openIfQueryFails="yes" cacheQueries="yes"></xsf2:offline>
+				<xsf2:server isPreSubmitPostBackEnabled="no" isMobileEnabled="no" formLocale="en-US"></xsf2:server>
+				<xsf2:solutionPropertiesExtension branch="workflowInitAssoc">
+					<xsf2:workflowInitAssoc path="http://m264981:1411/Workflows/Board Agenda Approval/Board Agenda Approval.xsn"></xsf2:workflowInitAssoc>
+				</xsf2:solutionPropertiesExtension>
+				<xsf2:viewsExtension>
+					<xsf2:viewExtension ref="Start" clientOnly="no"></xsf2:viewExtension>
+					<xsf2:viewExtension ref="Associate" clientOnly="no"></xsf2:viewExtension>
+				</xsf2:viewsExtension>
+			</xsf2:solutionDefinition>
+			<xsf3:solutionPropertiesExtension2009>
+				<xsf3:solutionMode mode="workflowInitAssoc" originalPublishUrl="http://m264981:1411/Workflows/Board Agenda Approval/Board Agenda Approval.xsn" isListEditForm="no"></xsf3:solutionMode>
+			</xsf3:solutionPropertiesExtension2009>
+			<xsf3:solutionDefinition>
+				<xsf3:customValidation></xsf3:customValidation>
+				<xsf3:viewsExtension>
+					<xsf3:viewExtension ref="Start"></xsf3:viewExtension>
+					<xsf3:viewExtension ref="Associate"></xsf3:viewExtension>
+				</xsf3:viewsExtension>
+			</xsf3:solutionDefinition>
+		</xsf:extension>
+	</xsf:extensions>
+	<xsf:applicationParameters application="InfoPath Design Mode">
+		<xsf:solutionProperties lastVersionNeedingTransform="1.0.0.2" lastOpenView="view1.xsl" fullyEditableNamespace="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-06-08T02:14:49"></xsf:solutionProperties>
+	</xsf:applicationParameters>
+	<xsf:documentSchemas>
+		<xsf:documentSchema rootSchema="yes" location="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution rootschema.xsd"></xsf:documentSchema>
+		<xsf:documentSchema rootSchema="no" location="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields qfschema.xsd"></xsf:documentSchema>
+		<xsf:documentSchema rootSchema="no" location="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields dfschema.xsd"></xsf:documentSchema>
+		<xsf:documentSchema rootSchema="no" location="http://schemas.microsoft.com/office/2009/documentManagement/types typeschema.xsd"></xsf:documentSchema>
+		<xsf:documentSchema rootSchema="no" location="http://schemas.microsoft.com/office/infopath/2007/PartnerControls builtincontrolsschema.xsd"></xsf:documentSchema>
+		<xsf:documentSchema location="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-06-08T02:14:49 myschema.xsd"></xsf:documentSchema>
+	</xsf:documentSchemas>
+	<xsf:fileNew>
+		<xsf:initialXmlDocument caption="3BoardAgendaApproval" href="template.xml"></xsf:initialXmlDocument>
+	</xsf:fileNew>
+	<xsf:submit onAfterSubmit="close" showStatusDialog="no" caption="Submit" disableMenuItem="no">
+		<xsf:errorMessage>The form cannot be submitted because of an error.</xsf:errorMessage>
+		<xsf:submitToHostAdapter name="Main Data Connection" submitAllowed="yes"></xsf:submitToHostAdapter>
+	</xsf:submit>
+	<xsf:dataObjects>
+		<xsf:dataObject name="Choices Data Connection" schema="choices.xsd" initOnLoad="yes">
+			<xsf:query>
+				<xsf:xmlFileAdapter fileUrl="x-soln:///choices.xml" name="Choices Data Connection"></xsf:xmlFileAdapter>
+			</xsf:query>
+		</xsf:dataObject>
+		<xsf:dataObject name="Context" schema="context.xsd" initOnLoad="yes">
+			<xsf:query>
+				<xsf:xmlFileAdapter fileUrl="x-soln:///context.xml" name="Context"></xsf:xmlFileAdapter>
+			</xsf:query>
+		</xsf:dataObject>
+	</xsf:dataObjects>
+	<xsf:calculations></xsf:calculations>
+	<xsf:customValidation>
+		<xsf:errorCondition match="/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:DueDateforAllTasks" expressionContext="." expression=". != &quot;&quot; and msxsl:string-compare(., xdDate:Now()) &lt; 0">
+			<xsf:errorMessage type="modeless" shortMessage="Values for this control must be greater than the current date and time.">Values for this control must be greater than the current date and time.</xsf:errorMessage>
+		</xsf:errorCondition>
+	</xsf:customValidation>
+	<xsf:views default="Start">
+		<xsf:view name="Start" caption="Start">
+			<xsf:mainpane transform="view1.xsl"></xsf:mainpane>
+			<xsf:editing>
+				<xsf:xmlToEdit name="Approvers_1" item="/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Approvers/d:Assignment" container="/dfs:myFields">
+					<xsf:editWith caption="Approvers" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment parent="dfs:dataFields" innerFragment="d:SharePointListItem_RW/d:Approvers/d:Assignment">
+								<d:SharePointListItem_RW>
+									<d:Approvers>
+										<d:Assignment>
+											<d:Assignee>
+												<pc:Person>
+													<pc:DisplayName></pc:DisplayName>
+													<pc:AccountId></pc:AccountId>
+													<pc:AccountType></pc:AccountType>
+												</pc:Person>
+											</d:Assignee>
+											<d:Stage xsi:nil="true"></d:Stage>
+											<d:AssignmentType>Serial</d:AssignmentType>
+										</d:Assignment>
+									</d:Approvers>
+								</d:SharePointListItem_RW>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="NotificationMessage_1" item="/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:NotificationMessage">
+					<xsf:editWith type="plainMultiline" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+			</xsf:editing>
+			<xsf:menuArea name="msoStructuralEditingContextMenu">
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="Approvers_1" caption="Insert Approvers before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="Approvers_1" caption="Insert Approvers after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="Approvers_1" caption="Remove Approvers" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="Approvers_1" caption="Insert Approvers" showIf="immediate"></xsf:button>
+			</xsf:menuArea>
+			<xsf:unboundControls>
+				<xsf:button name="CTRL36">
+					<xsf:ruleSetAction ruleSet="ruleSet_1"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL41">
+					<xsf:ruleSetAction ruleSet="ruleSet_2"></xsf:ruleSetAction>
+				</xsf:button>
+			</xsf:unboundControls>
+		</xsf:view>
+		<xsf:view name="Associate" caption="Associate">
+			<xsf:mainpane transform="view2.xsl"></xsf:mainpane>
+			<xsf:unboundControls>
+				<xsf:button name="CTRL44">
+					<xsf:ruleSetAction ruleSet="ruleSet_3"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL48">
+					<xsf:ruleSetAction ruleSet="ruleSet_4"></xsf:ruleSetAction>
+				</xsf:button>
+			</xsf:unboundControls>
+		</xsf:view>
+	</xsf:views>
+	<xsf:dataAdapters>
+		<xsf:submitToHostAdapter name="default" submitAllowed="yes"></xsf:submitToHostAdapter>
+	</xsf:dataAdapters>
+	<xsf:ruleSets>
+		<xsf:ruleSet name="ruleSet_1">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:submitAction adapter="default"></xsf:submitAction>
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_2">
+			<xsf:rule caption="Rule 2" isEnabled="yes">
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_3">
+			<xsf:rule caption="Rule 3" isEnabled="yes">
+				<xsf:submitAction adapter="default"></xsf:submitAction>
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_4">
+			<xsf:rule caption="Rule 4" isEnabled="yes">
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+	</xsf:ruleSets>
+</xsf:xDocumentClass>

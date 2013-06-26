@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FieldTypes>
+  <FieldType>
+    <Field Name="TypeName">ActionRequiredChoice</Field>
+    <Field Name="ParentType">Choice</Field>
+    <Field Name="Type">MultiChoice</Field>
+    <Field Name="TypeDisplayName">Action Required Choice</Field>
+    <Field Name="TypeShortDescription">Actions Required Choices for Manual Delegations</Field>
+    <Field Name="UserCreatable">TRUE</Field>
+    <Field Name="ShowOnListCreate">TRUE</Field>
+    <Field Name="ShowOnSurveyCreate">TRUE</Field>
+    <Field Name="ShowOnDocumentLibraryCreate">TRUE</Field>
+    <Field Name="ShowOnColumnTemplateCreate">TRUE</Field>
+    <Field Name="FieldTypeClass">ExecutiveTaskTracking.Fields.ActionRequiredChoiceField, $SharePoint.Project.AssemblyFullName$</Field>
+    <Field Name="Group">Custom Columns</Field>
+  </FieldType>
+</FieldTypes>

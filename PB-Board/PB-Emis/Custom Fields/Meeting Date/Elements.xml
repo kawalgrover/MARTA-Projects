@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{6A262E75-ADF6-4C20-A592-9E07670B2760}"
+        Type="DateTime"
+        Group="MARTA Columns"
+        DisplayName="Meeting Date"
+        Name="Meeting Date"/>
+</Elements>

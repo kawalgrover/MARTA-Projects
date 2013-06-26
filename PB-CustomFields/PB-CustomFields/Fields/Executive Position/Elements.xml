@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{683E1185-CAD8-48D2-B4E9-3BFF11931856}"
+         Name="AGM Office"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="AGM Office">
+    <CHOICES>
+      <CHOICE>AGM-Audit</CHOICE>
+      <CHOICE>AGM-Bus Operations</CHOICE>
+      <CHOICE>AGM-Communications and External Affairs</CHOICE>
+      <CHOICE>AGM-Contracts and Procurement</CHOICE>
+      <CHOICE>AGM-Finance</CHOICE>
+      <CHOICE>AGM-Human Resources</CHOICE>
+      <CHOICE>AGM-Legal Services</CHOICE>
+      <CHOICE>AGM-Operations</CHOICE>
+      <CHOICE>AGM-Planning</CHOICE>
+      <CHOICE>AGM-Police</CHOICE>
+      <CHOICE>AGM-Rail Operations</CHOICE>
+      <CHOICE>AGM-Safety and QA</CHOICE>
+      <CHOICE>AGM-Technology</CHOICE>
+      <CHOICE>Executive Director</CHOICE>
+      <CHOICE>DGM</CHOICE>
+      <CHOICE>CBSS</CHOICE>
+      <CHOICE>GM</CHOICE>
+    </CHOICES>
+  </Field>  
+</Elements>

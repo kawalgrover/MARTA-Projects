@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="ebefe9f8-fa98-4297-b18b-bbe960f0aacd"
+          Title="Weather Web Part"
+          Description="Weather Web Part for Axis Capital"
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"
+          
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="WeatherReport.webpart" />
+  </ElementManifests>
+</Feature>

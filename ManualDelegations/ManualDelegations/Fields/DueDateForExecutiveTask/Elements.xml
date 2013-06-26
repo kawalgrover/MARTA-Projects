@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{2410235D-B2AB-43DE-A4FD-F86C9F70EB97}"
+         Type="DateTime"
+         Group="MARTA Columns"
+         DisplayName="Due Date"
+         Name="DelegateDueDate"
+         Format="DateOnly"
+         Description="All tasks assigned for the Executive task will get this due date."/>
+</Elements>

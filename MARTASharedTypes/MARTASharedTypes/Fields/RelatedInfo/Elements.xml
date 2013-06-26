@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{761C8B12-4187-4278-8772-6FF13A09B2E9}"
+         Type="URL"
+         Group="MARTA Shared Columns"
+         DisplayName="Related Info"
+         Name="RelatedInfo"/>
+</Elements>

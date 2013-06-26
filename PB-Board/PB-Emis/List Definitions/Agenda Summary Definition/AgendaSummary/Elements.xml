@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Agenda Summary"
+                OnQuickLaunch="TRUE"
+                TemplateType="10005"
+                Url="Lists/AgendaSummary"
+                Description="List Instance for Agenda Summary">
+  </ListInstance>
+</Elements>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ExecutiveTasks" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ExecutiveTaskTracking-ExecutiveTasks" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0120D520001a1b53404a8340a79f7d7982f168ab2f" Name="Executive Task" Group="Custom Content Types" Description="Document Set that holds any pertinent information related to Executive tasks" Version="0" ProgId="SharePoint.DocumentSet">
+        <Folder TargetName="_cts/ExecutiveTask Document Set" />
+        <FieldRefs>
+          <FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" DisplayName="Subject" />
+          <!-- FileLeafRef / Name -->
+          <FieldRef ID="{629C85FE-8FA6-4649-BFE8-1E095688FEA7}" />
+          <!-- Delegate To-->
+          <FieldRef ID="{6A71ED76-9DFB-4D51-A8C8-A8BC97E25950}" />
+          <!-- Action Required-->
+          <FieldRef ID="{2410235D-B2AB-43DE-A4FD-F86C9F70EB97}" />
+          <!-- Due Date-->
+          <FieldRef ID="{FB0F91FD-6434-4483-8FB3-9A79A2594AB6}" />
+          <!-- High Priority-->
+        </FieldRefs>
+        <XmlDocuments>
+          <!-- list of all content types that are allowed in the document set. -->
+          <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes">
+            <act:AllowedContentTypes xmlns:act="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes" LastModified="1/1/2010 08:00:00 AM">
+              <AllowedContentType id="0x0101" />
+              <!-- Document -->
+            </act:AllowedContentTypes>
+          </XmlDocument>
+          <!-- list of all fields that should appear on the welcome page -->
+          <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/welcomepagefields">
+            <wpFields:WelcomePageFields xmlns:wpFields="http://schemas.microsoft.com/office/documentsets/welcomepagefields" LastModified="1/1/2010 08:00:00 AM">
+              <WelcomePageField id="8553196d-ec8d-4564-9861-3dbe931050c8" />
+              <!-- Delegate To -->
+              <WelcomePageField id="629C85FE-8FA6-4649-BFE8-1E095688FEA7" />
+              <!-- Action Required -->
+              <WelcomePageField id="6A71ED76-9DFB-4D51-A8C8-A8BC97E25950" />
+              <!-- Due Date -->
+              <WelcomePageField id="2410235D-B2AB-43DE-A4FD-F86C9F70EB97" />
+              <!-- High Priority -->
+              <WelcomePageField id="FB0F91FD-6434-4483-8FB3-9A79A2594AB6" />
+            </wpFields:WelcomePageFields>
+          </XmlDocument>
+          <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+            <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+              <New>_layouts/ExecutiveTaskTracking/ExecTaskNewForm.aspx</New>
+              <Display>_layouts/ExecutiveTaskTracking/ExecTaskDisplayForm.aspx</Display>
+              <Edit>_layouts/Executive/ExecTaskEditForm.aspx</Edit>
+            </FormUrls>
+          </XmlDocument>
+        </XmlDocuments>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" Name="FileLeafRef" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FileLeafRef" Group="_Hidden" ShowInFileDlg="FALSE" ShowInVersionHistory="FALSE" Type="File" DisplayName="$Resources:core,Name;" AuthoringInfo="$Resources:core,for_use_in_forms;" List="Docs" FieldRef="ID" ShowField="LeafName" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" Required="TRUE" />
+      <Field ID="{b824e17e-a1b3-426e-aecf-f0184d900485}" Name="ItemChildCount" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ItemChildCount" Group="_Hidden" ReadOnly="TRUE" Filterable="FALSE" Sortable="FALSE" Hidden="FALSE" Type="Lookup" DisplayName="$Resources:core,Item_Child_Count;" List="Docs" FieldRef="ID" ShowField="ItemChildCount" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" Customization="" />
+      <Field ID="{960ff01f-2b6d-4f1b-9c3f-e19ad8927341}" Name="FolderChildCount" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FolderChildCount" Group="_Hidden" ReadOnly="TRUE" Filterable="FALSE" Sortable="FALSE" Hidden="FALSE" Type="Lookup" DisplayName="$Resources:core,Folder_Child_Count;" List="Docs" FieldRef="ID" ShowField="FolderChildCount" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" Customization="">
+      </Field>
+      <Field ID="{2410235d-b2ab-43de-a4fd-f86c9f70eb97}" Type="DateTime" Group="MARTA Columns" DisplayName="Due Date" Name="DelegateDueDate" Description="Will default to 5 business days from today." />
+      <Field ID="{fb0f91fd-6434-4483-8fb3-9a79a2594ab6}" Type="Boolean" Group="MARTA Columns" DisplayName="High Priority" Name="HighPriority" />
+      <Field ID="{6a71ed76-9dfb-4d51-a8c8-a8bc97e25950}" Type="ActionRequiredChoice" Group="MARTA Columns" DisplayName="Action Required" Name="ActionRequired" />
+      <Field ID="{629c85fe-8fa6-4649-bfe8-1e095688fea7}" Type="RolesForExecutiveTasksChoice" Group="MARTA Columns" DisplayName="To" Name="DelegateTo" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments">
+          </FieldRef>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{C9474265-EEE9-4340-A0A0-9C6E8E0F8C0D}"
+         Type="User"
+         Name="Sponsor"
+         DisplayName="Sponsor"
+         Group="MARTA Columns">
+         
+  </Field>
+</Elements>

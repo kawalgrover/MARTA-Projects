@@ -1,0 +1,2 @@
+﻿<%@ Assembly Name="MARTA.PaperlessBoard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d769deb045fee341" %>
+<%@ ServiceHost Service="MARTA.PaperlessBoard.HelperService" %>

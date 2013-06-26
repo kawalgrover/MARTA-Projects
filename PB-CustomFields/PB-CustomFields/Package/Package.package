@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e7c720cd-4971-4cb7-b453-046b05ac2993" solutionId="e7c720cd-4971-4cb7-b453-046b05ac2993" resetWebServer="false" name="PB_CustomFields" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="3d1d162b-a356-46f2-ad23-ae6a0761c316" />
+    <featureReference itemId="af66860a-4c62-438f-a795-cee8f8057a9e" />
+  </features>
+</package>

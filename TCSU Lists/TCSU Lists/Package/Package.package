@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4d56c7c1-821c-4fa0-bc87-9bddda5f76c6" solutionId="4d56c7c1-821c-4fa0-bc87-9bddda5f76c6" resetWebServer="false" name="TCSU_Lists" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="83fa090c-ca09-4671-9d3a-937d724dea3c" />
+  </features>
+</package>

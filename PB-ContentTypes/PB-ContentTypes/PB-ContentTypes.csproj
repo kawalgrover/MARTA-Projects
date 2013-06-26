@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26DB6CBD-9110-455B-9D8D-8FAFFBB082D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PB_ContentTypes</RootNamespace>
+    <AssemblyName>PB-ContentTypes</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Agenda Summary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c52247ee-2aa3-4c90-8c07-fa7962a95d71}</SharePointProjectItemId>
+    </None>
+    <None Include="Board Agenda\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{50457fab-0956-4948-867d-b56919f0b672}</SharePointProjectItemId>
+    </None>
+    <None Include="Board Meeting Copy\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6c4f7fdb-d28c-4f10-b812-bc1c46e23ae8}</SharePointProjectItemId>
+    </None>
+    <None Include="Board Meeting\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{35892c76-6749-46ce-a28c-4947af8d669c}</SharePointProjectItemId>
+    </None>
+    <None Include="BoardMeetingCopy\BoardMeetings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cecbd750-140d-44da-b922-2b379c667602}</SharePointProjectItemId>
+    </None>
+    <None Include="BoardMeetingCopy\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d76982e2-b98e-4d6e-ac52-1331344485bd}</SharePointProjectItemId>
+    </None>
+    <None Include="Contract Award Analysis\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ba0ee324-36b7-48d1-8493-06ca9554556f}</SharePointProjectItemId>
+    </None>
+    <None Include="DefaultDocuments\ProcurementResolution.docx" />
+    <None Include="DefaultDocuments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{49caf70e-6c82-4c01-9389-131988a8accf}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\PB-ContentTypes\PB-ContentTypes.feature">
+      <FeatureId>{e9d5524d-526a-4048-b5c4-f3b1df9e9fa9}</FeatureId>
+    </None>
+    <None Include="Future Agendas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9b3f38f9-5c03-4ae6-8fc0-ee438af75a8a}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{1e9d3ee3-f9cd-424b-81d2-5f8ccba6da47}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Procurement Resolution\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d37d06a6-8206-419a-abf5-e22e84815386}</SharePointProjectItemId>
+    </None>
+    <None Include="Responsible AGM\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8eff664e-9692-4f2b-bb04-f817ed8b82cf}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Agenda Summary\Elements.xml" />
+    <Content Include="Board Agenda\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Board Meeting Copy\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Board Meeting\Elements.xml" />
+    <Content Include="BoardMeetingCopy\Elements.xml" />
+    <Content Include="BoardMeetingCopy\BoardMeetings\Elements.xml" />
+    <Content Include="BoardMeetingCopy\Schema.xml" />
+    <Content Include="Contract Award Analysis\Elements.xml" />
+    <Content Include="DefaultDocuments\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DefaultDocuments\Sample.txt" />
+    <Content Include="Features\PB-ContentTypes\PB-ContentTypes.Template.xml">
+      <DependentUpon>PB-ContentTypes.feature</DependentUpon>
+    </Content>
+    <Content Include="Future Agendas\Elements.xml" />
+    <Content Include="Procurement Resolution\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Responsible AGM\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{20CD7D82-64D8-4D37-A977-BF81894A1BFF}"
+         Name="Voting Requirements"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Voting Requirements">
+    <CHOICES>
+      <CHOICE>Majority</CHOICE>
+      <CHOICE>Super Majority (2/3)</CHOICE>
+      <CHOICE>Consensus</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

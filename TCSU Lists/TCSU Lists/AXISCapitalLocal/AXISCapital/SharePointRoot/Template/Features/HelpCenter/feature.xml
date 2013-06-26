@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="b242c36b-fb1a-4141-a29b-f253deebb1d9"
+          Title="Help Center"
+          Description="This is the Help Center Web Part for the Axis Knowledge Network"
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"
+          
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="InsuranceList.webpart" />
+  </ElementManifests>
+</Feature>

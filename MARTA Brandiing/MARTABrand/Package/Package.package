@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="27147970-8877-4665-9bb5-33a37d7f5308" solutionId="27147970-8877-4665-9bb5-33a37d7f5308" resetWebServer="false" name="MARTABrand" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="cd091c24-c965-47e2-9e12-568b610913a1" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="40fd30b0-a410-4ac9-86c5-c2e3116de921" />
+    <projectItemReference itemId="be50aaf8-fa03-444d-9e42-12be7cd9b4a8" />
+    <projectItemReference itemId="913e669a-b521-4566-b46d-0174b2f0b866" />
+  </projectItems>
+</package>

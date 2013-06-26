@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ExecutiveTaskWFForms\" Type="ElementManifest" />
+    <ProjectItemFile Source="StartExecutiveTaskForm.aspx" Target="ExecutiveTaskWFForms\" Type="ElementFile" />
+    <ProjectItemFile Source="..\ExecutiveTaskWFForms\ExecutiveTaskEditForm.aspx" Target="ExecutiveTaskWFForms\" Type="ElementFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="ExecutiveTaskTracking" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

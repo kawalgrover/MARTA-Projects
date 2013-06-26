@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100516c763c532d402792a2e0f47192e69b"
+               Name="Responsible AGM"
+               Group="Custom Content Types"
+               Description="Responsible AGM"
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{683E1185-CAD8-48D2-B4E9-3BFF11931856}" />
+      <FieldRef ID="{0150E9FB-2077-4331-B406-8CB4C404A0BE}" />
+      <FieldRef ID="{3B8B0735-3FDA-487C-BA18-A50CFDC66F39}"/>
+      <FieldRef ID="{E8DCA6E0-1783-4945-9698-FFCD20AD9D6B}"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

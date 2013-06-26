@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="AXISCapital.UI.WebControls.WebParts.AxisNewsWebPart, AXISCapital, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e3887e76deee1794" />
+      <importErrorMessage>Cannot import AxisNews Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Axis News</property>
+        <property name="Description" type="string">This is the Axis News Web Part for the AXIS Knoweldge Network</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

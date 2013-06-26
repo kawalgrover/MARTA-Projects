@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{179836E0-2916-49DA-8734-0D1297E2BC03}"
+          Type="DateTime"
+          Group="MARTA Columns"
+          DisplayName="Due Date for Delegated Task"
+          Name="DelegateDueDate"/>
+</Elements>

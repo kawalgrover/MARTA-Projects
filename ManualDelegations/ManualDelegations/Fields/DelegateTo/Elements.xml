@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{629C85FE-8FA6-4649-BFE8-1E095688FEA7}"
+         Type="RolesForExecutiveTasksChoice"
+         Group="MARTA Columns"
+         DisplayName="To"
+         Name="DelegateTo"/>
+</Elements>

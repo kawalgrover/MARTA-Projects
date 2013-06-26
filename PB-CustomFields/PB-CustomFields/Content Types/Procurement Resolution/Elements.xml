@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x010100f698dbfcd4dd4da19934099ec55b3bd2"
+               Name="Procurement Resolution"
+               Group="Custom Content Types"
+               Description="PaperlessBoard - Procurement Resolution"
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{7CFE3257-06C0-4061-AA42-0B4F4D95A02D}" Required="TRUE" Name="PublishDocumentToBoard" DisplayName="Publish Document To Board"/>
+      <FieldRef ID="{20CD7D82-64D8-4D37-A977-BF81894A1BFF}" Name="Voting Requirements"/>
+      <FieldRef ID="{5C3D49E7-CDF4-4745-AD29-DDC99D6508D4}" DisplayName="Contract Bid Date" Name="ContractBidDate"/>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+      <FieldRef ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" Required="TRUE" Name="Name"/>
+      <FieldRef ID="{94110E4E-91DC-4419-A5CE-9E24AD5EB9FE}" Required="TRUE" Name="Agenda Type" DisplayName="Agenda Type"/>
+    </FieldRefs>
+    <DocumentTemplate TargetName="/_cts/PB-ContentTypes/ProcurementResolution.docx"/>
+  </ContentType>
+</Elements>

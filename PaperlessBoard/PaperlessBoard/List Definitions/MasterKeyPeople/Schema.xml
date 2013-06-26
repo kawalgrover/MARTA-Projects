@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="KeyPeopleDefinition" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/PaperlessBoard-MasterKeyPeople" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01004820a02270d044edb96f45d0754f4e1b" Name="KeyPeople" Group="Custom Content Types" Description="Content Type for the KeyPeople List" Inherits="FALSE" Version="0">
+        <FieldRefs>
+         
+          <FieldRef ID="{AD25BCE6-BBD7-45DD-8278-F8BDD804A20C}" Name="Position" Required="TRUE" />
+          <FieldRef ID="{A949BA21-D579-4906-AEBC-87EFA30241C3}" Name="KeyPerson" />
+          <FieldRef ID="{E8E625D4-CFF2-4832-9D1F-C8DA60775A71}" Name="Is Contributor?"/>
+          
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      
+      <Field ID="{a949ba21-d579-4906-aebc-87efa30241c3}" Type="User" Name="KeyPerson" DisplayName="Key Person" Group="MARTA Columns" SourceID="{6570b431-8e16-4cc8-b1f8-9e6233710e88}" StaticName="KeyPerson">
+      </Field>
+      <Field ID="{ad25bce6-bbd7-45dd-8278-f8bdd804a20c}" Type="Text" Group="MARTA Columns" DisplayName="Position" Name="PositionInMarta" SourceID="{6570b431-8e16-4cc8-b1f8-9e6233710e88}" StaticName="PositionInMarta" />
+      <Field ID="{E8E625D4-CFF2-4832-9D1F-C8DA60775A71}" Type="Boolean" Group="MARTA Columns" DisplayName="Is Contributor?" Name="IsContributor" SourceID="{6570b431-8e16-4cc8-b1f8-9e6233710e88}" StaticName="IsContributor"/>
+      
+      
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="PositionInMarta">
+          </FieldRef>
+          <FieldRef Name="KeyPerson">
+          </FieldRef>
+          <FieldRef Name="IsContributor">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

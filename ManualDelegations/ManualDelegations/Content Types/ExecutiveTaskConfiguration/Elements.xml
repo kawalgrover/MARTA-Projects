@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01000406e4d4285d4f1fb773e4f82ade0063"
+               Name="ExecutiveTaskConfiguration"
+               Group="MARTA Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{CD38DA47-F17A-49B0-9E3D-BB5622D69181}" DisplayName="Due Days for Tasks" Required="TRUE"/> 
+      <FieldRef ID="{68A57E4A-80AE-4E0E-9F22-7F232036C210}" DisplayName="Task Coordinator" Required="TRUE"/> 
+    </FieldRefs>
+  </ContentType>
+</Elements>

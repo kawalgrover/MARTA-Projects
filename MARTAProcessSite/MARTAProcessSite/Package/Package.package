@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="8ec62d95-c718-4d73-be56-03cb0cd2079f" solutionId="8ec62d95-c718-4d73-be56-03cb0cd2079f" resetWebServer="false" name="MARTAProcessSite" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="MARTAWebParts.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="Ref\MARTAWebParts.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="ea90c8e2-568e-47ad-852e-1e49f64112aa" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="56f92ba8-1b50-4ae1-a1ef-a5bdd1cf372e" />
+    <projectItemReference itemId="a1317267-031b-447e-afe1-684fe09d3e23" />
+  </projectItems>
+</package>

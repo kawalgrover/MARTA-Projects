@@ -1,0 +1,207 @@
+﻿/* Search */
+#SRSB {
+	margin-top: 25px;
+}
+
+/* Interior: Left Nav */
+
+#left-nav {
+	width: 20%;
+	padding-right: 17px !important;
+}
+.leftNav {
+	background:none; 
+	border: none;
+	border-top: 2px solid #2066aa;
+	margin: 0;
+	width: 100%;
+}
+
+/* "In This Section" Header */
+
+.leftNav1 td a {
+	font-family: Verdana !important;
+	font-size: 11pt !important;
+	color: #2e5377;
+	margin: 7px 0;
+	font-weight: normal !important;
+}
+
+/* Left Nav Links */
+#left-nav td td a {
+	padding-left: 15px;
+	background:url('/_layouts/images/AxisIntraBranding/bullet.png') 5px 5px no-repeat;
+}
+
+#left-nav a {
+	font-family: Verdana !important;
+	font-size: 9pt !important;
+	color: #004881;
+	background-color: #fff !important;
+}
+#left-nav div a {
+	font-size: 8pt !important;
+	width: auto;
+}
+
+#left-nav .leftNav tr td table {
+	border: none !important;
+}
+
+/* Hide the sub-menu indicator arrow */
+#left-nav img, .topNavFlyOuts img {
+	display: none !important;
+}
+
+/* Get rid of any hover effects */
+#left-nav td, #left-nav a:hover, #left-nav tr:hover .leftNav1 {
+	background-color: #fff !important;
+	color: #004881;
+}
+
+/* Left Nav Fly-outs */
+#left-nav div.leftNavFlyOuts {
+	border-top: 2px solid #2066aa;
+	margin-left: -1px;
+}
+table.leftNavFlyOutsItem, table.leftNavFlyOutsItem td {
+	background: #fff !important;
+}
+
+table.leftNavFlyOutsItem td {
+	padding: 4px;
+}
+
+
+/* *********************************** */
+
+.pageTitle {
+	 display: none;
+}
+.ms-WPHeader .ms-WPTitle {
+	font-size: 11pt;
+	
+}
+.ms-WPHeader td {
+	border: none !important;
+}
+.mainContainer td {
+	vertical-align: top !important;
+}
+.mainContent table {
+	width: 100% !important;
+}
+#OuterLeftCell {
+	padding: 0 !important;
+}
+#MiddleLeftCell {
+	padding-right: 20px;
+}
+
+.side-mod {
+	border-top: 2px solid #2066aa;
+	padding-left: 10px;
+	margin-bottoM: 20px;
+}
+p.header, .side-mod p.header {
+	font-size: 11pt !important;
+	color: #2e5377;
+	margin: 6px 0 0px;
+}
+.side-mod ul {
+	padding: 0;
+	margin: 8px 0 0 -10px;
+}
+.side-mod li {
+	list-style-position: inside !important;
+}
+#side-column ul li {
+	list-style-position: outside;
+}
+
+
+.side-mod a{
+	font-size: 9pt;
+}
+.mainContainer ul li {
+	list-style-image: url('/_layouts/images/AxisIntraBranding/bullet.png');
+	list-style-position: inside;
+	padding: 0 0 1px 0;
+	margin-left: 0;
+}
+.mainContainer li a {
+	padding-left: 5px;
+}
+.mainContainer p, .mainContainer td{
+	font-size: 9pt !important;
+}
+h2 {
+	font-size: 16pt !important;
+}
+h3 {
+	font-size: 12pt !important;
+}
+h4 {
+	font-size: 11pt !important;
+}
+p.header {
+	margin-top: 0;
+	font-size: 11pt;
+}
+
+
+
+.fuuuuuuuu  ul {
+	margin-left: 0px !important;
+}
+.fuuuuuuuu  ul ul {
+	margin-top: 20px !important;
+	margin-left: 20px !important;
+}
+.fuuuuuuuu li {
+	margin-bottom: 20px !important;
+}
+
+
+#main-column {
+	width: 75%;
+}
+#main-column ul {
+	margin-left: -10px;
+}
+#main-column li {
+	padding-bottom: 10px;
+}
+#side-column {
+	width: 24%;
+
+}
+
+#quick-look {
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+
+
+
+#news-events {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc !important;
+}
+
+#change-location {
+	
+	display: block;
+	width: 100%;
+
+	padding: 6px 0 6px;
+	text-align: center;
+	color: #fff;
+	background: #00aeef;
+	margin-bottom: 20px;
+}
+#change-location a {
+	color: #fff !important;
+	font-size: 10pt;
+}

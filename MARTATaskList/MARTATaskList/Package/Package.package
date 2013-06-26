@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1466131d-8f9d-4a78-b978-e6270087e321" solutionId="1466131d-8f9d-4a78-b978-e6270087e321" resetWebServer="false" name="MARTATaskList" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="22cd14a5-742f-4b23-9d21-16a2f76668e9" />
+  </features>
+</package>

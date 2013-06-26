@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MasterPageModule" Url="_catalogs/masterpage">
+  <File Path="MasterPageModule\MARTA_publishing.master" Url="MARTA_publishing.master" Type="GhostableInLibrary" />
+</Module>
+</Elements>

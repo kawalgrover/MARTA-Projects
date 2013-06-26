@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{E648F29D-B66D-4723-AFDF-7F386FE44773}"
+        Type="Text"
+        Group="MARTA Columns"
+        DisplayName="MeetingWorkspaceURL"
+        Name="MeetingWorkspaceURL"/>
+</Elements>

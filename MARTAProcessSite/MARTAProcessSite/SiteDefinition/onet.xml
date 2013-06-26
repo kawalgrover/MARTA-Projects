@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Title="MARTA Process Site" Revision="2" ListDir="" xmlns:ows="Microsoft SharePoint" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <NavBars>
+    <NavBar Name="$Resources:core,category_Lists;"
+            Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;"
+            Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/layouts/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;"
+            Suffix="&lt;/table&gt;"
+            ID="1003" />
+  </NavBars>
+  <Configurations>
+    <Configuration ID="0" Name="MARTAProcessSite">
+      <Lists>
+        <List FeatureId="cdf0191d-3253-4d14-b28a-9fe8d6b69fd4"
+              Type="107"
+              Title="MARTA Tasks"
+              Url="Lists/MARTATaskList"
+              />
+        
+      </Lists>
+      <SiteFeatures>
+      </SiteFeatures>
+      <WebFeatures>
+      </WebFeatures>
+      <Modules>
+        <Module Name="DefaultBlank" />
+      </Modules>
+    </Configuration>
+  </Configurations>
+  <Modules>
+    <Module Name="DefaultBlank" Url="" Path="">
+      <File Url="default.aspx">
+      </File>
+    </Module>
+  </Modules>
+</Project>
+

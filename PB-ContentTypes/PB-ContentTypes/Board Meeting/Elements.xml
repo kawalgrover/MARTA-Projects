@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Event (0x0102) -->
+  <ContentType ID="0x010200be96d84c0fcc4a8ba3891db4550d2bb9"
+                Name="Board Meeting"
+                Inherits="FALSE"
+                Group="Custom Content Types"
+                Description="My Content Type"
+                Version="0">
+    <FieldRefs>
+      <!-- All Day Event -->
+      <RemoveFieldRef ID="{7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8}"/>
+      <!-- Recurrence -->
+      <RemoveFieldRef ID="{f2e63656-135e-4f1c-8fc2-ccbe74071901}"/>
+      <!-- Category -->
+      <RemoveFieldRef ID="{6df9bd52-550e-4a30-bc31-a4366832a87d}"/>
+      <!-- Board Committee -->
+      <FieldRef ID="{81601602-CE87-4220-A6C7-E58342292477}"/>
+      <!-- Title -->
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"/>
+      <!-- Location -->
+      <FieldRef ID="{288f5f32-8462-4175-8f09-dd7ba29359a9}"/>
+      <!-- Start Time -->
+      <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}"/>
+      <!-- End Time -->
+      <FieldRef ID="{2684f9f2-54be-429f-ba06-76754fc056bf}"/>
+      <!-- Description -->
+      <FieldRef ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}"/>
+      <!-- Workspace -->
+      <FieldRef ID="{08fc65f9-48eb-4e99-bd61-5946c439e691}"/>
+      <!-- MeetingWorkspaceURL -->
+      <FieldRef ID="{E648F29D-B66D-4723-AFDF-7F386FE44773}"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>
+

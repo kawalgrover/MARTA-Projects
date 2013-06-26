@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Files\Workflows\3BoardAgendaApproval\2BoardAgendaApproval.xsn" Target="Files\Workflows\3BoardAgendaApproval\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Workflows\3BoardAgendaApproval\4BoardAgendaApproval.xoml.rules" Target="Files\Workflows\3BoardAgendaApproval\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Workflows\3BoardAgendaApproval\5BoardAgendaApproval.xoml" Target="Files\Workflows\3BoardAgendaApproval\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Workflows\3BoardAgendaApproval\6BoardAgendaApproval.xoml.wfconfig.xml" Target="Files\Workflows\3BoardAgendaApproval\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Workflows\3BoardAgendaApproval\7ApprovalWorkflowTask_x0028_en-US_x0029_Copy.xsn" Target="Files\Workflows\3BoardAgendaApproval\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="WorkflowsBoard_Agenda_Approval_\" Type="ElementManifest" />
+  </Files>
+</ProjectItem>

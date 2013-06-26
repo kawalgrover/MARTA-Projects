@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Executives"
+                OnQuickLaunch="TRUE"
+                TemplateType="10001"
+                Url="Lists/Executives"
+                Description="This list contains all the Executives in MARTA">
+  </ListInstance>
+</Elements>

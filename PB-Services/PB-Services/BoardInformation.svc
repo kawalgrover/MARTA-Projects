@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MARTA.Services.PaperlessBoard.BoardInformation" CodeBehind="BoardInformation.svc.cs" Factory="System.ServiceModel.Activation.WebScriptServiceHostFactory" %>

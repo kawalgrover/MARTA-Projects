@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="32faf7ff-ca3b-48dd-8579-9eca1b37bc29" solutionId="32faf7ff-ca3b-48dd-8579-9eca1b37bc29" resetWebServer="false" name="AgendaApprovalWorkflow" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="0a854de5-712b-4a62-9d89-463fd9a1c04d" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="6bb114ec-3597-45c2-b6b8-608cf4cdb008" />
+  </projectItems>
+</package>

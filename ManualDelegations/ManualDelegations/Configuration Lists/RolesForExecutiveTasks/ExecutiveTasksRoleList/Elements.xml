@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="ExecutiveTasksRoleList"
+                OnQuickLaunch="TRUE"
+                TemplateType="10001"
+                Url="Lists/ExecutiveTasksRoleList"
+                Description="Configuration List that holds the roles information for the executive tasks list.">
+  </ListInstance>
+</Elements>

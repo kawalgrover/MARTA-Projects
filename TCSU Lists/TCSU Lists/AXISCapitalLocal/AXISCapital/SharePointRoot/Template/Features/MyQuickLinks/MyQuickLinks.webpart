@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="AXISCapital.UI.WebControls.WebParts.MyQuickLinksWebPart, AXISCapital, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e3887e76deee1794" />
+      <importErrorMessage>Cannot import MyQuickLinks Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">My Quick Links</property>
+        <property name="Description" type="string">This is the My Quick Links Web Part for the AXIS Knowledge Network</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Templates xmlns:ows="Microsoft SharePoint">
+  <Template Name="MARTA Process Site" ID="10000">
+    <Configuration ID="0" Title="MARTA Process Site" Hidden="FALSE" ImageUrl="/_layouts/images/CPVW.gif" Description="This template is used for Process Sites within the MARTA SharePoint ecosystem." DisplayCategory="SharePoint Customizations">
+    </Configuration>
+  </Template>
+</Templates>
